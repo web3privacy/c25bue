@@ -1603,14 +1603,6 @@ table.table-custom {
   }
 }
 
-#menu-toggle {
-  cursor: pointer;
-}
-
-#mobile-menu {
-  height: 88vh;
-}
-
 .menu {
   gap: 20px;
   align-items: center;
@@ -1620,9 +1612,6 @@ table.table-custom {
 /* Responsive adjustments */
 @media (min-width: 1024px) {
   /* lg breakpoint */
-  #mobile-menu {
-    display: none;
-  }
 }
 
 .show-mobile {
