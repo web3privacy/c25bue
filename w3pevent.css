@@ -627,6 +627,7 @@ table.table-custom {
   background-size: cover;
   background-color: black;
   background-position: center;
+  margin-top: 20rem;  
 }
 #manifesto {
   background-image: url(/img/manifesto.webp);
