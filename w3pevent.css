@@ -1312,10 +1312,7 @@ table.table-custom {
     font-size: 14px !important;
     line-height: 24px !important;
   }
-  #intro {
-    background: transparent;
-  }
-
+  
   .main-title {
     background-image: url(/img/bg.webp);
     background-repeat: no-repeat;
