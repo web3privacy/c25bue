@@ -627,7 +627,7 @@ table.table-custom {
   background-size: cover;
   background-color: black;
   background-position: center;
-  margin-top: 5rem;  
+  margin-top: 5rem;
 }
 #manifesto {
   background-image: url(/img/manifesto.webp);
@@ -1312,7 +1312,7 @@ table.table-custom {
     font-size: 14px !important;
     line-height: 24px !important;
   }
-  
+
   .main-title {
     background-image: url(/img/bg.webp);
     background-repeat: no-repeat;
@@ -1635,4 +1635,39 @@ table.table-custom {
 }
 .privacy-logo {
   height: 56px;
+}
+
+.speaker-card {
+  position: relative;
+  overflow: visible;
+}
+
+.speaker-description-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  min-height: 100%;
+  background: #fff;
+  color: #111;
+  z-index: 10;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 2rem 1.5rem;
+  transition: opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.speaker-card:hover .speaker-description-overlay,
+.speaker-card:focus-within .speaker-description-overlay {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.speaker-description-content {
+  max-width: 400px;
+  margin: 0 auto;
 }
