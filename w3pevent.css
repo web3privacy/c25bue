@@ -622,12 +622,27 @@ table.table-custom {
   color: #999999;
 }
 #intro {
-  background-image: url(/img/bg.webp);
+  background-image: url(/img/bg-image.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
   background-position: center;
-  margin-top: 5rem;
+  position: relative;
+}
+
+#intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#intro > * {
+  position: relative;
+  z-index: 2;
 }
 #manifesto {
   background-image: url(/img/manifesto.webp);
@@ -1295,6 +1310,16 @@ table.table-custom {
   font-weight: 400;
   line-height: 48px;
   max-width: 899px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Add text shadow to intro section text for better readability */
+#intro .text-white {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#intro .font-mono2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 640px) {
@@ -1314,7 +1339,7 @@ table.table-custom {
   }
 
   .main-title {
-    background-image: url(/img/bg.webp);
+    background-image: url(/img/bg-image.png);
     background-repeat: no-repeat;
     background-size: 230%;
     background-position: center;
