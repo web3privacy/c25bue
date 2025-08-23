@@ -2280,12 +2280,12 @@ table.table-custom {
 }
 
 /* Mobile Navigation Styles */
-.mobile-nav-controls {
+.mobile-nav {
   display: none;
-  position: absolute;
-  right: 2.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+}
+
+.mobile-nav-controls {
+  position: relative;
   z-index: 50;
 }
 
@@ -2350,8 +2350,8 @@ table.table-custom {
     display: none;
   }
 
-  .mobile-nav-controls {
-    display: block;
+  .mobile-nav {
+    display: flex;
   }
 
   .navbar-minimal {
@@ -2363,7 +2363,7 @@ table.table-custom {
 
 /* Desktop: hide mobile elements */
 @media (min-width: 769px) {
-  .mobile-nav-controls,
+  .mobile-nav,
   .mobile-menu-panel {
     display: none !important;
   }

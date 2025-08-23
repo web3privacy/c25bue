@@ -33,7 +33,14 @@
           
           <div class="navbar-minimal px-10 py-4 pt-2">
               <!-- Desktop Navigation -->
-              <div class="desktop-nav flex justify-center items-center my-1">
+              <div class="desktop-nav flex justify-between items-center my-1">
+                <!-- Logo -->
+                <div class="flex items-center">
+                  <a href="#intro">
+                    <img src="./img/logo5.svg" alt="Web3Privacy Now" style="width: 13rem;">
+                  </a>
+                </div>
+                <!-- Navigation Links -->
                 <div class="flex items-center gap-8 text-base">
                   <div class="m-1">
                     <a class="nav-link-minimal active" href="#intro">Home</a>
@@ -53,10 +60,18 @@
                 </div>
               </div>
 
-              <!-- Mobile Navigation Controls -->
-              <div class="mobile-nav-controls">
-                <!-- Hamburger Icon -->
-                <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
+              <!-- Mobile Navigation -->
+              <div class="mobile-nav flex justify-between items-center">
+                <!-- Logo for Mobile -->
+                <div class="mobile-logo">
+                  <a href="#intro">
+                    <img src="./img/logo5.svg" alt="Web3Privacy Now" style="width: 10rem;">
+                  </a>
+                </div>
+                <!-- Mobile Navigation Controls -->
+                <div class="mobile-nav-controls">
+                  <!-- Hamburger Icon -->
+                  <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -71,6 +86,7 @@
                     <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                   </svg>
                 </label>
+                </div>
               </div>
 
               <!-- Mobile Menu Panel -->
