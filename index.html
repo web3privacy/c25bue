@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#000000">
     <meta http-equiv="content-security-policy" content="script-src 'self'; form-action 'self';">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet">
     <link href="./w3pevent.css?v=2" rel="stylesheet">
     <title>Ethereum Cypherpunk Congress 2 | 16 Nov 2025</title>
     <meta name="description" content="16 Nov 2025 - First Congress was an exceptional event: 2500 people, 50 speakers, 30 partners, Chelsea Manning & Vitalik Buterin speaking, Audrey Tang in the audience! We decided to make a sequel and strengthen Cypherpunk activism, culture and actions within the Latin America.">
@@ -25,38 +28,122 @@
     <div style="display: contents">
       <div class="relative w-full min-h-screen text-white">
         <div  id="header" class="fixed w-full h-18 z-40" style="top: 0px;">
-          <div class="bg-black px-10 py-4 pt-2">
-              <div class="flex justify-between items-center my-1 space-x-4">
-                <div class="flex items-center justify-between m-1">
-                  <img src="./img/logo3.png" alt="Web3Privacy logo">
+          <!-- Hidden checkbox for menu toggle -->
+          <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" style="display: none;">
+          
+          <div class="navbar-minimal px-10 py-4 pt-2">
+              <!-- Desktop Navigation -->
+              <div class="desktop-nav flex justify-center items-center my-1">
+                <div class="flex items-center gap-8 text-base">
+                  <div class="m-1">
+                    <a class="nav-link-minimal active" href="#intro">Home</a>
+                  </div>
+                  <div class="m-1">
+                    <a class="nav-link-minimal" href="#speakers">Speakers</a>
+                  </div>
+                  <div class="m-1">
+                    <a class="nav-link-minimal" href="#program">Program</a>
+                  </div>
+                  <div class="m-1">
+                    <a class="nav-link-minimal" href="#tickets">Tickets</a>
+                  </div>
+                  <div class="m-1">
+                    <a class="nav-button-minimal" href="https://web3privacy.info/" target="_blank">About Us</a>
+                  </div>
                 </div>
-                <div class="flex items-center lg:gap-8 xl:gap-14 text-base darker space-x-4">
-                  <div class="m-1">
-                    <a class="text-xl hover:underline" href="#speakers">SPEAKERS</a>
+              </div>
+
+              <!-- Mobile Navigation Controls -->
+              <div class="mobile-nav-controls">
+                <!-- Hamburger Icon -->
+                <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </label>
+                
+                <!-- Close Icon -->
+                <label for="mobile-menu-toggle" class="close-icon" data-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </label>
+              </div>
+
+              <!-- Mobile Menu Panel -->
+              <div class="mobile-menu-panel" data-hidden="true">
+                <div class="mobile-menu-items">
+                  <div class="mobile-nav-item">
+                    <a class="nav-link-minimal active" href="#home">Home</a>
                   </div>
-                  <div class="m-1">
-                    <a class="text-xl hover:underline" href="#program">PROGRAM</a>
+                  <div class="mobile-nav-item">
+                    <a class="nav-link-minimal" href="#speakers">Speakers</a>
                   </div>
-                  <div class="m-1">
-                    <a class="text-xl hover:underline" href="#tickets">TICKETS</a>
+                  <div class="mobile-nav-item">
+                    <a class="nav-link-minimal" href="#program">Program</a>
+                  </div>
+                  <div class="mobile-nav-item">
+                    <a class="nav-link-minimal" href="#tickets">Tickets</a>
+                  </div>
+                  <div class="mobile-nav-item">
+                    <a class="nav-button-minimal" href="https://web3privacy.info/" target="_blank">About Us</a>
                   </div>
                 </div>
               </div>
             </div>
          </div>
-      <div id="intro" class="w-full h-screen bg-[url('./img/bg-image.png')]">
-          <div class="w-full h-full flex items-center justify-center text-center">
-            <div class="flex flex-col px-4 gap-8">
-              <div class="text-white text-5xl font-mono2" >ethereum cypherpunk congress 2</div>
-              <div class="text-white font-bold highlight-subtext"><p>First Congress was a blast: 2000 people, 50 speakers, 30 partners, Chelsea Manning & Vitalik Buterin speaking, Audrey Tang in the audience! We decided to make a sequel and strengthen Cypherpunk values, culture and actions within the Ethereum ecosystem.</p></div>
-           <div class="flex items-center justify-center">
-            <div class="inline-block bg-black text-white inward-border font-mono2 px-6 py-2.5 md:w-auto w-3/4 text-lg"><span>16 NOV 2025 AT </span><a href="https://maps.app.goo.gl/gCoLr4AgZDJPTytEA" target="_blank" class="underline hover:no-underline font-medium">BUENOS AIRES</a></div>
-            <div class="inline-block bg-white text-black text-lg font-mono2 font-bold px-6 py-2.5 md:w-auto w-3/4 hover:bg-black hover:text-white"><a href="https://lu.ma/u2sw5kpv">REGISTER FOR FREE</a></div>
-           </div>
-             </div>
+      <!-- Hero Section -->
+      <div id="intro" class="w-full h-screen">
+          <div class="hero-container">
+            <div class="hero-content">
+              <!-- Top Badge -->
+              <a href="https://www.youtube.com/playlist?list=PLSsVHWrO8Yh2FBmQ3JwauylmYI4F6z5Q3" target="_blank" rel="noopener noreferrer" class="hero-badge">
+                <div class="play-icon">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <span>Check our 2024 edition</span>
+              </a>
+              
+              <!-- Main Hero Title -->
+              <h1 class="hero-title">ethereum<br>cypherpunk<br>congress 2</h1>
+              
+              <!-- Hero Tagline Subtitle -->
+              <p class="hero-tagline">Grassroots collective empowering privacy & freedom in the future web.</p>
             </div>
           </div>
-        <div id="about" class="flex flex-col items-center justify-center text-center px-4 mx-auto">
+      </div>
+
+      <!-- About Section -->
+      <div id="about" class="w-full">
+          <div class="about-container">
+            <!-- Mission and Vision Cards -->
+            <div class="about-cards">
+              <div class="about-card">
+                <div class="card-title">Mission</div>
+                <div class="card-text">Lorem ipsum dolor adipscin sed diam mm nich tincidun laoreetra</div>
+              </div>
+              <div class="about-card">
+                <div class="card-title">Vision</div>
+                <div class="card-text">Lorem ipsum dolor adipscin sed diam mim nch sincidun laoreetra</div>
+              </div>
+            </div>
+            
+            <!-- About Content -->
+            <div class="about-content">
+              <h2 class="about-headline">Sin privacidad no hay democracia.</h2>
+              <p class="about-description">First Congress was a blast: 2000 people, 50 speakers, 30 partners, Chelsea Manning & Vitalik Buterin speaking, Audrey Tang in the audience! We decided to make a sequel and strengthen Cypherpunk values, culture and actions within the Ethereum ecosystem.</p>
+              <div class="about-cta">
+                <a href="https://web3privacy.info/about/" class="story-button">Read Our Full Story →</a>
+              </div>
+            </div>
+          </div>
+      </div>
+        <!-- <div id="about" class="flex flex-col items-center justify-center text-center px-4 mx-auto">
           <div class="flex flex-col items-center justify-center inward-border">
             <div class="flex flex-col items-center justify-center md:py-32 md:w-5/6  text-mild">
               <p class="invitation-title font-mono2">​Join the largest freedom & privacy activism gathering facilitated by the Web3Privacy Now collective.</p>
@@ -72,7 +159,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Congress Stats Section -->
         <hr style="border-color: #fff; opacity: 0.2; margin: 48px 0 32px 0;">
         <div class="section-header">worldwide impact</div>
@@ -1927,12 +2014,8 @@
     </div>
  </div>
    <div id="youtube-embed" class="bg-black text-center items-center">
-            <div class="section-header text-white px-4">Check out the last edition</div>
-            <div><iframe width="100%" height=520 src="https://www.youtube-nocookie.com/embed/Un3_zWjL9PA?si=WM2flz_p2kuwEFq4" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <br>
-            <div class="inline-block bg-white text-black font-medium md:w-auto w-3/4">
-            <div class="px-6 py-2.5 hover:bg-black hover:text-white"><span><a href="https://www.youtube.com/playlist?list=PLSsVHWrO8Yh2FBmQ3JwauylmYI4F6z5Q3">CLICK HERE TO WATCH ALL THE 2024 TALKS</a></span>
-          </div>
+     
+            
       </div>
     
    <div class="bg-black text-white px-4">
@@ -2004,8 +2087,7 @@
       </div>
           <div id="tickets" class="bg-black text-white px-4">
               <div class="section-header text-center">Tickets</div>
-              <div class="mt-10 mb-8 text-mild">We are grateful to our Partners for allowing us to offer this event free.</div>
-              <div class="mt-10 mb-8 text-mild">If you wish to support the Web3Privacy research and future events please consider becoming a member or donating</div>
+
                 <div class="text-center text-2xl px-10 text-white hover:bg-white hover:text-black">
                     <div class="text-2xl uppercase">
                       <a href="https://lu.ma/u2sw5kpv">Free access via registration</a>
