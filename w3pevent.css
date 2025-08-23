@@ -60,6 +60,14 @@
     url("/fonts/dm-mono-v11-latin-500.svg#DMMono") format("svg"); /* Legacy iOS */
 }
 
+/* KyivTypeSerif-Heavy2 - latin */
+@font-face {
+  font-family: "KyivTypeSerif";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/KyivTypeSerif-Heavy2.ttf") format("truetype"); /* IE9 Compat Modes */
+}
+
 /* ! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com */
 
 /*
@@ -1061,6 +1069,7 @@ table.table-custom {
   font-family: Major Mono Display, ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1693,25 +1702,108 @@ table.table-custom {
 .hero-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
   padding-top: 80px; /* Account for fixed header */
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sunburst background effect */
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(138, 138, 255, 0.3) 0%,
+    rgba(138, 138, 255, 0.2) 20%,
+    rgba(138, 138, 255, 0.1) 40%,
+    rgba(138, 138, 255, 0.05) 60%,
+    transparent 80%
+  );
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Additional starburst rays */
+.hero-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  width: 140%;
+  height: 140%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(138, 138, 255, 0.1) 10deg,
+    transparent 20deg,
+    rgba(138, 138, 255, 0.08) 30deg,
+    transparent 40deg,
+    rgba(138, 138, 255, 0.06) 50deg,
+    transparent 60deg,
+    rgba(138, 138, 255, 0.04) 70deg,
+    transparent 80deg,
+    rgba(138, 138, 255, 0.02) 90deg,
+    transparent 100deg,
+    rgba(138, 138, 255, 0.1) 110deg,
+    transparent 120deg,
+    rgba(138, 138, 255, 0.08) 130deg,
+    transparent 140deg,
+    rgba(138, 138, 255, 0.06) 150deg,
+    transparent 160deg,
+    rgba(138, 138, 255, 0.04) 170deg,
+    transparent 180deg,
+    rgba(138, 138, 255, 0.02) 190deg,
+    transparent 200deg,
+    rgba(138, 138, 255, 0.1) 210deg,
+    transparent 220deg,
+    rgba(138, 138, 255, 0.08) 230deg,
+    transparent 240deg,
+    rgba(138, 138, 255, 0.06) 250deg,
+    transparent 260deg,
+    rgba(138, 138, 255, 0.04) 270deg,
+    transparent 280deg,
+    rgba(138, 138, 255, 0.02) 290deg,
+    transparent 300deg,
+    rgba(138, 138, 255, 0.1) 310deg,
+    transparent 320deg,
+    rgba(138, 138, 255, 0.08) 330deg,
+    transparent 340deg,
+    rgba(138, 138, 255, 0.06) 350deg,
+    transparent 360deg
+  );
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  max-width: 1200px;
+  gap: 4rem;
+  max-width: 1400px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 4rem;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 6rem;
+  }
+
+  .hero-container {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -1719,7 +1811,8 @@ table.table-custom {
 .hero-left {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  max-width: 600px;
 }
 
 .hero-tagline {
@@ -1733,8 +1826,7 @@ table.table-custom {
 }
 
 .hero-title {
-  font-family: "Aileron", "Major Mono Display", ui-monospace, SFMono-Regular,
-    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: KyivTypeSerif, serif;
   font-size: 3.5rem;
   line-height: 1.05;
   font-weight: 600;
@@ -1826,7 +1918,11 @@ table.table-custom {
 .hero-right {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
+  align-items: flex-end;
+  max-width: 500px;
+  justify-content: flex-start;
+  padding-top: 8rem;
 }
 
 .hero-video-section {
@@ -1837,29 +1933,32 @@ table.table-custom {
 }
 
 .video-pill {
-  width: 360px;
-  height: 120px;
-  background: rgba(81, 86, 121, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 150px;
+  height: 70px;
+  background: linear-gradient(90deg, #2d3748 0%, #4a5568 100%);
   border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .play-button {
   width: 56px;
   height: 56px;
-  background: #1b2354;
+
   border-radius: 50%;
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.play-button:hover {
-  background: #515679;
+.video-pill:hover {
+  background: linear-gradient(90deg, #4a5568 0%, #718096 100%);
 }
 
 .play-button::after {
@@ -1984,5 +2083,158 @@ table.table-custom {
 
   .hero-description {
     font-size: 0.875rem;
+  }
+}
+
+/* Navbar Styles */
+.navbar-background {
+  background: linear-gradient(90deg, #202030 0%, #202030 60%, #1a1a1a 100%);
+  position: relative;
+}
+
+.navbar-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    );
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  pointer-events: none;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #8a8aff;
+}
+
+.nav-link.active {
+  color: #8a8aff;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #8a8aff;
+}
+
+.nav-button {
+  background: transparent;
+  border: 1px solid #333333;
+  border-radius: 9999px;
+  color: #8a8aff;
+  padding: 8px 16px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  border-color: #8a8aff;
+  background-color: rgba(138, 138, 255, 0.1);
+}
+
+/* Minimalistic Navbar Styles */
+.navbar-minimal {
+  background: #000000;
+  position: relative;
+}
+
+/* Add margin to all sections except hero */
+#intro ~ * {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  #intro ~ * {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #intro ~ * {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+.nav-link-minimal {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link-minimal:hover {
+  color: #515679;
+}
+
+.nav-link-minimal.active {
+  color: #ffffff;
+}
+
+.nav-button-minimal {
+  background: transparent;
+  border: 1px solid #515679;
+  border-radius: 9999px;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button-minimal:hover {
+  background-color: rgba(81, 86, 121, 0.1);
+}
+
+/* Vibes and Tickets sections spacing */
+.bg-black.text-white.px-4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .bg-black.text-white.px-4 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-black.text-white.px-4 {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 }
