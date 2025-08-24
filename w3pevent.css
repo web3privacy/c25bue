@@ -1956,7 +1956,7 @@ table.table-custom {
 .about-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 0.2rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -1966,7 +1966,7 @@ table.table-custom {
 
 @media (min-width: 1024px) {
   .about-container {
-    padding: 6rem 6rem;
+    padding: 0.3rem 6rem 6rem 6rem;
   }
 }
 
@@ -2123,7 +2123,7 @@ table.table-custom {
   }
 
   .about-container {
-    padding: 3rem 1rem;
+    padding: 0.15rem 1rem 3rem 1rem;
     gap: 3rem;
   }
 
