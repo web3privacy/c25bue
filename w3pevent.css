@@ -68,6 +68,10 @@
   src: url("/fonts/KyivTypeSerif-Heavy2.ttf") format("truetype"); /* IE9 Compat Modes */
 }
 
+.archivo-font {
+  font-family: "Archivo", sans-serif;
+}
+
 /* ! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com */
 
 /*
