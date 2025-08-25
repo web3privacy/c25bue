@@ -68,6 +68,11 @@
   src: url("/fonts/KyivTypeSerif-Heavy2.ttf") format("truetype"); /* IE9 Compat Modes */
 }
 
+.aileron-semibold {
+  font-family: "aileron", sans-serif;
+  font-weight: 600;
+}
+
 .archivo-font {
   font-family: "Archivo", sans-serif;
 }
@@ -540,12 +545,12 @@ footer a:hover,
   text-align: left;
   border-top-width: 2px;
   padding-top: 1rem;
-  font-family: Major Mono Display, ui-monospace, SFMono-Regular, Menlo, Monaco,
-    Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: aileron, Major Mono Display, ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 300;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 @media (min-width: 768px) {
