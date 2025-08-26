@@ -1888,29 +1888,13 @@ table.table-custom {
 
 /* Feature carousel styles */
 .feature-carousel {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(30, 30, 30, 0.9) 100%
-  );
+  background: transparent;
   position: relative;
   overflow: hidden;
   margin-top: 0;
 }
 
-.feature-carousel::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("./img/bg.webp");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3;
-  z-index: -1;
-}
+/* Removed background overlay for transparent carousel */
 
 .feature-grid {
   display: grid;
@@ -1922,14 +1906,18 @@ table.table-custom {
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
   border-radius: 20px;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   position: relative;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .feature-card:hover {
@@ -1939,9 +1927,9 @@ table.table-custom {
 }
 
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 2rem;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   display: flex;
@@ -1960,32 +1948,40 @@ table.table-custom {
 
 .feature-title {
   font-family: "DM Mono", monospace;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: white;
-  margin-bottom: 1rem;
-  text-transform: lowercase;
+  margin-bottom: 0.75rem;
+  text-transform: none;
 }
 
 .feature-description {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
 }
 
 .feature-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 25px;
   font-family: "DM Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  width: fit-content;
+  max-width: 140px;
+  margin: 0 auto;
 }
 
 .feature-btn:hover {
