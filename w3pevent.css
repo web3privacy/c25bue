@@ -1734,10 +1734,11 @@ table.table-custom {
   left: -10%;
   width: 60%;
   height: 60%;
-  background-image: url("/img/bg_sun.png");
+  background-image: url("/img/logo-blue.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  filter: invert(1) hue-rotate(180deg) saturate(1.5) brightness(0.9);
   transform: translateY(-50%);
   z-index: 0;
   pointer-events: none;
