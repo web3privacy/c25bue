@@ -1744,22 +1744,22 @@ table.table-custom {
   pointer-events: none;
 }
 
-/* Subtle gradient overlay only over sun image area */
+/* Subtle gradient overlay across entire hero section */
 .hero-container::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: -10%;
-  width: 60%;
-  height: 60%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: radial-gradient(
-    circle at center,
-    rgba(25, 30, 65, 0.3) 0%,
-    rgba(40, 50, 95, 0.25) 30%,
-    rgba(55, 65, 120, 0.15) 60%,
-    transparent 80%
+    ellipse at center,
+    rgba(25, 30, 65, 0.4) 0%,
+    rgba(40, 50, 95, 0.3) 25%,
+    rgba(55, 65, 120, 0.2) 50%,
+    rgba(70, 80, 140, 0.1) 75%,
+    transparent 100%
   );
-  transform: translateY(-50%);
   z-index: 1;
   pointer-events: none;
 }
@@ -2069,9 +2069,10 @@ table.table-custom {
   }
 
   .hero-container::after {
-    width: 80%;
-    height: 80%;
-    left: -20%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   .hero-content {
@@ -2111,7 +2112,8 @@ table.table-custom {
   .hero-container::after {
     width: 100%;
     height: 100%;
-    left: -30%;
+    top: 0;
+    left: 0;
   }
 
   .hero-content {
