@@ -7,7 +7,7 @@
     <link rel="icon" href="./favicon.png">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#000000">
-    <meta http-equiv="content-security-policy" content="script-src 'self'; form-action 'self';">
+    <meta http-equiv="content-security-policy" content="script-src 'self' 'unsafe-inline'; form-action 'self';">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet">
@@ -2975,42 +2975,62 @@
         </div>
        </div>
       </div>
-        <div  id="faq" class="text-white px-4">
+        <div id="faq" class="text-white px-4">
           <div class="section-header">Frequently Asked Questions</div>
-            <div class="mx-auto">
-              <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-                <div class="hover:bg-white hover:text-black">
-                  <div class="pb-4 px-4">
-                    <div class="mt-4 text-xl">What is Web3Privacy Now?</div>
-                    <div class="mt-2 text-sm">
-                      <p><a class="underline external" href="http://web3privacy.info/" target="_blank">Web3privacy now</a> is a think-and-do tank aimed at building a culture of privacy industry in web3 by fostering collaboration among privacy advocates and key players, developing tools and sharing knowledge.</p>
-                    </div>
-                  </div>
+          <div class="faq-container mx-auto max-w-4xl">
+            
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(1)">
+                <h3 class="faq-question">What is Web3Privacy Now?</h3>
+                <span class="faq-icon" id="faq-icon-1">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-1">
+                <div class="faq-answer">
+                  <p><a class="underline external" href="http://web3privacy.info/" target="_blank">Web3privacy now</a> is a think-and-do tank aimed at building a culture of privacy industry in web3 by fostering collaboration among privacy advocates and key players, developing tools and sharing knowledge.</p>
                 </div>
-                <div class="hover:bg-white hover:text-black">
-                  <div class="pb-4 px-4">
-                    <div class="mt-4 text-xl">Who is the event for?</div>
-                    <div class="mt-2 text-sm text">
-                      <p>People interested in privacy topics in the Web3 industry. We aim to make our content accessible to everyone - rather than going into deep technical detail, we'll discuss privacy topics in their broader context.</p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(2)">
+                <h3 class="faq-question">Who is the event for?</h3>
+                <span class="faq-icon" id="faq-icon-2">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-2">
+                <div class="faq-answer">
+                  <p>People interested in privacy topics in the Web3 industry. We aim to make our content accessible to everyone - rather than going into deep technical detail, we'll discuss privacy topics in their broader context.</p>
                 </div>
-                <div class="hover:bg-white hover:text-black">
-                  <div class="pb-4 px-4">
-                    <div class="mt-4 text-xl">How do I get to the venue?</div>
-                    <div class="mt-2 text-sm">
-                      <p>The venue is <a class="underline external" href="https://maps.app.goo.gl/A69DBS3k2uLcr5iX8" target="_blank">DESEO CLUB</a> - located in central Buenos Aires near the metro station <em>Tronador</em> (line B). The address is Av. Chorroarín 1040, C1427CXU, Cdad. Autónoma de Buenos Aires (<a class="underline external" href="https://maps.app.goo.gl/A69DBS3k2uLcr5iX8" target="_blank">Google Maps</a>) </p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(3)">
+                <h3 class="faq-question">How do I get to the venue?</h3>
+                <span class="faq-icon" id="faq-icon-3">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-3">
+                <div class="faq-answer">
+                  <p>The venue is <a class="underline external" href="https://maps.app.goo.gl/A69DBS3k2uLcr5iX8" target="_blank">DESEO CLUB</a> - located in central Buenos Aires near the metro station <em>Tronador</em> (line B). The address is Av. Chorroarín 1040, C1427CXU, Cdad. Autónoma de Buenos Aires (<a class="underline external" href="https://maps.app.goo.gl/A69DBS3k2uLcr5iX8" target="_blank">Google Maps</a>)</p>
                 </div>
-                <div class="hover:bg-white hover:text-black">
-                 <div class="pb-4 px-4">
-                      <div class="mt-4 text-xl">I have another question, where can I contact you?</div>
-                      <div class="mt-2 text-sm">
-                        <p>You can contact the organizing team or the community around the event in our <a class="underline external" href="https://matrix.to/#/#web3privacy:gwei.cz" target="_blank">public Matrix space</a> or our <a class="underline external" href="https://t.me/+DMkrxGNeJzYyYzM0" target="_blank">Telegram Community</a></p>
-                      </div>
-                    </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(4)">
+                <h3 class="faq-question">I have another question, where can I contact you?</h3>
+                <span class="faq-icon" id="faq-icon-4">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-4">
+                <div class="faq-answer">
+                  <p>You can contact the organizing team or the community around the event in our <a class="underline external" href="https://matrix.to/#/#web3privacy:gwei.cz" target="_blank">public Matrix space</a> or our <a class="underline external" href="https://t.me/+DMkrxGNeJzYyYzM0" target="_blank">Telegram Community</a></p>
                 </div>
+              </div>
+            </div>
+
           </div>
      <!-- Congress Brand Footer -->
      <footer class="brand-footer">
@@ -3093,6 +3113,41 @@
 
 
 
+
+<script>
+function toggleFaq(index) {
+  const content = document.getElementById(`faq-content-${index}`);
+  const icon = document.getElementById(`faq-icon-${index}`);
+  
+  // Close all other FAQ items
+  for (let i = 1; i <= 4; i++) {
+    if (i !== index) {
+      const otherContent = document.getElementById(`faq-content-${i}`);
+      const otherIcon = document.getElementById(`faq-icon-${i}`);
+      if (otherContent && otherIcon) {
+        otherContent.classList.remove('active');
+        otherIcon.classList.remove('active');
+        otherIcon.textContent = '+';
+      }
+    }
+  }
+  
+  // Toggle current FAQ item
+  if (content && icon) {
+    const isActive = content.classList.contains('active');
+    
+    if (isActive) {
+      content.classList.remove('active');
+      icon.classList.remove('active');
+      icon.textContent = '+';
+    } else {
+      content.classList.add('active');
+      icon.classList.add('active');
+      icon.textContent = '−';
+    }
+  }
+}
+</script>
 
 </body>
 </html>
