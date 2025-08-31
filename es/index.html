@@ -7,7 +7,7 @@
     <link rel="icon" href="../favicon.png">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#000000">
-    <meta http-equiv="content-security-policy" content="script-src 'self'; form-action 'self';">
+    <meta http-equiv="content-security-policy" content="script-src 'self' 'unsafe-inline'; form-action 'self';">
     <link href="../w3pevent.css" rel="stylesheet">
     <title>Ethereum Cypherpunk Congress 2 | 16 Nov 2025</title>
     <meta name="description" content="16 Nov 2025 - First Congress was an exceptional event: 2500 people, 50 speakers, 30 partners, Chelsea Manning & Vitalik Buterin speaking, Audrey Tang in the audience! We decided to make a sequel and strengthen Cypherpunk activism, culture and actions within the Latin America.">
@@ -2175,42 +2175,62 @@
         </div>
        </div>
       </div>
-        <div  id="faq" class="text-white px-4">
+        <div id="faq" class="text-white px-4">
           <div class="section-header">PREGUNTAS FRECUENTES</div>
-            <div class="mx-auto">
-              <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-                <div class="hover:bg-white hover:text-black">
-                  <div class="pb-4 px-4">
-                    <div class="mt-4 text-xl">¿Qué es Web3Privacy Now?</div>
-                    <div class="mt-2 text-sm">
-                      <p><a class="underline external" href="http://web3privacy.info/">Web3privacy now</a> es un think-and-do tank que tiene como objetivo construir una cultura de la privacidad en la industria web3 fomentando la colaboración entre defensores de la privacidad y actores clave, desarrollando herramientas y compartiendo conocimientos.</p>
-                    </div>
-                  </div>
+          <div class="faq-container mx-auto max-w-4xl">
+            
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(1)">
+                <h3 class="faq-question">¿Qué es Web3Privacy Now?</h3>
+                <span class="faq-icon" id="faq-icon-1">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-1">
+                <div class="faq-answer">
+                  <p><a class="underline external" href="http://web3privacy.info/" target="_blank">Web3privacy now</a> es un think-and-do tank que tiene como objetivo construir una cultura de la privacidad en la industria web3 fomentando la colaboración entre defensores de la privacidad y actores clave, desarrollando herramientas y compartiendo conocimientos.</p>
                 </div>
-                <div class="hover:bg-white hover:text-black">
-                  <div class="pb-4 px-4">
-                    <div class="mt-4 text-xl">¿Para quién es el evento?</div>
-                    <div class="mt-2 text-sm text">
-                      <p>Personas interesadas en temas de privacidad en la industria Web3. Nuestro objetivo es que nuestro contenido sea accesible a todo el mundo. En lugar de profundizar en detalles técnicos, trataremos los temas de privacidad en su contexto más amplio.</p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(2)">
+                <h3 class="faq-question">¿Para quién es el evento?</h3>
+                <span class="faq-icon" id="faq-icon-2">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-2">
+                <div class="faq-answer">
+                  <p>Personas interesadas en temas de privacidad en la industria Web3. Nuestro objetivo es que nuestro contenido sea accesible a todo el mundo. En lugar de profundizar en detalles técnicos, trataremos los temas de privacidad en su contexto más amplio.</p>
                 </div>
-                <div class="hover:bg-white hover:text-black">
-                  <div class="pb-4 px-4">
-                    <div class="mt-4 text-xl">¿Cómo llego al lugar del evento?</div>
-                    <div class="mt-2 text-sm">
-                      <p>El lugar está <a class="underline external" href="https://www.venue.location">por ser anunciado</a> - se encuentra en el centro de Buenos Aires, cerca de las estaciones de metro <em>X</em> y <em>Y</em>. La dirección es xx, calle, código postal (<a class="underline external" href="https://maps.app.goo.gl/gCoLr4AgZDJPTytEA">Google Maps</a>) (<a class="underline external" href="https://www.openstreetmap.org/node/xxxxxxxx">OpenStreetMap</a>)</p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(3)">
+                <h3 class="faq-question">¿Cómo llego al lugar del evento?</h3>
+                <span class="faq-icon" id="faq-icon-3">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-3">
+                <div class="faq-answer">
+                  <p>El lugar está <a class="underline external" href="https://www.venue.location" target="_blank">por ser anunciado</a> - se encuentra en el centro de Buenos Aires, cerca de las estaciones de metro <em>X</em> y <em>Y</em>. La dirección es xx, calle, código postal (<a class="underline external" href="https://maps.app.goo.gl/gCoLr4AgZDJPTytEA" target="_blank">Google Maps</a>) (<a class="underline external" href="https://www.openstreetmap.org/node/xxxxxxxx" target="_blank">OpenStreetMap</a>)</p>
                 </div>
-                <div class="hover:bg-white hover:text-black">
-                 <div class="pb-4 px-4">
-                      <div class="mt-4 text-xl">Tengo otra pregunta, ¿dónde puedo ponerme en contacto con ustedes?</div>
-                      <div class="mt-2 text-sm">
-                        <p>Puedes ponerte en contacto con el equipo organizador o la comunidad alrededor del evento en nuestro <a class="underline external" href="https://matrix.to/#/#web3privacy:gwei.cz">espacio público de Matrix</a> o en nuestra <a class="underline external" href="https://t.me/+DMkrxGNeJzYyYzM0">comunidad de Telegram</a></p>
-                      </div>
-                    </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(4)">
+                <h3 class="faq-question">Tengo otra pregunta, ¿dónde puedo ponerme en contacto con ustedes?</h3>
+                <span class="faq-icon" id="faq-icon-4">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-4">
+                <div class="faq-answer">
+                  <p>Puedes ponerte en contacto con el equipo organizador o la comunidad alrededor del evento en nuestro <a class="underline external" href="https://matrix.to/#/#web3privacy:gwei.cz" target="_blank">espacio público de Matrix</a> o en nuestra <a class="underline external" href="https://t.me/+DMkrxGNeJzYyYzM0" target="_blank">comunidad de Telegram</a></p>
                 </div>
+              </div>
+            </div>
+
           </div>
      <!-- Congress Brand Footer -->
      <footer class="brand-footer">
@@ -2289,5 +2309,40 @@
      </footer>
   </div>
 </div>
+<script>
+function toggleFaq(index) {
+  const content = document.getElementById(`faq-content-${index}`);
+  const icon = document.getElementById(`faq-icon-${index}`);
+  
+  // Close all other FAQ items
+  for (let i = 1; i <= 4; i++) {
+    if (i !== index) {
+      const otherContent = document.getElementById(`faq-content-${i}`);
+      const otherIcon = document.getElementById(`faq-icon-${i}`);
+      if (otherContent && otherIcon) {
+        otherContent.classList.remove('active');
+        otherIcon.classList.remove('active');
+        otherIcon.textContent = '+';
+      }
+    }
+  }
+  
+  // Toggle current FAQ item
+  if (content && icon) {
+    const isActive = content.classList.contains('active');
+    
+    if (isActive) {
+      content.classList.remove('active');
+      icon.classList.remove('active');
+      icon.textContent = '+';
+    } else {
+      content.classList.add('active');
+      icon.classList.add('active');
+      icon.textContent = '−';
+    }
+  }
+}
+</script>
+
 </body>
 </html>
