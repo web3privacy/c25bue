@@ -3367,3 +3367,86 @@ table.table-custom {
 .team-avatar img {
   filter: grayscale(100%);
 }
+
+/* === CTA PARTNER STYLES === */
+.cta-partner-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+}
+
+.cta-partner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.cta-partner-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-family: "aileron", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  min-width: 280px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-partner-btn.primary {
+  background: linear-gradient(90deg, #090C16 0%, #1B224F 100%);
+  color: var(--brand-white);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cta-partner-btn.secondary {
+  background: transparent;
+  color: var(--brand-white);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-partner-btn.primary:hover {
+  background: linear-gradient(90deg, #1B224F 0%, #515679 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.cta-partner-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .cta-partner-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .cta-partner-btn {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-partner-section {
+    padding: 3rem 1rem;
+  }
+  
+  .cta-partner-btn {
+    min-width: 100%;
+    padding: 0.875rem 2rem;
+    font-size: 0.9rem;
+  }
+}
