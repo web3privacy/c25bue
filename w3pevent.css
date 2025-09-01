@@ -2524,12 +2524,12 @@ table.table-custom {
   width: 70px;
   height: 70px;
   margin: 0 auto 1.5rem;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(90deg, #090C16 0%, #1B224F 100%);
 }
 
 .feature-icon svg {
@@ -2562,8 +2562,8 @@ table.table-custom {
 }
 
 .feature-btn {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, #090C16 0%, #1B224F 100%);
+  border: none;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 25px;
