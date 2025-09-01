@@ -3368,6 +3368,90 @@ table.table-custom {
   filter: grayscale(100%);
 }
 
+/* === SPEAKERS BRAND STYLING === */
+.person-item {
+  border-radius: 20px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.person-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+}
+
+.speaker-name {
+  font-family: "aileron", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  color: var(--brand-white) !important;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.text-mild {
+  font-family: "DM Mono", monospace !important;
+  font-weight: 300 !important;
+  font-size: 0.85rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.text-mild a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-mild a:hover {
+  color: var(--brand-white) !important;
+  text-decoration: underline;
+}
+
+.markdown-basic {
+  font-family: "DM Mono", monospace !important;
+  font-weight: 300 !important;
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  line-height: 1.4;
+}
+
+.markdown-basic a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.markdown-basic a:hover {
+  color: var(--brand-white) !important;
+  text-decoration: underline;
+}
+
+.person-item img {
+  border-radius: 15px 15px 0 0 !important;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.person-item:hover img {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .speaker-name {
+    font-size: 0.9rem !important;
+  }
+  
+  .text-mild {
+    font-size: 0.8rem !important;
+  }
+  
+  .markdown-basic {
+    font-size: 0.75rem !important;
+  }
+}
+
 /* === CTA PARTNER STYLES === */
 .cta-partner-section {
   text-align: center;
