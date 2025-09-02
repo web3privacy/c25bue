@@ -3648,7 +3648,7 @@ table.table-custom {
 
 /* === CTA PARTNER STYLES === */
   .cta-partner-section {
-    background: var(--brand-gray);
+    background: var(--brand-black);
     padding: 4rem 2rem;
     margin: 4rem auto;
     border-radius: 30px;
@@ -3676,6 +3676,7 @@ table.table-custom {
     text-align: center;
     width: fit-content;
     margin: 0 auto;
+    background-color: black;
   }
 
 .cta-partner-content {
@@ -3715,6 +3716,7 @@ table.table-custom {
   font-weight: 300 !important;
   font-size: 1.1rem !important;
   color: rgba(255, 255, 255, 0.8);
+  background-color: black;
   max-width: 600px;
   line-height: 1.6;
   margin: 0;
@@ -3757,7 +3759,7 @@ table.table-custom {
 .cta-partner-btn.primary {
   background: linear-gradient(90deg, #090C16 0%, #1B224F 100%);
   color: var(--brand-white);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: none;
 }
 
 .cta-partner-btn.primary:hover {
