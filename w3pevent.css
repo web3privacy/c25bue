@@ -2948,6 +2948,21 @@ table.table-custom {
 }
 
 /* === FAQ ACCORDION STYLES === */
+#faq {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+  position: relative;
+  z-index: 10;
+}
+
+/* Force margins for FAQ section */
+body #faq,
+html #faq,
+#faq[style*="margin"] {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
 .faq-container {
   margin-top: 3rem;
   margin-bottom: 3rem;
