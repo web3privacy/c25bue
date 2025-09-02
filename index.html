@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet">
-    <link href="./w3pevent.css?v=2" rel="stylesheet">
+    <link href="./w3pevent.css?v=3" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css">
     <title>Ethereum Cypherpunk Congress 2 | 16 Nov 2025</title>
     <meta name="description" content="16 Nov 2025 - First Congress was an exceptional event: 2500 people, 50 speakers, 30 partners, Chelsea Manning & Vitalik Buterin speaking, Audrey Tang in the audience! We decided to make a sequel and strengthen Cypherpunk activism, culture and actions within the Latin America.">
@@ -1264,36 +1264,89 @@
                   <!-- <div class="pb-6 text-xl text-center mt-14">Thanks to our partners we are able to make this event free for all</div>
                   <div class="pb-6 text-xl text-center">Contact the <a href="https://x.com/PG_CDG">Partnerships team today</a> to become a beloved event partner</div> -->
    <div class="team-showcase">
-    <div class="team-badge">Our Team</div>
-    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Where ideas take form
-  </h2>
-    
-    <div class="team-avatars">
-      <div class="team-avatar">
-        <img src="./img/mykola.png" alt="Mykola Siusko">
-                  </div>
+      <div class="team-badge">Our Team</div>
+  <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Where ideas take form
+</h2>
+    <!-- Team Grid -->
+    <div class="team-grid">
+      <!-- Row 1 -->
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/mykola.png" alt="Mykola Siusko">
+        </div>
+        <h3 class="team-name">Mykola Siusko</h3>
+        <a href="https://x.com/nicksvyaznoy" target="_blank" class="team-handle">@nicksvyaznoy</a>
+      </div>
 
-      <div class="team-avatar">
-        <img src="./img/pg1.png" alt="PG">
-                  </div>
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/pg1.png" alt="PG">
+        </div>
+        <h3 class="team-name">PG</h3>
+        <a href="https://x.com/PG_CDG" target="_blank" class="team-handle">@PG_CDG</a>
+      </div>
 
-      <div class="team-avatar featured">
-        <img src="./img/coinmandeer.png" alt="Coinmandeer">
-                  </div>
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/coinmandeer.png" alt="Coinmandeer">
+        </div>
+        <h3 class="team-name">Coinmandeer</h3>
+        <a href="https://x.com/KeenOfCoin" target="_blank" class="team-handle">@KeenOfCoin</a>
+      </div>
 
-      <div class="team-avatar">
-        <img src="./img/robert.png" alt="Robert">
-                  </div>
+      <!-- Row 2 -->
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/robert.png" alt="Robert">
+        </div>
+        <h3 class="team-name">Robert</h3>
+        <a href="https://x.com/robdotrego" target="_blank" class="team-handle">@robdotrego</a>
+      </div>
 
-      <div class="team-avatar">
-        <img src="./img/andreea.png" alt="Andreea">
-                    </div>
-                  </div>
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/andreea.png" alt="Andreea">
+        </div>
+        <h3 class="team-name">Andreea</h3>
+        <a href="https://x.com/iandreeacia" target="_blank" class="team-handle">@iandreeacia</a>
+      </div>
 
-    <div class="team-navigation">
-      <button class="nav-arrow" onclick="previousTeam()">‹</button>
-      <button class="nav-arrow" onclick="nextTeam()">›</button>
-                    </div>
+      <!-- Row 3 -->
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/alina.jpg" alt="Alina">
+        </div>
+        <h3 class="team-name">Alina</h3>
+        <a href="https://x.com/alinalatinina" target="_blank" class="team-handle">@alinalatinina</a>
+      </div>
+
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/lucila.jpg" alt="Lucila">
+        </div>
+        <h3 class="team-name">Lucila</h3>
+        <a href="https://x.com/lucilajuliana" target="_blank" class="team-handle">@lucilajuliana</a>
+      </div>
+
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/jensei.png" alt="Jensei">
+        </div>
+        <h3 class="team-name">Jensei</h3>
+        <a href="https://x.com/jensei_eth" target="_blank" class="team-handle">@jensei_eth</a>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="./img/mf.png" alt="MF">
+        </div>
+        <h3 class="team-name">MF</h3>
+        <a href="https://x.com/0x_m_f" target="_blank" class="team-handle">@0x_m_f</a>
+      </div>
+
+      
+    </div>
                       </div>
     <!-- <div id="cta-footer" class="items-center text-center text-lg md:text-xl uppercase mt-12">
          <div class="inline-block bg-white text-black font-medium md:w-auto w-3/4">
@@ -1500,10 +1553,21 @@ function updateTeamDisplay() {
     const memberIndex = (startIndex + index) % teamMembers.length;
     const member = teamMembers[memberIndex];
     const img = avatar.querySelector('img');
+    const nameElement = avatar.querySelector('.team-member-name');
+    const linkElement = avatar.querySelector('.team-member-link');
     
     if (img && member) {
       img.src = member.image;
       img.alt = member.name;
+    }
+    
+    if (nameElement && member) {
+      nameElement.textContent = member.name;
+    }
+    
+    if (linkElement && member && member.handle) {
+      linkElement.textContent = member.handle;
+      linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
     }
     
     // Mark center avatar as featured
