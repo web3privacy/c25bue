@@ -2978,6 +2978,13 @@ table.table-custom {
 }
 
 /* === FAQ ACCORDION STYLES === */
+
+/* FAQ and Footer Wrapper */
+.faq-footer-wrapper {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 #faq {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -3098,7 +3105,39 @@ html #faq,
 }
 
 /* FAQ Responsive Design */
+@media (max-width: 1200px) {
+  .faq-footer-wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  
+  #faq {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .faq-container {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .faq-footer-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  #faq {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .faq-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .faq-header {
     padding: 1.25rem 1.5rem;
   }
@@ -3120,9 +3159,21 @@ html #faq,
 }
 
 @media (max-width: 480px) {
-  .faq-container {
+  .faq-footer-wrapper {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  
+  #faq {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .faq-container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .faq-header {
@@ -3131,12 +3182,48 @@ html #faq,
   
   .faq-question {
     font-size: 1rem;
-    padding-right: 0.75rem;
+    line-height: 1.3;
   }
   
   .faq-answer {
     padding: 0 1rem;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .faq-icon {
+    font-size: 1.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .faq-footer-wrapper {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  #faq {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  
+  .faq-container {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  
+  .faq-header {
+    padding: 0.875rem;
+  }
+  
+  .faq-question {
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer {
+    padding: 0 0.875rem;
+    font-size: 0.85rem;
   }
 }
 
