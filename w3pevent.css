@@ -7,6 +7,12 @@
   --brand-gray: #515679;
   --brand-white: #ffffff;
 }
+
+/* Global overflow fix */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 /* major-mono-display-regular - latin */
 @font-face {
   font-family: "Major Mono Display";
@@ -2631,6 +2637,30 @@ table.table-custom {
   .feature-card {
     padding: 2rem 1.5rem;
   }
+  
+  /* Fix margin issues on mobile */
+  #faq {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  
+  .brand-footer {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #faq {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+  
+  .brand-footer {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
 }
 
 /* === FOOTER STYLES === */
@@ -2949,8 +2979,8 @@ table.table-custom {
 
 /* === FAQ ACCORDION STYLES === */
 #faq {
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
+  margin-left: 2rem;
+  margin-right: 2rem;
   position: relative;
   z-index: 10;
 }
@@ -2959,8 +2989,8 @@ table.table-custom {
 body #faq,
 html #faq,
 #faq[style*="margin"] {
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .faq-container {
