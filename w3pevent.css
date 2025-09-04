@@ -1901,7 +1901,7 @@ table.table-custom {
   font-size: 2.8rem;
   line-height: 1.05;
   font-weight: 600;
-  text-transform: lowercase;
+  text-transform: none;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   margin: 0;
