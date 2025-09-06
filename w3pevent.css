@@ -2824,7 +2824,8 @@ table.table-custom {
 
 .footer-social {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .footer-social-link {
