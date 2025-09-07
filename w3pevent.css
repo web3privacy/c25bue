@@ -1827,7 +1827,13 @@ table.table-custom {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .hero-tagline {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 4rem;
+  }
+  
   .stats-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1918,7 +1924,7 @@ table.table-custom {
   color: rgba(255, 255, 255, 0.8);
   max-width: 500px;
   margin: 0;
-  margin-top: -0.5rem;
+  margin-top: 10rem;
 }
 
 @media (min-width: 768px) {
@@ -1928,6 +1934,7 @@ table.table-custom {
 
   .hero-tagline {
     font-size: 1.2rem;
+    margin-top: -0.5rem;
   }
 
   .hero-content {
