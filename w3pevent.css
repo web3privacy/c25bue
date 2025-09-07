@@ -2638,6 +2638,13 @@ table.table-custom {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
+    max-width: 100%;
+  }
+  
+  .feature-card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
   }
 
   .carousel-nav {
