@@ -2414,6 +2414,9 @@ table.table-custom {
 
 .mobile-nav-item {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Data-hidden attribute styles */
