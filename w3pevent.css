@@ -3999,6 +3999,13 @@ div[class*="bg-black"] .person-item img {
   border-radius: 0.75rem !important;
 }
 
+/* === VOLUNTEER SECTION ROUNDED CORNERS === */
+.volunteer-section img.rounded-xl,
+.volunteer-section .rounded-xl img {
+  border-radius: 0.75rem !important;
+  display: block !important;
+}
+
 /* === SPEAKERS & MEMBERS BRAND STYLING === */
 .person-item {
   border-radius: 20px !important;
