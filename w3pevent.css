@@ -3988,6 +3988,17 @@ html #faq,
   filter: grayscale(100%);
 }
 
+/* === PREVIOUS EVENTS SECTION ROUNDED CORNERS FIX === */
+.person-item img.rounded-xl {
+  border-radius: 0.75rem !important;
+  display: block !important;
+}
+
+/* Ensure rounded corners work on all previous events images */
+div[class*="bg-black"] .person-item img {
+  border-radius: 0.75rem !important;
+}
+
 /* === SPEAKERS & MEMBERS BRAND STYLING === */
 .person-item {
   border-radius: 20px !important;
