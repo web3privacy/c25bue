@@ -3143,9 +3143,9 @@ table.table-custom {
 
 .language-btn {
   padding: 0.5rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: none;
   background: transparent;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--brand-white);
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -3156,8 +3156,8 @@ table.table-custom {
 
 .language-btn:hover,
 .language-btn.active {
-  background: var(--brand-white);
-  color: var(--brand-black);
+  background: linear-gradient(90deg, #090C16 0%, #1B224F 100%);
+  color: var(--brand-white);
   border-color: var(--brand-white);
 }
 
