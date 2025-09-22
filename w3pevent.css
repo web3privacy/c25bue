@@ -2054,7 +2054,7 @@ table.table-custom {
 
 .about-container {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   padding: 0.2rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
