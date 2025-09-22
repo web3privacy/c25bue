@@ -2058,8 +2058,6 @@
       </footer>
       </div>
     </div>
-  
-  
 
     <!-- <div id="cta-footer" class="items-center text-center text-lg md:text-xl uppercase mt-12">
          <div class="inline-block bg-white text-black font-medium md:w-auto w-3/4">
@@ -2072,106 +2070,104 @@
         </div>
       </div> -->
       
-      
-    </div> 
-
-    
+    </div>   
   </div>
-<script>
-function toggleFaq(index) {
-  const content = document.getElementById(`faq-content-${index}`);
-  const icon = document.getElementById(`faq-icon-${index}`);
   
-  // Close all other FAQ items
-  for (let i = 1; i <= 4; i++) {
-    if (i !== index) {
-      const otherContent = document.getElementById(`faq-content-${i}`);
-      const otherIcon = document.getElementById(`faq-icon-${i}`);
-      if (otherContent && otherIcon) {
-        otherContent.classList.remove('active');
-        otherIcon.classList.remove('active');
-        otherIcon.textContent = '+';
+<script>
+  function toggleFaq(index) {
+    const content = document.getElementById(`faq-content-${index}`);
+    const icon = document.getElementById(`faq-icon-${index}`);
+    
+    // Close all other FAQ items
+    for (let i = 1; i <= 4; i++) {
+      if (i !== index) {
+        const otherContent = document.getElementById(`faq-content-${i}`);
+        const otherIcon = document.getElementById(`faq-icon-${i}`);
+        if (otherContent && otherIcon) {
+          otherContent.classList.remove('active');
+          otherIcon.classList.remove('active');
+          otherIcon.textContent = '+';
+        }
+      }
+    }
+    
+    // Toggle current FAQ item
+    if (content && icon) {
+      const isActive = content.classList.contains('active');
+      
+      if (isActive) {
+        content.classList.remove('active');
+        icon.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        content.classList.add('active');
+        icon.classList.add('active');
+        icon.textContent = '−';
       }
     }
   }
-  
-  // Toggle current FAQ item
-  if (content && icon) {
-    const isActive = content.classList.contains('active');
+
+  // Team showcase navigation
+  let currentTeamIndex = 0;
+  const teamMembers = [
+    { name: "Mykola", image: "./img/mykola.png", handle: "@nicksvyaznoy", description: "Web3 privacy advocate behind Web3Privacy Now" },
+    { name: "PG", image: "./img/pg1.png", handle: "@PG_CDG", description: "Larrikin sling master" },
+    { name: "Coinmandeer", image: "./img/coinmandeer.png", handle: "@KeenOfCoin", description: "UI/UX Design & Branding" },
+    { name: "Robert", image: "./img/robert.png", handle: "@robdotrego", description: "Swarm | ETH Prague" },
+    { name: "Beth", image: "./img/beth.jpg", handle: "@ontologymachine", description: "Privacy Advocate" },
+    { name: "Lucila", image: "./img/lucila.jpg", handle: "@lucilajuliana", description: "Local Manager" },
+    { name: "Recursor", image: "./img/recursor.jpeg", handle: "@RecursiveBeing", description: "Chaos Ops & Artful Maverick" },
+    { name: "Federico", image: "./img/babybit.jpeg", handle: "@BabyBitProd", description: "Director" },
+    { name: "MF", image: "./img/mf.png", handle: "@0x_m_f", description: "Master of Caffeine" },
+    { name: "Jensei", image: "./img/jensei.jpg", handle: "@jensei_", description: "free software fit" },
+    { name: "Peter", image: "./img/peter.jpeg", handle: "@0xfarbey", description: "Education Track" },
+    { name: "Alisher", image: "./img/alisher.png", handle: "@alisher", description: "Volunteers" },
+  ];
+
+  function updateTeamDisplay() {
+    const avatars = document.querySelectorAll('.team-avatar');
+    const startIndex = currentTeamIndex;
     
-    if (isActive) {
-      content.classList.remove('active');
-      icon.classList.remove('active');
-      icon.textContent = '+';
-    } else {
-      content.classList.add('active');
-      icon.classList.add('active');
-      icon.textContent = '−';
-    }
+    avatars.forEach((avatar, index) => {
+      const memberIndex = (startIndex + index) % teamMembers.length;
+      const member = teamMembers[memberIndex];
+      const img = avatar.querySelector('img');
+      const nameElement = avatar.querySelector('.team-member-name');
+      const linkElement = avatar.querySelector('.team-member-link');
+      
+      if (img && member) {
+        img.src = member.image;
+        img.alt = member.name;
+      }
+      
+      if (nameElement && member) {
+        nameElement.textContent = member.name;
+      }
+      
+      if (linkElement && member && member.handle) {
+        linkElement.textContent = member.handle;
+        linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
+      }
+      
+      // Mark center avatar as featured
+      avatar.classList.toggle('featured', index === 2);
+    });
   }
-}
 
-// Team showcase navigation
-let currentTeamIndex = 0;
-const teamMembers = [
-  { name: "Mykola", image: "./img/mykola.png", handle: "@nicksvyaznoy", description: "Web3 privacy advocate behind Web3Privacy Now" },
-  { name: "PG", image: "./img/pg1.png", handle: "@PG_CDG", description: "Larrikin sling master" },
-  { name: "Coinmandeer", image: "./img/coinmandeer.png", handle: "@KeenOfCoin", description: "UI/UX Design & Branding" },
-  { name: "Robert", image: "./img/robert.png", handle: "@robdotrego", description: "Swarm | ETH Prague" },
-  { name: "Beth", image: "./img/beth.jpg", handle: "@ontologymachine", description: "Privacy Advocate" },
-  { name: "Lucila", image: "./img/lucila.jpg", handle: "@lucilajuliana", description: "Local Manager" },
-  { name: "Recursor", image: "./img/recursor.jpeg", handle: "@RecursiveBeing", description: "Chaos Ops & Artful Maverick" },
-  { name: "Federico", image: "./img/babybit.jpeg", handle: "@BabyBitProd", description: "Director" },
-  { name: "MF", image: "./img/mf.png", handle: "@0x_m_f", description: "Master of Caffeine" },
-  { name: "Jensei", image: "./img/jensei.jpg", handle: "@jensei_", description: "free software fit" },
-  { name: "Peter", image: "./img/peter.jpeg", handle: "@0xfarbey", description: "Education Track" },
-  { name: "Alisher", image: "./img/alisher.png", handle: "@alisher", description: "Volunteers" },
-];
+  function nextTeam() {
+    currentTeamIndex = (currentTeamIndex + 1) % teamMembers.length;
+    updateTeamDisplay();
+  }
 
-function updateTeamDisplay() {
-  const avatars = document.querySelectorAll('.team-avatar');
-  const startIndex = currentTeamIndex;
-  
-  avatars.forEach((avatar, index) => {
-    const memberIndex = (startIndex + index) % teamMembers.length;
-    const member = teamMembers[memberIndex];
-    const img = avatar.querySelector('img');
-    const nameElement = avatar.querySelector('.team-member-name');
-    const linkElement = avatar.querySelector('.team-member-link');
-    
-    if (img && member) {
-      img.src = member.image;
-      img.alt = member.name;
-    }
-    
-    if (nameElement && member) {
-      nameElement.textContent = member.name;
-    }
-    
-    if (linkElement && member && member.handle) {
-      linkElement.textContent = member.handle;
-      linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
-    }
-    
-    // Mark center avatar as featured
-    avatar.classList.toggle('featured', index === 2);
+  function previousTeam() {
+    currentTeamIndex = (currentTeamIndex - 1 + teamMembers.length) % teamMembers.length;
+    updateTeamDisplay();
+  }
+
+  // Initialize team display
+  document.addEventListener('DOMContentLoaded', function() {
+    updateTeamDisplay();
   });
-}
-
-function nextTeam() {
-  currentTeamIndex = (currentTeamIndex + 1) % teamMembers.length;
-  updateTeamDisplay();
-}
-
-function previousTeam() {
-  currentTeamIndex = (currentTeamIndex - 1 + teamMembers.length) % teamMembers.length;
-  updateTeamDisplay();
-}
-
-// Initialize team display
-document.addEventListener('DOMContentLoaded', function() {
-  updateTeamDisplay();
-});
 </script>
 
 </body>

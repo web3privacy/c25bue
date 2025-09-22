@@ -2085,34 +2085,34 @@
   ];
   
   function updateTeamDisplay() {
-  const avatars = document.querySelectorAll('.team-avatar');
-  const startIndex = currentTeamIndex;
-  
-  avatars.forEach((avatar, index) => {
-    const memberIndex = (startIndex + index) % teamMembers.length;
-    const member = teamMembers[memberIndex];
-    const img = avatar.querySelector('img');
-    const nameElement = avatar.querySelector('.team-member-name');
-    const linkElement = avatar.querySelector('.team-member-link');
+    const avatars = document.querySelectorAll('.team-avatar');
+    const startIndex = currentTeamIndex;
     
-    if (img && member) {
-      img.src = member.image;
-      img.alt = member.name;
-    }
-    
-    if (nameElement && member) {
-      nameElement.textContent = member.name;
-    }
-    
-    if (linkElement && member && member.handle) {
-      linkElement.textContent = member.handle;
-      linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
-    }
-    
-    // Mark center avatar as featured
-    avatar.classList.toggle('featured', index === 2);
-  });
-}
+    avatars.forEach((avatar, index) => {
+      const memberIndex = (startIndex + index) % teamMembers.length;
+      const member = teamMembers[memberIndex];
+      const img = avatar.querySelector('img');
+      const nameElement = avatar.querySelector('.team-member-name');
+      const linkElement = avatar.querySelector('.team-member-link');
+      
+      if (img && member) {
+        img.src = member.image;
+        img.alt = member.name;
+      }
+      
+      if (nameElement && member) {
+        nameElement.textContent = member.name;
+      }
+      
+      if (linkElement && member && member.handle) {
+        linkElement.textContent = member.handle;
+        linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
+      }
+      
+      // Mark center avatar as featured
+      avatar.classList.toggle('featured', index === 2);
+    });
+  }
   
   function nextTeam() {
     currentTeamIndex = (currentTeamIndex + 1) % teamMembers.length;
@@ -2128,7 +2128,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     updateTeamDisplay();
   });
-  </script>
+</script>
   
   </body>
   </html>
