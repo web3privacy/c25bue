@@ -2714,7 +2714,7 @@ table.table-custom {
 
 .testimonials-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .testimonials-badge {
@@ -2736,8 +2736,8 @@ table.table-custom {
   font-weight: 600;
   font-size: 2.5rem;
   color: var(--brand-white);
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
@@ -2755,7 +2755,7 @@ table.table-custom {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 0;
 }
 
 .testimonial-card {
