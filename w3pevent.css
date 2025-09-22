@@ -2736,7 +2736,8 @@ table.table-custom {
   font-weight: 600;
   font-size: 2.5rem;
   color: var(--brand-white);
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   line-height: 1.2;
 }
 
@@ -3498,7 +3499,7 @@ html #faq,
 /* === TEAM SHOWCASE STYLES === */
 .team-showcase {
   background: var(--brand-black);
-  padding: 6rem 0;
+  padding: 3rem 0 3rem 0;
   margin: 4rem 2rem;
   border-radius: 32px;
   position: relative;
@@ -3755,7 +3756,7 @@ html #faq,
 @media (max-width: 1200px) {
   .team-showcase {
     margin: 3rem 1.5rem;
-    padding: 5rem 0;
+    padding: 2.5rem 0 2.5rem 0;
   }
   
   .team-grid {
@@ -3772,7 +3773,7 @@ html #faq,
 @media (max-width: 1024px) {
   .team-showcase {
     margin: 3rem 1rem;
-    padding: 4.5rem 0;
+    padding: 2.25rem 0 2.25rem 0;
   }
   
   .team-showcase-title {
@@ -3829,7 +3830,7 @@ html #faq,
 @media (max-width: 768px) {
   .team-showcase {
     margin: 2rem 1rem;
-    padding: 4rem 0;
+    padding: 2rem 0 2rem 0;
     border-radius: 24px;
   }
   
@@ -3875,7 +3876,7 @@ html #faq,
 @media (max-width: 600px) {
   .team-showcase {
     margin: 1.5rem 0.75rem;
-    padding: 3.5rem 0;
+    padding: 1.75rem 0 1.75rem 0;
     border-radius: 20px;
   }
   
@@ -3911,7 +3912,7 @@ html #faq,
 @media (max-width: 480px) {
   .team-showcase {
     margin: 1rem 0.5rem;
-    padding: 3rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     border-radius: 16px;
   }
   
@@ -3954,7 +3955,7 @@ html #faq,
 @media (max-width: 360px) {
   .team-showcase {
     margin: 0.75rem 0.25rem;
-    padding: 2.5rem 0;
+    padding: 1.25rem 0 1.25rem 0;
   }
   
   .team-showcase-title {
