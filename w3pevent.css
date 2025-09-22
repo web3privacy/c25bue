@@ -2026,8 +2026,8 @@ table.table-custom {
 
 .story-button {
   display: inline-block;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, #090C16 0%, #1B224F 100%);
+  border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
