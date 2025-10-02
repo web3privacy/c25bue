@@ -4169,6 +4169,13 @@ div[class*="bg-black"] .person-item img {
   font-size: 0.8rem !important;
   color: rgba(255, 255, 255, 0.8) !important;
   line-height: 1.4;
+  /* Text clamping for speaker descriptions */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 2.8em; /* 2 lines * 1.4 line-height */
 }
 
 .markdown-basic a {
@@ -4201,8 +4208,45 @@ div[class*="bg-black"] .person-item img {
     font-size: 0.8rem !important;
   }
   
+  /* Hide Twitter handles in speaker cards on mobile devices */
+  .person-item .text-mild {
+    display: none !important;
+  }
+  
   .markdown-basic {
     font-size: 0.75rem !important;
+    /* Enhanced mobile text clamping */
+    -webkit-line-clamp: 2;
+    max-height: 2.1em; /* 2 lines * 1.05 line-height for mobile */
+    line-height: 1.05;
+  }
+}
+
+/* === SPEAKER DESCRIPTION TEXT CLAMPING === */
+/* Fallback for browsers that don't support -webkit-line-clamp */
+@supports not (-webkit-line-clamp: 2) {
+  .markdown-basic {
+    position: relative;
+    max-height: 2.8em;
+    overflow: hidden;
+  }
+  
+  .markdown-basic::after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--brand-black);
+    padding-left: 0.5em;
+  }
+}
+
+/* Mobile fallback */
+@media (max-width: 768px) {
+  @supports not (-webkit-line-clamp: 2) {
+    .markdown-basic {
+      max-height: 2.1em;
+    }
   }
 }
 
