@@ -679,8 +679,18 @@ table.table-custom {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background-image: url(img/mobile.png), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-size: cover, auto;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
   z-index: 1;
+}
+
+/* Desktop background image */
+@media (min-width: 768px) {
+  #intro::before {
+    background-image: url(img/desktop.png), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
 }
 
 #intro > * {
