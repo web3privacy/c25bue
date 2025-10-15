@@ -2511,6 +2511,15 @@ table.table-custom {
   margin-top: 0;
 }
 
+@media (max-width: 768px) {
+  .feature-carousel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 /* Removed background overlay for transparent carousel */
 
 .feature-grid {
@@ -2647,8 +2656,10 @@ table.table-custom {
   .feature-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
   
   .feature-card {
@@ -2662,7 +2673,7 @@ table.table-custom {
   }
 
   .feature-card {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
   
   /* Fix margin issues on mobile */
@@ -2687,6 +2698,17 @@ table.table-custom {
   .brand-footer {
     margin-left: 0.5rem !important;
     margin-right: 0.5rem !important;
+  }
+  
+  /* Feature section adjustments for very small screens */
+  .feature-grid {
+    padding: 0 0.25rem !important;
+    margin-left: 0.25rem !important;
+    margin-right: 0.25rem !important;
+  }
+  
+  .feature-card {
+    padding: 1rem 0.75rem !important;
   }
 }
 
