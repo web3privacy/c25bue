@@ -15,10 +15,6 @@ Public repository of the code for the 2025 Web3Privacy Now Congress held in Buen
 - This repository is automatically deployed on Github Pages 
 - The website has a unique subdomain: [c25bue.web3privacy.info](https://c25bue.web3privacy.info/)
 - [congress.web3privacy.info](https://congress.web3privacy.info/) redirects to this deployment
-
-## RELEASES
-
-- [v 1.0 - Fresh install from c24bkk code](https://github.com/web3privacy/c24bkk)
  
 ## LICENSE
 
