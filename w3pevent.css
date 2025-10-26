@@ -93,6 +93,11 @@ html, body {
   font-weight: 600;
 }
 
+.aileron-regular {
+  font-family: "aileron", sans-serif;
+  font-weight: 400;
+}
+
 .archivo-semibold {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
@@ -2043,7 +2048,7 @@ table.table-custom {
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
-  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: aileron-regular, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   color: #ffffff;
@@ -2152,6 +2157,7 @@ table.table-custom {
 
 .about-cta {
   margin-top: 1rem;
+  font-family: "aileron", sans-serif;
 }
 
 /* Responsive adjustments */
@@ -2602,7 +2608,7 @@ table.table-custom {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  font-family: "DM Mono", monospace;
+  font-family: aileron-regular;
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -3634,7 +3640,7 @@ html #faq,
   color: var(--brand-white);
   padding: 0.75rem 2rem;
   border-radius: 50px;
-  font-family: "aileron", sans-serif;
+  font-family: aileron-regular, sans-serif;
   font-weight: 200;
   font-size: 0.875rem;
   letter-spacing: 0.5px;
@@ -4330,10 +4336,9 @@ div[class*="bg-black"] .person-item img {
     color: var(--brand-white);
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
-    font-family: "aileron", sans-serif !important;
+    font-family: aileron-regular, sans-serif !important;
     font-weight: 400 !important;
     font-size: 0.85rem !important;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
     border: none;
     width: fit-content;
@@ -4382,10 +4387,8 @@ div[class*="bg-black"] .person-item img {
     padding: 1rem 2rem;
     border-radius: 15px;
     text-decoration: none;
-    font-family: "aileron", sans-serif !important;
-    font-weight: 600 !important;
+    font-family: aileron-regular, sans-serif !important;
     font-size: 1rem !important;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
