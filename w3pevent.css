@@ -82,6 +82,14 @@ html, body {
   src: url("/fonts/KyivTypeSerif-Heavy2.ttf") format("truetype"); /* IE9 Compat Modes */
 }
 
+/* Aileron SemiBold - latin */
+@font-face {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/aileron/aileron.semibold.otf") format("opentype");
+}
+
 /* === CONGRESS BRAND TYPOGRAPHY === */
 .dm-sans-light {
   font-family: "DM Mono", monospace;
@@ -2594,9 +2602,9 @@ table.table-custom {
 }
 
 .feature-title {
-  font-family: "DM Mono", monospace;
+  font-family: "Aileron", sans-serif;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   margin-bottom: 0.75rem;
   text-transform: none;
