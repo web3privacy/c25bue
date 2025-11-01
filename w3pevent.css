@@ -3134,16 +3134,7 @@ table.table-custom {
   color: var(--brand-white);
   margin-bottom: 1.5rem;
   position: relative;
-}
-
-.footer-column-title::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background: var(--brand-navy);
+  text-align: center;
 }
 
 .footer-links {
