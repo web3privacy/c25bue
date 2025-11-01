@@ -2152,6 +2152,20 @@ table.table-custom {
     height: auto;
   }
 
+  .about-badge {
+    background: linear-gradient(90deg, #090c16 0%, #1b224f 100%);
+    color: var(--brand-white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-family: aileron-regular, sans-serif;
+    font-weight: 200 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.1em;
+    border: none;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
   .hero-logo {
     width: 80%;
     max-width: 500px;
@@ -4386,10 +4400,10 @@ div[class*="bg-black"] .person-item img {
 .cta-partner-badge {
   background: linear-gradient(90deg, #090c16 0%, #1b224f 100%);
   color: var(--brand-white);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem !important;
   border-radius: 25px;
-  font-family: "Archivo", sans-serif;
-  font-weight: 600 !important;
+  font-family: aileron-regular, sans-serif;
+  font-weight: 200 !important;
   font-size: 0.85rem !important;
   letter-spacing: 0.1em;
   border: none;
