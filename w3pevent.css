@@ -2510,14 +2510,11 @@ table.table-custom {
 .feature-carousel {
   background: transparent;
   position: relative;
-  overflow: hidden;
   margin-top: 0;
 }
 
 @media (max-width: 768px) {
   .feature-carousel {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -2531,7 +2528,7 @@ table.table-custom {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .feature-card {
@@ -2661,10 +2658,7 @@ table.table-custom {
   .feature-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 0 0.5rem;
     max-width: 100%;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
 
   .feature-card {
@@ -2702,11 +2696,6 @@ table.table-custom {
   }
 
   /* Feature section adjustments for very small screens */
-  .feature-grid {
-    padding: 0 0.25rem !important;
-    margin-left: 0.25rem !important;
-    margin-right: 0.25rem !important;
-  }
 
   .feature-card {
     padding: 24px 16px !important;
