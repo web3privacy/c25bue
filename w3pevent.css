@@ -4308,6 +4308,16 @@ div[class*="bg-black"] .person-item img {
     max-height: 2.1em; /* 2 lines * 1.05 line-height for mobile */
     line-height: 1.05;
   }
+
+  /* Hide partner text on mobile - show only images */
+  .partner-item .partner-text {
+    display: none !important;
+  }
+
+  /* Adjust partner image border-radius when text is hidden */
+  .partner-item .partner-img {
+    border-radius: 20px !important;
+  }
 }
 
 /* === SPEAKER DESCRIPTION TEXT CLAMPING === */
