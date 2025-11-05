@@ -35,45 +35,8 @@ body {
   src: url("/fonts/Archivo.ttf"); /* IE9 Compat Modes */
 }
 
-/* dm-mono-300 - latin */
-@font-face {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/dm-mono-v11-latin-300.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/dm-mono-v11-latin-300.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/dm-mono-v11-latin-300.woff2") format("woff2"),
-    url("/fonts/dm-mono-v11-latin-300.woff") format("woff"),
-    url("/fonts/dm-mono-v11-latin-300.ttf") format("truetype"),
-    url("/fonts/dm-mono-v11-latin-300.svg#DMMono") format("svg"); /* Legacy iOS */
-}
-/* dm-mono-regular - latin */
-@font-face {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/dm-mono-v11-latin-regular.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/dm-mono-v11-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/dm-mono-v11-latin-regular.woff2") format("woff2"),
-    url("/fonts/dm-mono-v11-latin-regular.woff") format("woff"),
-    url("/fonts/dm-mono-v11-latin-regular.ttf") format("truetype"),
-    url("/fonts/dm-mono-v11-latin-regular.svg#DMMono") format("svg"); /* Legacy iOS */
-}
-/* dm-mono-500 - latin */
-@font-face {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/dm-mono-v11-latin-500.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/dm-mono-v11-latin-500.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/dm-mono-v11-latin-500.woff2") format("woff2"),
-    url("/fonts/dm-mono-v11-latin-500.woff") format("woff"),
-    url("/fonts/dm-mono-v11-latin-500.ttf") format("truetype"),
-    url("/fonts/dm-mono-v11-latin-500.svg#DMMono") format("svg"); /* Legacy iOS */
-}
+/* DM Sans is loaded from Google Fonts - see index.html line 13 */
+/* Removed local @font-face declarations that were incorrectly loading DM Mono files */
 
 /* KyivTypeSerif-Heavy2 - latin */
 @font-face {
