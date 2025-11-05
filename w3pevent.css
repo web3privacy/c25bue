@@ -37,7 +37,7 @@ body {
 
 /* dm-mono-300 - latin */
 @font-face {
-  font-family: "DM Mono";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 300;
   src: url("/fonts/dm-mono-v11-latin-300.eot"); /* IE9 Compat Modes */
@@ -50,7 +50,7 @@ body {
 }
 /* dm-mono-regular - latin */
 @font-face {
-  font-family: "DM Mono";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/dm-mono-v11-latin-regular.eot"); /* IE9 Compat Modes */
@@ -63,7 +63,7 @@ body {
 }
 /* dm-mono-500 - latin */
 @font-face {
-  font-family: "DM Mono";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   src: url("/fonts/dm-mono-v11-latin-500.eot"); /* IE9 Compat Modes */
@@ -93,7 +93,7 @@ body {
 
 /* === CONGRESS BRAND TYPOGRAPHY === */
 .dm-sans-light {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -208,8 +208,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-family: "DM Sans", sans-serif; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -462,8 +461,7 @@ body {
   background-attachment: fixed;
 }
 * {
-  font-family: DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
 }
 #header-shade {
@@ -1378,7 +1376,7 @@ table.table-custom {
 
 /* Custom Headings */
 .highlight-subtext {
-  font-family: "DM Mono";
+  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 48px;
@@ -1542,7 +1540,7 @@ table.table-custom {
 }
 
 .invitation-subtext {
-  font-family: "DM Mono";
+  font-family: "DM Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -1551,7 +1549,7 @@ table.table-custom {
 }
 
 .program-subtext {
-  font-family: "DM Mono";
+  font-family: "DM Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -1571,7 +1569,7 @@ table.table-custom {
 }
 
 .ticket-highlight {
-  font-family: DM Mono;
+  font-family: "DM Sans";
   font-size: 24px;
   color: white;
   font-weight: 500;
@@ -1587,7 +1585,7 @@ table.table-custom {
 }
 
 .ticket-ul {
-  font-family: DM Mono;
+  font-family: "DM Sans";
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -2774,7 +2772,7 @@ table.table-custom {
 }
 
 .testimonials-subtitle {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1.125rem;
   color: var(--brand-gray);
@@ -2867,7 +2865,7 @@ table.table-custom {
 }
 
 .author-title {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   color: var(--brand-gray);
@@ -3147,7 +3145,7 @@ html #faq,
 }
 
 .faq-icon {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   color: var(--brand-white);
@@ -3180,7 +3178,7 @@ html #faq,
 
 .faq-answer {
   padding: 0 2rem;
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.6;
@@ -3533,7 +3531,7 @@ html #faq,
 }
 
 .team-handle {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
@@ -3916,7 +3914,7 @@ div[class*="bg-black"] .person-item img {
 }
 
 .partner-text .text-sm {
-  font-family: "DM Mono", monospace !important;
+  font-family: "DM Sans", sans-serif !important;
   font-weight: 300 !important;
   font-size: 0.85rem !important;
   color: rgba(255, 255, 255, 0.7) !important;
@@ -3941,7 +3939,7 @@ div[class*="bg-black"] .person-item img {
 }
 
 .text-mild {
-  font-family: "DM Mono", monospace !important;
+  font-family: "DM Sans", sans-serif !important;
   font-weight: 300 !important;
   font-size: 0.85rem !important;
   color: rgba(255, 255, 255, 0.7) !important;
@@ -3959,7 +3957,7 @@ div[class*="bg-black"] .person-item img {
 }
 
 .markdown-basic {
-  font-family: "DM Mono", monospace !important;
+  font-family: "DM Sans", sans-serif !important;
   font-weight: 300 !important;
   font-size: 0.8rem !important;
   color: rgba(255, 255, 255, 0.8) !important;
@@ -4119,7 +4117,7 @@ div[class*="bg-black"] .person-item img {
 }
 
 .cta-partner-description {
-  font-family: "DM Mono", monospace !important;
+  font-family: "DM Sans", sans-serif !important;
   font-weight: 300 !important;
   font-size: 1.1rem !important;
   color: rgba(255, 255, 255, 0.8);
