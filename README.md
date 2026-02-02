@@ -1,6 +1,6 @@
 # c25bue
 
-Public repository of the code for the 2025 Web3Privacy Now Congress held in Buenos Aires -  built with simple web-standard HTML and CSS
+Public repository of the code for the 2025 Web3Privacy Now Congress held in Mumbai -  built with simple web-standard HTML and CSS
 
 ## CONTENTS
 
