@@ -123,7 +123,7 @@
 
       <!-- Hero Section -->
       <div id="intro" class="w-full h-screen">
-        <div class="hero-container bg-[url(img/hero.webp)] bg-cover bg-center bg-no-repeat">
+        <div class="hero-container relative z-2 bg-[url(img/hero.webp)] bg-cover bg-center bg-no-repeat">
           <div class="absolute inset-0 bg-black/60"></div>
           <div class="hero-content relative">
             <!-- Top Badge -->
@@ -140,20 +140,32 @@
             <img src="./img/ecc3_logo_white.png" alt="Ethereum Cypherpunk Congress Logo" class="hero-logo">
           
             <!-- Hero Tagline Subtitle -->
-            <p class="hero-tagline">The world's largest cypherpunk and human rights event</p>
-            <p class="hero-tagline">November 2, Mumbai</p>
+            <p class="hero-tagline text-white">The world's largest cypherpunk and human rights event</p>
+            <p class="hero-tagline text-white">November 2, Mumbai</p>
           </div>
         </div>
       </div>
 
       <!-- About Section -->
       <div id="about" class="w-full">
-        <div class="about-container">
+        <div class="w-full flex flex-col md:flex-row items-center py-36 px-6">
+          <!-- Photo Collage -->
+          <div class="relative w-full md:w-1/2 aspect-3/2 mt-12 mb-[12%] md:mb-12">
+            <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-0 left-[15%] z-10">
+              <img src="./img/collage1.avif" alt="Event photo 1" class="w-full h-full object-cover block">
+            </div>
+            <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-[30%] left-0 z-30">
+              <img src="./img/collage2.avif" alt="Event photo 2" class="w-full h-full object-cover block">
+            </div>
+            <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-[50%] right-0 z-20">
+              <img src="./img/collage3.avif" alt="Event photo 3" class="w-full h-full object-cover block">
+            </div>
+          </div>
           <!-- About Content -->
-          <div class="about-content">
-            <h2 class="about-headline">Privacy loves equality</h2>
-            <p class="about-description">5000 gathering in Mumbai to celebrate privacy with internet freedom. Past editions featured visionaries like Richard Stallman [FSF], Chelsea Manning [Nym], Vitalik Buterin [Ethereum], Roger Dingledine [Tor], Eva Galperin [EFF], Renata Avila [Open Knowledge Foundation], Sofia Celi [Brave], Juan Benet [Protocol Labs].</p>
-            <div class="about-cta">
+          <div class="flex flex-col gap-8 text-center flex-1 px-12 py-12">
+            <h2 class="font-semibold text-3xl lg:text-4xl leading-tight text-white" style="font-family: 'Archivo', system-ui, -apple-system, sans-serif;">Privacy loves equality</h2>
+            <p class="font-light text-lg leading-relaxed text-white/90">5000 gathering in Mumbai to celebrate privacy with internet freedom. Past editions featured visionaries like Richard Stallman [FSF], Chelsea Manning [Nym], Vitalik Buterin [Ethereum], Roger Dingledine [Tor], Eva Galperin [EFF], Renata Avila [Open Knowledge Foundation], Sofia Celi [Brave], Juan Benet [Protocol Labs].</p>
+            <div class="mt-4">
               <a href="https://luma.com/spsnos9t" class="feature-btn" target="_blank">Free internet for all →</a>
             </div>
           </div>

@@ -326,16 +326,6 @@ table.table-custom {
 }
 
 /* Desktop background image */
-@media (min-width: 768px) {
-  #intro::before {
-    /* Removed duplicate desktop.png background - using body background instead */
-  }
-}
-
-#intro > * {
-  position: relative;
-  z-index: 2;
-}
 #manifesto {
   background-image: url(/img/manifesto.webp);
   background-repeat: no-repeat;
@@ -1106,23 +1096,6 @@ table.table-custom {
   box-sizing: border-box;
 }
 
-.about-container {
-  max-width: 1400px;
-  margin: 2rem auto 0 auto;
-  padding: 0.2rem 2rem 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 1024px) {
-  .about-container {
-    padding: 0.3rem 6rem 6rem 6rem;
-  }
-}
-
 /* About Cards (Mission/Vision) */
 .about-cards {
   display: flex;
@@ -1157,44 +1130,6 @@ table.table-custom {
   }
 }
 
-/* About Content */
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-headline {
-  font-family: "Archivo", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.2;
-  color: #ffffff;
-  margin: 0;
-}
-
-@media (min-width: 1024px) {
-  .about-headline {
-    font-size: 2.5rem;
-  }
-}
-
-.about-description {
-  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 300;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0;
-}
-
-.about-cta {
-  margin-top: 1rem;
-  font-family: "aileron", sans-serif;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -1305,13 +1240,6 @@ table.table-custom {
     max-width: 280px;
   }
 
-  .about-headline {
-    font-size: 1.5rem;
-  }
-
-  .about-description {
-    font-size: 0.95rem;
-  }
 }
 
 /* Navbar Styles */
@@ -1658,6 +1586,7 @@ table.table-custom {
   margin-bottom: 1.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   flex-grow: 1;
@@ -1676,8 +1605,12 @@ table.table-custom {
   text-decoration: none;
   display: inline-block;
   width: fit-content;
-  max-width: 140px;
   margin: 0 auto;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; */
 }
 
 .feature-btn:hover {
@@ -3021,6 +2954,7 @@ div[class*="bg-black"] .person-item img {
   /* Text clamping for speaker descriptions */
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3066,6 +3000,7 @@ div[class*="bg-black"] .person-item img {
     font-size: 0.75rem !important;
     /* Enhanced mobile text clamping */
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     max-height: 2.1em; /* 2 lines * 1.05 line-height for mobile */
     line-height: 1.05;
   }
