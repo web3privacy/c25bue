@@ -184,11 +184,17 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
   .relative {
     position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
   }
   .end {
     inset-inline-end: var(--spacing);
@@ -270,6 +276,9 @@
   }
   .inline-block {
     display: inline-block;
+  }
+  .aspect-16\/11 {
+    aspect-ratio: 16/11;
   }
   .aspect-\[16\/11\] {
     aspect-ratio: 16/11;
@@ -359,6 +368,18 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-black\/40 {
+    background-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
+  .bg-black\/60 {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -367,6 +388,9 @@
   }
   .bg-\[url\(img\/desktop\.png\)\] {
     background-image: url(img/desktop.png);
+  }
+  .bg-\[url\(img\/hero\.webp\)\] {
+    background-image: url(img/hero.webp);
   }
   .bg-cover {
     background-size: cover;
@@ -1378,7 +1402,7 @@ table.table-custom {
   font-size: 1.3rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
-  max-width: 500px;
+  max-width: 400px;
   margin: 0;
 }
 @media (min-width: 768px) {
