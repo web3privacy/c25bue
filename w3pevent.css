@@ -1,5 +1,17 @@
 /* v0.8 of CSS stylesheet for the Web3Privacy Now event websites - source: https://github.com/web3privacy/events_web */
 
+/* === ANIMATIONS === */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* === CONGRESS BRAND COLORS === */
 :root {
   --brand-black: #000000;
