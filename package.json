@@ -1,0 +1,24 @@
+{
+  "name": "W3PN Congress",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i input.css -o output.css --minify",
+    "dev": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web3privacy/c25bue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/web3privacy/c25bue/issues"
+  },
+  "homepage": "https://github.com/web3privacy/c25bue#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.0",
+    "tailwindcss": "^4.2.0"
+  }
+}
