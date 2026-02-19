@@ -27,9 +27,9 @@
   </head>
   <body>
     <div class="relative w-full min-h-screen text-white">
-      <div id="header" class="fixed w-full h-18 z-40" style="top: 0px;">
+      <div id="header" class="fixed w-full h-18 z-40 top-0">
         <!-- Hidden checkbox for menu toggle -->
-        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" style="display: none;">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden">
         
         <div class="navbar-minimal px-10 py-4 pt-2">
           <!-- Desktop Navigation -->
@@ -37,7 +37,7 @@
             <!-- Logo -->
             <div class="flex items-center">
               <a href="https://web3privacy.info/" target="_blank">
-                <img src="./img/logo5.svg" alt="Web3Privacy Now" style="width: 13rem;">
+                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-52">
               </a>
             </div>
             <!-- Navigation Links -->
@@ -73,7 +73,7 @@
             <!-- Logo for Mobile -->
             <div class="mobile-logo">
               <a href="https://web3privacy.info/" target="_blank">
-                <img src="./img/logo5.svg" alt="Web3Privacy Now" style="width: 10rem;">
+                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-40">
               </a>
             </div>
             <!-- Mobile Navigation Controls -->
@@ -131,8 +131,8 @@
       </div>
 
       <!-- Main Content -->
-      <div style="padding-top: 100px;" class="px-4 py-20">
-        <div class="text-center" style="margin-bottom: 60px;">
+      <div class="pt-[100px] px-4 py-20">
+        <div class="text-center mb-15">
           <h1 class="testimonials-title text-center">Program</h1>
         </div>
 
@@ -140,7 +140,7 @@
         <div class="max-w-6xl mx-auto">
           <div class="text-center">
             <!-- Placeholder for agenda image - replace with your actual image -->
-            <img src="./img/agenda.png" alt="Congress Program Agenda" class="w-full h-auto max-w-full mx-auto rounded-lg" style="max-height: 90vh; object-fit: contain;">
+            <img src="./img/agenda.png" alt="Congress Program Agenda" class="w-full h-auto max-w-full mx-auto rounded-lg max-h-[90vh] object-contain">
             <!-- If the image doesn't exist yet, you can add it to ./img/agenda.png -->
           </div>
         </div>
