@@ -856,7 +856,6 @@ table.table-custom {
   align-items: top;
   text-align: center;
   color: white;
-
 }
 
 /* Responsive adjustments for tablets and mobile */
@@ -1335,23 +1334,23 @@ table.table-custom {
   position: relative;
 }
 
-/* Add margin to all sections except hero and about */
+/* Add padding to all sections except hero and about */
 #intro ~ *:not(#about) {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media (min-width: 768px) {
   #intro ~ *:not(#about) {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
 @media (min-width: 1024px) {
   #intro ~ *:not(#about) {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
