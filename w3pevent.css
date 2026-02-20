@@ -852,9 +852,10 @@ table.table-custom {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   text-align: center;
   color: white;
+  
 }
 
 /* Responsive adjustments for tablets and mobile */
