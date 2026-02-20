@@ -140,8 +140,8 @@
             <img src="./img/ecc3_logo_white.png" alt="Ethereum Cypherpunk Congress Logo" class="hero-logo">
           
             <!-- Hero Tagline Subtitle -->
-            <p class="hero-tagline text-white animate-[slide-up_0.6s_ease-out_both]">The world's largest cypherpunk and human rights event</p>
-            <p class="hero-tagline text-white animate-[slide-up_0.6s_ease-out_0.3s_both]">November 2, Mumbai</p>
+            <p class="hero-tagline text-white" data-animate data-delay="100">The world's largest cypherpunk and human rights event</p>
+            <p class="hero-tagline text-white" data-animate data-delay="400">November 2, Mumbai</p>
           </div>
         </div>
       </div>
@@ -163,9 +163,11 @@
           </div>
           <!-- About Content -->
           <div class="flex flex-col gap-8 text-center flex-1 px-12 py-12">
-            <h2 class="font-archivo font-semibold text-3xl lg:text-4xl leading-tight text-white">Privacy loves equality</h2>
-            <p class="font-light text-lg leading-relaxed text-white/90">5000 gathering in Mumbai to celebrate privacy with internet freedom. Past editions featured visionaries like Richard Stallman [FSF], Chelsea Manning [Nym], Vitalik Buterin [Ethereum], Roger Dingledine [Tor], Eva Galperin [EFF], Renata Avila [Open Knowledge Foundation], Sofia Celi [Brave], Juan Benet [Protocol Labs].</p>
-            <div class="mt-4">
+            <div class="w-full opacity-0" data-animate data-delay="100">
+              <h2 class="font-archivo font-semibold text-3xl lg:text-4xl leading-tight text-white">Privacy loves equality</h2>
+              <p class="font-light text-lg leading-relaxed text-white/90">5000 gathering in Mumbai to celebrate privacy with internet freedom. Past editions featured visionaries like Richard Stallman [FSF], Chelsea Manning [Nym], Vitalik Buterin [Ethereum], Roger Dingledine [Tor], Eva Galperin [EFF], Renata Avila [Open Knowledge Foundation], Sofia Celi [Brave], Juan Benet [Protocol Labs].</p>
+            </div>
+            <div class="mt-4 opacity-0" data-animate data-delay="400">
               <a href="https://luma.com/spsnos9t" class="feature-btn" target="_blank">Free internet for all →</a>
             </div>
           </div>
@@ -2433,6 +2435,18 @@
         if (showMoreBtn) {
           showMoreBtn.addEventListener('click', toggleTestimonials);
         }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const delay = entry.target.dataset.delay || '0';
+              entry.target.style.animation = `slide-up 0.6s ease-out ${delay}ms both`;
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
       });
     </script>
   </body>

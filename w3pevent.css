@@ -12,6 +12,7 @@
   }
 }
 
+
 /* === CONGRESS BRAND COLORS === */
 :root {
   --brand-black: #000000;
@@ -855,7 +856,7 @@ table.table-custom {
   align-items: top;
   text-align: center;
   color: white;
-  
+
 }
 
 /* Responsive adjustments for tablets and mobile */
