@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "./w3pevent.css";
+
+@theme {
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-archivo: "Archivo", system-ui, -apple-system, sans-serif;
+}

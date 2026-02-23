@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet">
-    <link href="./w3pevent.css?v=3" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css">
     <title>Ethereum Cypherpunk Congress 3 | 2 Nov 2026 </title>
     <meta name="description" content="2 Nov 2026 - The Ancestral Fork - a gathering focused on human rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin.>
@@ -28,11 +28,11 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="1200">
   </head>
-  <body>
+  <body class="bg-black bg-[url(img/desktop.png)] bg-cover bg-center bg-no-repeat bg-fixed">
     <div class="relative w-full min-h-screen text-white">
-      <div id="header" class="fixed w-full h-18 z-40" style="top: 0px;">
+      <div id="header" class="fixed w-full h-18 z-40 top-0">
         <!-- Hidden checkbox for menu toggle -->
-        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" style="display: none;">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden">
         
         <div class="navbar-minimal px-10 py-4 pt-2">
           <!-- Desktop Navigation -->
@@ -40,7 +40,7 @@
             <!-- Logo -->
             <div class="flex items-center">
               <a href="https://web3privacy.info/" target="_blank">
-                <img src="./img/logo5.svg" alt="Web3Privacy Now" style="width: 13rem;">
+                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-52">
               </a>
             </div>
             <!-- Navigation Links -->
@@ -63,11 +63,6 @@
               <div class="m-1">
                 <a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a>
               </div>
-              <!-- Language Switcher -->
-              <div class="footer-language">
-                <a href="./index.html" class="language-btn active">EN</a>
-                <a href="./es/index.html" class="language-btn">ES</a>
-              </div>
             </div>
           </div>
 
@@ -76,7 +71,7 @@
             <!-- Logo for Mobile -->
             <div class="mobile-logo">
               <a href="https://web3privacy.info/" target="_blank">
-                <img src="./img/logo5.svg" alt="Web3Privacy Now" style="width: 10rem;">
+                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-40">
               </a>
             </div>
             <!-- Mobile Navigation Controls -->
@@ -121,13 +116,6 @@
               <div class="mobile-nav-item">
                 <a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a>
               </div>
-              <!-- Language Switcher Mobile -->
-              <div class="mobile-nav-item">
-                <div class="footer-language">
-                  <a href="./index.html" class="language-btn active">EN</a>
-                  <a href="./es/index.html" class="language-btn">ES</a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -135,35 +123,51 @@
 
       <!-- Hero Section -->
       <div id="intro" class="w-full h-screen">
-        <div class="hero-container">
-          <div class="hero-content">
+        <div class="hero-container relative z-2 bg-[url(img/hero.webp)] bg-cover bg-center bg-no-repeat">
+          <div class="absolute inset-0 bg-black/60"></div>
+          <div class="hero-content relative">
             <!-- Top Badge -->
-            <a href="https://youtu.be/97-qkXRmMlk" target="_blank" rel="noopener noreferrer" class="hero-badge">
+            <!-- <a href="https://youtu.be/97-qkXRmMlk" target="_blank" rel="noopener noreferrer" class="hero-badge">
               <div class="play-icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z"/>
                 </svg>
               </div>
               <span>2025 Edition [Buenos Aires]</span>
-            </a> 
+            </a>  -->
             
             <!-- Logo -->
-            <img src="/img/ecc3_logo_white.png" alt="Ethereum Cypherpunk Congress Logo" class="hero-logo">
+            <img src="./img/ecc3_logo_white.png" alt="Ethereum Cypherpunk Congress Logo" class="hero-logo">
           
             <!-- Hero Tagline Subtitle -->
-            <p class="hero-tagline">The world's largest cypherpunk and human rights event - November 2, Mumbai</p>
+            <p class="hero-tagline font-bold text-white" data-animate data-delay="100">The world's largest cypherpunk and human rights event</p>
+            <p class="hero-tagline font-bold text-white" data-animate data-delay="400">November 2, Mumbai</p>
           </div>
         </div>
       </div>
 
       <!-- About Section -->
       <div id="about" class="w-full">
-        <div class="about-container">
+        <div class="w-full flex flex-col md:flex-row items-center py-36 px-6">
+          <!-- Photo Collage -->
+          <div class="relative w-full md:w-1/2 aspect-3/2 mt-12 mb-[12%] md:mb-12">
+            <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-0 left-[15%] z-10">
+              <img src="./img/collage1.avif" alt="Event photo 1" class="w-full h-full object-cover block">
+            </div>
+            <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-[30%] left-0 z-30">
+              <img src="./img/collage2.avif" alt="Event photo 2" class="w-full h-full object-cover block">
+            </div>
+            <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-[50%] right-0 z-20">
+              <img src="./img/collage3.avif" alt="Event photo 3" class="w-full h-full object-cover block">
+            </div>
+          </div>
           <!-- About Content -->
-          <div class="about-content">
-            <h2 class="about-headline">Privacy loves equality</h2>
-            <p class="about-description">5000 gathering in Mumbai to celebrate privacy with internet freedom. Past editions featured visionaries like Richard Stallman [FSF], Chelsea Manning [Nym], Vitalik Buterin [Ethereum], Roger Dingledine [Tor], Eva Galperin [EFF], Renata Avila [Open Knowledge Foundation], Sofia Celi [Brave], Juan Benet [Protocol Labs].</p>
-            <div class="about-cta">
+          <div class="flex flex-col gap-8 text-center flex-1 px-12 py-12">
+            <div class="w-full flex flex-col gap-8 opacity-0" data-animate data-delay="100">
+              <h2 class="font-archivo font-semibold text-3xl lg:text-4xl leading-tight text-white">Privacy loves equality</h2>
+              <p class="font-light text-lg leading-relaxed text-white/90">5000 gathering in Mumbai to celebrate privacy with internet freedom. Past editions featured visionaries like Richard Stallman [FSF], Chelsea Manning [Nym], Vitalik Buterin [Ethereum], Roger Dingledine [Tor], Eva Galperin [EFF], Renata Avila [Open Knowledge Foundation], Sofia Celi [Brave], Juan Benet [Protocol Labs].</p>
+            </div>
+            <div class="mt-4 opacity-0" data-animate data-delay="400">
               <a href="https://luma.com/spsnos9t" class="feature-btn" target="_blank">Free internet for all →</a>
             </div>
           </div>
@@ -171,43 +175,57 @@
       </div>
       
       <!-- Congress Stats Section -->
-      <div class="mb-12 mx-4 max-w-4xl mx-auto" style="background: rgba(255, 255, 255, 0.07); border-radius: 16px; padding: 30px 38px; border: none;">
-        <div class="stats-container">
-          <div class="flex flex-col items-center flex-1">
-            <div class="text-3xl font-light mb-1" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">5000+</div>
-            <div class="text-sm font-medium" style="font-family: 'DM Sans', sans-serif; font-weight: 400;">Event Visitors</div>
-            <div class="text-xs opacity-70" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">From 70 Countries</div>
+      <div class="mb-12 w-full">
+        <div class="stats-container max-w-4xl mx-auto bg-white/7 rounded-2xl py-[30px] px-[38px] border-none font-dm-sans items-stretch">
+          <div class="flex flex-col items-center flex-1 align-top">
+            <div class="text-3xl font-light mb-1">5000+</div>
+            <div class="text-sm font-normal">Event Visitors</div>
+            <div class="text-xs opacity-70 font-light">From 70 Countries</div>
           </div>
 
-          <div class="stats-divider-original" style="width: 1px; height: 80px; background: rgba(255, 255, 255, 0.5); margin: 0 32px;"></div>
+          <div class="stats-divider-original w-px bg-white/50 mx-8"></div>
 
           <div class="flex flex-col items-center flex-1">
-            <div class="text-3xl font-light mb-1" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">100+</div>
-            <div class="text-sm font-medium" style="font-family: 'DM Sans', sans-serif; font-weight: 400;">Speakers</div>
-            <div class="text-xs opacity-70" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">From Tor to Ethereum Foundation</div>
+            <div class="text-3xl font-light mb-1">100+</div>
+            <div class="text-sm font-normal">Speakers</div>
+            <div class="text-xs opacity-70 font-light">From Tor to Ethereum Foundation</div>
           </div>
 
-          <div class="stats-divider-original" style="width: 1px; height: 80px; background: rgba(255, 255, 255, 0.5); margin: 0 32px;"></div>
+          <div class="stats-divider-original w-px bg-white/50 mx-8"></div>
 
           <div class="flex flex-col items-center flex-1">
-            <div class="text-3xl font-light mb-1" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">20+</div>
-            <div class="text-sm font-medium" style="font-family: 'DM Sans', sans-serif; font-weight: 400;">Experiences</div>
-            <div class="text-xs opacity-70" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">Privacy-focused Events</div>
+            <div class="text-3xl font-light mb-1">20+</div>
+            <div class="text-sm font-normal">Experiences</div>
+            <div class="text-xs opacity-70 font-light">Privacy-focused Events</div>
           </div>
 
-          <div class="stats-divider-original" style="width: 1px; height: 80px; background: rgba(255, 255, 255, 0.5); margin: 0 32px;"></div>
+          <div class="stats-divider-original w-px bg-white/50 mx-8"></div>
 
           <div class="flex flex-col items-center flex-1">
-            <div class="text-3xl font-light mb-1" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">3+</div>
-            <div class="text-sm font-medium" style="font-family: 'DM Sans', sans-serif; font-weight: 400;">Years</div>
-            <div class="text-xs opacity-70" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">Building Privacy Culture</div>
+            <div class="text-3xl font-light mb-1">3+</div>
+            <div class="text-sm font-normal">Years</div>
+            <div class="text-xs opacity-70 font-light">Building Privacy Culture</div>
           </div>
+        </div>
+      </div>
+
+      <!-- 2025 Theme Section -->
+      <div class="w-full flex flex-col md:flex-row wrap py-12 items-stretch">
+        <div class="w-full md:w-1/2 aspect-3/2 p-0 md:p-8">
+          <img src="./img/slide3.avif" alt="2025 Theme" class="w-full h-full object-cover">
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col gap-8 text-center px-12 items-center justify-center">
+          <div class="w-full opacity-0" data-animate data-delay="100">
+            <h2 class="font-archivo font-bold text-3xl lg:text-4xl leading-tight text-white">2025 Theme: The Ancestral Fork</h2>
+            <h5 class="font-bold text-lg leading-relaxed text-white/90">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+          </div>
+          <p class="font-light text-lg leading-relaxed text-white/90" data-animate data-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
         </div>
       </div>
       
       <!-- What To Expect Section -->
-      <section class="feature-carousel py-20 px-4" style="margin-top: 100px;">
-        <div class="text-center" style="margin-bottom: 30px;">
+      <section class="feature-carousel py-20 px-4 mt-[100px]">
+        <div class="text-center mb-[30px]">
           <h2 id="program" class="testimonials-title text-center">
            Privacy kinship for the planet, beings, and people
           </h2>
@@ -260,7 +278,7 @@
       </section>
 
       <div id="speakers" class="text-white px-4">
-        <div class="text-center" style="margin-top: 100px; margin-bottom: 30px;">
+        <div class="text-center mt-[100px] mb-[30px]">
           <h2 class="testimonials-title text-center">
             2026 Speakers
           </h2>
@@ -1500,20 +1518,20 @@
           </div>
         </div>
       </div>
-      <div class="text-center text-xl mt-10 mb-10" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">We keep adding more and more speakers</div>
+      <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">We keep adding more and more speakers</div>
       <div class="text-center">
           <div class="inline-block md:w-auto">
              <a href="https://tally.so/r/nrOzXl" class="cta-partner-badge" target="_blank" primary>Speak at Congress</a>
           </div>
       <div id="partners" class="mt-10 bg-black text-white px-4">
-        <div class="text-center" style="margin-top: 60px; margin-bottom: 60px;">
+        <div class="text-center mt-15 mb-15">
           <div class="cta-partner-badge">2025 Partners</div>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-6">
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://z.cash/">
-                <img src="./img/zcash.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/zcash.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1528,7 +1546,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://bento.me/crecimientoar">
-                <img src="./img/crecimiento.jpg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/crecimiento.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1543,7 +1561,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://ethereum.foundation/">
-                <img src="./img/eth.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/eth.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1558,7 +1576,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://pse.dev/en">
-                <img src="./img/pse.jpg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/pse.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1573,7 +1591,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="http://aztec.network">
-                <img src="./img/aztec.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/aztec.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1588,7 +1606,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="http://vocdoni.io">
-                <img src="./img/vocdoni.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/vocdoni.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1603,7 +1621,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.enclave.gg/">
-                <img src="./img/enclave.jpg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/enclave.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1618,7 +1636,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://human.tech/">
-                <img src="./img/human-tech.jpg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/human-tech.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1633,7 +1651,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://status.network/">
-                <img src="./img/status-network.JPG" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/status-network.JPG" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1648,7 +1666,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.mask.io/">
-                <img src="./img/mask.jpg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/mask.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1663,7 +1681,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://fhenix.io/">
-                <img src="./img/fhenix.jpg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/fhenix.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1678,7 +1696,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://logos.co/">
-                <img src="./img/logos.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/logos.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1693,7 +1711,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://brevis.network/">
-                <img src="./img/brevis.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/brevis.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1708,7 +1726,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://diligence.consensys.io/">
-                <img src="./img/consensys.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                  <img src="./img/consensys.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1723,7 +1741,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.bookofeth.xyz/">
-                <img src="./img/book-of-ethereum.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/book-of-ethereum.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1738,7 +1756,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.ethswarm.org/">
-                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1768,7 +1786,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://logos.co">
-                <img src="./img/logos.svg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/logos.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1783,7 +1801,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://waku.org">
-                <img src="./img/Waku.svg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/Waku.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1798,7 +1816,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://nomos.tech/">
-                <img src="./img/nomos.svg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/nomos.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1813,7 +1831,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://codex.storage/">
-                <img src="./img/codex.svg" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/codex.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1828,7 +1846,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://dyne.org/">
-                <img src="./img/dyne.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/dyne.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1843,7 +1861,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.0xbow.io">
-                <img src="./img/0xbow.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/0xbow.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1858,7 +1876,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.labyrinth.technology">
-                <img src="./img/labyrinth.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/labyrinth.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1873,7 +1891,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://namada.net">
-                <img src="./img/namada.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/namada.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1888,7 +1906,7 @@
             <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.intmax.io/">
-                <img src="./img/intmax.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/intmax.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1903,7 +1921,7 @@
             <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://morosnet.com/">
-                <img src="./img/moros.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/moros.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1918,7 +1936,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.gnosis.io">
-                <img src="./img/gnosisdao.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/gnosisdao.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1933,7 +1951,7 @@
           <div class="partner-item text-center items-center p-2">
           <div>
             <a href="https://tokendynamics.xyz/">
-              <img src="./img/tokendynamics.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+              <img src="./img/tokendynamics.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
             </a>
           </div>
           <div class="p-2 partner-text">
@@ -1948,7 +1966,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://calimero.network/">
-                <img src="./img/calimero.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/calimero.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1963,7 +1981,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.protocol.ai/">
-                <img src="./img/protocol-labs.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/protocol-labs.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1978,7 +1996,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.ethswarm.org/">
-                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-[16/11] w-full h-full object-contain p-0">
+                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -2039,13 +2057,13 @@
 
       <!-- Tickets Section -->
       <div id="tickets" class="text-white px-4">
-        <div class="text-center" style="margin-top: 60px; margin-bottom: 60px;">
+        <div class="text-center mt-15 mb-15">
           <div class="cta-partner-badge">Tickets</div>
         </div>
         
         <div class="text-center">
           <h2 class="testimonials-title">
-            <a href="https://luma.com/spsnos9t" style="color: var(--brand-white); text-decoration: none; font-family: 'Archivo', sans-serif; font-weight: 600;">Free forever - register</a>
+            <a href="https://luma.com/spsnos9t" class="text-(--brand-white) no-underline font-archivo font-semibold">Free forever - register</a>
           </h2>
           <div class="text-2xl mt-5 uppercase">
             <a href="https://luma.com/spsnos9t">$ 0</a>
@@ -2175,10 +2193,10 @@
             <h2 class="testimonials-title text-center">
               Volunteer with us
             </h2>
-            <p class="text-md md:text-xl text-white/80 mb-4 max-w-4xl mx-auto" style="font-family: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; font-weight: 300;">
+            <p class="text-md md:text-xl text-white/80 mb-4 max-w-4xl mx-auto font-dm-sans font-light">
               Help host 5000 people exploring privacy, decentralization, and data autonomy in Mumbai.
             </p>
-            <p class="text-md md:text-xl text-white/80 max-w-4xl mx-auto" style="font-family: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; font-weight: 300;">
+            <p class="text-md md:text-xl text-white/80 max-w-4xl mx-auto font-dm-sans font-light">
               Our volunteers are heart of the Congress. You make it happen.
             </p>
           </div>
@@ -2219,14 +2237,14 @@
           </div>
           <!-- Call to Action -->
           <div class="text-center">
-            <p class="text-md text-white/80 mb-8 max-w-4xl mx-auto" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">
+            <p class="text-md text-white/80 mb-8 max-w-4xl mx-auto font-dm-sans font-light">
               Welcoming newcomers and experienced contributors: privacy enthusiasts, activists, developers, journalists and legal allies.
             </p>
             <a href="https://tally.so/r/3lLqKo" 
               class="team-badge" target="_blank">
               Apply Now
             </a>
-            <p class="text-sm text-white/60" style="font-family: 'DM Sans', sans-serif; font-weight: 300;">
+            <p class="text-sm text-white/60 font-dm-sans font-light">
               The first 20 approved volunteers will receive priority placement.
             </p>
           </div>
@@ -2793,6 +2811,18 @@
         if (showMoreBtn) {
           showMoreBtn.addEventListener('click', toggleTestimonials);
         }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const delay = entry.target.dataset.delay || '0';
+              entry.target.style.animation = `slide-up 0.6s ease-out ${delay}ms both`;
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
       });
     </script>
   </body>
