@@ -31,6 +31,7 @@
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
@@ -405,6 +406,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -581,6 +585,10 @@
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
@@ -687,6 +695,11 @@
       flex-direction: row;
     }
   }
+  .md\:p-8 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
   .md\:text-xl {
     @media (width >= 48rem) {
       font-size: var(--text-xl);
@@ -790,7 +803,6 @@ html, body {
 }
 * {
   font-family: "DM Sans", sans-serif;
-  font-weight: 300;
 }
 #header-shade {
   height: 2.5rem;
@@ -1449,7 +1461,6 @@ table.table-custom {
 @media (max-width: 768px) {
   .hero-tagline {
     font-size: 1.7rem;
-    font-weight: 700;
     margin-top: 1rem;
   }
   .stats-container {
@@ -1522,7 +1533,6 @@ table.table-custom {
 }
 .hero-tagline {
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
@@ -1575,7 +1585,6 @@ table.table-custom {
 }
 .card-text {
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 300;
   font-size: 0.75rem;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
@@ -1602,7 +1611,6 @@ table.table-custom {
 }
 .progress-counter {
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 400;
   font-size: 0.875rem;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
@@ -1617,7 +1625,6 @@ table.table-custom {
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
   font-family: aileron-regular, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 400;
   font-size: 0.875rem;
   color: #ffffff;
   text-decoration: none;

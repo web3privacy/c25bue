@@ -98,7 +98,6 @@ body {
 }
 * {
   font-family: "DM Sans", sans-serif;
-  font-weight: 300;
 }
 #header-shade {
   height: 2.5rem;
@@ -887,7 +886,6 @@ table.table-custom {
 @media (max-width: 768px) {
   .hero-tagline {
     font-size: 1.7rem;
-    font-weight: 700;
     margin-top: 1rem;
   }
 
@@ -975,7 +973,6 @@ table.table-custom {
 /* Hero tagline as subtitle */
 .hero-tagline {
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
@@ -1039,7 +1036,6 @@ table.table-custom {
 
 .card-text {
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 300;
   font-size: 0.75rem;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
@@ -1071,7 +1067,6 @@ table.table-custom {
 
 .progress-counter {
   font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 400;
   font-size: 0.875rem;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
@@ -1087,8 +1082,7 @@ table.table-custom {
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
   font-family: aileron-regular, system-ui, -apple-system, Segoe UI, Roboto,
-    sans-serif;
-  font-weight: 400;
+    sans-serif; 
   font-size: 0.875rem;
   color: #ffffff;
   text-decoration: none;
