@@ -7,7 +7,7 @@
     <link rel="icon" href="./favicon.png">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#000000">
-    <meta http-equiv="content-security-policy" content="script-src 'self' 'unsafe-inline'; form-action 'self';">
+    <!-- <meta http-equiv="content-security-policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.typekit.net; font-src 'self' https://fonts.gstatic.com https://use.typekit.net; img-src 'self' https://i.ytimg.com data:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://p.typekit.net; form-action 'self';"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet">
@@ -315,7 +315,8 @@
         </div>
       </section>
 
-      <div id="speakers" class="text-white px-4">
+      <!-- 2026Speakers Section -->
+      <section id="speakers" class="text-white px-4">
         <div class="text-center mt-[100px] mb-[30px]">
           <h2 class="testimonials-title text-center">
             2026 Speakers
@@ -717,9 +718,76 @@
               </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="speakers" class="text-white px-4">
+      <!-- Past talks Section -->
+      <section id="past-talks" class="text-white px-4">
+        <div class="text-center" style="margin-top: 100px; margin-bottom: 30px;">
+          <h2 class="testimonials-title text-center py-8">
+            Past talks
+          </h2>
+          <div class="flex flex-col md:flex-row items-stretch gap-8 max-w-[1200px] mx-auto">
+            <!-- Featured video (left, large) -->
+            <div class="w-full md:w-3/5 flex flex-col justify-center" data-animate data-delay="100">
+              <div class="relative w-full aspect-video overflow-hidden">
+                <iframe
+                  class="absolute inset-0 w-full h-full"
+                  src="https://www.youtube-nocookie.com/embed/S3PiMK8iguY?si=XbCq01D0BxZ4x3ir&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=0&controls=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="px-1">
+                <h3 class="text-base font-bold mt-2 md:text-xl md:mt-3 text-left">Cyberfascism: what is it and how we can fight it?</h3>
+                <h4 class="text-left text-xs md:text-sm text-white/70">Eva Galperin</h4>
+              </div>
+            </div>
+            <!-- Sidebar videos (right, stacked) -->
+            <div class="w-full md:w-2/5 flex flex-col gap-8 justify-between">
+              <div data-animate data-delay="200">
+                <div class="relative w-full aspect-video overflow-hidden">
+                  <iframe
+                    class="absolute inset-0 w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/5At5_GiQNEA?si=XbCq01D0BxZ4x3ir&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=0&controls=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="px-1">
+                  <h3 class="text-base font-bold mt-2 text-left">Cypherpunk values in Ethereum</h3>
+                  <h4 class="text-xs text-white/70 text-left">Vitalik Buterin & Naomi Brockwell</h4>
+                </div>
+              </div>
+              <div data-animate data-delay="300">
+                <div class="relative w-full aspect-video overflow-hidden">
+                  <iframe
+                    class="absolute inset-0 w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/ykxHnBon7TI?si=XbCq01D0BxZ4x3ir&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=0&controls=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="px-1">
+                  <h3 class="text-base font-bold mt-2 text-left">Lessons Learned from Tor</h3>
+                  <h4 class="text-xs text-white/70 text-left">Roger Dingledine</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2025 Speakers Section -->
+      <section id="speakers" class="text-white px-4">
         <div class="text-center" style="margin-top: 100px; margin-bottom: 30px;">
           <h2 class="testimonials-title text-center">
             2025 Speakers
@@ -1597,7 +1665,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">We keep adding more and more speakers</div>
       <div class="text-center">
           <div class="inline-block md:w-auto">
