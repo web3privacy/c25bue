@@ -1,46 +1,55 @@
-<!-- v 1 of code for W3PN Congress 3025 --> 
+<!-- v 1 of code for W3PN Congress 3025 -->
 <!-- sauce: https://github.com/web3privacy/c25bue -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="icon" href="./favicon.png">
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#000000">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
     <!-- <meta http-equiv="content-security-policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.typekit.net; font-src 'self' https://fonts.gstatic.com https://use.typekit.net; img-src 'self' https://i.ytimg.com data:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://p.typekit.net; form-action 'self';"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css">
-    <title>Ethereum Cypherpunk Congress 3 | 2 Nov 2026 </title>
-    <meta name="description" content="2 Nov 2026 - The Ancestral Fork - a gathering focused on human rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin.>
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@web3privacy">
-    <meta name="twitter:title" content="Ethereum Cypherpunk Congress #3">
-    <meta name="twitter:description" content="2 Nov 2026 - The Ancestral Fork - a gathering focused on digital rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin.>
-    <meta name="twitter:image" content="https://congress.web3privacy.info/img/banner-square.png?v=2">
-    <meta property="og:url" content="https://congress.web3privacy.info">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Ethereum Cypherpunk Congress #3">
-    <meta property="og:description" content="2 Nov 2026 - The Ancestral Fork - a gathering focused on digital rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin.>
-    <meta property="og:image" content="https://congress.web3privacy.info/img/banner-square.png?v=2">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css" />
+    <title>Ethereum Cypherpunk Congress 3 | 2 Nov 2026</title>
+    <meta
+      name="description"
+      content="2 Nov 2026 - The Ancestral Fork - a gathering focused on human rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@web3privacy" />
+    <meta name="twitter:title" content="Ethereum Cypherpunk Congress #3" />
+    <meta
+      name="twitter:description"
+      content="2 Nov 2026 - The Ancestral Fork - a gathering focused on digital rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin."
+    />
+    <meta name="twitter:image" content="https://congress.web3privacy.info/img/ecc3.png" />
+    <meta property="og:url" content="https://congress.web3privacy.info" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ethereum Cypherpunk Congress #3" />
+    <meta
+      property="og:description"
+      content="2 Nov 2026 - The Ancestral Fork - a gathering focused on digital rights, privacy, and digital autonomy. It explores how inherited systems shape our digital choices in the AI Age. Two previous Congresses in Bangkok & Buenos Aires made a change: 7000 people, 100 speakers, 50 partners, visionaries from whistleblowers like Chelsea Manning & or Vitalik Buterin."
+    />
+    <meta property="og:image" content="https://congress.web3privacy.info/img/ecc3.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
   </head>
   <body class="bg-black bg-[url(img/desktop.png)] bg-cover bg-center bg-no-repeat bg-fixed">
     <div class="relative w-full min-h-screen text-white">
       <div id="header" class="fixed w-full h-18 z-40 top-0">
         <!-- Hidden checkbox for menu toggle -->
-        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden">
-        
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden" />
+
         <div class="navbar-minimal px-10 py-4 pt-2">
           <!-- Desktop Navigation -->
           <div class="desktop-nav flex justify-between items-center my-1">
             <!-- Logo -->
             <div class="flex items-center">
               <a href="https://web3privacy.info/" target="_blank">
-                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-52">
+                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-52" />
               </a>
             </div>
             <!-- Navigation Links -->
@@ -71,7 +80,7 @@
             <!-- Logo for Mobile -->
             <div class="mobile-logo">
               <a href="https://web3privacy.info/" target="_blank">
-                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-40">
+                <img src="./img/logo5.svg" alt="Web3Privacy Now" class="w-40" />
               </a>
             </div>
             <!-- Mobile Navigation Controls -->
@@ -79,17 +88,17 @@
               <!-- Hamburger Icon -->
               <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </label>
-              
+
               <!-- Close Icon -->
               <label for="mobile-menu-toggle" class="close-icon" data-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </label>
             </div>
@@ -135,10 +144,10 @@
               </div>
               <span>2025 Edition [Buenos Aires]</span>
             </a>  -->
-            
+
             <!-- Logo -->
-            <img src="./img/ecc3_logo_white.png" alt="Ethereum Cypherpunk Congress Logo" class="hero-logo">
-          
+            <img src="./img/ecc3_logo_white.png" alt="Ethereum Cypherpunk Congress Logo" class="hero-logo" />
+
             <!-- Hero Tagline Subtitle -->
             <p class="hero-tagline font-bold text-white" data-animate data-delay="100">The world's largest cypherpunk and human rights event</p>
             <p class="hero-tagline font-bold text-white" data-animate data-delay="400">November 2, Mumbai</p>
@@ -152,20 +161,23 @@
           <!-- Photo Collage -->
           <div class="relative w-full md:w-1/2 aspect-3/2 my-12">
             <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-0 left-[15%] z-10">
-              <img src="./img/collage2.avif" alt="Event photo 1" class="w-full h-full object-cover block">
+              <img src="./img/collage2.avif" alt="Event photo 1" class="w-full h-full object-cover block" />
             </div>
             <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-[30%] left-0 z-30">
-              <img src="./img/collage_2.jpg" alt="Event photo 2" class="w-full h-full object-cover block">
+              <img src="./img/collage_2.jpg" alt="Event photo 2" class="w-full h-full object-cover block" />
             </div>
             <div class="absolute overflow-hidden w-3/5 aspect-3/2 top-[50%] right-0 z-20">
-              <img src="./img/collage_3.jpg" alt="Event photo 3" class="w-full h-full object-cover block">
+              <img src="./img/collage_3.jpg" alt="Event photo 3" class="w-full h-full object-cover block" />
             </div>
           </div>
           <!-- About Content -->
           <div class="flex flex-col gap-8 text-center flex-1 px-12 py-12">
             <div class="w-full flex flex-col gap-8 opacity-0" data-animate data-delay="100">
               <h2 class="font-archivo font-semibold text-3xl lg:text-4xl leading-tight text-white">Privacy loves equality</h2>
-              <p class="font-light text-lg leading-relaxed text-white/90">5000 people are gathering in Mumbai to celebrate privacy and internet freedoms. Past editions featured visionaries like Richard Stallman, Chelsea Manning, Vitalik Buterin, Roger Dingledine, Eva Galperin, Renata Avila, David Chaum, Juan Benet & many others.</p>
+              <p class="font-light text-lg leading-relaxed text-white/90">
+                5000 people are gathering in Mumbai to celebrate privacy and internet freedoms. Past editions featured visionaries like Richard
+                Stallman, Chelsea Manning, Vitalik Buterin, Roger Dingledine, Eva Galperin, Renata Avila, David Chaum, Juan Benet & many others.
+              </p>
             </div>
             <div class="mt-4 opacity-0" data-animate data-delay="400">
               <a href="https://luma.com/spsnos9t" class="feature-btn" target="_blank">Register →</a>
@@ -173,7 +185,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Congress Stats Section -->
       <div class="my-24 md:my-36 mb-36 md:mb-48 w-full">
         <div class="stats-container max-w-4xl mx-auto bg-white/7 rounded-2xl py-[30px] px-[38px] border-none font-dm-sans items-stretch">
@@ -210,51 +222,60 @@
       </div>
 
       <!-- 2025 Theme Section -->
-      <div class="w-full flex flex-col md:flex-row wrap my-24 md:my-36 items-stretch">
-        <div class="w-full md:w-1/2 aspect-3/2">
-          <img src="./img/future_whistleblowing.jpg" alt="2026 Theme" class="w-full h-full object-cover">
+      <div class="w-full flex flex-col lg:flex-row wrap my-24 md:my-36 items-stretch">
+        <div class="w-full lg:w-1/2 aspect-3/2">
+          <img src="./img/future_whistleblowing.jpg" alt="2026 Theme" class="w-full h-full object-cover" />
         </div>
-        <div class="w-full md:w-1/2 flex flex-col gap-8 text-center px-12 py-12 items-center justify-center">
+        <div class="w-full lg:w-1/2 flex flex-col gap-8 text-center px-12 py-12 items-center justify-center">
           <div class="w-full opacity-0" data-animate data-delay="100">
             <h2 class="font-archivo font-bold text-3xl lg:text-4xl leading-tight text-white">2026 Theme: The Ancestral Fork</h2>
             <h5 class="font-bold text-lg leading-relaxed text-white/90">moving from legacy of societal and technological prejudices.</h5>
           </div>
-          <p class="font-light text-lg leading-relaxed text-white/90" data-animate data-delay="400">A celebration of privacy, unlearned legacy tech & societal biases, connection between digital rights activists & decentralised tech towards alternative internet imaginaries.</p>
+          <p class="font-light text-lg leading-relaxed text-white/90" data-animate data-delay="400">
+            A celebration of privacy, unlearned legacy tech & societal biases, connection between digital rights activists & decentralised tech
+            towards alternative internet imaginaries.
+          </p>
         </div>
       </div>
-      
+
       <!-- What To Expect Section -->
       <section class="feature-carousel px-4 my-24 md:my-36 py-12">
         <div class="text-center mb-12">
-          <h2 id="program" class="testimonials-title text-center">
-           Privacy kinship for the planet, beings, and people
-          </h2>
+          <h2 id="program" class="testimonials-title text-center">Privacy kinship for the planet, beings, and people</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto my-8">
-          <div class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto my-8">
+          <div
+            class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5"
+          >
             <div class="w-48 h-48 mb-6 rounded-full flex items-center justify-center bg-linear-to-r from-[#090c16] to-[#1b224f]">
-              <img src="img/features/1.webp" alt="Democratising AI" class="w-full h-full object-contain rounded-full">
+              <img src="img/features/1.webp" alt="Democratising AI" class="w-full h-full object-contain rounded-full" />
             </div>
             <h3 class="font-[Aileron,sans-serif] text-[1.4rem] font-semibold text-white mb-3">Democratising AI</h3>
             <p class="font-dm-sans font-light text-white/80 text-[0.9rem] leading-normal grow">
-              World-class activists, technologists, policymakers, and artists will explore open-source AI, harmful neo-colonial agentic practices & co-create a better vision of AI commons.
+              World-class activists, technologists, policymakers, and artists will explore open-source AI, harmful neo-colonial agentic practices &
+              co-create a better vision of AI commons.
             </p>
           </div>
 
-          <div class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5">
+          <div
+            class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5"
+          >
             <div class="w-48 h-48 mb-6 rounded-full flex items-center justify-center bg-linear-to-r from-[#090c16] to-[#1b224f]">
-              <img src="img/features/2.webp" alt="Internet censorship" class="w-full h-full object-contain rounded-full">
+              <img src="img/features/2.webp" alt="Internet censorship" class="w-full h-full object-contain rounded-full" />
             </div>
             <h3 class="font-[Aileron,sans-serif] text-[1.4rem] font-semibold text-white mb-3">Internet censorship</h3>
             <p class="font-dm-sans font-light text-white/80 text-[0.9rem] leading-normal grow">
-              Radical re-imaginings of technology’s role in global internet shutdowns through practical FOSS from mesh networks to cross-border digital currencies.
+              Radical re-imaginings of technology’s role in global internet shutdowns through practical FOSS from mesh networks to cross-border
+              digital currencies.
             </p>
           </div>
 
-          <div class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5">
+          <div
+            class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5"
+          >
             <div class="w-48 h-48 mb-6 rounded-full flex items-center justify-center bg-linear-to-r from-[#090c16] to-[#1b224f]">
-              <img src="img/features/3.webp" alt="Positive freedom" class="w-full h-full object-contain rounded-full">
+              <img src="img/features/3.webp" alt="Positive freedom" class="w-full h-full object-contain rounded-full" />
             </div>
             <h3 class="font-[Aileron,sans-serif] text-[1.4rem] font-semibold text-white mb-3">Positive freedom</h3>
             <p class="font-dm-sans font-light text-white/80 text-[0.9rem] leading-normal grow">
@@ -262,10 +283,11 @@
             </p>
           </div>
 
-
-          <div class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5">
+          <div
+            class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5"
+          >
             <div class="w-48 h-48 mb-6 rounded-full flex items-center justify-center bg-linear-to-r from-[#090c16] to-[#1b224f]">
-              <img src="img/features/4.webp" alt="Enshitification" class="w-full h-full object-contain rounded-full">
+              <img src="img/features/4.webp" alt="Enshitification" class="w-full h-full object-contain rounded-full" />
             </div>
             <h3 class="font-[Aileron,sans-serif] text-[1.4rem] font-semibold text-white mb-3">Enshitification</h3>
             <p class="font-dm-sans font-light text-white/80 text-[0.9rem] leading-normal grow">
@@ -273,23 +295,29 @@
             </p>
           </div>
 
-          <div class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5">
+          <div
+            class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5"
+          >
             <div class="w-48 h-48 mb-6 rounded-full flex items-center justify-center bg-linear-to-r from-[#090c16] to-[#1b224f]">
-              <img src="img/features/5.webp" alt="Neo-cypherpunk" class="w-full h-full object-contain rounded-full">
+              <img src="img/features/5.webp" alt="Neo-cypherpunk" class="w-full h-full object-contain rounded-full" />
             </div>
             <h3 class="font-[Aileron,sans-serif] text-[1.4rem] font-semibold text-white mb-3">Neo-cypherpunk</h3>
             <p class="font-dm-sans font-light text-white/80 text-[0.9rem] leading-normal grow">
-              Dive deeper into a new form of digital activism embracing encryption, communal care & default privacy for "$30 phone" or for non-techies too.
+              Dive deeper into a new form of digital activism embracing encryption, communal care & default privacy for "$30 phone" or for non-techies
+              too.
             </p>
           </div>
 
-          <div class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5">
+          <div
+            class="bg-white/[0.07] rounded-[20px] px-10 py-8 text-center transition-all duration-300 backdrop-blur-sm flex flex-col items-center justify-center hover:bg-white/10 hover:-translate-y-1.5"
+          >
             <div class="w-48 h-48 mb-6 rounded-full flex items-center justify-center bg-linear-to-r from-[#090c16] to-[#1b224f]">
-              <img src="img/features/6.webp" alt="Sustainable privacy economy" class="w-full h-full object-contain rounded-full">
+              <img src="img/features/6.webp" alt="Sustainable privacy economy" class="w-full h-full object-contain rounded-full" />
             </div>
             <h3 class="font-[Aileron,sans-serif] text-[1.4rem] font-semibold text-white mb-3">Sustainable privacy economy</h3>
             <p class="font-dm-sans font-light text-white/80 text-[0.9rem] leading-normal grow">
-              Unite foundations, protocols, activists, public goods funding projects to mediate on intersections of sustainable economical growth of privacy tech & FOSS principles.
+              Unite foundations, protocols, activists, public goods funding projects to mediate on intersections of sustainable economical growth of
+              privacy tech & FOSS principles.
             </p>
           </div>
         </div>
@@ -297,28 +325,28 @@
 
       <!-- 2026 Speakers Section -->
       <section id="speakers" class="text-white">
-        <h2 class="testimonials-title text-center">
-          2026 Speakers
-        </h2>
+        <h2 class="testimonials-title text-center">2026 Speakers</h2>
         <div class="mt-12">
           <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/kurtopsahl2.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/kurtopsahl2.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">KURT OPSAHL</div>
                 <div class="text-mild">
-                  <a href="https://x.com/kurtopsahl" class="hover:underline" target="_blank">Former Deputy Executive Director and General Counsel of EFF</a>
+                  <a href="https://x.com/kurtopsahl" class="hover:underline" target="_blank"
+                    >Former Deputy Executive Director and General Counsel of EFF</a
+                  >
                 </div>
                 <div class="mt-2 text-sm markdown-basic">
                   <p>Associate General Counsel for Cybersecurity and Civil Liberties Policy @ <a href="https://fil.org">Filecoin</a></p>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/fernandes.jpeg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/fernandes.jpeg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4 relative">
                 <div class="mt-4 speaker-name">ISABELA FERNANDES</div>
@@ -332,7 +360,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/ahmedghappour.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/ahmedghappour.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">AHMED GHAPPOUR</div>
@@ -345,22 +373,22 @@
               </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
-                <div>
-                  <img src="./img/taaki.jpg" alt="speaker" class="aspect-square object-cover w-full">
+              <div>
+                <img src="./img/taaki.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">AMIR TAAKI</div>
+                <div class="text-mild">
+                  <a href="https://x.com/lunardragon420" class="hover:underline" target="_blank">Visionary hacktivist</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">AMIR TAAKI</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/lunardragon420" class="hover:underline" target="_blank">Visionary hacktivist</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Founder @ <a href="https://x.com/DarkFiSquad">DarkFi</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Founder @ <a href="https://x.com/DarkFiSquad">DarkFi</a></p>
                 </div>
+              </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/obrien.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/obrien.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">DANNY O'BRIEN</div>
@@ -374,7 +402,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/jaromil.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/jaromil.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">DENIS "JAROMIL" ROJO</div>
@@ -388,7 +416,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/justindrake.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/justindrake.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">JUSTIN DRAKE</div>
@@ -402,7 +430,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/guzman.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/guzman.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">ANDY GUZMAN</div>
@@ -416,7 +444,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/baylina.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/baylina.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">JORDI BAYLINA</div>
@@ -430,7 +458,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/kyledenhartog.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/kyledenhartog.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">KYLE DEN HARTOG</div>
@@ -444,12 +472,14 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/yingtonglai2.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/yingtonglai2.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">YING TONG LAI</div>
                 <div class="text-mild">
-                  <a href="https://twitter.com/therealyingtong" class="hover:underline" target="_blank">Helping protocols & institutions adopt ZK-tech</a>
+                  <a href="https://twitter.com/therealyingtong" class="hover:underline" target="_blank"
+                    >Helping protocols & institutions adopt ZK-tech</a
+                  >
                 </div>
                 <div class="mt-2 text-sm markdown-basic">
                   <p>Applied Cryptographer @ <a href="https://fil.org">independent</a></p>
@@ -458,7 +488,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/michelleLai.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/michelleLai.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">ml_sudo</div>
@@ -472,7 +502,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/auryn.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/auryn.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">AURYN MCMILLAN</div>
@@ -486,7 +516,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/benet.avif" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/benet.avif" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">JUAN BENET</div>
@@ -499,50 +529,50 @@
               </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
-                <div>
-                  <img src="./img/sebastian.png" alt="speaker" class="aspect-square object-cover w-full">
-                </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">SEBASTIAN BURGEL</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/SCBuergel" class="hover:underline" target="_blank">Mixnets visionary</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>VP of Technology @ <a href="https://www.gnosis.io">Gnosis & HOPR</a></p>
-                  </div>
-                </div>
-            </div>
-            <div class="hover:bg-white hover:text-black person-item border border-white/30">
-                <div>
-                  <img src="./img/bobsummerwill.png" alt="speaker" class="aspect-square object-cover w-full">
-                </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">BOB SUMMERWILL</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/BobSummerwill" class="hover:underline" target="_blank">Decentralisation veteran</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Head of Ecosystem @ <a href="https://strato.nexus">Strato</a></p>
-                  </div>
-                </div>
-            </div>
-            <div class="hover:bg-white hover:text-black person-item border border-white/30">
-            <div>
-              <img src="./img/andreas.png" alt="speaker" class="aspect-square object-cover w-full">
-            </div>
-            <div class="pb-4 px-4">
-              <div class="mt-4 speaker-name">MIROYATO</div>
-              <div class="text-mild">
-                <a href="https://x.com/miroyato" class="hover:underline" target="_blank">Academic turned practical privacy tech</a>
+              <div>
+                <img src="./img/sebastian.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
-              <div class="mt-2 text-sm markdown-basic">
-                <p>Co-founder @ <a href="https://fileverse.io" class="hover:underline" target="_blank">Fileverse</a></p>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">SEBASTIAN BURGEL</div>
+                <div class="text-mild">
+                  <a href="https://x.com/SCBuergel" class="hover:underline" target="_blank">Mixnets visionary</a>
+                </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>VP of Technology @ <a href="https://www.gnosis.io">Gnosis & HOPR</a></p>
+                </div>
               </div>
-            </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/chrismccabe.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/bobsummerwill.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">BOB SUMMERWILL</div>
+                <div class="text-mild">
+                  <a href="https://x.com/BobSummerwill" class="hover:underline" target="_blank">Decentralisation veteran</a>
+                </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Head of Ecosystem @ <a href="https://strato.nexus">Strato</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
+              <div>
+                <img src="./img/andreas.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">MIROYATO</div>
+                <div class="text-mild">
+                  <a href="https://x.com/miroyato" class="hover:underline" target="_blank">Academic turned practical privacy tech</a>
+                </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Co-founder @ <a href="https://fileverse.io" class="hover:underline" target="_blank">Fileverse</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
+              <div>
+                <img src="./img/chrismccabe.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">CHRIS MCCABE</div>
@@ -555,92 +585,94 @@
               </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
-                <div>
-                  <img src="./img/consigny.jpg" alt="speaker" class="aspect-square object-cover w-full">
-                </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">NICO CONSIGNY</div>
-                  <div class="text-mild">
-                    <a href="https://twitter.com/ncsgy" class="hover:underline" target="_blank">Privacy in digital wallets visionary</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Lead @ <a href="https://ethereum.foundation">Ethereum Foundation</a></p>
-                  </div>
-                </div>
-            </div>  
-            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/valkenburgh.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/consigny.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">NICO CONSIGNY</div>
+                <div class="text-mild">
+                  <a href="https://twitter.com/ncsgy" class="hover:underline" target="_blank">Privacy in digital wallets visionary</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">PETER VAN VALKENBURGH</div>
-                  <div class="text-mild">
-                    <a href="https://twitter.com/valkenburgh" class="hover:underline" target="_blank">Advocate focused on the public policy on decentralized computing</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Executive Director @ <a href="https://coincenter.org">Coin Center</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Lead @ <a href="https://ethereum.foundation">Ethereum Foundation</a></p>
                 </div>
+              </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/fatemeh.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/valkenburgh.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">PETER VAN VALKENBURGH</div>
+                <div class="text-mild">
+                  <a href="https://twitter.com/valkenburgh" class="hover:underline" target="_blank"
+                    >Advocate focused on the public policy on decentralized computing</a
+                  >
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">FATEMEH FANNIZADEH</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/Fatalmeh" class="hover:underline" target="_blank">Legal expert on decentralized computing & activism</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Legal @ <a href="https://x.com/Fatalmeh">independent</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Executive Director @ <a href="https://coincenter.org">Coin Center</a></p>
                 </div>
+              </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/havel.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/fatemeh.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">FATEMEH FANNIZADEH</div>
+                <div class="text-mild">
+                  <a href="https://x.com/Fatalmeh" class="hover:underline" target="_blank">Legal expert on decentralized computing & activism</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">MARIO HAVEL</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/TMIYChao" class="hover:underline" target="_blank">FOSS advocate</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Protocol Support @ <a href="https://ethereum.foundation">Ethereum Foundation & BORDEL</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Legal @ <a href="https://x.com/Fatalmeh">independent</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/oskarth.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/havel.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">MARIO HAVEL</div>
+                <div class="text-mild">
+                  <a href="https://x.com/TMIYChao" class="hover:underline" target="_blank">FOSS advocate</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">OSKARTH</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/oskarth" class="hover:underline" target="_blank">Applied cryptographer meeting institutional adoption</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Lead @ <a href="https://ethereum.foundation">Ethereum Foundation & IPTF</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Protocol Support @ <a href="https://ethereum.foundation">Ethereum Foundation & BORDEL</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/lanski.jpeg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/oskarth.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">OSKARTH</div>
+                <div class="text-mild">
+                  <a href="https://x.com/oskarth" class="hover:underline" target="_blank">Applied cryptographer meeting institutional adoption</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">POL LANSKI</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/Pol_Lanski" class="hover:underline" target="_blank">Catalan activist behind decentralised infrastructure</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Lead @ <a href="https://dappnode.com">Dappnode</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Lead @ <a href="https://ethereum.foundation">Ethereum Foundation & IPTF</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/willscott.jpeg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/lanski.jpeg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">POL LANSKI</div>
+                <div class="text-mild">
+                  <a href="https://x.com/Pol_Lanski" class="hover:underline" target="_blank">Catalan activist behind decentralised infrastructure</a>
+                </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Lead @ <a href="https://dappnode.com">Dappnode</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
+              <div>
+                <img src="./img/willscott.jpeg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">WILL SCOTT</div>
@@ -649,115 +681,135 @@
                 </div>
                 <div class="mt-2 text-sm markdown-basic">
                   <p>Adoption @ <a href="https://fil.org">Filecoin Foundation</a></p>
-                  </div>
+                </div>
               </div>
             </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/loring.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/loring.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">Loring Harkness</div>
+                <div class="text-mild">
+                  <a href="https://x.com/LoringHarkness" class="hover:underline" target="_blank">Encrypted Mempools advocate</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">Loring Harkness</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/LoringHarkness" class="hover:underline" target="_blank">Encrypted Mempools advocate</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Lead @ <a href="https://linktr.ee/ShutterNetwork">Shutter Network</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Lead @ <a href="https://linktr.ee/ShutterNetwork">Shutter Network</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/tron.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/tron.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">VIKTOR TRÓN</div>
+                <div class="text-mild">
+                  <a href="https://x.com/zeligf" class="hover:underline" target="_blank">Visionary behind distributed tech</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">VIKTOR TRÓN</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/zeligf" class="hover:underline" target="_blank">Visionary behind distributed tech</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Founder @ <a href="https://ethswarm.org">Swarm</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Founder @ <a href="https://ethswarm.org">Swarm</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/seveso.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/seveso.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">ANTONIO SEVESO</div>
+                <div class="text-mild">
+                  <a href="https://x.com/0xMeTony" class="hover:underline" target="_blank">Stealth addresses advocate</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">ANTONIO SEVESO</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/0xMeTony" class="hover:underline" target="_blank">Stealth addresses advocate</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Co-founder @ <a href="https://www.fluidkey.com">Fluidkey</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Co-founder @ <a href="https://www.fluidkey.com">Fluidkey</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/kieran.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/kieran.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">KIERAN MESQUITA</div>
+                <div class="text-mild">
+                  <a href="https://x.com/mesquka" class="hover:underline" target="_blank">Applied cryptographer serving millions of people</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">KIERAN MESQUITA</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/mesquka" class="hover:underline" target="_blank">Applied cryptographer serving millions of people</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>contributor @ <a href="https://railgun.org">Railgun</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>contributor @ <a href="https://railgun.org">Railgun</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                  <img src="./img/knobelsdorf.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/knobelsdorf.png" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">DANIEL KNOBELSDORF</div>
+                <div class="text-mild">
+                  <a href="" class="hover:underline" target="_blank">Digital rights meeting decentralised tech</a>
                 </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">DANIEL KNOBELSDORF</div>
-                  <div class="text-mild">
-                    <a href="" class="hover:underline" target="_blank">Digital rights meeting decentralised tech</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Lead @ <a href="">Infinite Garden</a></p>
-                  </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Lead @ <a href="">Infinite Garden</a></p>
                 </div>
               </div>
-              <div class="hover:bg-white hover:text-black person-item border border-white/30">
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/shady.jpeg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/shady.jpeg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">SHADY EL DAMATY</div>
                 <div class="text-mild">
-                  <a href="https://x.com/hebbianloop" class="hover:underline" target="_blank">Digital rights activists delivering identity for the internet age</a>
+                  <a href="https://x.com/hebbianloop" class="hover:underline" target="_blank"
+                    >Digital rights activists delivering identity for the internet age</a
+                  >
                 </div>
                 <div class="mt-2 text-sm markdown-basic">
                   <p>CEO @ <a href="https://x.com/0xholonym">Human.tech</a></p>
-                  </div>
                 </div>
               </div>
-            <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">We keep adding more and more speakers</div>
-          <div class="text-center">
-          <div class="inline-block md:w-auto">
-          <a href="https://tally.so/r/nrOzXl" class="cta-partner-badge" target="_blank" primary>Speak at Congress</a>
+            </div>
+          </div>
         </div>
-      </div>
-     </div> 
-    </div>
-  </section>
+        <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">We keep adding more and more speakers</div>
+        <div class="text-center">
+          <div class="inline-block md:w-auto">
+            <a href="https://tally.so/r/nrOzXl" class="cta-partner-badge" target="_blank" primary>Speak at Congress</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Past talks Section -->
       <section id="past-talks" class="text-white my-24 md:my-36">
-        <h2 class="testimonials-title text-center py-8">
-          Past talks
-        </h2>
+        <h2 class="testimonials-title text-center py-8">Past talks</h2>
         <div class="flex flex-col md:flex-row items-stretch gap-8 max-w-[1200px] mx-auto">
           <!-- Featured video (left, large) -->
           <div class="w-full md:w-3/5 flex flex-col justify-center" data-animate data-delay="100">
-            <a href="https://www.youtube.com/watch?v=S3PiMK8iguY" target="_blank" rel="noopener noreferrer" class="relative w-full aspect-video overflow-hidden block group">
-              <img src="https://img.youtube.com/vi/S3PiMK8iguY/maxresdefault.jpg" alt="Cyberfascism: what is it and how we can fight it?" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a
+              href="https://www.youtube.com/watch?v=S3PiMK8iguY"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="relative w-full aspect-video overflow-hidden block group"
+            >
+              <img
+                src="https://img.youtube.com/vi/S3PiMK8iguY/maxresdefault.jpg"
+                alt="Cyberfascism: what is it and how we can fight it?"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
               <div class="absolute bottom-2 right-2 md:bottom-3 md:right-3">
-                <svg class="w-9 h-7 md:w-12 md:h-9 drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300" viewBox="0 0 68 48" fill="none"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                <svg
+                  class="w-9 h-7 md:w-12 md:h-9 drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  viewBox="0 0 68 48"
+                  fill="none"
+                >
+                  <path
+                    d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                    fill="red"
+                  />
+                  <path d="M45 24L27 14v20" fill="white" />
+                </svg>
               </div>
             </a>
             <div class="px-1">
@@ -768,10 +820,30 @@
           <!-- Sidebar videos (right, stacked) -->
           <div class="w-full md:w-2/5 flex flex-col gap-8 justify-between">
             <div data-animate data-delay="200">
-              <a href="https://www.youtube.com/watch?v=5At5_GiQNEA" target="_blank" rel="noopener noreferrer" class="relative w-full aspect-video overflow-hidden block group">
-                <img src="https://img.youtube.com/vi/5At5_GiQNEA/maxresdefault.jpg" alt="Cypherpunk values in Ethereum" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <a
+                href="https://www.youtube.com/watch?v=5At5_GiQNEA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="relative w-full aspect-video overflow-hidden block group"
+              >
+                <img
+                  src="https://img.youtube.com/vi/5At5_GiQNEA/maxresdefault.jpg"
+                  alt="Cypherpunk values in Ethereum"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
                 <div class="absolute bottom-2 right-2">
-                  <svg class="w-8 h-6 md:w-9 md:h-7 drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300" viewBox="0 0 68 48" fill="none"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                  <svg
+                    class="w-8 h-6 md:w-9 md:h-7 drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    viewBox="0 0 68 48"
+                    fill="none"
+                  >
+                    <path
+                      d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                      fill="red"
+                    />
+                    <path d="M45 24L27 14v20" fill="white" />
+                  </svg>
                 </div>
               </a>
               <div class="px-1">
@@ -780,10 +852,30 @@
               </div>
             </div>
             <div data-animate data-delay="300">
-              <a href="https://www.youtube.com/watch?v=ykxHnBon7TI" target="_blank" rel="noopener noreferrer" class="relative w-full aspect-video overflow-hidden block group">
-                <img src="https://img.youtube.com/vi/ykxHnBon7TI/maxresdefault.jpg" alt="Lessons Learned from Tor" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              <a
+                href="https://www.youtube.com/watch?v=ykxHnBon7TI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="relative w-full aspect-video overflow-hidden block group"
+              >
+                <img
+                  src="https://img.youtube.com/vi/ykxHnBon7TI/maxresdefault.jpg"
+                  alt="Lessons Learned from Tor"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
                 <div class="absolute bottom-2 right-2">
-                  <svg class="w-8 h-6 md:w-9 md:h-7 drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300" viewBox="0 0 68 48" fill="none"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                  <svg
+                    class="w-8 h-6 md:w-9 md:h-7 drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    viewBox="0 0 68 48"
+                    fill="none"
+                  >
+                    <path
+                      d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                      fill="red"
+                    />
+                    <path d="M45 24L27 14v20" fill="white" />
+                  </svg>
                 </div>
               </a>
               <div class="px-1">
@@ -798,25 +890,41 @@
       <!-- Feedback section -->
       <section id="feedback" class="text-white my-24 md:my-36 px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1100px] mx-auto">
-          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-4 flex flex-col md:flex-row items-center gap-6">
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-4 flex flex-col lg:flex-row items-center gap-6">
             <div class="w-50 h-50 md:w-52 md:h-52 shrink-0 rounded-full overflow-hidden">
-              <img src="./img/kurtopsahl2.jpg" alt="Kurt Opsahl" class="w-full h-full object-cover">
+              <img src="./img/kurtopsahl2.jpg" alt="Kurt Opsahl" class="w-full h-full object-cover" />
             </div>
-            <div class="flex flex-col justify-between text-center md:text-left h-full">
-              <p class="text-[0.95rem] leading-relaxed text-white/85"><span>> </span>The Cypherpunk Congress was the place to be to find those who care about privacy, security and liberty. Not only a strong lineup of speakers and high signal-to-noise, but also a community ready to build a better future.</p>
+            <div class="flex flex-col justify-between text-center lg:text-left h-full">
+              <p class="text-[0.95rem] leading-relaxed text-white/85">
+                <img
+                  src="./img/icons/double-quotes-l-svgrepo-com.svg"
+                  alt="Double Quotes Left"
+                  class="w-6 h-6 inline-block relative -top-2 right-1"
+                />
+                The Cypherpunk Congress was the place to be to find those who care about privacy, security and liberty. Not only a strong lineup of
+                speakers and high signal-to-noise, but also a community ready to build a better future.
+              </p>
               <div class="mt-5">
                 <h3 class="text-lg font-bold">Kurt Opsahl</h3>
                 <h4 class="text-base text-white/50">ex-EFF, Filecoin Foundation</h4>
               </div>
             </div>
           </div>
-          
-          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-4 flex flex-col md:flex-row items-center gap-6">
+
+          <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-4 flex flex-col lg:flex-row items-center gap-6">
             <div class="w-50 h-50 md:w-52 md:h-52 shrink-0 rounded-full overflow-hidden">
-              <img src="./img/dingledine.webp" alt="Roger Dingledine" class="w-full h-full object-cover">
+              <img src="./img/dingledine.webp" alt="Roger Dingledine" class="w-full h-full object-cover" />
             </div>
-            <div class="flex flex-col justify-between text-center md:text-left h-full">
-              <p class="text-[0.95rem] leading-relaxed text-white/85"><span class="text-white/50">> </span>I love going to gatherings like the Cypherpunk Congress because meeting people in person helps remind us that we all have good intentions and shared values.</p>
+            <div class="flex flex-col justify-between text-center lg:text-left h-full">
+              <p class="text-[0.95rem] leading-relaxed text-white/85">
+                <img
+                  src="./img/icons/double-quotes-l-svgrepo-com.svg"
+                  alt="Double Quotes Left"
+                  class="w-6 h-6 inline-block relative -top-2 right-1"
+                />
+                I love going to gatherings like the Cypherpunk Congress because meeting people in person helps remind us that we all have good
+                intentions and shared values.
+              </p>
               <div class="mt-5">
                 <h3 class="text-lg font-bold">Roger Dingledine</h3>
                 <h4 class="text-base text-white/50">Tor</h4>
@@ -828,14 +936,12 @@
 
       <!-- 2025 Speakers Section -->
       <section id="speakers" class="text-white my-24 md:my-36">
-        <h2 class="testimonials-title text-center">
-          Previous speakers
-        </h2>
+        <h2 class="testimonials-title text-center">Previous speakers</h2>
         <div class="mt-12">
           <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/chelseamanning.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/chelseamanning.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">CHELSEA MANNING</div>
@@ -846,10 +952,10 @@
                   <p><a href="https://nym.com">Nym</a></p>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/richard-stallman.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/richard-stallman.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4 relative">
                 <div class="mt-4 speaker-name">DR. RICHARD STALLMAN</div>
@@ -863,7 +969,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/davidchaum.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/davidchaum.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4 relative">
                 <div class="mt-4 speaker-name">DAVID CHAUM</div>
@@ -877,7 +983,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/kurtopsahl.jpeg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/kurtopsahl.jpeg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">KURT OPSAHL</div>
@@ -891,7 +997,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/vitalik.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/vitalik.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">VITALIK BUTERIN</div>
@@ -905,7 +1011,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/avila.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/avila.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">RENATA AVILA</div>
@@ -919,7 +1025,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/galperin.png" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/galperin.png" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">EVA GALPERIN</div>
@@ -933,7 +1039,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/baylina.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/baylina.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">JORDI BAYLINA</div>
@@ -947,7 +1053,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/Jennifer_Helsby.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/Jennifer_Helsby.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">DR. JENNIFER HELSBY</div>
@@ -961,7 +1067,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/obrien.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/obrien.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">DANNY O'BRIEN</div>
@@ -975,7 +1081,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/naomi.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/naomi.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">NAOMI BROCKWELL</div>
@@ -989,7 +1095,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/dingledine.webp" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/dingledine.webp" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">ROGER DINGLEDINE</div>
@@ -1003,7 +1109,7 @@
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/benet.avif" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/benet.avif" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">JUAN BENET</div>
@@ -1016,36 +1122,36 @@
               </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
-                <div>
-                  <img src="./img/arturofilastro.jpg" alt="speaker" class="aspect-square object-cover w-full">
-                </div>
-                <div class="pb-4 px-4">
-                  <div class="mt-4 speaker-name">ARTURO FILASTRO</div>
-                  <div class="text-mild">
-                    <a href="https://x.com/hellais" class="hover:underline" target="_blank">ex-Tor, GlobalLeaks & OONI inventor</a>
-                  </div>
-                  <div class="mt-2 text-sm markdown-basic">
-                    <p>Co-founder <a href="https://x.com/hellais">OONI</a></p>
-                  </div>
-                </div>
-            </div>
-            <div class="hover:bg-white hover:text-black person-item border border-white/30">
-            <div>
-              <img src="./img/celi.jpg" alt="speaker" class="aspect-square object-cover w-full">
-            </div>
-            <div class="pb-4 px-4">
-              <div class="mt-4 speaker-name">SOFIA CELI</div>
-              <div class="text-mild">
-                <a href="https://x.com/claucece" class="hover:underline" target="_blank">Senior cryptographer</a>
+              <div>
+                <img src="./img/arturofilastro.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
-              <div class="mt-2 text-sm markdown-basic">
-                <p>Cryptography and Security Researcher @ <a href="http://brave.com" class="hover:underline" target="_blank">Brave</a></p>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">ARTURO FILASTRO</div>
+                <div class="text-mild">
+                  <a href="https://x.com/hellais" class="hover:underline" target="_blank">ex-Tor, GlobalLeaks & OONI inventor</a>
+                </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Co-founder <a href="https://x.com/hellais">OONI</a></p>
+                </div>
               </div>
-            </div>
             </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/brewster.jpeg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/celi.jpg" alt="speaker" class="aspect-square object-cover w-full" />
+              </div>
+              <div class="pb-4 px-4">
+                <div class="mt-4 speaker-name">SOFIA CELI</div>
+                <div class="text-mild">
+                  <a href="https://x.com/claucece" class="hover:underline" target="_blank">Senior cryptographer</a>
+                </div>
+                <div class="mt-2 text-sm markdown-basic">
+                  <p>Cryptography and Security Researcher @ <a href="http://brave.com" class="hover:underline" target="_blank">Brave</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="hover:bg-white hover:text-black person-item border border-white/30">
+              <div>
+                <img src="./img/brewster.jpeg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">BREWSTER KAHLE</div>
@@ -1057,13 +1163,12 @@
                 </div>
               </div>
             </div>
-              <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">and 130 cryptographers, hacktivists, legal experts, philosophers, journalists, artists & other open-minded people.</div>
-           </div>
-         </div>
-        </div> 
-       </div>
-      </div>
-   </section>
+          </div>
+        </div>
+        <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">
+          and 130 cryptographers, hacktivists, legal experts, philosophers, journalists, artists & other open-minded people.
+        </div>
+      </section>
 
       <div id="partners" class="mt-10 bg-black text-white px-4">
         <div class="text-center mt-15 mb-15">
@@ -1073,7 +1178,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://z.cash/">
-                <img src="./img/zcash.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/zcash.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1088,7 +1193,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://bento.me/crecimientoar">
-                <img src="./img/crecimiento.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/crecimiento.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1103,7 +1208,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://ethereum.foundation/">
-                <img src="./img/eth.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/eth.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1118,7 +1223,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://pse.dev/en">
-                <img src="./img/pse.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/pse.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1126,14 +1231,14 @@
                 <a href="https://pse.dev/en" class="text-xl">PSE</a>
               </div>
               <div>
-                <a href="https://x.com/PrivacyEthereum" class="text-sm text-mild">@Privacy<br>Ethereum</a>
+                <a href="https://x.com/PrivacyEthereum" class="text-sm text-mild">@Privacy<br />Ethereum</a>
               </div>
             </div>
           </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="http://aztec.network">
-                <img src="./img/aztec.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/aztec.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1143,12 +1248,12 @@
               <div>
                 <a href="https://x.com/aztecnetwork" class="text-sm text-mild">@aztecnetwork</a>
               </div>
-              </div>
+            </div>
           </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="http://vocdoni.io">
-                <img src="./img/vocdoni.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/vocdoni.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1158,12 +1263,12 @@
               <div>
                 <a href="https://x.com/vocdoni" class="text-sm text-mild">@vocdoni</a>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.enclave.gg/">
-                <img src="./img/enclave.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/enclave.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1178,7 +1283,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://human.tech/">
-                <img src="./img/human-tech.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/human-tech.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1193,7 +1298,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://status.network/">
-                <img src="./img/status-network.JPG" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/status-network.JPG" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1208,7 +1313,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.mask.io/">
-                <img src="./img/mask.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/mask.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1223,7 +1328,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://fhenix.io/">
-                <img src="./img/fhenix.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/fhenix.jpg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1234,11 +1339,11 @@
                 <a href="https://x.com/FhenixIO" class="text-sm text-mild">@FhenixIO</a>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://logos.co/">
-                <img src="./img/logos.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/logos.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1253,7 +1358,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://brevis.network/">
-                <img src="./img/brevis.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/brevis.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1268,7 +1373,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://diligence.consensys.io/">
-                  <img src="./img/consensys.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/consensys.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1283,7 +1388,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.bookofeth.xyz/">
-                <img src="./img/book-of-ethereum.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/book-of-ethereum.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1298,7 +1403,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.ethswarm.org/">
-                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1322,13 +1427,13 @@
             </div>
           </div>
         </div>
-  
+
         <h2 class="testimonials-title text-center">Members supporting our collective</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 mb-6 mt-6">
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://logos.co">
-                <img src="./img/logos.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/logos.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1343,7 +1448,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://waku.org">
-                <img src="./img/Waku.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/Waku.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1358,7 +1463,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://nomos.tech/">
-                <img src="./img/nomos.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/nomos.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1373,7 +1478,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://codex.storage/">
-                <img src="./img/codex.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/codex.svg" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1388,7 +1493,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://dyne.org/">
-                <img src="./img/dyne.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/dyne.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1403,7 +1508,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.0xbow.io">
-                <img src="./img/0xbow.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/0xbow.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1418,7 +1523,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.labyrinth.technology">
-                <img src="./img/labyrinth.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/labyrinth.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1427,13 +1532,13 @@
               </div>
               <div>
                 <a href="https://x.com/Labyrinth_HQ" class="text-sm text-mild">@Labyrinth_HQ</a>
-                </div>
+              </div>
             </div>
           </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://namada.net">
-                <img src="./img/namada.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/namada.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1445,10 +1550,10 @@
               </div>
             </div>
           </div>
-            <div class="partner-item text-center items-center p-2">
+          <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.intmax.io/">
-                <img src="./img/intmax.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/intmax.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1457,13 +1562,13 @@
               </div>
               <div>
                 <a href="https://x.com/intmaxIO" class="text-sm text-mild">@intmaxIO</a>
-                </div>
+              </div>
             </div>
           </div>
-            <div class="partner-item text-center items-center p-2">
+          <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://morosnet.com/">
-                <img src="./img/moros.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/moros.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1472,13 +1577,13 @@
               </div>
               <div>
                 <a href="https://x.com/morosnet" class="text-sm text-mild">@morosnet</a>
-                  </div>
+              </div>
             </div>
           </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.gnosis.io">
-                <img src="./img/gnosisdao.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/gnosisdao.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1491,24 +1596,24 @@
             </div>
           </div>
           <div class="partner-item text-center items-center p-2">
-          <div>
-            <a href="https://tokendynamics.xyz/">
-              <img src="./img/tokendynamics.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
-            </a>
-          </div>
-          <div class="p-2 partner-text">
             <div>
-              <a href="https://tokendynamics.xyz/" class="text-xl">Token<br>Dynamics</a>
+              <a href="https://tokendynamics.xyz/">
+                <img src="./img/tokendynamics.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
+              </a>
             </div>
-            <div>
-              <a href="https://x.com/tokendynamics" class="text-sm text-mild">@tokendynamics</a>
-                </div>
+            <div class="p-2 partner-text">
+              <div>
+                <a href="https://tokendynamics.xyz/" class="text-xl">Token<br />Dynamics</a>
+              </div>
+              <div>
+                <a href="https://x.com/tokendynamics" class="text-sm text-mild">@tokendynamics</a>
+              </div>
+            </div>
           </div>
-          </div>            
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://calimero.network/">
-                <img src="./img/calimero.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/calimero.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1516,14 +1621,14 @@
                 <a href="https://calimero.network/" class="text-xl">Calimero</a>
               </div>
               <div>
-                <a href="https://x.com/CalimeroNetwork" class="text-sm text-mild">@Calimero<br>Network</a>
+                <a href="https://x.com/CalimeroNetwork" class="text-sm text-mild">@Calimero<br />Network</a>
               </div>
             </div>
           </div>
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.protocol.ai/">
-                <img src="./img/protocol-labs.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/protocol-labs.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1538,7 +1643,7 @@
           <div class="partner-item text-center items-center p-2">
             <div>
               <a href="https://www.ethswarm.org/">
-                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0">
+                <img src="./img/swarm.png" alt="partner" class="partner-img aspect-16/11 w-full h-full object-contain p-0" />
               </a>
             </div>
             <div class="p-2 partner-text">
@@ -1549,7 +1654,7 @@
                 <a href="https://x.com/ethswarm" class="text-sm text-mild">@ethswarm</a>
               </div>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
       <!-- Previous Events Section -->
@@ -1558,40 +1663,40 @@
         <div>
           <div class="grid gap-2 grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-3 mb-6 mt-6">
             <div class="person-item">
-              <img src="./img/congress-promo1.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/congress-promo1.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/congress-promo2.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/congress-promo2.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/congress-promo3.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/congress-promo3.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/congress-promo5.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/congress-promo5.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event9.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event9.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event4.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event4.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event2.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event2.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event3.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event3.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event7.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event7.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event8.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event8.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event5.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event5.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
             <div class="person-item">
-              <img src="./img/event6.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl">
+              <img src="./img/event6.png" alt="vibes" class="aspect-square object-cover w-full rounded-xl" />
             </div>
           </div>
         </div>
@@ -1602,7 +1707,7 @@
         <div class="text-center mt-15 mb-15">
           <div class="cta-partner-badge">Register</div>
         </div>
-        
+
         <div class="text-center">
           <h2 class="testimonials-title">
             <a href="https://luma.com/spsnos9t" class="text-(--brand-white) no-underline font-archivo font-semibold">Free forever - register</a>
@@ -1613,7 +1718,12 @@
           <ul class="mt-8 text-center px-6">
             <li class="mb-2 pl-2 text-sm"><a href="https://luma.com/spsnos9t">All talks &amp; panels</a></li>
             <li class="mb-2 pl-2 text-sm"><a href="https://luma.com/spsnos9t">Knowledge & insights</a></li>
-            <li class="mb-2 pl-2 text-sm"><a href="https://luma.com/spsnos9t">Networking with speakers<br> &amp; attendees</a></li>
+            <li class="mb-2 pl-2 text-sm">
+              <a href="https://luma.com/spsnos9t"
+                >Networking with speakers<br />
+                &amp; attendees</a
+              >
+            </li>
           </ul>
         </div>
         <div class="text-center mt-10">
@@ -1628,7 +1738,7 @@
           <!-- Row 1 -->
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/mykola.png" alt="Mykola Siusko">
+              <img src="./img/mykola.png" alt="Mykola Siusko" />
             </div>
             <h3 class="team-name">Mykola x Leadership</h3>
             <a href="https://x.com/nicksvyaznoy" target="_blank" class="team-handle">@nicksvyaznoy</a>
@@ -1636,7 +1746,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/pg1.png" alt="PG">
+              <img src="./img/pg1.png" alt="PG" />
             </div>
             <h3 class="team-name">PG x Partnerships</h3>
             <a href="https://x.com/PG_CDG" target="_blank" class="team-handle">@PG_CDG</a>
@@ -1644,7 +1754,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/coinmandeer.png" alt="Coinmandeer">
+              <img src="./img/coinmandeer.png" alt="Coinmandeer" />
             </div>
             <h3 class="team-name">Coinmandeer x Design</h3>
             <a href="https://x.com/KeenOfCoin" target="_blank" class="team-handle">@KeenOfCoin</a>
@@ -1653,7 +1763,7 @@
           <!-- Row 2 -->
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/robert.png" alt="Robert">
+              <img src="./img/robert.png" alt="Robert" />
             </div>
             <h3 class="team-name">Robert x Volunteers</h3>
             <a href="https://x.com/robdotrego" target="_blank" class="team-handle">@robdotrego</a>
@@ -1661,7 +1771,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/beth.jpg" alt="Beth">
+              <img src="./img/beth.jpg" alt="Beth" />
             </div>
             <h3 class="team-name">Beth x Program Design</h3>
             <a href="https://x.com/ontologymachine" target="_blank" class="team-handle">@ontologymachine</a>
@@ -1670,7 +1780,7 @@
           <!-- Row 3 -->
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/lucila.jpg" alt="Lucila">
+              <img src="./img/lucila.jpg" alt="Lucila" />
             </div>
             <h3 class="team-name">Lucila x Local Management</h3>
             <a href="https://x.com/lucilajuliana" target="_blank" class="team-handle">@lucilajuliana</a>
@@ -1678,7 +1788,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/recursor.jpeg" alt="Recursor">
+              <img src="./img/recursor.jpeg" alt="Recursor" />
             </div>
             <h3 class="team-name">Recursor x Production</h3>
             <a href="https://x.com/RecursiveBeing" target="_blank" class="team-handle">@RecursiveBeing</a>
@@ -1686,7 +1796,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/babybit.jpeg" alt="Federico Marchi">
+              <img src="./img/babybit.jpeg" alt="Federico Marchi" />
             </div>
             <h3 class="team-name">Federico x AV Delivery</h3>
             <a href="https://x.com/BabyBitProd" target="_blank" class="team-handle">@BabyBitProd</a>
@@ -1695,7 +1805,7 @@
           <!-- Row 4 -->
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/jensei.jpg" alt="jensei">
+              <img src="./img/jensei.jpg" alt="jensei" />
             </div>
             <h3 class="team-name">Jensei x Free Software Fit</h3>
             <a href="https://x.com/@jensei_" target="_blank" class="team-handle">@jensei_</a>
@@ -1703,7 +1813,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/peter.jpeg" alt="peter">
+              <img src="./img/peter.jpeg" alt="peter" />
             </div>
             <h3 class="team-name">Peter x Education Track</h3>
             <a href="https://x.com/@0xfarbey" target="_blank" class="team-handle">@0xfarbey</a>
@@ -1711,7 +1821,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/alisher.png" alt="alisher">
+              <img src="./img/alisher.png" alt="alisher" />
             </div>
             <h3 class="team-name">Alisher x Volunteers</h3>
             <a href="https://x.com/alisher" target="_blank" class="team-handle">@alisher</a>
@@ -1719,7 +1829,7 @@
 
           <div class="team-member">
             <div class="team-avatar">
-              <img src="./img/teresa.jpg" alt="Teresa">
+              <img src="./img/teresa.jpg" alt="Teresa" />
             </div>
             <h3 class="team-name">Teresa x Design</h3>
             <a href="https://www.teresaneppi.com/" target="_blank" class="team-handle">teresaneppi.com</a>
@@ -1732,9 +1842,7 @@
           <!-- Header -->
           <div class="text-center mb-10">
             <div><a href="https://web3privacy.info/about/" target="_blank" class="team-badge">Together</a></div>
-            <h2 class="testimonials-title text-center">
-              Volunteer with us
-            </h2>
+            <h2 class="testimonials-title text-center">Volunteer with us</h2>
             <p class="text-md md:text-xl text-white/80 mb-4 max-w-4xl mx-auto font-dm-sans font-light">
               Help host 5000 people exploring privacy, decentralization, and data autonomy in Mumbai.
             </p>
@@ -1745,7 +1853,7 @@
           <div class="grid gap-8 mb-16 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/5_scaled.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/5_scaled.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">Network</div>
@@ -1753,10 +1861,10 @@
                   <p>Your entry point into the global cypherpunk community.</p>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/7_scaled.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/7_scaled.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">Impact</div>
@@ -1764,10 +1872,10 @@
                   <p>Shape the discourse at a major international event.</p>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="hover:bg-white hover:text-black person-item border border-white/30">
               <div>
-                <img src="./img/14_scaled.jpg" alt="speaker" class="aspect-square object-cover w-full">
+                <img src="./img/14_scaled.jpg" alt="speaker" class="aspect-square object-cover w-full" />
               </div>
               <div class="pb-4 px-4">
                 <div class="mt-4 speaker-name">Culture</div>
@@ -1775,20 +1883,15 @@
                   <p>Join a crew of like-minded allies and be part of an unforgettable experience.</p>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
           <!-- Call to Action -->
           <div class="text-center">
             <p class="text-md text-white/80 mb-8 max-w-4xl mx-auto font-dm-sans font-light">
               Welcoming newcomers and experienced contributors: privacy enthusiasts, activists, developers, journalists and legal allies.
             </p>
-            <a href="https://tally.so/r/3lLqKo" 
-              class="team-badge" target="_blank">
-              Apply Now
-            </a>
-            <p class="text-sm text-white/60 font-dm-sans font-light">
-              The first 20 approved volunteers will receive priority placement.
-            </p>
+            <a href="https://tally.so/r/3lLqKo" class="team-badge" target="_blank"> Apply Now </a>
+            <p class="text-sm text-white/60 font-dm-sans font-light">The first 20 approved volunteers will receive priority placement.</p>
           </div>
         </div>
       </section>
@@ -1800,17 +1903,18 @@
             <div class="team-badge">Proof-of-activism</div>
             <h2 class="testimonials-title">Community of joy</h2>
           </div>
-          
+
           <div class="testimonials-grid">
             <!-- Testimonial 1 -->
             <div class="testimonial-card">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  If you care about civil liberties and privacy issues Cypherpunk Congress is the place to be, it is by far the best congregation of like-minded people in Crypto who care.
+                  If you care about civil liberties and privacy issues Cypherpunk Congress is the place to be, it is by far the best congregation of
+                  like-minded people in Crypto who care.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/jarrad.png" alt="Jarrad">
+                    <img src="./img/jarrad.png" alt="Jarrad" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Jarrad Hope</div>
@@ -1819,16 +1923,18 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- Testimonial 2 -->
             <div class="testimonial-card">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  Tired of marketing fluff or VC posturing? Good. You won't find any of that here. The Cypherpunk Congress gathers the few who still remember why we started building decentralized tech in the first place. To build tools that empower, give choices and keep control with the individual instead of taking it away from them.
+                  Tired of marketing fluff or VC posturing? Good. You won't find any of that here. The Cypherpunk Congress gathers the few who still
+                  remember why we started building decentralized tech in the first place. To build tools that empower, give choices and keep control
+                  with the individual instead of taking it away from them.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/lefteris.png" alt="Lefteris Karapetsas">
+                    <img src="./img/lefteris.png" alt="Lefteris Karapetsas" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Lefteris Karapetsas</div>
@@ -1841,11 +1947,12 @@
             <div class="testimonial-card">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  We need to rediscover the heart of crypto; our true origins, goals and values. Understand that changing the present and building the future are possible.
+                  We need to rediscover the heart of crypto; our true origins, goals and values. Understand that changing the present and building the
+                  future are possible.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/andy.jpg" alt="Andy Guzmán">
+                    <img src="./img/andy.jpg" alt="Andy Guzmán" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Andy Guzmán</div>
@@ -1854,16 +1961,17 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- Testimonial 4 -->
             <div class="testimonial-card">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  Privacy is under threat, both from governments and from naive adoption of fully public Blockchain. The privacy Congress is a place to meet and strategize with people who are building and advocating to address that threat.
+                  Privacy is under threat, both from governments and from naive adoption of fully public Blockchain. The privacy Congress is a place
+                  to meet and strategize with people who are building and advocating to address that threat.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/peter.jpg" alt="Peter Van Valkenburgh">
+                    <img src="./img/peter.jpg" alt="Peter Van Valkenburgh" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Peter Van Valkenburgh</div>
@@ -1877,11 +1985,13 @@
             <div class="testimonial-card">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  The Cypherpunk Congress is an important intervention in cryptographic culture, and one of the last havens in an increasingly foreclosed world. The Congress not only reinvigorates the early emancipatory promise of cryptography and networks, but also ensures that ethics and morality are not lost in the hypercapitalist swamp of contemporary web3.
+                  The Cypherpunk Congress is an important intervention in cryptographic culture, and one of the last havens in an increasingly
+                  foreclosed world. The Congress not only reinvigorates the early emancipatory promise of cryptography and networks, but also ensures
+                  that ethics and morality are not lost in the hypercapitalist swamp of contemporary web3.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/wassim.jpg" alt="Wassim">
+                    <img src="./img/wassim.jpg" alt="Wassim" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Wassim Alsindi</div>
@@ -1895,11 +2005,12 @@
             <div class="testimonial-card">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  Web3Privacy has provided an umbrella for builders in the space, where we can not only find each other through a list of great projects but also have had many gatherings to network and connect giving rise to wild collabs.
+                  Web3Privacy has provided an umbrella for builders in the space, where we can not only find each other through a list of great
+                  projects but also have had many gatherings to network and connect giving rise to wild collabs.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/lasha.png" alt="Lasha Antadze">
+                    <img src="./img/lasha.png" alt="Lasha Antadze" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Lasha Antadze</div>
@@ -1911,20 +2022,19 @@
 
             <!-- Show More Button -->
             <div class="testimonials-show-more-container">
-              <button id="testimonials-show-more-btn" class="nav-button-minimal">
-                Show More
-              </button>
+              <button id="testimonials-show-more-btn" class="nav-button-minimal">Show More</button>
             </div>
 
             <!-- Testimonial 7 -->
             <div class="testimonial-card testimonial-hidden">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  Privacy is a right of every human being, not a privilege. It's very important that there's such a great project as Web3Privacy now and today it's turning 3 years old! Happy Birthday!
+                  Privacy is a right of every human being, not a privilege. It's very important that there's such a great project as Web3Privacy now
+                  and today it's turning 3 years old! Happy Birthday!
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/vlad.jpg" alt="Vladimir S.">
+                    <img src="./img/vlad.jpg" alt="Vladimir S." />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Vladimir S.</div>
@@ -1938,11 +2048,13 @@
             <div class="testimonial-card testimonial-hidden">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  A community I am part of, Web3Privacy now, has its 2 years birthday today! Privacy and data sovereignty are values I continuously stand for daily, especially through building Rotki. In the team of Web3Privacy now I found like-minded people, friends and comrades. Happy birthday!
+                  A community I am part of, Web3Privacy now, has its 2 years birthday today! Privacy and data sovereignty are values I continuously
+                  stand for daily, especially through building Rotki. In the team of Web3Privacy now I found like-minded people, friends and comrades.
+                  Happy birthday!
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/lefteris.png" alt="Lefteris Karapetsas">
+                    <img src="./img/lefteris.png" alt="Lefteris Karapetsas" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Lefteris Karapetsas</div>
@@ -1956,11 +2068,14 @@
             <div class="testimonial-card testimonial-hidden">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  W3N reminds us daily of why we are here. Privacy—a basic human right—beats at the heart of the cypherpunk ethos, the essence of everything worth building. Their conferences are a gathering place for the mad ones, the dreamers, the rebels who see the world as it could be. They bring together the lunarpunks, the uncompromising builders, the visionaries, and the long-term thinkers. These are my people, our people, creating a future that remembers what matters.
+                  W3N reminds us daily of why we are here. Privacy—a basic human right—beats at the heart of the cypherpunk ethos, the essence of
+                  everything worth building. Their conferences are a gathering place for the mad ones, the dreamers, the rebels who see the world as
+                  it could be. They bring together the lunarpunks, the uncompromising builders, the visionaries, and the long-term thinkers. These are
+                  my people, our people, creating a future that remembers what matters.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/kris.png" alt="Kris Is">
+                    <img src="./img/kris.png" alt="Kris Is" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Kris Is</div>
@@ -1974,11 +2089,13 @@
             <div class="testimonial-card testimonial-hidden">
               <div class="testimonial-content">
                 <div class="testimonial-quote">
-                  I think what you do in holding a space for the question of freedom, digital privacy and direct action is of greatly importance, specially today. As the politics of our world sink deeper into fascism, creating counter infrastructures and technologies that preserve people's autonomy and the freedom to reveal information will be vital for the resistance.
+                  I think what you do in holding a space for the question of freedom, digital privacy and direct action is of greatly importance,
+                  specially today. As the politics of our world sink deeper into fascism, creating counter infrastructures and technologies that
+                  preserve people's autonomy and the freedom to reveal information will be vital for the resistance.
                 </div>
                 <div class="testimonial-author">
                   <div class="author-avatar">
-                    <img src="./img/julio.png" alt="Julio Linares">
+                    <img src="./img/julio.png" alt="Julio Linares" />
                   </div>
                   <div class="author-info">
                     <div class="author-name">Julio Linares</div>
@@ -1988,224 +2105,249 @@
               </div>
             </div>
 
-            
-          
-          <!-- Testimonial 12 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                Over the last two years, I mostly stepped away from crypto events, feeling disconnected from the nihilistic, short-term focus dominating much of the space. While I still believe in the tech's potential for net-positive use cases, the focus on hyper-speculation wasn't something I could get excited about. So, I focused on the work we do with Radicle and Drips, ignoring the rest. Then, almost a year ago, I found Web3PrivacyNow. They managed to amplify the cypherpunk voice within the cryptocurrency space, proving it's not just alive but growing stronger. There is a thriving, principled community in crypto that it's worth contributing to. Today it's their 2nd birthday. Happy Birthday, Web3PrivacyNow! 🎉 Your mission is more important now than ever.
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/eleftherios.png" alt="Eleftherios">
+            <!-- Testimonial 12 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  Over the last two years, I mostly stepped away from crypto events, feeling disconnected from the nihilistic, short-term focus
+                  dominating much of the space. While I still believe in the tech's potential for net-positive use cases, the focus on
+                  hyper-speculation wasn't something I could get excited about. So, I focused on the work we do with Radicle and Drips, ignoring the
+                  rest. Then, almost a year ago, I found Web3PrivacyNow. They managed to amplify the cypherpunk voice within the cryptocurrency space,
+                  proving it's not just alive but growing stronger. There is a thriving, principled community in crypto that it's worth contributing
+                  to. Today it's their 2nd birthday. Happy Birthday, Web3PrivacyNow! 🎉 Your mission is more important now than ever.
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Eleftherios</div>
-                  <div class="author-title">Radicle</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/eleftherios.png" alt="Eleftherios" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Eleftherios</div>
+                    <div class="author-title">Radicle</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 13 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                The whole narrative of web3 especially during global events was just about blockchains before Web3PrivacyNow. Over the last two years, Web3Privacy collective has built mainstream awareness about the essence of privacy and cypherpunk ethos in the Web3 ecosystem.
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/guru.png" alt="Guru">
+            <!-- Testimonial 13 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  The whole narrative of web3 especially during global events was just about blockchains before Web3PrivacyNow. Over the last two
+                  years, Web3Privacy collective has built mainstream awareness about the essence of privacy and cypherpunk ethos in the Web3
+                  ecosystem.
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Guru</div>
-                  <div class="author-title">Waku</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/guru.png" alt="Guru" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Guru</div>
+                    <div class="author-title">Waku</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 14 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                Having an identity to rally around is critical for change. In 2 years, web3privacy now has become that identity for the importance of privacy in all forms.
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/will.png" alt="Will Scott">
+            <!-- Testimonial 14 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  Having an identity to rally around is critical for change. In 2 years, web3privacy now has become that identity for the importance
+                  of privacy in all forms.
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Will Scott</div>
-                  <div class="author-title">Filecoin</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/will.png" alt="Will Scott" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Will Scott</div>
+                    <div class="author-title">Filecoin</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 15 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                Managing in a very real way to not only create and expand the tent of those involved in privacy development, but buy up and update the Cypherpunk ethos and what it means to work on meaningful parallel technologies. Spreading the message and bringing back cultural hacking and subversion. Basically the only good parties in crypto and all around great ethos and crew.
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/avatar.png" alt="Max">
+            <!-- Testimonial 15 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  Managing in a very real way to not only create and expand the tent of those involved in privacy development, but buy up and update
+                  the Cypherpunk ethos and what it means to work on meaningful parallel technologies. Spreading the message and bringing back cultural
+                  hacking and subversion. Basically the only good parties in crypto and all around great ethos and crew.
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Max</div>
-                  <div class="author-title">Nym</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/avatar.png" alt="Max" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Max</div>
+                    <div class="author-title">Nym</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 16 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                Happy birthday to Web3 Privacy Now! You are incredibly important as an independent industry body - with research projects and reports providing an essential overview and benchmarking of development of Web3 privacy software. Continue your good work of undoing the surveillance driven digital economy and advocating for privacy as a fundamental human right!
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/jaya.jpg" alt="Jaya">
+            <!-- Testimonial 16 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  Happy birthday to Web3 Privacy Now! You are incredibly important as an independent industry body - with research projects and
+                  reports providing an essential overview and benchmarking of development of Web3 privacy software. Continue your good work of undoing
+                  the surveillance driven digital economy and advocating for privacy as a fundamental human right!
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Jaya</div>
-                  <div class="author-title">Nym</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/jaya.jpg" alt="Jaya" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Jaya</div>
+                    <div class="author-title">Nym</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 17 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                Web3 provides a mechanism for intelligent cooperation among distributed entities; and central to the realisation of this vision, is the ability to do so privately. I am grateful to w3pn for creating a platform for building, discussing, and advocating in this problem space.
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/ying.png" alt="Ying Tong">
+            <!-- Testimonial 17 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  Web3 provides a mechanism for intelligent cooperation among distributed entities; and central to the realisation of this vision, is
+                  the ability to do so privately. I am grateful to w3pn for creating a platform for building, discussing, and advocating in this
+                  problem space.
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Ying Tong</div>
-                  <div class="author-title">Independent Applied Cryptographer</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/ying.png" alt="Ying Tong" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Ying Tong</div>
+                    <div class="author-title">Independent Applied Cryptographer</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 18 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                Privacy, censorship resistance, and verifiability are core to digital human rights—and essential for a more open, fair internet. Web3Privacy fights for these values, building tools and advocacy that give people real agency online. At Protocol Labs, we're proud to support their work. It's a critical part of creating systems that serve humanity, not control it. Happy 2nd birthday!
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/andrew.png" alt="Andrew Woo">
+            <!-- Testimonial 18 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  Privacy, censorship resistance, and verifiability are core to digital human rights—and essential for a more open, fair internet.
+                  Web3Privacy fights for these values, building tools and advocacy that give people real agency online. At Protocol Labs, we're proud
+                  to support their work. It's a critical part of creating systems that serve humanity, not control it. Happy 2nd birthday!
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Andrew Woo</div>
-                  <div class="author-title">Protocol Labs</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/andrew.png" alt="Andrew Woo" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Andrew Woo</div>
+                    <div class="author-title">Protocol Labs</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial 19 -->
-          <div class="testimonial-card testimonial-hidden">
-            <div class="testimonial-content">
-              <div class="testimonial-quote">
-                I've had the pleasure of watching this community develop over the last 2 years and participated in 3 of their events. Every one of them has had a unique vibe with deep critical thinking on the nature of the industry, with a strong practical advocacy for privacy technologies. The cypherpunk ethos is returning to crypto and I think this is in no small part down to the hard work of @nicksvyaznoy, @PG_CDG and the rest of the @web3privacy team, who are all genuinely welcoming and wonderful people. Follow them, support them, make sure to get to the future events!
-              </div>
-              <div class="testimonial-author">
-                <div class="author-avatar">
-                  <img src="./img/almond.jpg" alt="Nick Almond">
+            <!-- Testimonial 19 -->
+            <div class="testimonial-card testimonial-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote">
+                  I've had the pleasure of watching this community develop over the last 2 years and participated in 3 of their events. Every one of
+                  them has had a unique vibe with deep critical thinking on the nature of the industry, with a strong practical advocacy for privacy
+                  technologies. The cypherpunk ethos is returning to crypto and I think this is in no small part down to the hard work of
+                  @nicksvyaznoy, @PG_CDG and the rest of the @web3privacy team, who are all genuinely welcoming and wonderful people. Follow them,
+                  support them, make sure to get to the future events!
                 </div>
-                <div class="author-info">
-                  <div class="author-name">Nick Almond</div>
-                  <div class="author-title">FactoryDAO</div>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <img src="./img/almond.jpg" alt="Nick Almond" />
+                  </div>
+                  <div class="author-info">
+                    <div class="author-name">Nick Almond</div>
+                    <div class="author-title">FactoryDAO</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          </div> 
         </div>
       </div>
-      
+
       <!-- FAQ and Footer Wrapper -->
       <div class="faq-footer-wrapper" data-animate data-delay="100">
-      <!-- FAQ Section -->
-      <div id="faq" class="text-white px-4">
-        <h2 class="testimonials-title text-center">Frequently Asked Questions</h2>
-        <div class="faq-container mx-auto max-w-4xl">
-          
-          <!-- FAQ Item 1 -->
-          <div class="faq-item">
-            <button class="faq-header" onclick="toggleFaq(1)">
-              <h3 class="faq-question">What is Web3Privacy Now?</h3>
-              <span class="faq-icon" id="faq-icon-1">+</span>
-            </button>
-            <div class="faq-content" id="faq-content-1">
-              <div class="faq-answer">
-                <p><a class="underline external" href="http://web3privacy.info/" target="_blank">Web3privacy now</a> is a think-and-do tank aimed at building a culture of privacy industry in web3 by fostering collaboration among privacy advocates and key players, developing tools and sharing knowledge.</p>
+        <!-- FAQ Section -->
+        <div id="faq" class="text-white px-4">
+          <h2 class="testimonials-title text-center">Frequently Asked Questions</h2>
+          <div class="faq-container mx-auto max-w-4xl">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(1)">
+                <h3 class="faq-question">What is Web3Privacy Now?</h3>
+                <span class="faq-icon" id="faq-icon-1">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-1">
+                <div class="faq-answer">
+                  <p>
+                    <a class="underline external" href="http://web3privacy.info/" target="_blank">Web3privacy now</a> is a think-and-do tank aimed at
+                    building a culture of privacy industry in web3 by fostering collaboration among privacy advocates and key players, developing
+                    tools and sharing knowledge.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(2)">
+                <h3 class="faq-question">Who is the event for?</h3>
+                <span class="faq-icon" id="faq-icon-2">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-2">
+                <div class="faq-answer">
+                  <p>
+                    People interested in privacy topics in the Web3 industry. We aim to make our content accessible to everyone - rather than going
+                    into deep technical detail, we'll discuss privacy topics in their broader context.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(3)">
+                <h3 class="faq-question">How do I get to the venue?</h3>
+                <span class="faq-icon" id="faq-icon-3">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-3">
+                <div class="faq-answer">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-header" onclick="toggleFaq(4)">
+                <h3 class="faq-question">I have another question, where can I contact you?</h3>
+                <span class="faq-icon" id="faq-icon-4">+</span>
+              </button>
+              <div class="faq-content" id="faq-content-4">
+                <div class="faq-answer">
+                  <p>
+                    You can contact the organizing team or the community around the event in our
+                    <a class="underline external" href="mailto:web3privacy@protonmail.com" target="_blank">email us</a> or our
+                    <a class="underline external" href="https://t.me/+DMkrxGNeJzYyYzM0" target="_blank">Telegram Community</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- FAQ Item 2 -->
-          <div class="faq-item">
-            <button class="faq-header" onclick="toggleFaq(2)">
-              <h3 class="faq-question">Who is the event for?</h3>
-              <span class="faq-icon" id="faq-icon-2">+</span>
-            </button>
-            <div class="faq-content" id="faq-content-2">
-              <div class="faq-answer">
-                <p>People interested in privacy topics in the Web3 industry. We aim to make our content accessible to everyone - rather than going into deep technical detail, we'll discuss privacy topics in their broader context.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 3 -->
-          <div class="faq-item">
-            <button class="faq-header" onclick="toggleFaq(3)">
-              <h3 class="faq-question">How do I get to the venue?</h3>
-              <span class="faq-icon" id="faq-icon-3">+</span>
-            </button>
-            <div class="faq-content" id="faq-content-3">
-              <div class="faq-answer">
-                <p></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 4 -->
-          <div class="faq-item">
-            <button class="faq-header" onclick="toggleFaq(4)">
-              <h3 class="faq-question">I have another question, where can I contact you?</h3>
-              <span class="faq-icon" id="faq-icon-4">+</span>
-            </button>
-            <div class="faq-content" id="faq-content-4">
-              <div class="faq-answer">
-                <p>You can contact the organizing team or the community around the event in our <a class="underline external" href="mailto:web3privacy@protonmail.com" target="_blank">email us</a> or our <a class="underline external" href="https://t.me/+DMkrxGNeJzYyYzM0" target="_blank">Telegram Community</a></p>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
       </div>
 
       <footer class="mobile-footer">
         <div class="footer-top-section">
           <h3 class="footer-main-title">Web3Privacy Now</h3>
-          <p class="footer-description">
-            Grassroots collective empowering privacy & freedom in the future web.
-          </p>
+          <p class="footer-description">Grassroots collective empowering privacy & freedom in the future web.</p>
         </div>
         <div class="footer-bottom-section">
           <div class="footer-column">
@@ -2227,145 +2369,145 @@
         </div>
       </footer>
 
+      <script>
+        function toggleFaq(index) {
+          const content = document.getElementById(`faq-content-${index}`);
+          const icon = document.getElementById(`faq-icon-${index}`);
 
-    <script>
-      function toggleFaq(index) {
-        const content = document.getElementById(`faq-content-${index}`);
-        const icon = document.getElementById(`faq-icon-${index}`);
-        
-        // Close all other FAQ items
-        for (let i = 1; i <= 4; i++) {
-          if (i !== index) {
-            const otherContent = document.getElementById(`faq-content-${i}`);
-            const otherIcon = document.getElementById(`faq-icon-${i}`);
-            if (otherContent && otherIcon) {
-              otherContent.classList.remove('active');
-              otherIcon.classList.remove('active');
-              otherIcon.textContent = '+';
+          // Close all other FAQ items
+          for (let i = 1; i <= 4; i++) {
+            if (i !== index) {
+              const otherContent = document.getElementById(`faq-content-${i}`);
+              const otherIcon = document.getElementById(`faq-icon-${i}`);
+              if (otherContent && otherIcon) {
+                otherContent.classList.remove('active');
+                otherIcon.classList.remove('active');
+              }
+            }
+          }
+
+          // Toggle current FAQ item
+          if (content && icon) {
+            const isActive = content.classList.contains('active');
+
+            if (isActive) {
+              content.classList.remove('active');
+              icon.classList.remove('active');
+            } else {
+              content.classList.add('active');
+              icon.classList.add('active');
             }
           }
         }
-        
-        // Toggle current FAQ item
-        if (content && icon) {
-          const isActive = content.classList.contains('active');
-          
-          if (isActive) {
-            content.classList.remove('active');
-            icon.classList.remove('active');
-            icon.textContent = '+';
-          } else {
-            content.classList.add('active');
-            icon.classList.add('active');
-            icon.textContent = '−';
-          }
+
+        // Team showcase navigation
+        let currentTeamIndex = 0;
+        const teamMembers = [
+          { name: 'Mykola', image: './img/mykola.png', handle: '@nicksvyaznoy', description: 'Web3 privacy advocate behind Web3Privacy Now' },
+          { name: 'PG', image: './img/pg1.png', handle: '@PG_CDG', description: 'Larrikin sling master' },
+          { name: 'Coinmandeer', image: './img/coinmandeer.png', handle: '@KeenOfCoin', description: 'UI/UX Design & Branding' },
+          { name: 'Robert', image: './img/robert.png', handle: '@robdotrego', description: 'Swarm | ETH Prague' },
+          { name: 'Beth', image: './img/beth.jpg', handle: '@ontologymachine', description: 'Privacy Advocate' },
+          { name: 'Lucila', image: './img/lucila.jpg', handle: '@lucilajuliana', description: 'Local Manager' },
+          { name: 'Recursor', image: './img/recursor.jpeg', handle: '@RecursiveBeing', description: 'Chaos Ops & Artful Maverick' },
+          { name: 'Federico', image: './img/babybit.jpeg', handle: '@BabyBitProd', description: 'Director' },
+          { name: 'Jensei', image: './img/jensei.jpg', handle: '@jensei_', description: 'free software fit' },
+          { name: 'Peter', image: './img/peter.jpeg', handle: '@0xfarbey', description: 'Education Track' },
+          { name: 'Alisher', image: './img/alisher.png', handle: '@alisher', description: 'Volunteers' },
+          { name: 'Teresa', image: './img/teresa.jpg', handle: 'teresaneppi.com', description: 'Branding' },
+        ];
+
+        function updateTeamDisplay() {
+          const avatars = document.querySelectorAll('.team-avatar');
+          const startIndex = currentTeamIndex;
+
+          avatars.forEach((avatar, index) => {
+            const memberIndex = (startIndex + index) % teamMembers.length;
+            const member = teamMembers[memberIndex];
+            const img = avatar.querySelector('img');
+            const nameElement = avatar.querySelector('.team-member-name');
+            const linkElement = avatar.querySelector('.team-member-link');
+
+            if (img && member) {
+              img.src = member.image;
+              img.alt = member.name;
+            }
+
+            if (nameElement && member) {
+              nameElement.textContent = member.name;
+            }
+
+            if (linkElement && member && member.handle) {
+              linkElement.textContent = member.handle;
+              linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
+            }
+
+            // Mark center avatar as featured
+            avatar.classList.toggle('featured', index === 2);
+          });
         }
-      }
 
-      // Team showcase navigation
-      let currentTeamIndex = 0;
-      const teamMembers = [
-        { name: "Mykola", image: "./img/mykola.png", handle: "@nicksvyaznoy", description: "Web3 privacy advocate behind Web3Privacy Now" },
-        { name: "PG", image: "./img/pg1.png", handle: "@PG_CDG", description: "Larrikin sling master" },
-        { name: "Coinmandeer", image: "./img/coinmandeer.png", handle: "@KeenOfCoin", description: "UI/UX Design & Branding" },
-        { name: "Robert", image: "./img/robert.png", handle: "@robdotrego", description: "Swarm | ETH Prague" },
-        { name: "Beth", image: "./img/beth.jpg", handle: "@ontologymachine", description: "Privacy Advocate" },
-        { name: "Lucila", image: "./img/lucila.jpg", handle: "@lucilajuliana", description: "Local Manager" },
-        { name: "Recursor", image: "./img/recursor.jpeg", handle: "@RecursiveBeing", description: "Chaos Ops & Artful Maverick" },
-        { name: "Federico", image: "./img/babybit.jpeg", handle: "@BabyBitProd", description: "Director" },
-        { name: "Jensei", image: "./img/jensei.jpg", handle: "@jensei_", description: "free software fit" },
-        { name: "Peter", image: "./img/peter.jpeg", handle: "@0xfarbey", description: "Education Track" },
-        { name: "Alisher", image: "./img/alisher.png", handle: "@alisher", description: "Volunteers" },
-        { name: "Teresa", image: "./img/teresa.jpg", handle: "teresaneppi.com", description: "Branding" },
-      ];
+        function nextTeam() {
+          currentTeamIndex = (currentTeamIndex + 1) % teamMembers.length;
+          updateTeamDisplay();
+        }
 
-      function updateTeamDisplay() {
-        const avatars = document.querySelectorAll('.team-avatar');
-        const startIndex = currentTeamIndex;
-        
-        avatars.forEach((avatar, index) => {
-          const memberIndex = (startIndex + index) % teamMembers.length;
-          const member = teamMembers[memberIndex];
-          const img = avatar.querySelector('img');
-          const nameElement = avatar.querySelector('.team-member-name');
-          const linkElement = avatar.querySelector('.team-member-link');
-          
-          if (img && member) {
-            img.src = member.image;
-            img.alt = member.name;
-          }
-          
-          if (nameElement && member) {
-            nameElement.textContent = member.name;
-          }
-          
-          if (linkElement && member && member.handle) {
-            linkElement.textContent = member.handle;
-            linkElement.href = `https://x.com/${member.handle.replace('@', '')}`;
-          }
-          
-          // Mark center avatar as featured
-          avatar.classList.toggle('featured', index === 2);
+        function previousTeam() {
+          currentTeamIndex = (currentTeamIndex - 1 + teamMembers.length) % teamMembers.length;
+          updateTeamDisplay();
+        }
+
+        // Initialize team display
+        document.addEventListener('DOMContentLoaded', function () {
+          updateTeamDisplay();
         });
-      }
 
-      function nextTeam() {
-        currentTeamIndex = (currentTeamIndex + 1) % teamMembers.length;
-        updateTeamDisplay();
-      }
+        // Testimonials Show More functionality
+        function toggleTestimonials() {
+          const hiddenTestimonials = document.querySelectorAll('.testimonial-hidden');
+          const showMoreBtn = document.getElementById('testimonials-show-more-btn');
 
-      function previousTeam() {
-        currentTeamIndex = (currentTeamIndex - 1 + teamMembers.length) % teamMembers.length;
-        updateTeamDisplay();
-      }
-
-      // Initialize team display
-      document.addEventListener('DOMContentLoaded', function() {
-        updateTeamDisplay();
-      });
-
-      // Testimonials Show More functionality
-      function toggleTestimonials() {
-        const hiddenTestimonials = document.querySelectorAll('.testimonial-hidden');
-        const showMoreBtn = document.getElementById('testimonials-show-more-btn');
-        
-        if (hiddenTestimonials.length > 0) {
-          // Show hidden testimonials
-          hiddenTestimonials.forEach(testimonial => {
-            testimonial.classList.remove('testimonial-hidden');
-            testimonial.style.display = 'block';
-          });
-          showMoreBtn.textContent = 'Show Less Testimonials';
-        } else {
-          // Hide testimonials 5-19
-          const allTestimonials = document.querySelectorAll('.testimonial-card');
-          for (let i = 4; i < allTestimonials.length; i++) {
-            allTestimonials[i].classList.add('testimonial-hidden');
-            allTestimonials[i].style.display = 'none';
-          }
-          showMoreBtn.textContent = 'Show More Testimonials';
-        }
-      }
-
-      // Initialize testimonials functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const showMoreBtn = document.getElementById('testimonials-show-more-btn');
-        if (showMoreBtn) {
-          showMoreBtn.addEventListener('click', toggleTestimonials);
-        }
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const delay = entry.target.dataset.delay || '0';
-              entry.target.style.animation = `slide-up 0.6s ease-out ${delay}ms both`;
-              observer.unobserve(entry.target);
+          if (hiddenTestimonials.length > 0) {
+            // Show hidden testimonials
+            hiddenTestimonials.forEach((testimonial) => {
+              testimonial.classList.remove('testimonial-hidden');
+              testimonial.style.display = 'block';
+            });
+            showMoreBtn.textContent = 'Show Less Testimonials';
+          } else {
+            // Hide testimonials 5-19
+            const allTestimonials = document.querySelectorAll('.testimonial-card');
+            for (let i = 4; i < allTestimonials.length; i++) {
+              allTestimonials[i].classList.add('testimonial-hidden');
+              allTestimonials[i].style.display = 'none';
             }
-          });
-        }, { threshold: 0.15 });
+            showMoreBtn.textContent = 'Show More Testimonials';
+          }
+        }
 
-        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
-      });
-    </script>
+        // Initialize testimonials functionality
+        document.addEventListener('DOMContentLoaded', function () {
+          const showMoreBtn = document.getElementById('testimonials-show-more-btn');
+          if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', toggleTestimonials);
+          }
+
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const delay = entry.target.dataset.delay || '0';
+                  entry.target.style.animation = `slide-up 0.6s ease-out ${delay}ms both`;
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.15 },
+          );
+
+          document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
+        });
+      </script>
+    </div>
   </body>
 </html>
