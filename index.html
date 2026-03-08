@@ -770,12 +770,12 @@
                 </div>
               </div>
             </div>
-            <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">We keep adding more and more speakers</div>
-            <div class="text-center">
-              <div class="inline-block md:w-auto">
-                <a href="https://tally.so/r/nrOzXl" class="cta-partner-badge" target="_blank" primary>Speak at Congress</a>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">We keep adding more and more speakers</div>
+        <div class="text-center">
+          <div class="inline-block md:w-auto">
+            <a href="https://tally.so/r/nrOzXl" class="cta-partner-badge" target="_blank" primary>Speak at Congress</a>
           </div>
         </div>
       </section>
@@ -894,10 +894,15 @@
             <div class="w-50 h-50 md:w-52 md:h-52 shrink-0 rounded-full overflow-hidden">
               <img src="./img/kurtopsahl2.jpg" alt="Kurt Opsahl" class="w-full h-full object-cover" />
             </div>
-            <div class="flex flex-col justify-between text-center md:text-left h-full">
+            <div class="flex flex-col justify-between text-center lg:text-left h-full">
               <p class="text-[0.95rem] leading-relaxed text-white/85">
-                <span>> </span>The Cypherpunk Congress was the place to be to find those who care about privacy, security and liberty. Not only a
-                strong lineup of speakers and high signal-to-noise, but also a community ready to build a better future.
+                <img
+                  src="./img/icons/double-quotes-l-svgrepo-com.svg"
+                  alt="Double Quotes Left"
+                  class="w-6 h-6 inline-block relative -top-2 right-1"
+                />
+                The Cypherpunk Congress was the place to be to find those who care about privacy, security and liberty. Not only a strong lineup of
+                speakers and high signal-to-noise, but also a community ready to build a better future.
               </p>
               <div class="mt-5">
                 <h3 class="text-lg font-bold">Kurt Opsahl</h3>
@@ -910,10 +915,15 @@
             <div class="w-50 h-50 md:w-52 md:h-52 shrink-0 rounded-full overflow-hidden">
               <img src="./img/dingledine.webp" alt="Roger Dingledine" class="w-full h-full object-cover" />
             </div>
-            <div class="flex flex-col justify-between text-center md:text-left h-full">
+            <div class="flex flex-col justify-between text-center lg:text-left h-full">
               <p class="text-[0.95rem] leading-relaxed text-white/85">
-                <span class="text-white/50">> </span>I love going to gatherings like the Cypherpunk Congress because meeting people in person helps
-                remind us that we all have good intentions and shared values.
+                <img
+                  src="./img/icons/double-quotes-l-svgrepo-com.svg"
+                  alt="Double Quotes Left"
+                  class="w-6 h-6 inline-block relative -top-2 right-1"
+                />
+                I love going to gatherings like the Cypherpunk Congress because meeting people in person helps remind us that we all have good
+                intentions and shared values.
               </p>
               <div class="mt-5">
                 <h3 class="text-lg font-bold">Roger Dingledine</h3>
@@ -1153,10 +1163,10 @@
                 </div>
               </div>
             </div>
-            <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">
-              and 130 cryptographers, hacktivists, legal experts, philosophers, journalists, artists & other open-minded people.
-            </div>
           </div>
+        </div>
+        <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">
+          and 130 cryptographers, hacktivists, legal experts, philosophers, journalists, artists & other open-minded people.
         </div>
       </section>
 
@@ -2372,7 +2382,6 @@
               if (otherContent && otherIcon) {
                 otherContent.classList.remove('active');
                 otherIcon.classList.remove('active');
-                otherIcon.textContent = '+';
               }
             }
           }
@@ -2384,11 +2393,9 @@
             if (isActive) {
               content.classList.remove('active');
               icon.classList.remove('active');
-              icon.textContent = '+';
             } else {
               content.classList.add('active');
               icon.classList.add('active');
-              icon.textContent = '−';
             }
           }
         }
