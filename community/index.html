@@ -1,0 +1,658 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <link href="./styles/w3pevent.css" rel="stylesheet" />
+    <title>W3Privacy Community</title>
+    <meta name="description" content="A global network of privacy advocates, builders, and researchers shaping the future of digital rights." />
+    <style>
+      /* Re-declare local fonts since w3pevent.css uses absolute /fonts/ paths */
+      @font-face {
+        font-family: "Major Mono Display";
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/major-mono-display-v13-latin-regular.woff2') format('woff2'),
+             url('../fonts/major-mono-display-v13-latin-regular.woff') format('woff'),
+             url('../fonts/major-mono-display-v13-latin-regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/Archivo.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "KyivTypeSerif";
+        font-style: normal;
+        font-weight: 900;
+        src: url('../fonts/KyivTypeSerif-Heavy2.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "aileron";
+        font-style: normal;
+        font-weight: 600;
+        src: url('../fonts/aileron/aileron.semibold.otf') format('opentype');
+      }
+
+      /* Industry badge base */
+      .industry-badge {
+        display: inline-block;
+        padding: 0.2rem 0.65rem;
+        border-radius: 20px;
+        font-size: 0.68rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.85);
+        letter-spacing: 0.03em;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        white-space: nowrap;
+      }
+      .badge-web3     { background: #1b2354; }
+      .badge-security { background: #2d1a1a; }
+      .badge-ai       { background: #1a2d1a; }
+      .badge-legal    { background: #2d2d1a; }
+      .badge-defi     { background: #1a1a3a; }
+      .badge-academia { background: #2d1a2d; }
+      .badge-media    { background: #1a2d2d; }
+      .badge-gov      { background: #2a1a0a; }
+      .badge-health   { background: #0a2a1a; }
+      .badge-oss      { background: #0a1a2a; }
+      .badge-privacy  { background: #1a0a2d; }
+
+      /* Keep badge readable when card hovers to white */
+      .person-item:hover .industry-badge {
+        filter: brightness(1.6);
+        border-color: rgba(0, 0, 0, 0.15);
+      }
+
+      /* Badge overlaid on photo */
+      .card-image-wrap {
+        position: relative;
+      }
+      .card-image-wrap .industry-badge {
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+        backdrop-filter: blur(6px);
+        background-color: rgba(0,0,0,0.55) !important;
+        border-color: rgba(255,255,255,0.2) !important;
+        color: rgba(255,255,255,0.9) !important;
+        font-size: 0.6rem !important;
+        padding: 0.15rem 0.5rem !important;
+      }
+      .person-item:hover .card-image-wrap .industry-badge {
+        filter: none !important;
+        background-color: rgba(0,0,0,0.7) !important;
+        border-color: rgba(255,255,255,0.35) !important;
+      }
+
+      /* Links overlay on photo */
+      .card-links-overlay {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%);
+        padding: 1.2rem 0.6rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.4rem;
+        transition: background 0.2s ease;
+      }
+      .card-website {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.28rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 300;
+        color: rgba(255,255,255,0.75);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 0;
+      }
+      .card-website:hover { color: #fff; }
+      .person-item:hover .card-website { color: #fff; }
+      .card-twitter {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 300;
+        color: rgba(255,255,255,0.75);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        flex-shrink: 0;
+      }
+      .card-twitter:hover { color: #fff; }
+      .person-item:hover .card-twitter { color: #fff; }
+      .card-links-overlay.single-link { justify-content: flex-end; }
+
+      /* Role / tagline under name */
+      .card-role {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 300;
+        color: rgba(255,255,255,0.75);
+        margin-top: 0.2rem;
+        line-height: 1.4;
+      }
+      .person-item:hover .card-role { color: rgba(255,255,255,0.9); }
+
+      /* Smaller, tighter cards */
+      .member-grid .person-item .pb-4 { padding-bottom: 0.75rem !important; }
+      .member-grid .person-item .px-4 { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+      .member-grid .speaker-name { font-size: 0.78rem !important; margin-top: 0.6rem !important; }
+      .member-grid .industry-badge { font-size: 0.62rem !important; padding: 0.15rem 0.5rem !important; }
+      .member-grid .markdown-basic { font-size: 0.72rem !important; margin-top: 0.35rem !important; }
+      .member-grid .mt-1 { margin-top: 0.35rem !important; }
+
+      /* Hero section */
+      .community-hero {
+        padding-top: 7rem;
+        padding-bottom: 3.5rem;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .community-hero h1 {
+        font-family: "aileron", sans-serif;
+        font-weight: 600;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: #ffffff;
+        letter-spacing: 0.02em;
+        margin-top: 1rem;
+        line-height: 1.15;
+      }
+      .community-hero p {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.72);
+        max-width: 38rem;
+        margin: 1.1rem auto 0;
+        line-height: 1.65;
+      }
+
+      /* Section label */
+      #filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .filter-pill {
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        font-size: 0.78rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.65);
+        cursor: pointer;
+        transition: all 0.18s ease;
+        flex-shrink: 0;
+      }
+      .filter-pill:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
+      .filter-pill.active { background: #fff; color: #000; border-color: #fff; font-weight: 600; }
+
+      .section-label {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      /* CTA section */
+      .cta-section {
+        text-align: center;
+        padding: 4rem 1.5rem 5rem;
+      }
+      .cta-section p {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 1.5rem;
+      }
+      .cta-section .button {
+        font-size: 0.9rem;
+        padding: 0.65rem 2rem;
+        letter-spacing: 0.08em;
+      }
+    </style>
+  </head>
+
+  <body class="bg-black text-white" style="overflow-x:hidden;">
+    <div class="relative w-full min-h-screen text-white">
+
+      <!-- ======= NAVBAR ======= -->
+      <div id="header" class="fixed w-full h-18 z-40 top-0">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden" />
+        <div class="navbar-minimal px-10 py-4 pt-2">
+          <!-- Desktop Navigation -->
+          <div class="desktop-nav flex justify-between items-center my-1">
+            <div class="flex items-center">
+              <a href="https://web3privacy.info/" target="_blank">
+                <img src="../img/logo5.svg" alt="Web3Privacy Now" class="w-52" />
+              </a>
+            </div>
+            <div class="flex items-center gap-8 text-base">
+              <div class="m-1">
+                <a class="nav-link-minimal active" href="../index.html#intro">Home</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#speakers">Speakers</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#speakers">Program</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#tickets">Register</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#partners">Partners</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Navigation -->
+          <div class="mobile-nav flex justify-between items-center">
+            <div class="mobile-logo">
+              <a href="https://web3privacy.info/" target="_blank">
+                <img src="../img/logo5.svg" alt="Web3Privacy Now" class="w-40" />
+              </a>
+            </div>
+            <div class="mobile-nav-controls">
+              <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </label>
+              <label for="mobile-menu-toggle" class="close-icon" data-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </label>
+            </div>
+          </div>
+          <!-- Mobile Menu Panel -->
+          <div class="mobile-menu-panel" data-hidden="true">
+            <div class="mobile-menu-items">
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal active" href="../index.html#intro">Home</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#speakers">Speakers</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#speakers">Program</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#tickets">Register</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#partners">Partners</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======= END NAVBAR ======= -->
+
+      <!-- ======= HERO ======= -->
+      <section class="community-hero">
+        <h1>Community Directory</h1>
+        <p>
+          A global network of privacy advocates, builders, and researchers.
+          Meet the organizations shaping the future of digital rights.
+        </p>
+      </section>
+      <!-- ======= MEMBERS GRID ======= -->
+      <section class="px-6 md:px-16 lg:px-24 pb-10">
+        <div class="section-label">Members &mdash; <span id="members-count">0 speakers</span></div>
+        <div id="filter-bar"></div>
+
+        <div id="member-grid" class="member-grid grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <!-- CTA card -->
+          <a href="register.html" class="person-item border border-dashed border-white/25 flex flex-col items-center justify-center text-center no-underline group hidden" style="min-height:100%;text-decoration:none;background:transparent;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);">
+            <div style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;transition:all 0.3s ease;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round">
+                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </div>
+            <div style="font-family:'aileron',sans-serif;font-weight:600;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);line-height:1.4;transition:color 0.3s ease;">Join the<br/>Community</div>
+            <style>
+              a.person-item:hover { background: rgba(255,255,255,0.04) !important; border-color: rgba(255,255,255,0.5) !important; }
+              a.person-item:hover svg { stroke: rgba(255,255,255,0.9); }
+              a.person-item:hover div[style*="aileron"] { color: rgba(255,255,255,0.9) !important; }
+              a.person-item:hover div[style*="border-radius:50%"] { border-color: rgba(255,255,255,0.7) !important; }
+            </style>
+          </a>
+        </div>
+        <div id="scroll-sentinel" class="h-6" aria-hidden="true"></div>
+      </section>
+
+      <!-- ======= CTA ======= -->
+      <section class="cta-section">
+        <p class="hidden">Are you part of the privacy ecosystem?</p>
+        <a href="register.html" class="button hidden">Join the Community</a>
+      </section>
+
+      <!-- ======= FOOTER ======= -->
+      <footer class="mobile-footer">
+        <div class="footer-top-section">
+          <h3 class="footer-main-title">Web3Privacy Now</h3>
+          <p class="footer-description">Grassroots collective empowering privacy &amp; freedom in the future web.</p>
+        </div>
+        <div class="footer-bottom-section">
+          <div class="footer-column">
+            <h4 class="footer-column-title">Community</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Directory</a></li>
+              <li><a href="register.html" class="footer-link">Register</a></li>
+              <li><a href="../index.html" class="footer-link">Congress</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Contact</h4>
+            <ul class="footer-links-list">
+              <li><a href="https://t.me/+DMkrxGNeJzYyYzM0" class="footer-link" target="_blank">Telegram</a></li>
+              <li><a href="https://twitter.com/web3privacy" class="footer-link" target="_blank">Twitter</a></li>
+              <li><a href="https://www.youtube.com/@Web3PrivacyNow" class="footer-link" target="_blank">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+        <script>
+      (function () {
+        var CHUNK_SIZE = 12;
+        var members = [];
+        var filteredMembers = [];
+        var activeFilters = new Set();
+        var renderedCount = 0;
+
+        var filterBar = document.getElementById('filter-bar');
+        var memberGrid = document.getElementById('member-grid');
+        var membersCount = document.getElementById('members-count');
+        var sentinel = document.getElementById('scroll-sentinel');
+
+        var industryClassMap = {
+          'Blockchain & Web3': 'badge-web3',
+          'Cybersecurity': 'badge-security',
+          'AI & Machine Learning': 'badge-ai',
+          'Legal & Compliance': 'badge-legal',
+          'Finance & DeFi': 'badge-defi',
+          'Academia & Research': 'badge-academia',
+          'Journalism & Media': 'badge-media',
+          'Government & Policy': 'badge-gov',
+          'Healthcare & Biotech': 'badge-health',
+          'Open Source Software': 'badge-oss',
+          Privacy: 'badge-privacy'
+        };
+
+        function escapeHtml(value) {
+          return String(value || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+
+        function normalizeMember(item) {
+          return {
+            name: String(item.name || ''),
+            photo: String(item.photo || ''),
+            xUrl: String(item.xUrl || ''),
+            tagline: String(item.tagline || ''),
+            role: String(item.role || ''),
+            orgUrl: String(item.orgUrl || ''),
+            orgName: String(item.orgName || ''),
+            industry: String(item.industry || 'Privacy')
+          };
+        }
+
+        function getXHandle(url) {
+          if (!url) return '';
+          try {
+            var parsed = new URL(url);
+            var path = parsed.pathname.replace(/^\/+/, '').split('/')[0];
+            return path ? '@' + path : '@x';
+          } catch (_error) {
+            return '@x';
+          }
+        }
+
+        function getWebsiteLabel(member) {
+          if (member.orgName) return member.orgName;
+          if (!member.orgUrl) return '';
+          try {
+            return new URL(member.orgUrl).hostname.replace(/^www\./, '');
+          } catch (_error) {
+            return member.orgUrl;
+          }
+        }
+
+        function buildRoleLine(member) {
+          var role = (member.role || '').trim();
+          var orgName = (member.orgName || '').trim();
+          // Organization is already shown in the image overlay.
+          // Keep the bottom line concise: role only; fallback to org if role is missing.
+          if (role) return role;
+          return orgName;
+        }
+
+        function createMemberCard(member) {
+          var industry = member.industry || 'Privacy';
+          var badgeClass = industryClassMap[industry] || 'badge-privacy';
+          var hasWebsite = !!member.orgUrl;
+          var hasTwitter = !!member.xUrl;
+
+          var websiteHtml = hasWebsite
+            ? '<a href="' + escapeHtml(member.orgUrl) + '" target="_blank" rel="noopener noreferrer" class="card-website"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>' + escapeHtml(getWebsiteLabel(member)) + '</a>'
+            : '';
+
+          var twitterHtml = hasTwitter
+            ? '<a href="' + escapeHtml(member.xUrl) + '" target="_blank" rel="noopener noreferrer" class="card-twitter"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>' + escapeHtml(getXHandle(member.xUrl)) + '</a>'
+            : '';
+
+          var links = '';
+          if (hasWebsite || hasTwitter) {
+            var singleLinkClass = hasWebsite && hasTwitter ? '' : ' single-link';
+            links = '<div class="card-links-overlay' + singleLinkClass + '">' + websiteHtml + twitterHtml + '</div>';
+          }
+
+          var taglineHtml = member.tagline
+            ? (member.xUrl
+              ? '<div class="text-mild"><a href="' + escapeHtml(member.xUrl) + '" class="hover:underline" target="_blank" rel="noopener noreferrer">' + escapeHtml(member.tagline) + '</a></div>'
+              : '<div class="text-mild">' + escapeHtml(member.tagline) + '</div>')
+            : '';
+
+          var roleLine = buildRoleLine(member);
+
+          var card = document.createElement('div');
+          card.className = 'hover:bg-white hover:text-black person-item border border-white/30 generated-member-card';
+          card.dataset.industry = industry;
+          card.innerHTML =
+            '<div class="card-image-wrap">' +
+              '<img src="' + escapeHtml(member.photo) + '" alt="' + escapeHtml(member.name) + '" class="aspect-square object-cover w-full" loading="lazy" />' +
+              '<span class="industry-badge ' + badgeClass + '">' + escapeHtml(industry) + '</span>' +
+              links +
+            '</div>' +
+            '<div class="pb-4 px-4">' +
+              '<div class="mt-4 speaker-name">' + escapeHtml(member.name) + '</div>' +
+              taglineHtml +
+              '<div class="card-role">' + escapeHtml(roleLine) + '</div>' +
+            '</div>';
+
+          return card;
+        }
+
+        function clearGeneratedCards() {
+          memberGrid.querySelectorAll('.generated-member-card').forEach(function (node) {
+            node.remove();
+          });
+        }
+
+        function renderNextChunk() {
+          if (renderedCount >= filteredMembers.length) return;
+          var nextIndex = Math.min(renderedCount + CHUNK_SIZE, filteredMembers.length);
+          for (var i = renderedCount; i < nextIndex; i++) {
+            memberGrid.appendChild(createMemberCard(filteredMembers[i]));
+          }
+          renderedCount = nextIndex;
+        }
+
+        function applyFilters() {
+          if (activeFilters.size === 0) {
+            filteredMembers = members.slice();
+          } else {
+            filteredMembers = members.filter(function (member) {
+              return activeFilters.has(member.industry);
+            });
+          }
+
+          membersCount.textContent = filteredMembers.length + ' speakers';
+          renderedCount = 0;
+          clearGeneratedCards();
+          renderNextChunk();
+        }
+
+        function buildFilterBar() {
+          var industries = Array.from(new Set(members.map(function (member) { return member.industry || 'Privacy'; })));
+          industries.sort(function (a, b) { return a.localeCompare(b); });
+
+          filterBar.innerHTML = '';
+
+          var allButton = document.createElement('button');
+          allButton.className = 'filter-pill active';
+          allButton.type = 'button';
+          allButton.dataset.industry = 'All';
+          allButton.textContent = 'All';
+          filterBar.appendChild(allButton);
+
+          industries.forEach(function (industry) {
+            var button = document.createElement('button');
+            button.className = 'filter-pill';
+            button.type = 'button';
+            button.dataset.industry = industry;
+            button.textContent = industry;
+            filterBar.appendChild(button);
+          });
+        }
+
+        function setupFilterEvents() {
+          filterBar.addEventListener('click', function (event) {
+            var pill = event.target.closest('.filter-pill');
+            if (!pill) return;
+
+            var industry = pill.dataset.industry;
+            if (industry === 'All') {
+              activeFilters.clear();
+              filterBar.querySelectorAll('.filter-pill').forEach(function (node) {
+                node.classList.remove('active');
+              });
+              pill.classList.add('active');
+            } else {
+              var allPill = filterBar.querySelector('.filter-pill[data-industry="All"]');
+              if (allPill) allPill.classList.remove('active');
+
+              if (activeFilters.has(industry)) {
+                activeFilters.delete(industry);
+                pill.classList.remove('active');
+                if (activeFilters.size === 0 && allPill) {
+                  allPill.classList.add('active');
+                }
+              } else {
+                activeFilters.add(industry);
+                pill.classList.add('active');
+              }
+            }
+
+            applyFilters();
+          });
+        }
+
+        function setupInfiniteScroll() {
+          if (!('IntersectionObserver' in window)) {
+            window.addEventListener('scroll', function () {
+              var rect = sentinel.getBoundingClientRect();
+              if (rect.top < window.innerHeight + 200) {
+                renderNextChunk();
+              }
+            });
+            return;
+          }
+
+          var observer = new IntersectionObserver(function (entries) {
+            if (entries.some(function (entry) { return entry.isIntersecting; })) {
+              renderNextChunk();
+            }
+          }, {
+            root: null,
+            rootMargin: '350px 0px',
+            threshold: 0
+          });
+
+          observer.observe(sentinel);
+        }
+
+        function renderErrorState() {
+          membersCount.textContent = '0 speakers';
+          var note = document.createElement('div');
+          note.className = 'text-sm text-white/60 col-span-full';
+          note.textContent = 'Could not load speakers data.';
+          memberGrid.appendChild(note);
+        }
+
+        fetch('./comminity.json', { cache: 'no-store' })
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error('Failed to load speakers JSON');
+            }
+            return response.json();
+          })
+          .then(function (data) {
+            members = Array.isArray(data) ? data.map(normalizeMember) : [];
+            buildFilterBar();
+            setupFilterEvents();
+            setupInfiniteScroll();
+            applyFilters();
+          })
+          .catch(function () {
+            renderErrorState();
+          });
+      })();
+    </script>
+  </body>
+</html>
+

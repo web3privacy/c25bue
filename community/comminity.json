@@ -1,0 +1,332 @@
+[
+  {
+    "name": "KURT OPSAHL",
+    "photo": "../img/kurtopsahl2.jpg",
+    "xUrl": "https://x.com/kurtopsahl",
+    "tagline": "Former Deputy Executive Director and General Counsel of EFF",
+    "role": "Associate General Counsel for Cybersecurity and Civil Liberties Policy",
+    "orgUrl": "https://fil.org",
+    "orgName": "Filecoin",
+    "industry": "Privacy"
+  },
+  {
+    "name": "ISABELA FERNANDES",
+    "photo": "../img/fernandes.jpeg",
+    "xUrl": "https://x.com/Isa",
+    "tagline": "Free & anonymous software advocate",
+    "role": "Executive Director",
+    "orgUrl": "https://torproject.org",
+    "orgName": "Tor Project",
+    "industry": "Privacy"
+  },
+  {
+    "name": "AHMED GHAPPOUR",
+    "photo": "../img/ahmedghappour.png",
+    "xUrl": "https://twitter.com/ghappour",
+    "tagline": "Engineer turned digital rights lawyer",
+    "role": "GC",
+    "orgUrl": "https://www.flashbots.net",
+    "orgName": "Flashbots",
+    "industry": "Privacy"
+  },
+  {
+    "name": "AMIR TAAKI",
+    "photo": "../img/taaki.jpg",
+    "xUrl": "https://x.com/lunardragon420",
+    "tagline": "Visionary hacktivist",
+    "role": "Founder",
+    "orgUrl": "https://x.com/DarkFiSquad",
+    "orgName": "DarkFi",
+    "industry": "Privacy"
+  },
+  {
+    "name": "DANNY O'BRIEN",
+    "photo": "../img/obrien.jpg",
+    "xUrl": "https://twitter.com/mala",
+    "tagline": "Former director of strategy at EFF",
+    "role": "Senior Fellow",
+    "orgUrl": "https://fil.org",
+    "orgName": "Filecoin Foundation, EFF",
+    "industry": "Privacy"
+  },
+  {
+    "name": "VIJAY KRISHNAVANSHI",
+    "photo": "../img/vijay-krishnavanshi.jpeg",
+    "xUrl": "https://x.com/0x6b8",
+    "tagline": "Tech visionary challenging Google Suite",
+    "role": "Co-Founder",
+    "orgUrl": "https://fileverse.io/",
+    "orgName": "Fileverse",
+    "industry": "Privacy"
+  },
+  {
+    "name": "DENIS \"JAROMIL\" ROJO",
+    "photo": "../img/jaromil.jpg",
+    "xUrl": "https://x.com/jaromil",
+    "tagline": "Long-lasting cryptographer & hacktivist",
+    "role": "Founder",
+    "orgUrl": "https://dyne.org",
+    "orgName": "Dyne.org",
+    "industry": "Privacy"
+  },
+  {
+    "name": "JUSTIN DRAKE",
+    "photo": "../img/justindrake.jpg",
+    "xUrl": "https://x.com/drakefjustin",
+    "tagline": "Key protocol researcher",
+    "role": "Research",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation",
+    "industry": "Privacy"
+  },
+  {
+    "name": "ANDY GUZMAN",
+    "photo": "../img/guzman.jpg",
+    "xUrl": "https://x.com/AndyGuzmanEth",
+    "tagline": "Decentralised privacy adoption lead",
+    "role": "Head",
+    "orgUrl": "http://pse.dev",
+    "orgName": "Privacy Stewards of Ethereum",
+    "industry": "Privacy"
+  },
+  {
+    "name": "JORDI BAYLINA",
+    "photo": "../img/baylina.jpg",
+    "xUrl": "https://x.com/jbaylina",
+    "tagline": "Catalan cryptographer targeted by Pegasus",
+    "role": "Co-founder",
+    "orgUrl": "http://zisk.technology",
+    "orgName": "Zisk",
+    "industry": "Privacy"
+  },
+  {
+    "name": "KYLE DEN HARTOG",
+    "photo": "../img/kyledenhartog.jpg",
+    "xUrl": "https://x.com/PryvitKyle",
+    "tagline": "Researcher blending traditional & innovative tech",
+    "role": "Staff Cryptographic Security Engineer",
+    "orgUrl": "http://brave.com",
+    "orgName": "Brave",
+    "industry": "Privacy"
+  },
+  {
+    "name": "HARRY HALPIN",
+    "photo": "../img/harryhalping.jog.webp",
+    "xUrl": "https://x.com/PryvitKyle",
+    "tagline": "Experienced activist bridging network-level privacy & practical VPN",
+    "role": "CEO",
+    "orgUrl": "http://nym.com",
+    "orgName": "Nym",
+    "industry": "Privacy"
+  },
+  {
+    "name": "YING TONG LAI",
+    "photo": "../img/yingtonglai2.jpg",
+    "xUrl": "https://twitter.com/therealyingtong",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "Applied Cryptographer",
+    "orgUrl": "https://fil.org",
+    "orgName": "independent",
+    "industry": "Privacy"
+  },
+  {
+    "name": "ml_sudo",
+    "photo": "../img/michelleLai.png",
+    "xUrl": "https://x.com/ml_sudo",
+    "tagline": "Open-hardware enthusiast",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation/silviculture-society",
+    "orgName": "Ethereum Foundation's Silviculture",
+    "industry": "Privacy"
+  },
+  {
+    "name": "AURYN MCMILLAN",
+    "photo": "../img/auryn.png",
+    "xUrl": "https://x.com/auryn_macmillan",
+    "tagline": "Confidential computing visionary",
+    "role": "Co-founder",
+    "orgUrl": "https://enclave.gg",
+    "orgName": "Enclave",
+    "industry": "Privacy"
+  },
+  {
+    "name": "JUAN BENET",
+    "photo": "../img/benet.avif",
+    "xUrl": "https://x.com/juanbenet",
+    "tagline": "Visionary behind alternative tech ecosystem",
+    "role": "Founder",
+    "orgUrl": "https://www.protocol.ai",
+    "orgName": "Protocol Labs",
+    "industry": "Privacy"
+  },
+  {
+    "name": "SEBASTIAN BURGEL",
+    "photo": "../img/sebastian.png",
+    "xUrl": "https://x.com/SCBuergel",
+    "tagline": "Mixnets visionary",
+    "role": "VP of Technology",
+    "orgUrl": "https://www.gnosis.io",
+    "orgName": "Gnosis & HOPR",
+    "industry": "Privacy"
+  },
+  {
+    "name": "BOB SUMMERWILL",
+    "photo": "../img/bobsummerwill.png",
+    "xUrl": "https://x.com/BobSummerwill",
+    "tagline": "Decentralisation veteran",
+    "role": "Head of Ecosystem",
+    "orgUrl": "https://strato.nexus",
+    "orgName": "Strato",
+    "industry": "Privacy"
+  },
+  {
+    "name": "MIROYATO",
+    "photo": "../img/andreas.png",
+    "xUrl": "https://x.com/miroyato",
+    "tagline": "Academic turned practical privacy tech",
+    "role": "Co-founder",
+    "orgUrl": "https://fileverse.io",
+    "orgName": "Fileverse",
+    "industry": "Privacy"
+  },
+  {
+    "name": "CHRIS MCCABE",
+    "photo": "../img/chrismccabe.jpg",
+    "xUrl": "https://twitter.com/Cryptic_cm",
+    "tagline": "Decentralised messengers visionary",
+    "role": "Co-founder",
+    "orgUrl": "https://getsession.org",
+    "orgName": "Session",
+    "industry": "Privacy"
+  },
+  {
+    "name": "NICO CONSIGNY",
+    "photo": "../img/consigny.jpg",
+    "xUrl": "https://twitter.com/ncsgy",
+    "tagline": "Privacy in digital wallets visionary",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation",
+    "industry": "Privacy"
+  },
+  {
+    "name": "PETER VAN VALKENBURGH",
+    "photo": "../img/valkenburgh.jpg",
+    "xUrl": "https://twitter.com/valkenburgh",
+    "tagline": "Advocate focused on the public policy on decentralized computing",
+    "role": "Executive Director",
+    "orgUrl": "https://coincenter.org",
+    "orgName": "Coin Center",
+    "industry": "Privacy"
+  },
+  {
+    "name": "FATEMEH FANNIZADEH",
+    "photo": "../img/fatemeh.png",
+    "xUrl": "https://x.com/Fatalmeh",
+    "tagline": "Legal expert on decentralized computing & activism",
+    "role": "Legal",
+    "orgUrl": "https://x.com/Fatalmeh",
+    "orgName": "independent",
+    "industry": "Privacy"
+  },
+  {
+    "name": "MARIO HAVEL",
+    "photo": "../img/havel.jpg",
+    "xUrl": "https://x.com/TMIYChao",
+    "tagline": "FOSS advocate",
+    "role": "Protocol Support",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & BORDEL",
+    "industry": "Privacy"
+  },
+  {
+    "name": "OSKARTH",
+    "photo": "../img/oskarth.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+  {
+    "name": "POL LANSKI",
+    "photo": "../img/lanski.jpeg",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Catalan activist behind decentralised infrastructure",
+    "role": "Lead",
+    "orgUrl": "https://dappnode.com",
+    "orgName": "Dappnode",
+    "industry": "Privacy"
+  },
+  {
+    "name": "WILL SCOTT",
+    "photo": "../img/willscott.jpeg",
+    "xUrl": "https://x.com/willscott",
+    "tagline": "Global prime hacktivist",
+    "role": "Adoption",
+    "orgUrl": "https://fil.org",
+    "orgName": "Filecoin Foundation",
+    "industry": "Privacy"
+  },
+  {
+    "name": "Loring Harkness",
+    "photo": "../img/loring.jpg",
+    "xUrl": "https://x.com/LoringHarkness",
+    "tagline": "Encrypted Mempools advocate",
+    "role": "Lead",
+    "orgUrl": "https://linktr.ee/ShutterNetwork",
+    "orgName": "Shutter Network",
+    "industry": "Privacy"
+  },
+  {
+    "name": "VIKTOR TRÓN",
+    "photo": "../img/tron.jpg",
+    "xUrl": "https://x.com/zeligf",
+    "tagline": "Visionary behind distributed tech",
+    "role": "Founder",
+    "orgUrl": "https://ethswarm.org",
+    "orgName": "Swarm",
+    "industry": "Privacy"
+  },
+  {
+    "name": "ANTONIO SEVESO",
+    "photo": "../img/seveso.png",
+    "xUrl": "https://x.com/0xMeTony",
+    "tagline": "Stealth addresses advocate",
+    "role": "Co-founder",
+    "orgUrl": "https://www.fluidkey.com",
+    "orgName": "Fluidkey",
+    "industry": "Privacy"
+  },
+  {
+    "name": "KIERAN MESQUITA",
+    "photo": "../img/kieran.png",
+    "xUrl": "https://x.com/mesquka",
+    "tagline": "Applied cryptographer serving millions of people",
+    "role": "contributor",
+    "orgUrl": "https://railgun.org",
+    "orgName": "Railgun",
+    "industry": "Privacy"
+  },
+  {
+    "name": "DANIEL KNOBELSDORF",
+    "photo": "../img/knobelsdorf.png",
+    "xUrl": "",
+    "tagline": "Digital rights meeting decentralised tech",
+    "role": "Lead",
+    "orgUrl": "",
+    "orgName": "Infinite Garden",
+    "industry": "Privacy"
+  },
+  {
+    "name": "SHADY EL DAMATY",
+    "photo": "../img/shady.jpeg",
+    "xUrl": "https://x.com/hebbianloop",
+    "tagline": "Digital rights activists delivering identity for the internet age",
+    "role": "CEO",
+    "orgUrl": "https://x.com/0xholonym",
+    "orgName": "Human.tech",
+    "industry": "Privacy"
+  }
+]
