@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <link href="./styles/w3pevent.css" rel="stylesheet" />
+    <title>Join — W3Privacy Community</title>
+    <style>
+      /* Re-declare local fonts since w3pevent.css uses absolute /fonts/ paths */
+      @font-face {
+        font-family: "Major Mono Display";
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/major-mono-display-v13-latin-regular.woff2') format('woff2'),
+             url('../fonts/major-mono-display-v13-latin-regular.woff') format('woff'),
+             url('../fonts/major-mono-display-v13-latin-regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/Archivo.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "KyivTypeSerif";
+        font-style: normal;
+        font-weight: 900;
+        src: url('../fonts/KyivTypeSerif-Heavy2.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "aileron";
+        font-style: normal;
+        font-weight: 600;
+        src: url('../fonts/aileron/aileron.semibold.otf') format('opentype');
+      }
+
+      /* ==============================
+         PAGE LAYOUT
+         ============================== */
+      html, body { height: 100%; }
+      #step-grid {
+        min-height: 100vh;
+        height: auto;
+        overflow: visible;
+      }
+
+      .register-page {
+        min-height: calc(100vh - 72px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 768px) {
+        .register-page { grid-template-columns: 1fr; }
+        .register-left { display: none; }
+      }
+
+      /* Left panel — decorative */
+      .register-left {
+        position: relative;
+        background: linear-gradient(160deg, #0d1030 0%, #000000 60%, #0d0d1a 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 3rem;
+        overflow: hidden;
+      }
+      .register-left::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at 30% 40%, rgba(27,35,84,0.6) 0%, transparent 65%),
+                    radial-gradient(ellipse at 80% 80%, rgba(13,16,48,0.5) 0%, transparent 60%);
+      }
+      .register-left-grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+        background-size: 48px 48px;
+      }
+      .register-left-dots {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+      .register-left-dots span {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.06);
+      }
+      .register-left-content {
+        position: relative;
+        z-index: 1;
+      }
+      .register-left-quote {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 1.05rem;
+        color: rgba(255,255,255,0.55);
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        max-width: 28rem;
+      }
+      .register-left-quote strong {
+        color: rgba(255,255,255,0.9);
+        font-weight: 400;
+      }
+      .register-left-stats {
+        display: flex;
+        gap: 2.5rem;
+      }
+      .register-left-stat-num {
+        font-family: "aileron", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #ffffff;
+        line-height: 1;
+      }
+      .register-left-stat-label {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 0.78rem;
+        color: rgba(255,255,255,0.45);
+        margin-top: 0.3rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      /* Right panel — form */
+      .register-right {
+        background: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 3.5rem 3rem;
+        overflow-y: auto;
+      }
+      @media (max-width: 900px) {
+        .register-right { padding: 5rem 2rem 3rem; }
+      }
+
+      /* ---- Avatar upload circle ---- */
+      .avatar-circle-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0.75rem;
+        gap: 1rem;
+      }
+      .avatar-circle {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 1px dashed rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.04);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: border-color 0.2s ease, background 0.2s ease;
+        flex-shrink: 0;
+      }
+      .avatar-circle:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.07); }
+      .avatar-circle input[type="file"] {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .avatar-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .avatar-circle-hint {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: rgba(255,255,255,0.38);
+      }
+
+      /* ---- Form inputs ---- */
+      .form-field {
+        margin-bottom: 0.55rem;
+      }
+      .form-label {
+        display: block;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.45);
+        margin-bottom: 0.2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .form-input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 0.35rem 0;
+        color: #ffffff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.95rem;
+        font-weight: 300;
+        outline: none;
+        transition: border-color 0.25s ease;
+        border-radius: 0;
+      }
+      .form-input::placeholder { color: rgba(255, 255, 255, 0.2); }
+      .form-input:focus { border-bottom-color: rgba(255, 255, 255, 0.7); }
+
+      /* Select */
+      select.form-input {
+        appearance: none;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='rgba(255,255,255,0.35)' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.25rem center;
+        padding-right: 1.5rem;
+        cursor: pointer;
+      }
+      select.form-input option {
+        background-color: #111;
+        color: #fff;
+      }
+
+      /* ---- JOIN button ---- */
+      .btn-join {
+        display: block;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255,0.8);
+        background: transparent;
+        padding: 0.55rem 1.5rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "aileron", sans-serif;
+        font-weight: 600;
+        font-size: 0.82rem;
+        letter-spacing: 0.14em;
+        transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 0;
+        margin-top: 1rem;
+      }
+      .btn-join:hover {
+        background: #ffffff;
+        color: #000000;
+        border-color: #ffffff;
+      }
+
+      /* ---- Form heading ---- */
+      .form-heading {
+        font-family: "aileron", sans-serif;
+        font-weight: 600;
+        font-size: clamp(1.2rem, 2vw, 1.6rem);
+        color: #ffffff;
+        line-height: 1.15;
+        margin-bottom: 0.2rem;
+      }
+      .form-subheading {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 0.82rem;
+        color: rgba(255,255,255,0.45);
+        margin-bottom: 0.9rem;
+      }
+
+      /* Error */
+      .form-error {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.78rem;
+        color: #f87171;
+        margin-top: 0.65rem;
+        display: none;
+      }
+
+      /* ---- Industry badge ---- */
+      .industry-badge {
+        display: inline-block;
+        padding: 0.2rem 0.65rem;
+        border-radius: 20px;
+        font-size: 0.68rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.85);
+        letter-spacing: 0.03em;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        white-space: nowrap;
+      }
+      .badge-web3     { background: #1b2354; }
+      .badge-security { background: #2d1a1a; }
+      .badge-ai       { background: #1a2d1a; }
+      .badge-legal    { background: #2d2d1a; }
+      .badge-defi     { background: #1a1a3a; }
+      .badge-academia { background: #2d1a2d; }
+      .badge-media    { background: #1a2d2d; }
+      .badge-gov      { background: #2a1a0a; }
+      .badge-health   { background: #0a2a1a; }
+      .badge-oss      { background: #0a1a2a; }
+      .badge-privacy  { background: #1a0a2d; }
+      .person-item:hover .industry-badge {
+        filter: brightness(1.6);
+        border-color: rgba(0, 0, 0, 0.15);
+      }
+
+      /* ---- Filter pills ---- */
+      #filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .filter-pill {
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        font-size: 0.78rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.65);
+        cursor: pointer;
+        transition: all 0.18s ease;
+        flex-shrink: 0;
+      }
+      .filter-pill:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
+      .filter-pill.active { background: #fff; color: #000; border-color: #fff; font-weight: 600; }
+
+      /* ---- Step 2 ---- */
+      .welcome-hero {
+        padding-top: 7rem;
+        padding-bottom: 2.5rem;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .welcome-hero h1 {
+        font-family: "aileron", sans-serif;
+        font-weight: 600;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        color: #ffffff;
+        letter-spacing: 0.02em;
+        margin-top: 1rem;
+      }
+      .welcome-email {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 0.4rem;
+      }
+      .section-label {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .member-grid .person-item .pb-4 { padding-bottom: 0.75rem !important; }
+      .member-grid .person-item .px-4 { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+      .member-grid .speaker-name { font-size: 0.78rem !important; margin-top: 0.6rem !important; }
+      .member-grid .industry-badge { font-size: 0.62rem !important; padding: 0.15rem 0.5rem !important; }
+      .member-grid .markdown-basic { font-size: 0.72rem !important; margin-top: 0.35rem !important; }
+      .member-grid .mt-1 { margin-top: 0.35rem !important; }
+
+      /* ---- Links overlay on photo ---- */
+      .card-links-overlay {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%);
+        padding: 1.2rem 0.6rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.4rem;
+        transition: background 0.2s ease;
+      }
+      .person-item:hover .card-twitter { color: #fff; }
+
+      /* ---- Role under name ---- */
+      .card-role {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 300;
+        color: rgba(255,255,255,0.75);
+        margin-top: 0.2rem;
+        line-height: 1.4;
+      }
+      .person-item:hover .card-role { color: rgba(255,255,255,0.9); }
+
+      /* ---- Card image wrap + badge overlay ---- */
+      .card-image-wrap { position: relative; }
+      .card-image-wrap .industry-badge {
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+        backdrop-filter: blur(6px);
+        background-color: rgba(0,0,0,0.55) !important;
+        border-color: rgba(255,255,255,0.2) !important;
+        color: rgba(255,255,255,0.9) !important;
+        font-size: 0.6rem !important;
+        padding: 0.15rem 0.5rem !important;
+      }
+      .person-item:hover .card-image-wrap .industry-badge {
+        filter: none !important;
+        background-color: rgba(0,0,0,0.7) !important;
+        border-color: rgba(255,255,255,0.35) !important;
+      }
+
+      /* ---- Card Twitter link ---- */
+      .card-twitter {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 300;
+        color: rgba(255,255,255,0.75);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        flex-shrink: 0;
+      }
+      .card-twitter:hover { color: #fff; }
+
+      /* Website link with icon */
+      .card-website {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.28rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 300;
+        text-decoration: none;
+        color: rgba(255,255,255,0.75);
+        transition: color 0.2s ease;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 0;
+      }
+      .card-website:hover { color: #fff; }
+      .person-item:hover .card-website { color: #fff; }
+    </style>
+  </head>
+
+  <body class="bg-black text-white">
+    <div class="relative w-full min-h-screen text-white">
+
+      <!-- ======= NAVBAR ======= -->
+      <div id="header" class="fixed w-full h-18 z-40 top-0">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden" />
+        <div class="navbar-minimal px-10 py-4 pt-2">
+          <div class="desktop-nav flex justify-between items-center my-1">
+            <div class="flex items-center">
+              <a href="https://web3privacy.info/" target="_blank">
+                <img src="../img/logo5.svg" alt="Web3Privacy Now" class="w-52" />
+              </a>
+            </div>
+            <div class="flex items-center gap-8 text-base">
+              <div class="m-1"><a class="nav-link-minimal active" href="../index.html#intro">Home</a></div>
+              <div class="m-1"><a class="nav-link-minimal" href="../index.html#speakers">Speakers</a></div>
+              <div class="m-1"><a class="nav-link-minimal" href="../index.html#speakers">Program</a></div>
+              <div class="m-1"><a class="nav-link-minimal" href="../index.html#tickets">Register</a></div>
+              <div class="m-1"><a class="nav-link-minimal" href="../index.html#partners">Partners</a></div>
+              <div class="m-1"><a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a></div>
+            </div>
+          </div>
+          <div class="mobile-nav flex justify-between items-center">
+            <div class="mobile-logo">
+              <a href="https://web3privacy.info/" target="_blank">
+                <img src="../img/logo5.svg" alt="Web3Privacy Now" class="w-40" />
+              </a>
+            </div>
+            <div class="mobile-nav-controls">
+              <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </label>
+              <label for="mobile-menu-toggle" class="close-icon" data-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </label>
+            </div>
+          </div>
+          <div class="mobile-menu-panel" data-hidden="true">
+            <div class="mobile-menu-items">
+              <div class="mobile-nav-item"><a class="nav-link-minimal active" href="../index.html#intro">Home</a></div>
+              <div class="mobile-nav-item"><a class="nav-link-minimal" href="../index.html#speakers">Speakers</a></div>
+              <div class="mobile-nav-item"><a class="nav-link-minimal" href="../index.html#speakers">Program</a></div>
+              <div class="mobile-nav-item"><a class="nav-link-minimal" href="../index.html#tickets">Register</a></div>
+              <div class="mobile-nav-item"><a class="nav-link-minimal" href="../index.html#partners">Partners</a></div>
+              <div class="mobile-nav-item"><a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======= END NAVBAR ======= -->
+
+      <!-- ======= STEP 1: REGISTRATION FORM ======= -->
+      <div id="step-form">
+        <div class="register-page" style="padding-top:72px;">
+
+          <!-- Left decorative panel -->
+          <div class="register-left">
+            <div class="register-left-grid"></div>
+            <div class="register-left-dots">
+              <span style="width:320px;height:320px;top:-80px;left:-80px;"></span>
+              <span style="width:180px;height:180px;top:40%;right:-50px;"></span>
+              <span style="width:100px;height:100px;bottom:15%;left:30%;"></span>
+            </div>
+            <div class="register-left-content">
+              <p class="register-left-quote">
+                Privacy is not about having<br />something to hide.<br />
+                It's about having <strong>something to protect.</strong>
+              </p>
+              <div class="register-left-stats">
+                <div>
+                  <div class="register-left-stat-num">20+</div>
+                  <div class="register-left-stat-label">Organizations</div>
+                </div>
+                <div>
+                  <div class="register-left-stat-num">10</div>
+                  <div class="register-left-stat-label">Industries</div>
+                </div>
+                <div>
+                  <div class="register-left-stat-num">&infin;</div>
+                  <div class="register-left-stat-label">Impact</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right form panel -->
+          <div class="register-right">
+            <div style="max-width:26rem;">
+              <div class="team-badge" style="margin-bottom:1rem;">W3Privacy</div>
+              <h1 class="form-heading">Join the Community</h1>
+              <p class="form-subheading">Become part of the global privacy network.</p>
+
+              <form id="register-form" novalidate>
+
+                <!-- Avatar circle -->
+                <div class="avatar-circle-wrap">
+                  <div class="avatar-circle" id="avatar-circle">
+                    <input type="file" id="inp-avatar" accept="image/*" tabindex="-1" />
+                    <div id="avatar-preview-wrap">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="avatar-circle-hint">Upload photo &mdash; optional</span>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="inp-name">Name</label>
+                  <input type="text" id="inp-name" class="form-input" placeholder="Your full name" autocomplete="name" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="inp-email">Email</label>
+                  <input type="email" id="inp-email" class="form-input" placeholder="you@organization.com" autocomplete="email" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="inp-website">Website</label>
+                  <input type="url" id="inp-website" class="form-input" placeholder="https://yourorg.com" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="inp-role">Role / Position</label>
+                  <input type="text" id="inp-role" class="form-input" placeholder="e.g. CEO, Privacy Foundation" autocomplete="organization-title" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="inp-twitter">X (Twitter)</label>
+                  <input type="text" id="inp-twitter" class="form-input" placeholder="@handle" autocomplete="off" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="inp-industry">Industry</label>
+                  <select id="inp-industry" class="form-input">
+                    <option value="">Select&hellip;</option>
+                    <option value="Blockchain & Web3">Blockchain &amp; Web3</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="AI & Machine Learning">AI &amp; Machine Learning</option>
+                    <option value="Legal & Compliance">Legal &amp; Compliance</option>
+                    <option value="Finance & DeFi">Finance &amp; DeFi</option>
+                    <option value="Academia & Research">Academia &amp; Research</option>
+                    <option value="Journalism & Media">Journalism &amp; Media</option>
+                    <option value="Government & Policy">Government &amp; Policy</option>
+                    <option value="Healthcare & Biotech">Healthcare &amp; Biotech</option>
+                    <option value="Open Source Software">Open Source Software</option>
+                    <option value="Privacy">Privacy</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn-join">Join</button>
+                <div class="form-error" id="form-error"></div>
+              </form>
+
+              <p style="margin-top:1rem;font-family:'DM Sans',sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.3);">
+                Already a member? <a href="index.html" style="color:rgba(255,255,255,0.55);text-decoration:underline;">View directory</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- ======= END STEP 1 ======= -->
+
+      <!-- ======= STEP 2: PERSONALIZED GRID ======= -->
+      <div id="step-grid" style="display:none;">
+        <!-- Injected by JS -->
+      </div>
+      <!-- ======= END STEP 2 ======= -->
+
+      <!-- ======= FOOTER ======= -->
+      <footer class="mobile-footer">
+        <div class="footer-top-section">
+          <h3 class="footer-main-title">Web3Privacy Now</h3>
+          <p class="footer-description">Grassroots collective empowering privacy &amp; freedom in the future web.</p>
+        </div>
+        <div class="footer-bottom-section">
+          <div class="footer-column">
+            <h4 class="footer-column-title">Community</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Directory</a></li>
+              <li><a href="register.html" class="footer-link">Register</a></li>
+              <li><a href="../index.html" class="footer-link">Congress</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Contact</h4>
+            <ul class="footer-links-list">
+              <li><a href="https://t.me/+DMkrxGNeJzYyYzM0" class="footer-link" target="_blank">Telegram</a></li>
+              <li><a href="https://twitter.com/web3privacy" class="footer-link" target="_blank">Twitter</a></li>
+              <li><a href="https://www.youtube.com/@Web3PrivacyNow" class="footer-link" target="_blank">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script>
+      // ---- Data ----
+      var MEMBERS = [
+        { initials:'AM', name:'Alex Mercer',    role:'Lead Researcher, Zk Labs',                  website:'zklabs.io',           industry:'Blockchain & Web3',    color:'1b2354', twitter:'alexmercer'   },
+        { initials:'NC', name:'Nina Cross',     role:'Chief Security Officer, NovaCrypt',         website:'novacrypt.com',        industry:'Cybersecurity',        color:'2d1a1a', twitter:'ninacross_sec'},
+        { initials:'AS', name:'Aaron Shaw',     role:'Founder, Apex Sentinel',                    website:'apexsentinel.io',     industry:'Cybersecurity',        color:'2d1a1a', twitter:'aaronshaw_sec' },
+        { initials:'DM', name:'Diana Müller',   role:'Principal Scientist, DeepMind Research',    website:'deepmind-r.org',      industry:'AI & Machine Learning',color:'1a2d1a', twitter:'dianamuller_ai'},
+        { initials:'LX', name:'Lena Xavier',    role:'General Counsel, Lex Protocol',             website:'lexprotocol.io',      industry:'Legal & Compliance',   color:'2d2d1a', twitter:'lenaxavier_law'},
+        { initials:'VR', name:'Victor Ramos',   role:'CEO, Verichain',                            website:'verichain.finance',   industry:'Finance & DeFi',       color:'1a1a3a', twitter:'victorramos_fi'},
+        { initials:'RI', name:'Rin Inoue',      role:'Associate Professor, RI Web3',              website:'riweb3.edu',          industry:'Academia & Research',  color:'2d1a2d', twitter:'rininoue_web3' },
+        { initials:'PL', name:'Paul Laurent',   role:'Editor-in-Chief, Plaintext Press',          website:'plaintextpress.org',  industry:'Journalism & Media',   color:'1a2d2d', twitter:'paullaurent'   },
+        { initials:'DP', name:'Dana Petrov',    role:'Policy Director, DataPolicy EU',            website:'datapolicy.eu',       industry:'Government & Policy',  color:'2a1a0a', twitter:'danapetrov_eu' },
+        { initials:'BH', name:'Ben Hartley',    role:'CTO, BioHash',                              website:'biohash.health',      industry:'Healthcare & Biotech', color:'0a2a1a', twitter:'benhartley_bio'},
+        { initials:'OS', name:'Olivia Sun',     role:'Core Maintainer, OpenShield',               website:'openshield.dev',      industry:'Open Source Software', color:'0a1a2a', twitter:'oliviasun_oss' },
+        { initials:'SR', name:'Sam Reyes',      role:'Protocol Engineer, Silent Router',          website:'silentrouter.net',    industry:'Blockchain & Web3',    color:'1b2354', twitter:'samreyes_web3' },
+        { initials:'FP', name:'Fatima Patel',   role:'Research Lead, ForwardPact',                website:'forwardpact.ai',      industry:'AI & Machine Learning',color:'1a2d1a', twitter:'fatimapatel_ai'},
+        { initials:'CC', name:'Carlos Chen',    role:'Partner, CipherCounsel',                    website:'ciphercounsel.legal', industry:'Legal & Compliance',   color:'2d2d1a', twitter:'carloschen_law'},
+        { initials:'AX', name:'Ariel Kwan',     role:'Co-founder, AxiomFi',                       website:'axiomfi.org',         industry:'Finance & DeFi',       color:'1a1a3a', twitter:'arielkwan_defi'},
+        { initials:'QL', name:'Quinn Liu',      role:'Director, Quantum Ledger Labs',             website:'quantumledger.ac',    industry:'Academia & Research',  color:'2d1a2d', twitter:'quinnliu_ql'   },
+        { initials:'CJ', name:'Cleo Jensen',    role:'Investigative Reporter, Crypt Journal',     website:'cryptjournal.media',  industry:'Journalism & Media',   color:'1a2d2d', twitter:'cleojensen'    },
+        { initials:'RF', name:'Rosa Ferreira',  role:'Executive Director, Rights & Freedoms Fdn.',website:'rightsfreedoms.org',  industry:'Government & Policy',  color:'2a1a0a', twitter:'rosaferreira'  },
+        { initials:'GX', name:'George Vance',   role:'CEO, GenomeX',                              website:'genomex.bio',         industry:'Healthcare & Biotech', color:'0a2a1a', twitter:'georgevance_gx'},
+        { initials:'KR', name:'Kai Romero',     role:'Community Lead, Kernel',                    website:'kernel.community',    industry:'Open Source Software', color:'0a1a2a', twitter:'kairomero'     }
+      ];
+
+      var INDUSTRY_BADGE = {
+        'Blockchain & Web3':    'badge-web3',
+        'Cybersecurity':        'badge-security',
+        'AI & Machine Learning':'badge-ai',
+        'Legal & Compliance':   'badge-legal',
+        'Finance & DeFi':       'badge-defi',
+        'Academia & Research':  'badge-academia',
+        'Journalism & Media':   'badge-media',
+        'Government & Policy':  'badge-gov',
+        'Healthcare & Biotech': 'badge-health',
+        'Open Source Software': 'badge-oss',
+        'Privacy':              'badge-privacy'
+      };
+
+      // ---- Helpers ----
+      function makeAvatar(initials, color) {
+        var svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'>" +
+          "<rect width='200' height='200' fill='%23" + color + "'/>" +
+          "<circle cx='100' cy='78' r='36' fill='rgba(255,255,255,0.25)'/>" +
+          "<ellipse cx='100' cy='170' rx='58' ry='40' fill='rgba(255,255,255,0.18)'/>" +
+          "</svg>";
+        return "data:image/svg+xml," + svg;
+      }
+
+      function escapeHtml(str) {
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function renderCard(member, extraClass) {
+        var badgeClass = INDUSTRY_BADGE[member.industry] || 'badge-web3';
+        var avatarSrc = member.avatarDataUrl || makeAvatar(member.initials, member.color || '1b2354');
+        var website = member.website || '';
+        var displayWebsite = website.length > 24 ? website.substring(0, 22) + '…' : website;
+        var href = (website.indexOf('http') === 0) ? website : ('https://' + website);
+        var cls = 'hover:bg-white hover:text-black person-item border border-white/30' + (extraClass ? ' ' + extraClass : '');
+        var displayName = member.name || member.org;
+        var twitterHandle = (member.twitter || '').replace(/^@/, '');
+
+        var websiteHtml = website
+          ? '<a href="' + escapeHtml(href) + '" target="_blank" class="card-website"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>' + escapeHtml(displayWebsite) + '</a>'
+          : '';
+        var twitterHtml = twitterHandle
+          ? '<a href="https://x.com/' + escapeHtml(twitterHandle) + '" target="_blank" class="card-twitter"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>@' + escapeHtml(twitterHandle) + '</a>'
+          : '';
+        var overlayHtml = (websiteHtml || twitterHtml)
+          ? '<div class="card-links-overlay">' + websiteHtml + twitterHtml + '</div>'
+          : '';
+        var roleHtml = member.role
+          ? '<div class="card-role">' + escapeHtml(member.role) + '</div>'
+          : '';
+
+        return '<div class="' + cls + '">' +
+          '<div class="card-image-wrap">' +
+            '<img src="' + avatarSrc + '" alt="' + escapeHtml(displayName) + ' avatar" class="aspect-square object-cover w-full" />' +
+            '<span class="industry-badge ' + badgeClass + '">' + escapeHtml(member.industry) + '</span>' +
+            overlayHtml +
+          '</div>' +
+          '<div class="pb-4 px-4">' +
+            '<div class="mt-4 speaker-name">' + escapeHtml(displayName) + '</div>' +
+            roleHtml +
+          '</div>' +
+        '</div>';
+      }
+
+      // ---- Avatar preview ----
+      document.getElementById('inp-avatar').addEventListener('change', function () {
+        var file = this.files[0];
+        if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function (ev) {
+          var wrap = document.getElementById('avatar-preview-wrap');
+          wrap.innerHTML = '<img src="' + ev.target.result + '" style="width:72px;height:72px;object-fit:cover;border-radius:50%;" alt="Avatar preview" />';
+          // also hide the dashed border once image is loaded
+          var circle = document.getElementById('avatar-circle');
+          if (circle) { circle.style.border = 'none'; }
+        };
+        reader.readAsDataURL(file);
+      });
+
+      // ---- Form submit ----
+      document.getElementById('register-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var name     = document.getElementById('inp-name').value.trim();
+        var email    = document.getElementById('inp-email').value.trim();
+        var website  = document.getElementById('inp-website').value.trim();
+        var role     = document.getElementById('inp-role').value.trim();
+        var twitter  = document.getElementById('inp-twitter').value.trim().replace(/^@/, '');
+        var industry = document.getElementById('inp-industry').value;
+        var avatarInput = document.getElementById('inp-avatar');
+        var errorEl  = document.getElementById('form-error');
+
+        if (!name) {
+          errorEl.textContent = 'Please enter your name.';
+          errorEl.style.display = 'block';
+          return;
+        }
+        if (!email || email.indexOf('@') < 1) {
+          errorEl.textContent = 'Please enter a valid email address.';
+          errorEl.style.display = 'block';
+          return;
+        }
+        if (!industry) {
+          errorEl.textContent = 'Please select your industry.';
+          errorEl.style.display = 'block';
+          return;
+        }
+        errorEl.style.display = 'none';
+
+        var parts = name.trim().split(/\s+/);
+        var initials = parts.length >= 2
+          ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+          : name.substring(0, 2).toUpperCase();
+        var displaySite = website || email.split('@')[1];
+
+        function proceed(avatarDataUrl) {
+          buildStep2({
+            initials: initials,
+            name: name,
+            role: role,
+            org: website || email.split('@')[1],
+            website: displaySite,
+            industry: industry,
+            twitter: twitter,
+            color: '515679',
+            avatarDataUrl: avatarDataUrl || null
+          }, email);
+        }
+
+        if (avatarInput.files && avatarInput.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (ev) { proceed(ev.target.result); };
+          reader.readAsDataURL(avatarInput.files[0]);
+        } else {
+          proceed(null);
+        }
+      });
+
+      // ---- Build Step 2 ----
+      function buildStep2(userMember, email) {
+        var industries = [];
+        MEMBERS.forEach(function (m) {
+          if (industries.indexOf(m.industry) < 0) industries.push(m.industry);
+        });
+        industries.sort();
+
+        // activeFilters: Set of selected industries; empty = All
+        var activeFilters = new Set([userMember.industry]);
+
+        // Build pills HTML
+        var pillsHtml = '<button class="filter-pill" data-industry="All">All</button>';
+        industries.forEach(function (ind) {
+          var isActive = ind === userMember.industry ? ' active' : '';
+          pillsHtml += '<button class="filter-pill' + isActive + '" data-industry="' + escapeHtml(ind) + '">' + escapeHtml(ind) + '</button>';
+        });
+
+        var stepGrid = document.getElementById('step-grid');
+        stepGrid.innerHTML =
+          '<section class="welcome-hero">' +
+            '<div class="team-badge" style="margin:0 auto 0; display:inline-block;">W3Privacy</div>' +
+            '<h1>Welcome to the Community!</h1>' +
+            '<div class="welcome-email">' + escapeHtml(email) + '</div>' +
+          '</section>' +
+
+          '<section class="px-6 md:px-16 lg:px-24 pb-4">' +
+            '<div id="filter-bar">' + pillsHtml + '</div>' +
+          '</section>' +
+
+          '<section class="px-6 md:px-16 lg:px-24 pb-16">' +
+            '<div id="community-grid" class="member-grid grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-5"></div>' +
+          '</section>';
+
+        function renderGrid() {
+          var grid = document.getElementById('community-grid');
+          var showAll = activeFilters.size === 0;
+          var showUser = showAll || activeFilters.has(userMember.industry);
+          var filtered = showAll
+            ? MEMBERS
+            : MEMBERS.filter(function (m) { return activeFilters.has(m.industry); });
+          var userCardHtml = showUser ? renderCard(userMember, '') : '';
+          grid.innerHTML = userCardHtml + filtered.map(function (m) { return renderCard(m, ''); }).join('');
+        }
+
+        document.getElementById('filter-bar').addEventListener('click', function (e) {
+          var pill = e.target.closest ? e.target.closest('.filter-pill') : null;
+          if (!pill && e.target.classList.contains('filter-pill')) pill = e.target;
+          if (!pill) return;
+          var ind = pill.getAttribute('data-industry');
+          if (ind === 'All') {
+            activeFilters.clear();
+            document.querySelectorAll('.filter-pill').forEach(function (p) { p.classList.remove('active'); });
+            pill.classList.add('active');
+          } else {
+            // deactivate All pill
+            document.querySelector('.filter-pill[data-industry="All"]').classList.remove('active');
+            if (activeFilters.has(ind)) {
+              activeFilters.delete(ind);
+              pill.classList.remove('active');
+              // if nothing selected, fall back to All
+              if (activeFilters.size === 0) {
+                document.querySelector('.filter-pill[data-industry="All"]').classList.add('active');
+              }
+            } else {
+              activeFilters.add(ind);
+              pill.classList.add('active');
+            }
+          }
+          renderGrid();
+        });
+
+        renderGrid();
+
+        document.getElementById('step-form').style.display = 'none';
+        stepGrid.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>
