@@ -7,7 +7,7 @@
     "role": "Associate General Counsel for Cybersecurity and Civil Liberties Policy",
     "orgUrl": "https://fil.org",
     "orgName": "Filecoin",
-    "industry": "Privacy"
+    "industry": "Privacy", "Digital Rights",
   },
   {
     "name": "ISABELA FERNANDES",
@@ -17,7 +17,7 @@
     "role": "Executive Director",
     "orgUrl": "https://torproject.org",
     "orgName": "Tor Project",
-    "industry": "Privacy"
+    "industry": "Privacy", "Digital Rights",
   },
   {
     "name": "AHMED GHAPPOUR",
@@ -27,7 +27,7 @@
     "role": "GC",
     "orgUrl": "https://www.flashbots.net",
     "orgName": "Flashbots",
-    "industry": "Privacy"
+    "industry": "Privacy", "Digital Rights", "Legal",
   },
   {
     "name": "AMIR TAAKI",
@@ -37,7 +37,7 @@
     "role": "Founder",
     "orgUrl": "https://x.com/DarkFiSquad",
     "orgName": "DarkFi",
-    "industry": "Privacy"
+    "industry": "Privacy", "Engineering",
   },
   {
     "name": "DANNY O'BRIEN",
@@ -47,7 +47,7 @@
     "role": "Senior Fellow",
     "orgUrl": "https://fil.org",
     "orgName": "Filecoin Foundation, EFF",
-    "industry": "Privacy"
+    "industry": "Privacy", "Digital Rights",
   },
   {
     "name": "VIJAY KRISHNAVANSHI",
@@ -57,17 +57,17 @@
     "role": "Co-Founder",
     "orgUrl": "https://fileverse.io/",
     "orgName": "Fileverse",
-    "industry": "Privacy"
+    "industry": "Privacy", "Engineering", "Cryptography"
   },
   {
-    "name": "DENIS \"JAROMIL\" ROJO",
+    "name": "DENIS "JAROMIL" ROJO",
     "photo": "../img/jaromil.jpg",
     "xUrl": "https://x.com/jaromil",
     "tagline": "Long-lasting cryptographer & hacktivist",
     "role": "Founder",
     "orgUrl": "https://dyne.org",
     "orgName": "Dyne.org",
-    "industry": "Privacy"
+    "industry": "Privacy", "Cryptography"
   },
   {
     "name": "JUSTIN DRAKE",
@@ -77,7 +77,7 @@
     "role": "Research",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation",
-    "industry": "Privacy"
+    "industry": "Privacy", "Quantum resistance",
   },
   {
     "name": "ANDY GUZMAN",
@@ -87,7 +87,7 @@
     "role": "Head",
     "orgUrl": "http://pse.dev",
     "orgName": "Privacy Stewards of Ethereum",
-    "industry": "Privacy"
+    "industry": "Privacy", "Cryptography", 
   },
   {
     "name": "JORDI BAYLINA",
@@ -97,7 +97,7 @@
     "role": "Co-founder",
     "orgUrl": "http://zisk.technology",
     "orgName": "Zisk",
-    "industry": "Privacy"
+    "industry": "Privacy", "Voting", "Digital Rights",
   },
   {
     "name": "KYLE DEN HARTOG",
@@ -107,7 +107,7 @@
     "role": "Staff Cryptographic Security Engineer",
     "orgUrl": "http://brave.com",
     "orgName": "Brave",
-    "industry": "Privacy"
+    "industry": "Privacy", "Standartisation", "Browsers",
   },
   {
     "name": "HARRY HALPIN",
@@ -117,7 +117,7 @@
     "role": "CEO",
     "orgUrl": "http://nym.com",
     "orgName": "Nym",
-    "industry": "Privacy"
+    "industry": "Privacy", "VPN", "Digital Rights", "Mixnet",
   },
   {
     "name": "YING TONG LAI",
@@ -127,7 +127,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy"
+    "industry": "Privacy", "Cryptography", "Identity",
   },
   {
     "name": "ml_sudo",
@@ -137,7 +137,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation/silviculture-society",
     "orgName": "Ethereum Foundation's Silviculture",
-    "industry": "Privacy"
+    "industry": "Privacy", "Cryptography"
   },
   {
     "name": "AURYN MCMILLAN",
@@ -147,7 +147,7 @@
     "role": "Co-founder",
     "orgUrl": "https://enclave.gg",
     "orgName": "Enclave",
-    "industry": "Privacy"
+    "industry": "Privacy", "Compute",
   },
   {
     "name": "JUAN BENET",
@@ -167,7 +167,7 @@
     "role": "VP of Technology",
     "orgUrl": "https://www.gnosis.io",
     "orgName": "Gnosis & HOPR",
-    "industry": "Privacy"
+    "industry": "Privacy", "VPN", "Mixnet", 
   },
   {
     "name": "BOB SUMMERWILL",
@@ -187,7 +187,7 @@
     "role": "Co-founder",
     "orgUrl": "https://fileverse.io",
     "orgName": "Fileverse",
-    "industry": "Privacy"
+    "industry": "Privacy", "Cryptography", "Collaboration",
   },
   {
     "name": "CHRIS MCCABE",
@@ -197,7 +197,7 @@
     "role": "Co-founder",
     "orgUrl": "https://getsession.org",
     "orgName": "Session",
-    "industry": "Privacy"
+    "industry": "Privacy", "Messengers",
   },
   {
     "name": "NICO CONSIGNY",
@@ -207,7 +207,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation",
-    "industry": "Privacy"
+    "industry": "Privacy", "Wallets"
   },
   {
     "name": "PETER VAN VALKENBURGH",
@@ -217,7 +217,7 @@
     "role": "Executive Director",
     "orgUrl": "https://coincenter.org",
     "orgName": "Coin Center",
-    "industry": "Privacy"
+    "industry": "Privacy", "Legal",
   },
   {
     "name": "FATEMEH FANNIZADEH",
@@ -227,7 +227,7 @@
     "role": "Legal",
     "orgUrl": "https://x.com/Fatalmeh",
     "orgName": "independent",
-    "industry": "Privacy"
+    "industry": "Privacy", "Legal",
   },
   {
     "name": "MARIO HAVEL",
@@ -237,7 +237,7 @@
     "role": "Protocol Support",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & BORDEL",
-    "industry": "Privacy"
+    "industry": "Privacy", "Hacktivism",
   },
   {
     "name": "OSKARTH",
@@ -247,7 +247,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy", "Institutional",
   },
   {
     "name": "REDSHIFTZERO",
@@ -257,11 +257,31 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy", "Encryption", "Journalism",
   },
   {
     "name": "SETH FOR PRIVACY",
     "photo": "../img/sethforprivacy.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "ROGER DINGLEDINE",
+    "photo": "../img/roger.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy", "Digital Rights",
+  },
+    {
+    "name": "PG",
+    "photo": "../img/pg.jpg",
     "xUrl": "https://x.com/oskarth",
     "tagline": "Applied cryptographer meeting institutional adoption",
     "role": "Lead",
@@ -300,8 +320,148 @@
     "industry": "Privacy"
   },
     {
-    "name": "MIGLE RAKITAITE",
-    "photo": "../img/migle.png",
+    "name": "JOHN GUILDING",
+    "photo": "../img/john.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "LEUTS",
+    "photo": "../img/leuts-aragon.jpeg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "STEFANO GOGIOSO",
+    "photo": "../img/stefano-gogioso-profile.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+     {
+    "name": "CAMILA RIOJA",
+    "photo": "../img/camila-rioja.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "JIMJIM",
+    "photo": "../img/jimjim.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "MASHBEAN",
+    "photo": "../img/mashbean.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "AIS CONNOLLY",
+    "photo": "../img/aisconnolly.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+   {
+    "name": "KEVIN JONES",
+    "photo": "../img/Kevin Jones.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+  {
+    "name": "PARSLEY",
+    "photo": "../img/Parsley.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+   {
+    "name": "PARSLEY",
+    "photo": "../img/Parsley.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "QUINTUS",
+    "photo": "../img/quintus.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+     {
+    "name": "HIOKI LEONA",
+    "photo": "../img/hiokileona.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "MARINA MARKEZIC",
+    "photo": "../img/Marina-Markezic.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "NANAK NIHAL KHALSA",
+    "photo": "../img/Nanak-Nihal-Khalsa.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "CHEEKY GORILLA",
+    "photo": "../img/Cheeky-gorilla.jpg",
     "xUrl": "https://x.com/oskarth",
     "tagline": "Applied cryptographer meeting institutional adoption",
     "role": "Lead",
