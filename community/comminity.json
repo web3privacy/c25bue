@@ -189,27 +189,7 @@
     "orgName": "Ethereum Foundation's Silviculture",
     "industry": "Privacy, Cryptography"
   },
-    {
-    "name": "ml_sudo",
-    "photo": "../img/michelleLai.png",
-    "xUrl": "https://x.com/ml_sudo",
-    "tagline": "Open-hardware enthusiast",
-    "role": "Lead",
-    "orgUrl": "https://ethereum.foundation/silviculture-society",
-    "orgName": "Ethereum Foundation's Silviculture",
-    "industry": "Privacy" 
-  },
   {
-    "name": "HAZEL HU",
-    "photo": "../img/hazel-hu.jpg",
-    "xUrl": "https://x.com/auryn_macmillan",
-    "tagline": "Confidential computing visionary",
-    "role": "Co-founder",
-    "orgUrl": "https://enclave.gg",
-    "orgName": "Enclave",
-    "industry": "Compute" 
-  },
-    {
     "name": "HAZEL HU",
     "photo": "../img/hazel-hu.jpg",
     "xUrl": "https://x.com/auryn_macmillan",
@@ -240,16 +220,6 @@
     "industry": "Privacy"
   },
     {
-    "name": "EVA GALPERIN",
-    "photo": "../img/evagalperin.jpg",
-    "xUrl": "https://x.com/juanbenet",
-    "tagline": "Visionary behind alternative tech ecosystem",
-    "role": "Founder",
-    "orgUrl": "https://www.protocol.ai",
-    "orgName": "Protocol Labs",
-    "industry": "Privacy"
-  },
-      {
     "name": "EVA GALPERIN",
     "photo": "../img/evagalperin.jpg",
     "xUrl": "https://x.com/juanbenet",
