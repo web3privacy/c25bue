@@ -127,7 +127,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy" 
+    "industry": "Privacy, Cryptography, Identity" 
   },
     {
     "name": "LIAM EAGAN",
@@ -137,7 +137,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy" 
+    "industry": "Privacy, Cryptography, Academia" 
   },
     {
     "name": "VITALIK BUTERIN",
@@ -147,7 +147,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy" 
+    "industry": "Privacy, Protocols, Cryptography" 
   },
     {
     "name": "FRANCESCO ANDREOLI",
@@ -157,7 +157,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy, Cryptography, Identity"
+    "industry": "Privacy, Engineering, Wallets"
   },
     {
     "name": "WEI DAI",
@@ -167,7 +167,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy" 
+    "industry": "Privacy, Investments" 
   },
     {
     "name": "ARNAUD SCHENK",
@@ -177,7 +177,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy" 
+    "industry": "Privacy, Governance" 
   },
   {
     "name": "ml_sudo",
@@ -197,7 +197,7 @@
     "role": "Co-founder",
     "orgUrl": "https://enclave.gg",
     "orgName": "Enclave",
-    "industry": "Compute" 
+    "industry": "Public Goods" 
   },
   {
     "name": "BRUCE.ETH",
@@ -207,7 +207,7 @@
     "role": "Founder",
     "orgUrl": "https://www.protocol.ai",
     "orgName": "Protocol Labs",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography"
   },
     {
     "name": "BETH MCCARTHY",
@@ -217,7 +217,7 @@
     "role": "Founder",
     "orgUrl": "https://www.protocol.ai",
     "orgName": "Protocol Labs",
-    "industry": "Privacy"
+    "industry": "Public goods, Privacy, Digital Rights"
   },
     {
     "name": "EVA GALPERIN",
@@ -227,7 +227,7 @@
     "role": "Founder",
     "orgUrl": "https://www.protocol.ai",
     "orgName": "Protocol Labs",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights, Encryption"
   },
   {
     "name": "VACLAV PAVLIN",
@@ -237,7 +237,7 @@
     "role": "VP of Technology",
     "orgUrl": "https://www.gnosis.io",
     "orgName": "Gnosis & HOPR",
-    "industry": "VPN"
+    "industry": "Engineering, Cryptography"
   },
   {
     "name": "BOB SUMMERWILL",
@@ -257,7 +257,7 @@
     "role": "Co-founder",
     "orgUrl": "https://fileverse.io",
     "orgName": "Fileverse",
-    "industry": "Collaboration" 
+    "industry": "Collaboration, Cryptography, Applications" 
   },
   {
     "name": "CHRIS MCCABE",
@@ -267,7 +267,7 @@
     "role": "Co-founder",
     "orgUrl": "https://getsession.org",
     "orgName": "Session",
-    "industry": "Messengers" 
+    "industry": "Messengers, Applications" 
   },
   {
     "name": "NICO CONSIGNY",
@@ -277,7 +277,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation",
-    "industry": "Privacy" 
+    "industry": "Privacy, Wallets" 
   },
   {
     "name": "PETER VAN VALKENBURGH",
@@ -287,7 +287,7 @@
     "role": "Executive Director",
     "orgUrl": "https://coincenter.org",
     "orgName": "Coin Center",
-    "industry": "Privacy" 
+    "industry": "Privacy, Legal" 
   },
   {
     "name": "FATEMEH FANNIZADEH",
@@ -297,7 +297,7 @@
     "role": "Legal",
     "orgUrl": "https://x.com/Fatalmeh",
     "orgName": "independent",
-    "industry": "Legal"
+    "industry": "Legal, Digital Rights"
   },
   {
     "name": "MARIO HAVEL",
@@ -307,7 +307,7 @@
     "role": "Protocol Support",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & BORDEL",
-    "industry": "Hacktivism"
+    "industry": "Hacktivism, Engineering, Protocols"
   },
   {
     "name": "OSKARTH",
@@ -317,7 +317,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Institutional"
+    "industry": "Institutional, Privacy"
   },
   {
     "name": "REDSHIFTZERO",
@@ -327,7 +327,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Journalism"
+    "industry": "Journalism, Cryptography, Whistleblowers"
   },
   {
     "name": "SETH FOR PRIVACY",
@@ -337,7 +337,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Wallets"
   },
     {
     "name": "ROGER DINGLEDINE",
@@ -347,7 +347,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Digital Rights"
+    "industry": "Digital Rights, Privacy, Protocols"
   },
     {
     "name": "PG",
@@ -357,7 +357,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights"
   },
     {
     "name": "NAOMI BROCKWELL",
@@ -377,7 +377,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Protocols, Encryption"
   },
     {
     "name": "FLORIAN GLATZ",
@@ -387,7 +387,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Browsers, Legal"
   },
     {
     "name": "JOHN GUILDING",
@@ -397,7 +397,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Identity, Voting"
   },
     {
     "name": "LEUTS",
@@ -407,7 +407,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Governance"
   },
     {
     "name": "STEFANO GOGIOSO",
@@ -417,7 +417,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Academia, Quantum resistance"
   },
      {
     "name": "CAMILA RIOJA",
@@ -427,7 +427,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Public Goods, Legal, Governance"
   },
     {
     "name": "JIMJIM",
@@ -437,7 +437,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Engineering"
   },
     {
     "name": "MASHBEAN",
@@ -447,7 +447,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Governance, Public Goods"
   },
     {
     "name": "AIS CONNOLLY",
@@ -457,7 +457,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography"
   },
    {
     "name": "KEVIN JONES",
@@ -467,7 +467,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Messaging, Engineering"
   },
   {
     "name": "PARSLEY",
@@ -477,7 +477,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Engineering"
   },
     {
     "name": "QUINTUS",
@@ -487,7 +487,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Hardware"
   },
      {
     "name": "HIOKI LEONA",
@@ -497,7 +497,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Mining"
   },
     {
     "name": "MARINA MARKEZIC",
@@ -507,7 +507,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Legal"
   },
     {
     "name": "NANAK NIHAL KHALSA",
@@ -517,7 +517,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Identity"
   },
     {
     "name": "CHEEKY GORILLA",
@@ -527,7 +527,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Protocols"
   },
     {
     "name": "KATE STAPLETON",
@@ -537,7 +537,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Digital Rights"
   },
     {
     "name": "NICK ALMOND",
@@ -547,7 +547,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Governance"
   },
     {
     "name": "JOSH DAVILA",
@@ -557,7 +557,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Solidarity economy"
   },
     {
     "name": "MAX HAMPSHIRE",
@@ -567,7 +567,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, VPN, Mixnets"
   },
     {
     "name": "NIKOLINE ARNS",
@@ -577,7 +577,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights, Public Goods"
   },
   {
     "name": "POL LANSKI",
@@ -587,7 +587,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights, Hardware"
   },
   {
     "name": "ALAN SCOTT",
@@ -597,7 +597,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography"
   },
   {
     "name": "ALISHER",
@@ -607,7 +607,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Hardware"
   },
     {
     "name": "AMEEN SULEIMANI",
@@ -617,7 +617,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography"
   },
     {
     "name": "AMIT CHAUDHARY",
@@ -627,7 +627,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Academia"
   },
   {
     "name": "ANDREW MILLER",
@@ -637,7 +637,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Academia"
   },
     {
     "name": "JUAN BENET",
@@ -647,7 +647,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Investment"
   },
     {
     "name": "CYP",
@@ -657,7 +657,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Socials"
   },
     {
     "name": "ELEFTHERIOS",
@@ -667,7 +667,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Coordination"
   },
     {
     "name": "GAVIN BIRCH",
@@ -677,7 +677,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Applications"
   },
     {
     "name": "JOAN ARUS",
@@ -687,7 +687,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights, Legal"
   },
     {
     "name": "JULIO LINARES",
@@ -697,7 +697,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights, Cryptography, Academia"
   },
     {
     "name": "KRIS IS",
@@ -707,7 +707,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights"
   },
     {
     "name": "LASHA ANTADZE",
@@ -717,7 +717,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Identity, Voting, Digital Rights"
   },
     {
     "name": "MANU ALZURU",
@@ -727,7 +727,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Activism"
   },
     {
     "name": "LEFTERIS KARAPETSAS",
@@ -737,7 +737,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Applications, Governance"
   },
     {
     "name": "PAUL DYLAN-ENNIS",
@@ -747,7 +747,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Academia"
   },
     {
     "name": "PIEMAN",
@@ -757,7 +757,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography"
   },
     {
     "name": "alpeh_v",
@@ -767,7 +767,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Engineering"
   },
     {
     "name": "TANISHA KATARA",
@@ -777,7 +777,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Governance"
   },
     {
     "name": "AYA MIYAGUCHI",
@@ -787,7 +787,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Rights"
   },
       {
     "name": "SEBASTIAN BüRGEL",
@@ -797,7 +797,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Mixnets, VPN"
   },
     {
     "name": "JORDI PINYANA",
@@ -807,7 +807,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Voting, Engineering"
   },
     {
     "name": "POLYMUTEX",
@@ -817,7 +817,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Wallets, Engineering"
   },
     {
     "name": "SUJI JAN",
@@ -827,7 +827,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Socials"
   },
     {
     "name": "TOBIAS",
@@ -837,7 +837,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Security"
   },
     {
     "name": "WEI DAI",
@@ -847,7 +847,7 @@
     "role": "Lead",
     "orgUrl": "https://dappnode.com",
     "orgName": "Dappnode",
-    "industry": "Privacy"
+    "industry": "Privacy, Investments"
   },
   {
     "name": "WILL SCOTT",
@@ -857,7 +857,7 @@
     "role": "Adoption",
     "orgUrl": "https://fil.org",
     "orgName": "Filecoin Foundation",
-    "industry": "Privacy"
+    "industry": "Privacy, VPN"
   },
   {
     "name": "Loring Harkness",
@@ -867,7 +867,7 @@
     "role": "Lead",
     "orgUrl": "https://linktr.ee/ShutterNetwork",
     "orgName": "Shutter Network",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Engineering"
   },
   {
     "name": "VIKTOR TRÓN",
@@ -877,7 +877,7 @@
     "role": "Founder",
     "orgUrl": "https://ethswarm.org",
     "orgName": "Swarm",
-    "industry": "Privacy"
+    "industry": "Privacy, Storage"
   },
   {
     "name": "ANTONIO SEVESO",
@@ -887,7 +887,7 @@
     "role": "Co-founder",
     "orgUrl": "https://www.fluidkey.com",
     "orgName": "Fluidkey",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Engineering"
   },
   {
     "name": "KIERAN MESQUITA",
@@ -897,7 +897,7 @@
     "role": "contributor",
     "orgUrl": "https://railgun.org",
     "orgName": "Railgun",
-    "industry": "Privacy"
+    "industry": "Privacy, Cryptography, Engineering"
   },
   {
     "name": "DANIEL KNOBELSDORF",
@@ -907,7 +907,7 @@
     "role": "Lead",
     "orgUrl": "",
     "orgName": "Infinite Garden",
-    "industry": "Privacy"
+    "industry": "Privacy, Digital Activism"
   },
   {
     "name": "SHADY EL DAMATY",
@@ -917,6 +917,6 @@
     "role": "CEO",
     "orgUrl": "https://x.com/0xholonym",
     "orgName": "Human.tech",
-    "industry": "Privacy"
+    "industry": "Privacy, Identity, Digital Activism"
   }
 ]
