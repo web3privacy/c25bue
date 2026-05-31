@@ -67,7 +67,7 @@
                 <a class="nav-link-minimal" href="#speakers">Program</a>
               </div>
               <div class="m-1">
-                <a class="nav-link-minimal" href="#tickets">Register</a>
+                <a class="nav-link-minimal" href="./community/">Community</a>
               </div>
               <div class="m-1">
                 <a class="nav-link-minimal" href="#partners"> Partners</a>
@@ -120,7 +120,7 @@
                 <a class="nav-link-minimal" href="#speakers">Program</a>
               </div>
               <div class="mobile-nav-item">
-                <a class="nav-link-minimal" href="#tickets">Register</a>
+                <a class="nav-link-minimal" href="./community/">Community</a>
               </div>
               <div class="mobile-nav-item">
                 <a class="nav-link-minimal" href="#partners">Partners</a>
@@ -1197,6 +1197,229 @@
         </div>
         <div class="text-center text-xl mt-10 mb-10 font-dm-sans font-light">
           and 130 cryptographers, hacktivists, legal experts, philosophers, journalists, artists & other open-minded people.
+        </div>
+
+      </section>
+
+      <section id="community-showcase" class="text-white my-24 md:my-36" aria-label="Join the Community">
+        <style>
+          #community-showcase .community-carousel-shell {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1rem;
+          }
+          #community-showcase .community-headline {
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+          #community-showcase .community-kicker {
+            display: inline-block;
+            font-family: "DM Sans", sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.62);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 999px;
+            padding: 0.35rem 0.9rem;
+            margin-bottom: 1rem;
+          }
+          #community-showcase .community-subtitle {
+            max-width: 42rem;
+            margin: 0.8rem auto 0;
+            color: rgba(255, 255, 255, 0.72);
+            font-family: "DM Sans", sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.55;
+          }
+          #community-showcase .community-subtitle a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+          }
+          #community-showcase .community-carousel-wrap {
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 20px;
+            background: radial-gradient(circle at 20% 0%, rgba(255,255,255,0.08), transparent 45%),
+                        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+            overflow: hidden;
+            padding: 1rem;
+          }
+          #community-showcase .community-carousel-viewport {
+            overflow: hidden;
+          }
+          #community-showcase .community-carousel-track {
+            display: flex;
+            transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+            will-change: transform;
+          }
+          #community-showcase .community-carousel-slide {
+            min-width: 100%;
+          }
+          #community-showcase .community-slide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.9rem;
+          }
+          #community-showcase .community-person-card {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 14px;
+            overflow: hidden;
+            background: #080808;
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+            min-height: 100%;
+          }
+          #community-showcase .community-person-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.32);
+            background: #0e0e0e;
+          }
+          #community-showcase .community-card-image-wrap {
+            position: relative;
+          }
+          #community-showcase .community-person-photo {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+          }
+          #community-showcase .community-links-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0.22) 70%, transparent 100%);
+            padding: 1.05rem 0.6rem 0.45rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+          }
+          #community-showcase .community-links-overlay.single-link {
+            justify-content: flex-end;
+          }
+          #community-showcase .community-link {
+            font-family: "DM Sans", sans-serif;
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.78);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            min-width: 0;
+          }
+          #community-showcase .community-link:hover {
+            color: #fff;
+          }
+          #community-showcase .community-link-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 11rem;
+          }
+          #community-showcase .community-badges {
+            position: absolute;
+            top: 0.42rem;
+            right: 0.42rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.24rem;
+            z-index: 2;
+            pointer-events: none;
+          }
+          #community-showcase .community-badge {
+            display: inline-block;
+            padding: 0.14rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.62rem;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 0.03em;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(6px);
+            background-color: rgba(0,0,0,0.56);
+            white-space: nowrap;
+          }
+          #community-showcase .badge-web3     { background: #1b2354; }
+          #community-showcase .badge-security { background: #2d1a1a; }
+          #community-showcase .badge-ai       { background: #1a2d1a; }
+          #community-showcase .badge-legal    { background: #2d2d1a; }
+          #community-showcase .badge-defi     { background: #1a1a3a; }
+          #community-showcase .badge-academia { background: #2d1a2d; }
+          #community-showcase .badge-media    { background: #1a2d2d; }
+          #community-showcase .badge-gov      { background: #2a1a0a; }
+          #community-showcase .badge-health   { background: #0a2a1a; }
+          #community-showcase .badge-oss      { background: #0a1a2a; }
+          #community-showcase .badge-privacy  { background: #1a0a2d; }
+          #community-showcase .community-person-meta {
+            padding: 0.7rem 0.75rem 0.85rem;
+          }
+          #community-showcase .community-person-name {
+            font-family: "Archivo", sans-serif;
+            font-size: 0.92rem;
+            line-height: 1.25;
+            color: #fff;
+          }
+          #community-showcase .community-person-role {
+            margin-top: 0.36rem;
+            font-family: "DM Sans", sans-serif;
+            color: rgba(255,255,255,0.72);
+            font-size: 0.78rem;
+            line-height: 1.35;
+          }
+          #community-showcase .community-explore {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-family: "DM Sans", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid rgba(255,255,255,0.28);
+            border-radius: 12px;
+            background: rgba(255,255,255,0.05);
+            transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+            width: 100%;
+          }
+          #community-showcase .community-explore:hover {
+            border-color: rgba(255,255,255,0.52);
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+          }
+          @media (max-width: 980px) {
+            #community-showcase .community-slide-grid {
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+          }
+          @media (max-width: 680px) {
+            #community-showcase .community-slide-grid {
+              grid-template-columns: minmax(0, 1fr);
+            }
+          }
+        </style>
+
+        <div class="community-carousel-shell">
+          <div class="community-headline">
+            <h2 class="testimonials-title text-center">Build Privacy Together</h2>
+            <p class="community-subtitle">
+              Discover builders, researchers, activists, and organizations in our ecosystem.
+              Explore full directory at <a href="./community/">/community/</a>.
+            </p>
+          </div>
+
+          <div class="community-carousel-wrap">
+            <div class="community-carousel-viewport" id="community-carousel-viewport">
+              <div class="community-carousel-track" id="community-carousel-track"></div>
+            </div>
+            <a class="community-explore" href="./community/">Join the Community &#8599;</a>
+          </div>
         </div>
       </section>
 
@@ -2543,8 +2766,179 @@
             { threshold: 0.15 },
           );
 
+
           document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
         });
+
+        // Community showcase carousel (3 slides x 3 cards)
+        function escapeCommunityHtml(value) {
+          return String(value || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+
+        function normalizeCommunityIndustries(item) {
+          const raw = Object.prototype.hasOwnProperty.call(item || {}, 'industries') ? item.industries : item.industry;
+          const list = Array.isArray(raw) ? raw : typeof raw === 'string' ? raw.split(',') : raw != null ? [raw] : [];
+          const clean = list.map((v) => String(v || '').trim()).filter((v) => v.length > 0);
+          return clean.length ? [...new Set(clean)] : ['Privacy'];
+        }
+
+        function normalizeCommunityMember(item) {
+          const rawPhoto = String(item?.photo || './img/hero.webp');
+          const fixedPhoto = rawPhoto.startsWith('../img/') ? `./img/${rawPhoto.slice('../img/'.length)}` : rawPhoto;
+          return {
+            name: String(item?.name || 'Community Member'),
+            photo: fixedPhoto,
+            role: String(item?.role || ''),
+            orgName: String(item?.orgName || ''),
+            orgUrl: String(item?.orgUrl || ''),
+            xUrl: String(item?.xUrl || ''),
+            industries: normalizeCommunityIndustries(item),
+          };
+        }
+
+        function getCommunityBadgeClass(industry) {
+          const map = {
+            'Blockchain & Web3': 'badge-web3',
+            Cybersecurity: 'badge-security',
+            'AI & Machine Learning': 'badge-ai',
+            'Legal & Compliance': 'badge-legal',
+            'Finance & DeFi': 'badge-defi',
+            'Academia & Research': 'badge-academia',
+            'Journalism & Media': 'badge-media',
+            'Government & Policy': 'badge-gov',
+            'Healthcare & Biotech': 'badge-health',
+            'Open Source Software': 'badge-oss',
+            Privacy: 'badge-privacy',
+            'Digital Rights': 'badge-privacy',
+            Legal: 'badge-legal',
+          };
+          return map[industry] || 'badge-privacy';
+        }
+
+        function getCommunityXHandle(url) {
+          if (!url) return '';
+          try {
+            const parsed = new URL(url);
+            const path = parsed.pathname.replace(/^\/+/, '').split('/')[0];
+            return path ? `@${path}` : '@x';
+          } catch (_error) {
+            return '@x';
+          }
+        }
+
+        function getCommunityWebsiteLabel(member) {
+          if (member.orgName) return member.orgName;
+          if (!member.orgUrl) return '';
+          try {
+            return new URL(member.orgUrl).hostname.replace(/^www\./, '');
+          } catch (_error) {
+            return member.orgUrl;
+          }
+        }
+
+        function buildCommunityCard(member) {
+          const roleLine = member.role || member.orgName || 'Community member';
+          const badges = member.industries
+            .slice(0, 3)
+            .map((tag) => `<span class="community-badge ${getCommunityBadgeClass(tag)}">${escapeCommunityHtml(tag)}</span>`)
+            .join('');
+
+          const websiteLabel = getCommunityWebsiteLabel(member);
+          const websiteHtml = member.orgUrl
+            ? `<a href="${escapeCommunityHtml(member.orgUrl)}" class="community-link" target="_blank" rel="noopener noreferrer"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="community-link-label">${escapeCommunityHtml(websiteLabel)}</span></a>`
+            : '';
+          const xHtml = member.xUrl
+            ? `<a href="${escapeCommunityHtml(member.xUrl)}" class="community-link" target="_blank" rel="noopener noreferrer"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span class="community-link-label">${escapeCommunityHtml(getCommunityXHandle(member.xUrl))}</span></a>`
+            : '';
+          const links = websiteHtml || xHtml
+            ? `<div class="community-links-overlay${websiteHtml && xHtml ? '' : ' single-link'}">${websiteHtml}${xHtml}</div>`
+            : '';
+
+          return `
+            <article class="community-person-card"> 
+              <div class="community-card-image-wrap">
+                <img src="${escapeCommunityHtml(member.photo)}" alt="${escapeCommunityHtml(member.name)}" class="community-person-photo" loading="lazy" />
+                <div class="community-badges">${badges}</div>
+                ${links}
+              </div>
+              <div class="community-person-meta">
+                <h3 class="community-person-name">${escapeCommunityHtml(member.name)}</h3>
+                <p class="community-person-role">${escapeCommunityHtml(roleLine)}</p>
+              </div>
+            </article>
+          `;
+        }
+
+        function initCommunityCarousel() {
+          const section = document.getElementById('community-showcase');
+          const track = document.getElementById('community-carousel-track');
+          if (!section || !track) return;
+
+          function renderCommunityFallback(message) {
+            track.innerHTML = `
+              <div class="community-carousel-slide">
+                <div class="community-slide-grid" style="grid-template-columns: minmax(0, 1fr);">
+                  <article class="community-person-card">
+                    <div class="community-person-meta">
+                      <h3 class="community-person-name">Community preview unavailable</h3>
+                      <p class="community-person-role">${escapeCommunityHtml(message)}</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            `;
+          }
+
+          fetch('./community/comminity.json', { cache: 'no-store' })
+            .then((response) => {
+              if (!response.ok) throw new Error('Failed to load community data');
+              return response.json();
+            })
+            .then((data) => {
+              const source = Array.isArray(data) ? data.map(normalizeCommunityMember).filter((m) => m.name && m.photo) : [];
+              if (!source.length) {
+                renderCommunityFallback('No community members found in metadata yet.');
+                return;
+              }
+
+              const shuffled = source.slice().sort(() => Math.random() - 0.5);
+              const needed = 9;
+              const pool = [];
+              for (let i = 0; i < needed; i++) {
+                pool.push(shuffled[i % shuffled.length]);
+              }
+
+              const slides = [pool.slice(0, 3), pool.slice(3, 6), pool.slice(6, 9)];
+              track.innerHTML = slides
+                .map((group) => `<div class="community-carousel-slide"><div class="community-slide-grid">${group.map(buildCommunityCard).join('')}</div></div>`)
+                .join('');
+
+              let current = 0;
+              let timer = null;
+
+              function renderSlide(nextIndex) {
+                current = (nextIndex + slides.length) % slides.length;
+                track.style.transform = `translateX(-${current * 100}%)`;
+              }
+
+              function restartAutoplay() {
+                if (timer) clearInterval(timer);
+                timer = setInterval(() => renderSlide(current + 1), 5500);
+              }
+
+              restartAutoplay();
+            })
+            .catch(() => {
+              renderCommunityFallback('Could not load community metadata. Check /community/comminity.json path.');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initCommunityCarousel);
       </script>
     </div>
   </body>

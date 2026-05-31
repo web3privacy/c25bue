@@ -76,10 +76,16 @@
       .card-image-wrap {
         position: relative;
       }
-      .card-image-wrap .industry-badge {
+      .card-image-wrap .industry-badges {
         position: absolute;
         top: 0.4rem;
         right: 0.4rem;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.25rem;
+      }
+      .card-image-wrap .industry-badge {
         backdrop-filter: blur(6px);
         background-color: rgba(0,0,0,0.55) !important;
         border-color: rgba(255,255,255,0.2) !important;
@@ -136,6 +142,10 @@
       }
       .card-twitter:hover { color: #fff; }
       .person-item:hover .card-twitter { color: #fff; }
+      @media (max-width: 640px) {
+        .card-twitter-label { display: none; }
+        .card-website-icon { display: none; }
+      }
       .card-links-overlay.single-link { justify-content: flex-end; }
 
       /* Role / tagline under name */
@@ -429,6 +439,7 @@
         }
 
         function normalizeMember(item) {
+          var industries = normalizeIndustries(item);
           return {
             name: String(item.name || ''),
             photo: String(item.photo || ''),
@@ -437,8 +448,31 @@
             role: String(item.role || ''),
             orgUrl: String(item.orgUrl || ''),
             orgName: String(item.orgName || ''),
-            industry: String(item.industry || 'Privacy')
+            industries: industries,
+            // Keep for backwards compatibility with legacy code paths.
+            industry: industries[0] || 'Privacy'
           };
+        }
+
+        function normalizeIndustries(item) {
+          var raw = item && Object.prototype.hasOwnProperty.call(item, 'industries')
+            ? item.industries
+            : item && item.industry;
+
+          var list = [];
+          if (Array.isArray(raw)) {
+            list = raw;
+          } else if (typeof raw === 'string') {
+            list = raw.split(',');
+          } else if (raw != null) {
+            list = [raw];
+          }
+
+          var cleaned = list
+            .map(function (value) { return String(value || '').trim(); })
+            .filter(function (value) { return value.length > 0; });
+
+          return cleaned.length ? Array.from(new Set(cleaned)) : ['Privacy'];
         }
 
         function getXHandle(url) {
@@ -472,17 +506,18 @@
         }
 
         function createMemberCard(member) {
-          var industry = member.industry || 'Privacy';
-          var badgeClass = industryClassMap[industry] || 'badge-privacy';
+          var industries = Array.isArray(member.industries) && member.industries.length
+            ? member.industries
+            : [member.industry || 'Privacy'];
           var hasWebsite = !!member.orgUrl;
           var hasTwitter = !!member.xUrl;
 
           var websiteHtml = hasWebsite
-            ? '<a href="' + escapeHtml(member.orgUrl) + '" target="_blank" rel="noopener noreferrer" class="card-website"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>' + escapeHtml(getWebsiteLabel(member)) + '</a>'
+            ? '<a href="' + escapeHtml(member.orgUrl) + '" target="_blank" rel="noopener noreferrer" class="card-website"><span class="card-website-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>' + escapeHtml(getWebsiteLabel(member)) + '</a>'
             : '';
 
           var twitterHtml = hasTwitter
-            ? '<a href="' + escapeHtml(member.xUrl) + '" target="_blank" rel="noopener noreferrer" class="card-twitter"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>' + escapeHtml(getXHandle(member.xUrl)) + '</a>'
+            ? '<a href="' + escapeHtml(member.xUrl) + '" target="_blank" rel="noopener noreferrer" class="card-twitter"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span class="card-twitter-label">' + escapeHtml(getXHandle(member.xUrl)) + '</span></a>'
             : '';
 
           var links = '';
@@ -498,14 +533,18 @@
             : '';
 
           var roleLine = buildRoleLine(member);
+          var badgesHtml = industries.map(function (industry) {
+            var badgeClass = industryClassMap[industry] || 'badge-privacy';
+            return '<span class="industry-badge ' + badgeClass + '">' + escapeHtml(industry) + '</span>';
+          }).join('');
 
           var card = document.createElement('div');
           card.className = 'hover:bg-white hover:text-black person-item border border-white/30 generated-member-card';
-          card.dataset.industry = industry;
+          card.dataset.industries = industries.join('|');
           card.innerHTML =
             '<div class="card-image-wrap">' +
               '<img src="' + escapeHtml(member.photo) + '" alt="' + escapeHtml(member.name) + '" class="aspect-square object-cover w-full" loading="lazy" />' +
-              '<span class="industry-badge ' + badgeClass + '">' + escapeHtml(industry) + '</span>' +
+              '<div class="industry-badges">' + badgesHtml + '</div>' +
               links +
             '</div>' +
             '<div class="pb-4 px-4">' +
@@ -537,7 +576,8 @@
             filteredMembers = members.slice();
           } else {
             filteredMembers = members.filter(function (member) {
-              return activeFilters.has(member.industry);
+              var industries = Array.isArray(member.industries) ? member.industries : [member.industry || 'Privacy'];
+              return industries.some(function (industry) { return activeFilters.has(industry); });
             });
           }
 
@@ -548,7 +588,14 @@
         }
 
         function buildFilterBar() {
-          var industries = Array.from(new Set(members.map(function (member) { return member.industry || 'Privacy'; })));
+          var industries = Array.from(new Set(
+            members.reduce(function (acc, member) {
+              var values = Array.isArray(member.industries) && member.industries.length
+                ? member.industries
+                : [member.industry || 'Privacy'];
+              return acc.concat(values);
+            }, [])
+          ));
           industries.sort(function (a, b) { return a.localeCompare(b); });
 
           filterBar.innerHTML = '';
