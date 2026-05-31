@@ -479,16 +479,6 @@
     "orgName": "Ethereum Foundation & IPTF",
     "industry": "Privacy"
   },
-   {
-    "name": "PARSLEY",
-    "photo": "../img/Parsley.jpg",
-    "xUrl": "https://x.com/oskarth",
-    "tagline": "Applied cryptographer meeting institutional adoption",
-    "role": "Lead",
-    "orgUrl": "https://ethereum.foundation",
-    "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy"
-  },
     {
     "name": "QUINTUS",
     "photo": "../img/quintus.jpg",
@@ -750,16 +740,6 @@
     "industry": "Privacy"
   },
     {
-    "name": "LEFTERIS KARAPETSAS",
-    "photo": "../img/lefteris.png",
-    "xUrl": "https://x.com/Pol_Lanski",
-    "tagline": "Catalan activist behind decentralised infrastructure",
-    "role": "Lead",
-    "orgUrl": "https://dappnode.com",
-    "orgName": "Dappnode",
-    "industry": "Privacy"
-  },
-    {
     "name": "PAUL DYLAN-ENNIS",
     "photo": "../img/paul-dylan-ennis.jpg",
     "xUrl": "https://x.com/Pol_Lanski",
@@ -772,6 +752,46 @@
     {
     "name": "PIEMAN",
     "photo": "../img/pieman.png",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Catalan activist behind decentralised infrastructure",
+    "role": "Lead",
+    "orgUrl": "https://dappnode.com",
+    "orgName": "Dappnode",
+    "industry": "Privacy"
+  },
+    {
+    "name": "alpeh_v",
+    "photo": "../img/alpeh.jpg",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Catalan activist behind decentralised infrastructure",
+    "role": "Lead",
+    "orgUrl": "https://dappnode.com",
+    "orgName": "Dappnode",
+    "industry": "Privacy"
+  },
+    {
+    "name": "TANISHA KATARA",
+    "photo": "../img/tanisha.jpg",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Catalan activist behind decentralised infrastructure",
+    "role": "Lead",
+    "orgUrl": "https://dappnode.com",
+    "orgName": "Dappnode",
+    "industry": "Privacy"
+  },
+    {
+    "name": "AYA MIYAGUCHI",
+    "photo": "../img/aya.jpg",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Catalan activist behind decentralised infrastructure",
+    "role": "Lead",
+    "orgUrl": "https://dappnode.com",
+    "orgName": "Dappnode",
+    "industry": "Privacy"
+  },
+      {
+    "name": "SEBASTIAN BüRGEL",
+    "photo": "../img/sebastian.png",
     "xUrl": "https://x.com/Pol_Lanski",
     "tagline": "Catalan activist behind decentralised infrastructure",
     "role": "Lead",
