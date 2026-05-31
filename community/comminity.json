@@ -250,6 +250,116 @@
     "industry": "Privacy"
   },
   {
+    "name": "REDSHIFTZERO",
+    "photo": "../img/redshiftzero.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+  {
+    "name": "SETH FOR PRIVACY",
+    "photo": "../img/sethforprivacy.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "NAOMI BROCKWELL",
+    "photo": "../img/naomibrockwell.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "JARRAD HOPE",
+    "photo": "../img/jarradhope.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "FLORIAN GLATZ",
+    "photo": "../img/florian-glatz.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "MIGLE RAKITAITE",
+    "photo": "../img/migle.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "KATE STAPLETON",
+    "photo": "../img/kate-stapleton.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "NICK ALMOND",
+    "photo": "../img/nick-almond.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "JOSH DAVILA",
+    "photo": "../img/josh-davila.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "MAX HAMPSHIRE",
+    "photo": "../img/max-hampshire.jpg",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+    {
+    "name": "NIKOLINE ARNS",
+    "photo": "../img/nikoline.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Applied cryptographer meeting institutional adoption",
+    "role": "Lead",
+    "orgUrl": "https://ethereum.foundation",
+    "orgName": "Ethereum Foundation & IPTF",
+    "industry": "Privacy"
+  },
+  {
     "name": "POL LANSKI",
     "photo": "../img/lanski.jpeg",
     "xUrl": "https://x.com/Pol_Lanski",
