@@ -7,7 +7,7 @@
     "role": "Associate General Counsel for Cybersecurity and Civil Liberties Policy",
     "orgUrl": "https://fil.org",
     "orgName": "Filecoin",
-    "industry": "Privacy", "Digital Rights",
+    "industry": "Privacy", "Digital Rights"
   },
   {
     "name": "ISABELA FERNANDES",
@@ -17,7 +17,7 @@
     "role": "Executive Director",
     "orgUrl": "https://torproject.org",
     "orgName": "Tor Project",
-    "industry": "Privacy", "Digital Rights",
+    "industry": "Privacy", "Digital Rights"
   },
   {
     "name": "AHMED GHAPPOUR",
@@ -27,7 +27,7 @@
     "role": "GC",
     "orgUrl": "https://www.flashbots.net",
     "orgName": "Flashbots",
-    "industry": "Privacy", "Digital Rights", "Legal",
+    "industry": "Privacy", "Digital Rights", "Legal"
   },
   {
     "name": "AMIR TAAKI",
@@ -37,7 +37,7 @@
     "role": "Founder",
     "orgUrl": "https://x.com/DarkFiSquad",
     "orgName": "DarkFi",
-    "industry": "Privacy", "Engineering",
+    "industry": "Privacy", "Engineering"
   },
   {
     "name": "DANNY O'BRIEN",
@@ -47,7 +47,7 @@
     "role": "Senior Fellow",
     "orgUrl": "https://fil.org",
     "orgName": "Filecoin Foundation, EFF",
-    "industry": "Privacy", "Digital Rights",
+    "industry": "Privacy", "Digital Rights"
   },
   {
     "name": "VIJAY KRISHNAVANSHI",
@@ -77,7 +77,7 @@
     "role": "Research",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation",
-    "industry": "Privacy", "Quantum resistance",
+    "industry": "Privacy", "Quantum resistance"
   },
   {
     "name": "ANDY GUZMAN",
@@ -87,7 +87,7 @@
     "role": "Head",
     "orgUrl": "http://pse.dev",
     "orgName": "Privacy Stewards of Ethereum",
-    "industry": "Privacy", "Cryptography", 
+    "industry": "Privacy", "Cryptography"
   },
   {
     "name": "JORDI BAYLINA",
@@ -97,7 +97,7 @@
     "role": "Co-founder",
     "orgUrl": "http://zisk.technology",
     "orgName": "Zisk",
-    "industry": "Privacy", "Voting", "Digital Rights",
+    "industry": "Privacy", "Voting", "Digital Rights"
   },
   {
     "name": "KYLE DEN HARTOG",
@@ -107,7 +107,7 @@
     "role": "Staff Cryptographic Security Engineer",
     "orgUrl": "http://brave.com",
     "orgName": "Brave",
-    "industry": "Privacy", "Standartisation", "Browsers",
+    "industry": "Privacy", "Standartisation", "Browsers"
   },
   {
     "name": "HARRY HALPIN",
@@ -117,7 +117,7 @@
     "role": "CEO",
     "orgUrl": "http://nym.com",
     "orgName": "Nym",
-    "industry": "Privacy", "VPN", "Digital Rights", "Mixnet",
+    "industry": "Privacy", "VPN", "Digital Rights", "Mixnet"
   },
   {
     "name": "YING TONG LAI",
@@ -127,7 +127,7 @@
     "role": "Applied Cryptographer",
     "orgUrl": "https://fil.org",
     "orgName": "independent",
-    "industry": "Privacy", "Cryptography", "Identity",
+    "industry": "Privacy", "Cryptography", "Identity"
   },
   {
     "name": "ml_sudo",
@@ -147,7 +147,7 @@
     "role": "Co-founder",
     "orgUrl": "https://enclave.gg",
     "orgName": "Enclave",
-    "industry": "Privacy", "Compute",
+    "industry": "Privacy", "Compute"
   },
   {
     "name": "JUAN BENET",
@@ -167,7 +167,7 @@
     "role": "VP of Technology",
     "orgUrl": "https://www.gnosis.io",
     "orgName": "Gnosis & HOPR",
-    "industry": "Privacy", "VPN", "Mixnet", 
+    "industry": "Privacy", "VPN", "Mixnet"
   },
   {
     "name": "BOB SUMMERWILL",
@@ -187,7 +187,7 @@
     "role": "Co-founder",
     "orgUrl": "https://fileverse.io",
     "orgName": "Fileverse",
-    "industry": "Privacy", "Cryptography", "Collaboration",
+    "industry": "Privacy", "Cryptography", "Collaboration"
   },
   {
     "name": "CHRIS MCCABE",
@@ -197,7 +197,7 @@
     "role": "Co-founder",
     "orgUrl": "https://getsession.org",
     "orgName": "Session",
-    "industry": "Privacy", "Messengers",
+    "industry": "Privacy", "Messengers"
   },
   {
     "name": "NICO CONSIGNY",
@@ -217,7 +217,7 @@
     "role": "Executive Director",
     "orgUrl": "https://coincenter.org",
     "orgName": "Coin Center",
-    "industry": "Privacy", "Legal",
+    "industry": "Privacy", "Legal"
   },
   {
     "name": "FATEMEH FANNIZADEH",
@@ -227,7 +227,7 @@
     "role": "Legal",
     "orgUrl": "https://x.com/Fatalmeh",
     "orgName": "independent",
-    "industry": "Privacy", "Legal",
+    "industry": "Privacy", "Legal"
   },
   {
     "name": "MARIO HAVEL",
@@ -237,7 +237,7 @@
     "role": "Protocol Support",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & BORDEL",
-    "industry": "Privacy", "Hacktivism",
+    "industry": "Privacy", "Hacktivism"
   },
   {
     "name": "OSKARTH",
@@ -247,7 +247,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy", "Institutional",
+    "industry": "Privacy", "Institutional"
   },
   {
     "name": "REDSHIFTZERO",
@@ -257,7 +257,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy", "Encryption", "Journalism",
+    "industry": "Privacy", "Encryption", "Journalism"
   },
   {
     "name": "SETH FOR PRIVACY",
@@ -277,7 +277,7 @@
     "role": "Lead",
     "orgUrl": "https://ethereum.foundation",
     "orgName": "Ethereum Foundation & IPTF",
-    "industry": "Privacy", "Digital Rights",
+    "industry": "Privacy", "Digital Rights"
   },
     {
     "name": "PG",
