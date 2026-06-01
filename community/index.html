@@ -126,6 +126,12 @@
         white-space: nowrap;
         min-width: 0;
       }
+      .card-website-label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 0;
+      }
       .card-website:hover { color: #fff; }
       .person-item:hover .card-website { color: #fff; }
       .card-twitter {
@@ -199,9 +205,27 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.75rem;
         width: 100%;
         box-sizing: border-box;
+      }
+      .filter-controls {
+        margin-bottom: 2rem;
+      }
+      #filter-toggle {
+        display: none;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.72);
+        border-radius: 9999px;
+        padding: 0.32rem 0.85rem;
+        font-size: 0.75rem;
+        font-family: "DM Sans", sans-serif;
+        cursor: pointer;
+      }
+      #filter-toggle:hover {
+        border-color: rgba(255,255,255,0.55);
+        color: #fff;
       }
       .filter-pill {
         padding: 0.35rem 1rem;
@@ -218,6 +242,67 @@
       }
       .filter-pill:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
       .filter-pill.active { background: #fff; color: #000; border-color: #fff; font-weight: 600; }
+
+      .card-industry-row {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        #filter-toggle {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #filter-bar .mobile-hidden-filter {
+          display: none !important;
+        }
+        .card-image-wrap .industry-badges {
+          display: none !important;
+        }
+        .card-industry-row {
+          display: flex;
+          flex-direction: row !important;
+          flex-wrap: wrap !important;
+          justify-content: flex-start !important;
+          align-items: center !important;
+          align-content: flex-start !important;
+          width: 100%;
+          gap: 0.28rem;
+          padding: 0.45rem 0 0;
+        }
+        .card-industry-row .industry-pill-mobile {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.11rem 0.45rem;
+          border-radius: 999px;
+          font-size: 0.64rem;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 400;
+          color: rgba(255,255,255,0.86);
+          border: 1px solid rgba(255,255,255,0.2);
+          background: rgba(255,255,255,0.06);
+          letter-spacing: 0.02em;
+          white-space: nowrap;
+        }
+        .card-website {
+          display: grid;
+          grid-template-columns: auto minmax(0, 1fr);
+          align-items: start;
+          column-gap: 0.25rem;
+          white-space: normal;
+        }
+        .card-website-icon {
+          margin-top: 0.05rem;
+        }
+        .card-website-label {
+          white-space: normal;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          line-height: 1.15;
+        }
+      }
 
       .section-label {
         font-family: "DM Sans", sans-serif;
@@ -348,6 +433,9 @@
       <section class="px-6 md:px-16 lg:px-24 pb-10">
         <div class="section-label">Members &mdash; <span id="members-count">0 speakers</span></div>
         <div id="filter-bar"></div>
+        <div class="filter-controls">
+          <button id="filter-toggle" type="button" aria-expanded="false">Show all filters</button>
+        </div>
 
         <div id="member-grid" class="member-grid grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
           <!-- CTA card -->
@@ -411,9 +499,12 @@
         var renderedCount = 0;
 
         var filterBar = document.getElementById('filter-bar');
+        var filterToggle = document.getElementById('filter-toggle');
         var memberGrid = document.getElementById('member-grid');
         var membersCount = document.getElementById('members-count');
         var sentinel = document.getElementById('scroll-sentinel');
+        var isFilterExpanded = false;
+        var MOBILE_FILTER_LIMIT = 5;
 
         var industryClassMap = {
           'Blockchain & Web3': 'badge-web3',
@@ -513,7 +604,7 @@
           var hasTwitter = !!member.xUrl;
 
           var websiteHtml = hasWebsite
-            ? '<a href="' + escapeHtml(member.orgUrl) + '" target="_blank" rel="noopener noreferrer" class="card-website"><span class="card-website-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>' + escapeHtml(getWebsiteLabel(member)) + '</a>'
+            ? '<a href="' + escapeHtml(member.orgUrl) + '" target="_blank" rel="noopener noreferrer" class="card-website"><span class="card-website-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><span class="card-website-label">' + escapeHtml(getWebsiteLabel(member)) + '</span></a>'
             : '';
 
           var twitterHtml = hasTwitter
@@ -537,6 +628,9 @@
             var badgeClass = industryClassMap[industry] || 'badge-privacy';
             return '<span class="industry-badge ' + badgeClass + '">' + escapeHtml(industry) + '</span>';
           }).join('');
+          var mobilePillsHtml = industries.map(function (industry) {
+            return '<span class="industry-pill-mobile">' + escapeHtml(industry) + '</span>';
+          }).join('');
 
           var card = document.createElement('div');
           card.className = 'hover:bg-white hover:text-black person-item border border-white/30 generated-member-card';
@@ -551,6 +645,7 @@
               '<div class="mt-4 speaker-name">' + escapeHtml(member.name) + '</div>' +
               taglineHtml +
               '<div class="card-role">' + escapeHtml(roleLine) + '</div>' +
+              '<div class="card-industry-row">' + mobilePillsHtml + '</div>' +
             '</div>';
 
           return card;
@@ -615,6 +710,54 @@
             button.textContent = industry;
             filterBar.appendChild(button);
           });
+
+          updateMobileFilterVisibility();
+        }
+
+        function updateMobileFilterVisibility() {
+          if (!filterToggle) return;
+          var pills = Array.from(filterBar.querySelectorAll('.filter-pill'));
+          var isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+          pills.forEach(function (pill) {
+            pill.classList.remove('mobile-hidden-filter');
+          });
+
+          if (!isMobile) {
+            filterToggle.style.display = 'none';
+            return;
+          }
+
+          if (pills.length <= MOBILE_FILTER_LIMIT + 1) {
+            filterToggle.style.display = 'none';
+            return;
+          }
+
+          filterToggle.style.display = 'inline-flex';
+          if (!isFilterExpanded) {
+            for (var i = MOBILE_FILTER_LIMIT + 1; i < pills.length; i++) {
+              if (!pills[i].classList.contains('active')) {
+                pills[i].classList.add('mobile-hidden-filter');
+              }
+            }
+            filterToggle.textContent = 'Show all filters';
+            filterToggle.setAttribute('aria-expanded', 'false');
+          } else {
+            filterToggle.textContent = 'Show fewer';
+            filterToggle.setAttribute('aria-expanded', 'true');
+          }
+        }
+
+        function setupFilterToggle() {
+          if (!filterToggle) return;
+          filterToggle.addEventListener('click', function () {
+            isFilterExpanded = !isFilterExpanded;
+            updateMobileFilterVisibility();
+          });
+
+          window.addEventListener('resize', function () {
+            updateMobileFilterVisibility();
+          });
         }
 
         function setupFilterEvents() {
@@ -646,6 +789,7 @@
             }
 
             applyFilters();
+            updateMobileFilterVisibility();
           });
         }
 
@@ -691,6 +835,7 @@
           .then(function (data) {
             members = Array.isArray(data) ? data.map(normalizeMember) : [];
             buildFilterBar();
+            setupFilterToggle();
             setupFilterEvents();
             setupInfiniteScroll();
             applyFilters();
