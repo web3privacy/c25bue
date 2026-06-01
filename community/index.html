@@ -333,6 +333,103 @@
         padding: 0.65rem 2rem;
         letter-spacing: 0.08em;
       }
+
+      /* Activation roadmap */
+      .activation-roadmap {
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      .activation-roadmap-inner {
+        max-width: 1240px;
+        margin: 0 auto;
+      }
+      .activation-roadmap-head {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .activation-roadmap-kicker {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.74rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.56);
+      }
+      .activation-roadmap-title {
+        font-family: "Archivo", sans-serif;
+        font-size: clamp(1.8rem, 3.6vw, 2.7rem);
+        line-height: 1.15;
+        margin-top: 0.7rem;
+      }
+      .activation-roadmap-subtitle {
+        max-width: 42rem;
+        margin: 0.9rem auto 0;
+        font-family: "DM Sans", sans-serif;
+        color: rgba(255,255,255,0.72);
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+      .activation-roadmap-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+      .activation-step-card {
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+        padding: 1.2rem 1.15rem 1.25rem;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .activation-step-label {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.72rem;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.6);
+      }
+      .activation-step-title {
+        margin-top: 0.42rem;
+        font-family: "Archivo", sans-serif;
+        font-size: 1.32rem;
+        line-height: 1.22;
+      }
+      .activation-step-divider {
+        margin: 1rem 0 0.95rem;
+        border-top: 2px solid rgba(255,255,255,0.18);
+      }
+      .activation-step-text {
+        font-family: "DM Sans", sans-serif;
+        color: rgba(255,255,255,0.84);
+        line-height: 1.48;
+        font-size: 1rem;
+      }
+      .activation-step-cta {
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255,255,255,0.45);
+        border-radius: 999px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Archivo", sans-serif;
+        font-size: 0.82rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 0.56rem 0.95rem;
+        margin-top: 1.15rem;
+        transition: all 0.2s ease;
+      }
+      .activation-step-cta:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: rgba(255,255,255,0.72);
+      }
+      @media (max-width: 1024px) {
+        .activation-roadmap-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
 
@@ -455,6 +552,50 @@
           </a>
         </div>
         <div id="scroll-sentinel" class="h-6" aria-hidden="true"></div>
+      </section>
+
+      <section class="activation-roadmap">
+        <div class="activation-roadmap-inner">
+          <div class="activation-roadmap-head">
+            <div class="activation-roadmap-kicker">Participation Roadmap</div>
+            <h2 class="activation-roadmap-title">Activate Your Devcon Week</h2>
+            <p class="activation-roadmap-subtitle">
+              Come to Congress, get our week activation guide, and plug into the highest-signal events across the full Devcon week.
+            </p>
+          </div>
+
+          <div class="activation-roadmap-grid">
+            <article class="activation-step-card">
+              <div class="activation-step-label">Step 1</div>
+              <h3 class="activation-step-title">Join the Congress</h3>
+              <div class="activation-step-divider"></div>
+              <p class="activation-step-text">
+                Start with the main gathering in Mumbai and meet the core privacy builders, researchers, and partners in one place.
+              </p>
+              <a class="activation-step-cta" href="../index.html#tickets">Open Registration</a>
+            </article>
+
+            <article class="activation-step-card">
+              <div class="activation-step-label">Step 2</div>
+              <h3 class="activation-step-title">Get the Week Guide</h3>
+              <div class="activation-step-divider"></div>
+              <p class="activation-step-text">
+                We share a practical guide to activate all week: where to go, what to prioritize, and how to connect with the right circles.
+              </p>
+              <a class="activation-step-cta" href="https://t.me/+DMkrxGNeJzYyYzM0" target="_blank">Get Guide</a>
+            </article>
+
+            <article class="activation-step-card">
+              <div class="activation-step-label">Step 3</div>
+              <h3 class="activation-step-title">Maximize Impact</h3>
+              <div class="activation-step-divider"></div>
+              <p class="activation-step-text">
+                Follow the route from talks to side-events and working sessions, so your time translates into strong outcomes and long-term allies.
+              </p>
+              <a class="activation-step-cta" href="../index.html#program">See Program</a>
+            </article>
+          </div>
+        </div>
       </section>
 
       <!-- ======= CTA ======= -->
