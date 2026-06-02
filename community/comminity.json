@@ -830,13 +830,13 @@
     "industry": "Privacy, Socials"
   },
     {
-    "name": "TOBIAS",
+    "name": "TOBIAS VOGEL",
     "photo": "../img/tobias.png",
-    "xUrl": "https://x.com/Pol_Lanski",
-    "tagline": "Catalan activist behind decentralised infrastructure",
+    "xUrl": "https://www.linkedin.com/in/tobias-vogel-66545b100/",
+    "tagline": "Smart contract auditor securing Ethereum's critical infrastructure",
     "role": "Lead",
-    "orgUrl": "https://dappnode.com",
-    "orgName": "Dappnode",
+    "orgUrl": "https://diligence.security/",
+    "orgName": "Consensys Diligence",
     "industry": "Privacy, Security"
   },
     {
