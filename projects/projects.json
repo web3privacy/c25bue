@@ -1,0 +1,1741 @@
+[
+  {
+    "slug": "ethereum-foundation",
+    "name": "Ethereum Foundation",
+    "orgUrl": "https://ethereum.org/foundation/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.org",
+    "curated": true,
+    "description": "Nonprofit stewarding Ethereum protocol research, scalability, and cryptography.",
+    "direction": [
+      "Protocol & Research",
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "JUSTIN DRAKE",
+        "photo": "../img/justindrake.jpg",
+        "xUrl": "https://x.com/drakefjustin",
+        "role": "Research",
+        "tagline": "Key protocol researcher"
+      },
+      {
+        "name": "VITALIK BUTERIN",
+        "photo": "../img/vitalik-buterin.webp",
+        "xUrl": "https://x.com/vitalikbuterin",
+        "role": "Founder",
+        "tagline": "Helping protocols & institutions adopt ZK-tech"
+      },
+      {
+        "name": "NICO CONSIGNY",
+        "photo": "../img/consigny.jpg",
+        "xUrl": "https://twitter.com/ncsgy",
+        "role": "Lead",
+        "tagline": "Privacy in digital wallets visionary"
+      },
+      {
+        "name": "AYA MIYAGUCHI",
+        "photo": "../img/aya.jpg",
+        "xUrl": "https://x.com/AyaMiyagotchi",
+        "role": "President",
+        "tagline": "Steward of Ethereum's long-term ecosystem vision"
+      }
+    ],
+    "descriptionFull": "The nonprofit stewarding Ethereum protocol research and development, funding the teams and researchers pushing scalability, cryptography, and privacy tech across the ecosystem."
+  },
+  {
+    "slug": "flashbots",
+    "name": "Flashbots",
+    "orgUrl": "https://www.flashbots.net",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=flashbots.net",
+    "curated": true,
+    "description": "R&D org mitigating MEV harms on Ethereum with fairer, more private transaction infrastructure.",
+    "direction": [
+      "Protocol & Research",
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "AHMED GHAPPOUR",
+        "photo": "../img/ahmedghappour.png",
+        "xUrl": "https://twitter.com/ghappour",
+        "role": "GC",
+        "tagline": "Engineer turned digital rights lawyer"
+      },
+      {
+        "name": "QUINTUS",
+        "photo": "../img/quintus.jpg",
+        "xUrl": "https://x.com/0xQuintus",
+        "role": "Lead",
+        "tagline": "Applied researcher exploring cryptography beyond the protocol layer"
+      }
+    ],
+    "descriptionFull": "A research and development organization mitigating the harms of MEV on Ethereum, building infrastructure like MEV-Boost and encrypted mempools for a fairer, more private transaction supply chain."
+  },
+  {
+    "slug": "nym",
+    "name": "Nym",
+    "orgUrl": "http://nym.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=nym.com",
+    "curated": true,
+    "description": "Mixnet-based privacy infrastructure hiding metadata for anonymous VPN and messaging.",
+    "direction": [
+      "Networking & Mixnets",
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "HARRY HALPIN",
+        "photo": "../img/harryhalping.jog.webp",
+        "xUrl": "https://x.com/harryhalpin",
+        "role": "CEO",
+        "tagline": "Experienced activist bridging network-level privacy & practical VPN"
+      },
+      {
+        "name": "MAX HAMPSHIRE",
+        "photo": "../img/max-hampshire.jpg",
+        "xUrl": "https://x.com/_wjth",
+        "role": "Lead",
+        "tagline": "Privacy engineer focused on mixnets and metadata resistance"
+      }
+    ],
+    "descriptionFull": "A mixnet-based privacy infrastructure network that hides metadata — not just content — powering anonymous VPN and messaging layers resistant to network-level surveillance."
+  },
+  {
+    "slug": "railgun",
+    "name": "Railgun",
+    "orgUrl": "https://railgun.org/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=railgun.org",
+    "curated": true,
+    "description": "Privacy protocol enabling shielded, private DeFi transactions on EVM chains.",
+    "direction": [
+      "Cryptography & ZK",
+      "Wallets & Payments"
+    ],
+    "members": [
+      {
+        "name": "ALAN SCOTT",
+        "photo": "../img/alan.png",
+        "xUrl": "https://x.com/tsu_kareta",
+        "role": "Lead",
+        "tagline": "Privacy engineer advancing confidential Ethereum transactions"
+      },
+      {
+        "name": "KIERAN MESQUITA",
+        "photo": "../img/kieran.png",
+        "xUrl": "https://x.com/mesquka",
+        "role": "contributor",
+        "tagline": "Applied cryptographer serving millions of people"
+      }
+    ],
+    "descriptionFull": "A privacy protocol for EVM chains that lets users shield balances and transact privately in DeFi using zk-SNARKs, without leaving the smart contracts they already use."
+  },
+  {
+    "slug": "tor-project",
+    "name": "Tor Project",
+    "orgUrl": "https://torproject.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=torproject.org",
+    "curated": true,
+    "description": "Free, open-source onion-routing network for anonymous browsing and censorship circumvention.",
+    "direction": [
+      "Networking & Mixnets",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "ISABELA FERNANDES",
+        "photo": "../img/fernandes.jpeg",
+        "xUrl": "https://x.com/Isa",
+        "role": "Executive Director",
+        "tagline": "Free & anonymous software advocate"
+      },
+      {
+        "name": "ROGER DINGLEDINE",
+        "photo": "../img/roger.png",
+        "xUrl": "https://x.com/RogerDingledine",
+        "role": "Lead",
+        "tagline": "Co-creator of Tor and pioneer of anonymous communications"
+      }
+    ],
+    "descriptionFull": "The nonprofit behind Tor, the free and open-source onion-routing network that lets millions of people browse and communicate anonymously and route around censorship."
+  },
+  {
+    "slug": "aragon",
+    "name": "Aragon",
+    "orgUrl": "https://aragon.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=aragon.org",
+    "curated": true,
+    "description": "Toolkit for creating and running DAOs with on-chain governance primitives.",
+    "direction": [
+      "Governance & Public Goods",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "LEUTS",
+        "photo": "../img/leuts-aragon.jpeg",
+        "xUrl": "https://x.com/A_Leutenegger",
+        "role": "Lead",
+        "tagline": "Governance innovator focused on resilient decentralized organizations"
+      }
+    ],
+    "descriptionFull": "A platform and toolkit for creating and running DAOs, giving communities the governance primitives to coordinate and manage shared resources without centralized control."
+  },
+  {
+    "slug": "aztec",
+    "name": "Aztec",
+    "orgUrl": "https://aztec.network/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=aztec.network",
+    "curated": true,
+    "description": "A privacy-focused zero-knowledge rollup enabling confidential smart contracts on Ethereum.",
+    "direction": [
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "ARNAUD SCHENK",
+        "photo": "../img/Arnaud Schenk.png",
+        "xUrl": "https://x.com/Arnaudschenk",
+        "role": "Co-Founder",
+        "tagline": "Helping protocols & institutions adopt ZK-tech"
+      }
+    ],
+    "descriptionFull": "A privacy-focused zero-knowledge rollup on Ethereum, using zk-SNARKs to enable confidential smart contracts and transactions at L2 scale."
+  },
+  {
+    "slug": "brave",
+    "name": "Brave",
+    "orgUrl": "http://brave.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=brave.com",
+    "curated": true,
+    "description": "A privacy-first browser that blocks ads and trackers by default.",
+    "direction": [
+      "Browsers & Apps",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "KYLE DEN HARTOG",
+        "photo": "../img/kyledenhartog.jpg",
+        "xUrl": "https://x.com/PryvitKyle",
+        "role": "Staff Cryptographic Security Engineer",
+        "tagline": "Researcher blending traditional & innovative tech"
+      }
+    ],
+    "descriptionFull": "A privacy-first web browser built on Chromium that blocks ads and trackers by default, paired with a rewards system that puts users back in control of their attention and data."
+  },
+  {
+    "slug": "coin-center",
+    "name": "Coin Center",
+    "orgUrl": "https://coincenter.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=coincenter.org",
+    "curated": true,
+    "description": "Independent nonprofit policy research and advocacy for open blockchain networks.",
+    "direction": [
+      "Legal & Policy",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "PETER VAN VALKENBURGH",
+        "photo": "../img/valkenburgh.jpg",
+        "xUrl": "https://twitter.com/valkenburgh",
+        "role": "Executive Director",
+        "tagline": "Advocate focused on the public policy on decentralized computing"
+      }
+    ],
+    "descriptionFull": "An independent nonprofit research and advocacy center focused on public policy for cryptocurrency and open blockchain networks, defending the right to build and use them."
+  },
+  {
+    "slug": "electronic-frontier-foundation",
+    "name": "Electronic Frontier Foundation",
+    "orgUrl": "https://www.eff.org/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=eff.org",
+    "curated": true,
+    "description": "Nonprofit defending civil liberties in the digital world since 1990.",
+    "direction": [
+      "Digital Rights & Advocacy",
+      "Legal & Policy"
+    ],
+    "members": [
+      {
+        "name": "EVA GALPERIN",
+        "photo": "../img/evagalperin.jpg",
+        "xUrl": "https://x.com/evacide",
+        "role": "Founder",
+        "tagline": "Visionary behind alternative tech ecosystem"
+      }
+    ],
+    "descriptionFull": "The leading nonprofit defending civil liberties in the digital world since 1990 — litigating, lobbying, and building tools for free speech, encryption, and privacy rights."
+  },
+  {
+    "slug": "filecoin-foundation",
+    "name": "Filecoin Foundation",
+    "orgUrl": "https://fil.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fil.org",
+    "curated": true,
+    "description": "Nonprofit growing the Filecoin decentralized storage ecosystem.",
+    "direction": [
+      "Storage & Infra",
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "WILL SCOTT",
+        "photo": "../img/willscott.jpeg",
+        "xUrl": "https://x.com/willscott",
+        "role": "Adoption",
+        "tagline": "Global prime hacktivist"
+      }
+    ],
+    "descriptionFull": "The nonprofit supporting the Filecoin network and its ecosystem of builders, growing decentralized storage as public infrastructure for the open web."
+  },
+  {
+    "slug": "hopr",
+    "name": "HOPR",
+    "orgUrl": "https://hoprnet.org/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=hoprnet.org",
+    "curated": true,
+    "description": "Incentivized mixnet protocol that strips metadata from data in transit.",
+    "direction": [
+      "Networking & Mixnets",
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "SEBASTIAN BüRGEL",
+        "photo": "../img/sebastian.png",
+        "xUrl": "https://x.com/SCBuergel",
+        "role": "Lead",
+        "tagline": "Pioneer of incentivized mixnet infrastructure"
+      }
+    ],
+    "descriptionFull": "An incentivized mixnet protocol that routes data through relay nodes to strip away metadata, rewarding node operators for providing network-level privacy."
+  },
+  {
+    "slug": "metamask",
+    "name": "MetaMask",
+    "orgUrl": "https://metamask.io",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=metamask.io",
+    "curated": true,
+    "description": "The most widely used self-custodial Ethereum wallet and gateway to the dapp ecosystem.",
+    "direction": [
+      "Wallets & Payments",
+      "Browsers & Apps"
+    ],
+    "members": [
+      {
+        "name": "FRANCESCO ANDREOLI",
+        "photo": "../img/francesco.andreoli.webp",
+        "xUrl": "https://x.com/francescoswiss",
+        "role": "DevRel",
+        "tagline": "Helping protocols & institutions adopt ZK-tech"
+      }
+    ],
+    "descriptionFull": "The most widely used self-custodial Ethereum wallet, giving anyone a browser extension or mobile app to hold keys, sign transactions, and access the dapp ecosystem."
+  },
+  {
+    "slug": "protocol-labs",
+    "name": "Protocol Labs",
+    "orgUrl": "https://www.protocol.ai/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=protocol.ai",
+    "curated": true,
+    "description": "R&D lab behind IPFS, Filecoin, and libp2p for a decentralized internet.",
+    "direction": [
+      "Storage & Infra",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "JUAN BENET",
+        "photo": "../img/benet.avif",
+        "xUrl": "https://x.com/juanbenet",
+        "role": "Lead",
+        "tagline": "Inventor of decentralized storage and network infrastructure"
+      }
+    ],
+    "descriptionFull": "The R&D lab behind IPFS, Filecoin, and libp2p — building the open protocols and networks for a decentralized, content-addressed internet."
+  },
+  {
+    "slug": "swarm",
+    "name": "Swarm",
+    "orgUrl": "https://ethswarm.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethswarm.org",
+    "curated": true,
+    "description": "Decentralized storage and communication network for the self-sovereign web.",
+    "direction": [
+      "Storage & Infra",
+      "Networking & Mixnets"
+    ],
+    "members": [
+      {
+        "name": "VIKTOR TRÓN",
+        "photo": "../img/tron.jpg",
+        "xUrl": "https://x.com/zeligf",
+        "role": "Founder",
+        "tagline": "Visionary behind distributed tech"
+      }
+    ],
+    "descriptionFull": "A decentralized storage and communication network for the self-sovereign web, part of the wider Ethereum ecosystem’s push for censorship-resistant infrastructure."
+  },
+  {
+    "slug": "ethereum-foundation-iptf",
+    "name": "Ethereum Foundation & IPTF",
+    "orgUrl": "https://ethereum.foundation",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.foundation",
+    "curated": false,
+    "description": "Privacy researcher connecting Ethereum and human rights communities.",
+    "direction": [
+      "Legal & Policy",
+      "Messaging & Social",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "OSKARTH",
+        "photo": "../img/oskarth.png",
+        "xUrl": "https://x.com/oskarth",
+        "role": "Lead",
+        "tagline": "Privacy researcher connecting Ethereum and human rights communities"
+      },
+      {
+        "name": "KEVIN JONES",
+        "photo": "../img/Kevin Jones.jpg",
+        "xUrl": "https://x.com/cryptomastery_",
+        "role": "Lead",
+        "tagline": "Messaging and privacy advocate within Ethereum's public interest ecosystem"
+      },
+      {
+        "name": "NIKOLINE ARNS",
+        "photo": "../img/nikoline.png",
+        "xUrl": "https://x.com/nikoline_nik",
+        "role": "Lead",
+        "tagline": "Public goods organizer connecting privacy and digital rights movements"
+      }
+    ],
+    "descriptionFull": "Privacy researcher connecting Ethereum and human rights communities. Messaging and privacy advocate within Ethereum's public interest ecosystem. Public goods organizer connecting privacy and digital rights movements."
+  },
+  {
+    "slug": "logos",
+    "name": "Logos",
+    "orgUrl": "https://logos.co",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=logos.co",
+    "curated": false,
+    "description": "Mixnets visionary.",
+    "direction": [
+      "Protocol & Research",
+      "Cryptography & ZK",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "VACLAV PAVLIN",
+        "photo": "../img/vaclav-pavlin.jpg",
+        "xUrl": "https://x.com/vpavlin",
+        "role": "VP of Technology",
+        "tagline": "Mixnets visionary"
+      },
+      {
+        "name": "JARRAD HOPE",
+        "photo": "../img/jarradhope.png",
+        "xUrl": "https://x.com/jarradhope_",
+        "role": "Lead",
+        "tagline": "Architect of censorship-resistant network infrastructure"
+      },
+      {
+        "name": "KRIS IS",
+        "photo": "../img/kris.png",
+        "xUrl": "https://x.com/krrisis",
+        "role": "Lead",
+        "tagline": "Advocate for digital autonomy and internet freedom"
+      }
+    ],
+    "descriptionFull": "Mixnets visionary. Architect of censorship-resistant network infrastructure. Advocate for digital autonomy and internet freedom."
+  },
+  {
+    "slug": "dappnode",
+    "name": "Dappnode",
+    "orgUrl": "https://dappnode.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=dappnode.com",
+    "curated": false,
+    "description": "Making self-hosted infrastructure accessible to everyone.",
+    "direction": [
+      "Digital Rights & Advocacy",
+      "Storage & Infra",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "POL LANSKI",
+        "photo": "../img/lanski.jpeg",
+        "xUrl": "https://x.com/Pol_Lanski",
+        "role": "Lead",
+        "tagline": "Making self-hosted infrastructure accessible to everyone"
+      },
+      {
+        "name": "PAUL DYLAN-ENNIS",
+        "photo": "../img/paul-dylan-ennis.jpg",
+        "xUrl": "https://x.com/Pol_Lanski",
+        "role": "Lead",
+        "tagline": "Scholar documenting the social evolution of crypto communities"
+      }
+    ],
+    "descriptionFull": "Making self-hosted infrastructure accessible to everyone. Scholar documenting the social evolution of crypto communities."
+  },
+  {
+    "slug": "fileverse",
+    "name": "Fileverse",
+    "orgUrl": "https://fileverse.io/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fileverse.io",
+    "curated": false,
+    "description": "Tech visionary challenging Google Suite.",
+    "direction": [
+      "Protocol & Research",
+      "Cryptography & ZK",
+      "Browsers & Apps"
+    ],
+    "members": [
+      {
+        "name": "VIJAY KRISHNAVANSHI",
+        "photo": "../img/vijay-krishnavanshi.jpeg",
+        "xUrl": "https://x.com/0x6b8",
+        "role": "Co-Founder",
+        "tagline": "Tech visionary challenging Google Suite"
+      },
+      {
+        "name": "MIROYATO",
+        "photo": "../img/andreas.png",
+        "xUrl": "https://x.com/miroyato",
+        "role": "Co-founder",
+        "tagline": "Academic turned practical privacy tech"
+      }
+    ],
+    "descriptionFull": "Tech visionary challenging Google Suite. Academic turned practical privacy tech."
+  },
+  {
+    "slug": "human-tech",
+    "name": "Human Tech",
+    "orgUrl": "https://human.tech",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=human.tech",
+    "curated": false,
+    "description": "Digital identity advocate advancing human-centered credentials.",
+    "direction": [
+      "Identity & Credentials",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "NANAK NIHAL KHALSA",
+        "photo": "../img/Nanak-Nihal-Khalsa.jpg",
+        "xUrl": "https://x.com/NanakNihal",
+        "role": "Lead",
+        "tagline": "Digital identity advocate advancing human-centered credentials"
+      },
+      {
+        "name": "SHADY EL DAMATY",
+        "photo": "../img/shady.jpeg",
+        "xUrl": "https://x.com/hebbianloop",
+        "role": "CEO",
+        "tagline": "Digital rights activists delivering identity for the internet age"
+      }
+    ],
+    "descriptionFull": "Digital identity advocate advancing human-centered credentials. Digital rights activists delivering identity for the internet age."
+  },
+  {
+    "slug": "ideal",
+    "name": "Ideal",
+    "orgUrl": "https://ideal.group",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ideal.group",
+    "curated": false,
+    "description": "Helping protocols & institutions adopt ZK-tech.",
+    "direction": [
+      "Cryptography & ZK",
+      "Identity & Credentials",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "YING TONG LAI",
+        "photo": "../img/yingtonglai2.jpg",
+        "xUrl": "https://twitter.com/therealyingtong",
+        "role": "Applied Cryptographer",
+        "tagline": "Helping protocols & institutions adopt ZK-tech"
+      },
+      {
+        "name": "LIAM EAGAN",
+        "photo": "../img/LIAM-EAGAN.webp",
+        "xUrl": "https://x.com/liameagen",
+        "role": "Applied Cryptographer",
+        "tagline": "Helping protocols & institutions adopt ZK-tech"
+      }
+    ],
+    "descriptionFull": "Helping protocols & institutions adopt ZK-tech."
+  },
+  {
+    "slug": "privacy-stewards-of-ethereum",
+    "name": "Privacy Stewards of Ethereum",
+    "orgUrl": "http://pse.dev",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=pse.dev",
+    "curated": false,
+    "description": "Decentralised privacy adoption lead.",
+    "direction": [
+      "Cryptography & ZK",
+      "Identity & Credentials",
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "ANDY GUZMAN",
+        "photo": "../img/guzman.jpg",
+        "xUrl": "https://x.com/AndyGuzmanEth",
+        "role": "Head",
+        "tagline": "Decentralised privacy adoption lead"
+      },
+      {
+        "name": "JOHN GUILDING",
+        "photo": "../img/john.jpg",
+        "xUrl": "https://x.com/john_guilding",
+        "role": "Lead",
+        "tagline": "Bringing privacy technologies into real-world governance systems"
+      }
+    ],
+    "descriptionFull": "Decentralised privacy adoption lead. Bringing privacy technologies into real-world governance systems."
+  },
+  {
+    "slug": "1kx",
+    "name": "1kx",
+    "orgUrl": "https://1kx.capital",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=1kx.capital",
+    "curated": false,
+    "description": "Helping protocols & institutions adopt ZK-tech.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "WEI DAI",
+        "photo": "../img/wei-dai.webp",
+        "xUrl": "https://x.com/_weidai",
+        "role": "Research Partner",
+        "tagline": "Helping protocols & institutions adopt ZK-tech"
+      }
+    ],
+    "descriptionFull": "Helping protocols & institutions adopt ZK-tech."
+  },
+  {
+    "slug": "alpeh-v",
+    "name": "alpeh_v",
+    "orgUrl": "https://x.com/alpeh_v",
+    "icon": "",
+    "curated": false,
+    "description": "Independent engineer advancing privacy-first infrastructure.",
+    "direction": [
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "alpeh_v",
+        "photo": "../img/alpeh.jpg",
+        "xUrl": "https://x.com/alpeh_v",
+        "role": "Lead",
+        "tagline": "Independent engineer advancing privacy-first infrastructure"
+      }
+    ],
+    "descriptionFull": "Independent engineer advancing privacy-first infrastructure."
+  },
+  {
+    "slug": "armada",
+    "name": "Armada",
+    "orgUrl": "https://armada.wtf/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=armada.wtf",
+    "curated": false,
+    "description": "Ethereum educator focused on resilient validator infrastructure.",
+    "direction": [
+      "Browsers & Apps"
+    ],
+    "members": [
+      {
+        "name": "GAVIN BIRCH",
+        "photo": "../img/gavinbirch.png",
+        "xUrl": "https://x.com/Ether_Gavin",
+        "role": "Lead",
+        "tagline": "Ethereum educator focused on resilient validator infrastructure"
+      }
+    ],
+    "descriptionFull": "Ethereum educator focused on resilient validator infrastructure."
+  },
+  {
+    "slug": "bread-coop",
+    "name": "Bread Coop",
+    "orgUrl": "https://bread.coop",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=bread.coop",
+    "curated": false,
+    "description": "Cooperative economy advocate reimagining ownership online.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "JOSH DAVILA",
+        "photo": "../img/josh-davila.png",
+        "xUrl": "https://x.com/TBSocialist",
+        "role": "Lead",
+        "tagline": "Cooperative economy advocate reimagining ownership online"
+      }
+    ],
+    "descriptionFull": "Cooperative economy advocate reimagining ownership online."
+  },
+  {
+    "slug": "cake-wallet",
+    "name": "Cake Wallet",
+    "orgUrl": "cakewallet.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=cakewallet.com",
+    "curated": false,
+    "description": "Self-custody educator championing everyday financial privacy.",
+    "direction": [
+      "Cryptography & ZK",
+      "Wallets & Payments"
+    ],
+    "members": [
+      {
+        "name": "SETH FOR PRIVACY",
+        "photo": "../img/sethforprivacy.jpg",
+        "xUrl": "https://x.com/sethforprivacy",
+        "role": "Lead",
+        "tagline": "Self-custody educator championing everyday financial privacy"
+      }
+    ],
+    "descriptionFull": "Self-custody educator championing everyday financial privacy."
+  },
+  {
+    "slug": "circles",
+    "name": "Circles",
+    "orgUrl": "https://x.com/CirclesUBI",
+    "icon": "",
+    "curated": false,
+    "description": "Researching universal basic income through decentralized networks.",
+    "direction": [
+      "Digital Rights & Advocacy",
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "JULIO LINARES",
+        "photo": "../img/julio.png",
+        "xUrl": "https://x.com/Julio_Linares_",
+        "role": "Lead",
+        "tagline": "Researching universal basic income through decentralized networks"
+      }
+    ],
+    "descriptionFull": "Researching universal basic income through decentralized networks."
+  },
+  {
+    "slug": "consensys-diligence",
+    "name": "Consensys Diligence",
+    "orgUrl": "https://diligence.security/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=diligence.security",
+    "curated": false,
+    "description": "Smart contract auditor securing Ethereum's critical infrastructure.",
+    "direction": [
+      "Security & Auditing"
+    ],
+    "members": [
+      {
+        "name": "TOBIAS VOGEL",
+        "photo": "../img/tobias.png",
+        "xUrl": "https://www.linkedin.com/in/tobias-vogel-66545b100/",
+        "role": "Lead",
+        "tagline": "Smart contract auditor securing Ethereum's critical infrastructure"
+      }
+    ],
+    "descriptionFull": "Smart contract auditor securing Ethereum's critical infrastructure."
+  },
+  {
+    "slug": "darkfi",
+    "name": "DarkFi",
+    "orgUrl": "https://x.com/DarkFiSquad",
+    "icon": "",
+    "curated": false,
+    "description": "Visionary hacktivist.",
+    "direction": [
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "AMIR TAAKI",
+        "photo": "../img/taaki.jpg",
+        "xUrl": "https://x.com/lunardragon420",
+        "role": "Founder",
+        "tagline": "Visionary hacktivist"
+      }
+    ],
+    "descriptionFull": "Visionary hacktivist."
+  },
+  {
+    "slug": "dweb",
+    "name": "Dweb",
+    "orgUrl": "https://getdweb.net",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=getdweb.net",
+    "curated": false,
+    "description": "Visionary behind alternative tech ecosystem.",
+    "direction": [
+      "Governance & Public Goods",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "BETH MCCARTHY",
+        "photo": "../img/beth mccarthy.jpg",
+        "xUrl": "https://x.com/ontologymachine",
+        "role": "Facilitator",
+        "tagline": "Visionary behind alternative tech ecosystem"
+      }
+    ],
+    "descriptionFull": "Visionary behind alternative tech ecosystem."
+  },
+  {
+    "slug": "dyne-org",
+    "name": "Dyne.org",
+    "orgUrl": "https://dyne.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=dyne.org",
+    "curated": false,
+    "description": "Long-lasting cryptographer & hacktivist.",
+    "direction": [
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "DENIS JAROMIL ROJO",
+        "photo": "../img/jaromil.jpg",
+        "xUrl": "https://x.com/jaromil",
+        "role": "Founder",
+        "tagline": "Long-lasting cryptographer & hacktivist"
+      }
+    ],
+    "descriptionFull": "Long-lasting cryptographer & hacktivist."
+  },
+  {
+    "slug": "ethereum-foundation-bordel",
+    "name": "Ethereum Foundation & BORDEL",
+    "orgUrl": "https://ethereum.foundation",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.foundation",
+    "curated": false,
+    "description": "FOSS advocate.",
+    "direction": [
+      "Digital Rights & Advocacy",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "MARIO HAVEL",
+        "photo": "../img/havel.jpg",
+        "xUrl": "https://x.com/TMIYChao",
+        "role": "Protocol Support",
+        "tagline": "FOSS advocate"
+      }
+    ],
+    "descriptionFull": "FOSS advocate."
+  },
+  {
+    "slug": "ethereum-governance-ai",
+    "name": "Ethereum Governance AI",
+    "orgUrl": "https://x.com/EthereumGovAI",
+    "icon": "",
+    "curated": false,
+    "description": "Researcher applying AI to decentralized governance systems.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "TANISHA KATARA",
+        "photo": "../img/tanisha.jpg",
+        "xUrl": "https://x.com/governingweb3",
+        "role": "Lead",
+        "tagline": "Researcher applying AI to decentralized governance systems"
+      }
+    ],
+    "descriptionFull": "Researcher applying AI to decentralized governance systems."
+  },
+  {
+    "slug": "ethereum-institute",
+    "name": "Ethereum Institute",
+    "orgUrl": "https://ethereum.institute",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.institute",
+    "curated": false,
+    "description": "Policy researcher translating Ethereum for lawmakers and institutions.",
+    "direction": [
+      "Legal & Policy"
+    ],
+    "members": [
+      {
+        "name": "MARINA MARKEZIC",
+        "photo": "../img/Marina-Markezic.jpg",
+        "xUrl": "https://x.com/MarinaMarkezic",
+        "role": "Lead",
+        "tagline": "Policy researcher translating Ethereum for lawmakers and institutions"
+      }
+    ],
+    "descriptionFull": "Policy researcher translating Ethereum for lawmakers and institutions."
+  },
+  {
+    "slug": "ethereum-silviculture-society-harvard-allen-lab-fellow",
+    "name": "Ethereum Silviculture Society & Harvard Allen Lab Fellow",
+    "orgUrl": "https://x.com/mashbean",
+    "icon": "",
+    "curated": false,
+    "description": "Regenerative systems thinker cultivating public goods ecosystems.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "MASHBEAN",
+        "photo": "../img/mashbean.jpg",
+        "xUrl": "https://x.com/mashbean",
+        "role": "Lead",
+        "tagline": "Regenerative systems thinker cultivating public goods ecosystems"
+      }
+    ],
+    "descriptionFull": "Regenerative systems thinker cultivating public goods ecosystems."
+  },
+  {
+    "slug": "ethpanda",
+    "name": "ETHPanda",
+    "orgUrl": "https://ethpanda.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethpanda.org",
+    "curated": false,
+    "description": "Visionary behind alternative tech ecosystem.",
+    "direction": [
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "BRUCE.ETH",
+        "photo": "../img/brucexu.eth.jpg",
+        "xUrl": "https://x.com/brucexu_eth",
+        "role": "Co-Founder",
+        "tagline": "Visionary behind alternative tech ecosystem"
+      }
+    ],
+    "descriptionFull": "Visionary behind alternative tech ecosystem."
+  },
+  {
+    "slug": "fairblock",
+    "name": "Fairblock",
+    "orgUrl": "https://www.fairblock.network/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fairblock.network",
+    "curated": false,
+    "description": "Cryptography builder tackling fairness and transaction privacy.",
+    "direction": [
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "PIEMAN",
+        "photo": "../img/pieman.png",
+        "xUrl": "https://x.com/Pememoni",
+        "role": "Lead",
+        "tagline": "Cryptography builder tackling fairness and transaction privacy"
+      }
+    ],
+    "descriptionFull": "Cryptography builder tackling fairness and transaction privacy."
+  },
+  {
+    "slug": "fat-solutions",
+    "name": "FAT Solutions",
+    "orgUrl": "https://fatsolutions.xyz",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fatsolutions.xyz",
+    "curated": false,
+    "description": "Open-source engineer building privacy-enhancing Ethereum tools.",
+    "direction": [
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "PARSLEY",
+        "photo": "../img/Parsley.jpg",
+        "xUrl": "https://x.com/Parsley3D",
+        "role": "Lead",
+        "tagline": "Open-source engineer building privacy-enhancing Ethereum tools"
+      }
+    ],
+    "descriptionFull": "Open-source engineer building privacy-enhancing Ethereum tools."
+  },
+  {
+    "slug": "fatemeh-fannizadeh",
+    "name": "FATEMEH FANNIZADEH",
+    "orgUrl": "https://x.com/Fatalmeh",
+    "icon": "",
+    "curated": false,
+    "description": "Legal expert on decentralized computing & activism.",
+    "direction": [
+      "Legal & Policy",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "FATEMEH FANNIZADEH",
+        "photo": "../img/fatemeh.png",
+        "xUrl": "https://x.com/Fatalmeh",
+        "role": "Legal",
+        "tagline": "Legal expert on decentralized computing & activism"
+      }
+    ],
+    "descriptionFull": "Legal expert on decentralized computing & activism."
+  },
+  {
+    "slug": "fhenix",
+    "name": "Fhenix",
+    "orgUrl": "https://www.fhenix.io",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fhenix.io",
+    "curated": false,
+    "description": "Driving confidential computation toward mainstream adoption.",
+    "direction": [
+      "Cryptography & ZK",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "KATE STAPLETON",
+        "photo": "../img/kate-stapleton.png",
+        "xUrl": "https://x.com/kate_stapes",
+        "role": "Lead",
+        "tagline": "Driving confidential computation toward mainstream adoption"
+      }
+    ],
+    "descriptionFull": "Driving confidential computation toward mainstream adoption."
+  },
+  {
+    "slug": "filecoin",
+    "name": "Filecoin",
+    "orgUrl": "https://fil.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fil.org",
+    "curated": false,
+    "description": "Former Deputy Executive Director and General Counsel of EFF.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "KURT OPSAHL",
+        "photo": "../img/kurtopsahl2.jpg",
+        "xUrl": "https://x.com/kurtopsahl",
+        "role": "Associate General Counsel for Cybersecurity and Civil Liberties Policy",
+        "tagline": "Former Deputy Executive Director and General Counsel of EFF"
+      }
+    ],
+    "descriptionFull": "Former Deputy Executive Director and General Counsel of EFF."
+  },
+  {
+    "slug": "filecoin-foundation-eff",
+    "name": "Filecoin Foundation, EFF",
+    "orgUrl": "https://fil.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fil.org",
+    "curated": false,
+    "description": "Former director of strategy at EFF.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "DANNY O'BRIEN",
+        "photo": "../img/obrien.jpg",
+        "xUrl": "https://twitter.com/mala",
+        "role": "Senior Fellow",
+        "tagline": "Former director of strategy at EFF"
+      }
+    ],
+    "descriptionFull": "Former director of strategy at EFF."
+  },
+  {
+    "slug": "fluidkey",
+    "name": "Fluidkey",
+    "orgUrl": "https://www.fluidkey.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=fluidkey.com",
+    "curated": false,
+    "description": "Stealth addresses advocate.",
+    "direction": [
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "ANTONIO SEVESO",
+        "photo": "../img/seveso.png",
+        "xUrl": "https://x.com/0xMeTony",
+        "role": "Co-founder",
+        "tagline": "Stealth addresses advocate"
+      }
+    ],
+    "descriptionFull": "Stealth addresses advocate."
+  },
+  {
+    "slug": "freedom-browser",
+    "name": "Freedom Browser",
+    "orgUrl": "https://freedombrowser.eth.limo",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=freedombrowser.eth.limo",
+    "curated": false,
+    "description": "Lawyer building freedom-preserving tools for the sovereign web.",
+    "direction": [
+      "Browsers & Apps",
+      "Legal & Policy"
+    ],
+    "members": [
+      {
+        "name": "FLORIAN GLATZ",
+        "photo": "../img/florian-glatz.jpg",
+        "xUrl": "https://x.com/heckerhut",
+        "role": "Lead",
+        "tagline": "Lawyer building freedom-preserving tools for the sovereign web"
+      }
+    ],
+    "descriptionFull": "Lawyer building freedom-preserving tools for the sovereign web."
+  },
+  {
+    "slug": "freedom-of-the-press-foundation",
+    "name": "Freedom Of The Press Foundation",
+    "orgUrl": "https://freedom.press",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=freedom.press",
+    "curated": false,
+    "description": "Security engineer advancing press freedom through open-source tools.",
+    "direction": [
+      "Digital Rights & Advocacy",
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "Dr. JENNIFER HELSBY",
+        "photo": "../img/redshiftzero.png",
+        "xUrl": "https://x.com/redshiftzero",
+        "role": "Lead",
+        "tagline": "Security engineer advancing press freedom through open-source tools"
+      }
+    ],
+    "descriptionFull": "Security engineer advancing press freedom through open-source tools."
+  },
+  {
+    "slug": "gcc",
+    "name": "GCC",
+    "orgUrl": "https://www.gccofficial.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=gccofficial.org",
+    "curated": false,
+    "description": "Scaling Asian Public Goods Sector.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "HAZEL HU",
+        "photo": "../img/hazel-hu.jpg",
+        "xUrl": "https://x.com/0xHY2049",
+        "role": "Facilitator",
+        "tagline": "Scaling Asian Public Goods Sector"
+      }
+    ],
+    "descriptionFull": "Scaling Asian Public Goods Sector."
+  },
+  {
+    "slug": "infinite-garden",
+    "name": "Infinite Garden",
+    "orgUrl": "",
+    "icon": "",
+    "curated": false,
+    "description": "Digital rights meeting decentralised tech.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "DANIEL KNOBELSDORF",
+        "photo": "../img/knobelsdorf.png",
+        "xUrl": "",
+        "role": "Lead",
+        "tagline": "Digital rights meeting decentralised tech"
+      }
+    ],
+    "descriptionFull": "Digital rights meeting decentralised tech."
+  },
+  {
+    "slug": "institute-of-free-technology",
+    "name": "Institute of Free Technology",
+    "orgUrl": "https://free.technology/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=free.technology",
+    "curated": false,
+    "description": "Builder of open technology beyond platform dependence.",
+    "direction": [
+      "Storage & Infra"
+    ],
+    "members": [
+      {
+        "name": "ALISHER",
+        "photo": "../img/alisher.png",
+        "xUrl": "https://x.com/alisher",
+        "role": "Lead",
+        "tagline": "Builder of open technology beyond platform dependence"
+      }
+    ],
+    "descriptionFull": "Builder of open technology beyond platform dependence."
+  },
+  {
+    "slug": "intmax",
+    "name": "INTMAX",
+    "orgUrl": "https://x.com/IntmaxIO",
+    "icon": "",
+    "curated": false,
+    "description": "Scaling Ethereum privacy through next-generation rollup design.",
+    "direction": [
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "HIOKI LEONA",
+        "photo": "../img/hiokileona.jpg",
+        "xUrl": "https://x.com/leo_hio",
+        "role": "Lead",
+        "tagline": "Scaling Ethereum privacy through next-generation rollup design"
+      }
+    ],
+    "descriptionFull": "Scaling Ethereum privacy through next-generation rollup design."
+  },
+  {
+    "slug": "jito-factory-labs",
+    "name": "Jito & Factory Labs",
+    "orgUrl": "https://x.com/jito_sol",
+    "icon": "",
+    "curated": false,
+    "description": "Governance researcher examining incentives and decentralized coordination.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "NICK ALMOND",
+        "photo": "../img/nick-almond.jpg",
+        "xUrl": "https://x.com/DrNickA",
+        "role": "Lead",
+        "tagline": "Governance researcher examining incentives and decentralized coordination"
+      }
+    ],
+    "descriptionFull": "Governance researcher examining incentives and decentralized coordination."
+  },
+  {
+    "slug": "ludlow-institute",
+    "name": "Ludlow Institute",
+    "orgUrl": "https://www.ludlowinstitute.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=ludlowinstitute.org",
+    "curated": false,
+    "description": "Privacy educator making digital self-defense accessible.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "NAOMI BROCKWELL",
+        "photo": "../img/naomibrockwell.jpg",
+        "xUrl": "https://x.com/naomibrockwell",
+        "role": "Lead",
+        "tagline": "Privacy educator making digital self-defense accessible"
+      }
+    ],
+    "descriptionFull": "Privacy educator making digital self-defense accessible."
+  },
+  {
+    "slug": "mask-network",
+    "name": "Mask Network",
+    "orgUrl": "https://www.mask.io/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=mask.io",
+    "curated": false,
+    "description": "Connecting privacy, identity, and social networking.",
+    "direction": [
+      "Messaging & Social"
+    ],
+    "members": [
+      {
+        "name": "SUJI JAN",
+        "photo": "../img/suji-yan.jpg",
+        "xUrl": "https://x.com/suji_yan",
+        "role": "Lead",
+        "tagline": "Connecting privacy, identity, and social networking"
+      }
+    ],
+    "descriptionFull": "Connecting privacy, identity, and social networking."
+  },
+  {
+    "slug": "mother-ai",
+    "name": "Mother AI",
+    "orgUrl": "https://www.hellomother.co.uk/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=hellomother.co.uk",
+    "curated": false,
+    "description": "Entrepreneur exploring alternatives to extractive digital platforms.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "MANU ALZURU",
+        "photo": "../img/manualzuru.png",
+        "xUrl": "https://x.com/ManuAlzuru",
+        "role": "Lead",
+        "tagline": "Entrepreneur exploring alternatives to extractive digital platforms"
+      }
+    ],
+    "descriptionFull": "Entrepreneur exploring alternatives to extractive digital platforms."
+  },
+  {
+    "slug": "neverlocal",
+    "name": "NeverLocal",
+    "orgUrl": "https://neverlocal.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=neverlocal.com",
+    "curated": false,
+    "description": "Researcher exploring post-quantum and privacy-preserving systems.",
+    "direction": [
+      "Protocol & Research",
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "STEFANO GOGIOSO",
+        "photo": "../img/stefano-gogioso-profile.jpg",
+        "xUrl": "https://x.com/StefanoGogioso",
+        "role": "Lead",
+        "tagline": "Researcher exploring post-quantum and privacy-preserving systems"
+      }
+    ],
+    "descriptionFull": "Researcher exploring post-quantum and privacy-preserving systems."
+  },
+  {
+    "slug": "palliora",
+    "name": "Palliora",
+    "orgUrl": "https://palliora.org/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=palliora.org",
+    "curated": false,
+    "description": "Researcher bringing rigorous privacy science to Web3.",
+    "direction": [
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "AMIT CHAUDHARY",
+        "photo": "../img/amitchaudhary.png",
+        "xUrl": "https://x.com/amitchax",
+        "role": "Lead",
+        "tagline": "Researcher bringing rigorous privacy science to Web3"
+      }
+    ],
+    "descriptionFull": "Researcher bringing rigorous privacy science to Web3."
+  },
+  {
+    "slug": "plexos-institute",
+    "name": "Plexos Institute",
+    "orgUrl": "https://www.plexosinstitute.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=plexosinstitute.org",
+    "curated": false,
+    "description": "Governance strategist at the intersection of law and digital rights.",
+    "direction": [
+      "Governance & Public Goods",
+      "Legal & Policy"
+    ],
+    "members": [
+      {
+        "name": "CAMILA RIOJA",
+        "photo": "../img/camila-rioja.jpg",
+        "xUrl": "https://x.com/mila_rioja",
+        "role": "Lead",
+        "tagline": "Governance strategist at the intersection of law and digital rights"
+      }
+    ],
+    "descriptionFull": "Governance strategist at the intersection of law and digital rights."
+  },
+  {
+    "slug": "privacy-pools",
+    "name": "Privacy Pools",
+    "orgUrl": "https://privacypools.com/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=privacypools.com",
+    "curated": false,
+    "description": "Cryptographer designing compliant privacy for public blockchains.",
+    "direction": [
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "AMEEN SULEIMANI",
+        "photo": "../img/ameen.png",
+        "xUrl": "https://x.com/ameensol",
+        "role": "Lead",
+        "tagline": "Cryptographer designing compliant privacy for public blockchains"
+      }
+    ],
+    "descriptionFull": "Cryptographer designing compliant privacy for public blockchains."
+  },
+  {
+    "slug": "protocol-guild",
+    "name": "Protocol Guild",
+    "orgUrl": "https://www.protocolguild.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=protocolguild.org",
+    "curated": false,
+    "description": "Long-term Ethereum contributor funding protocol sustainability.",
+    "direction": [
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "CHEEKY GORILLA",
+        "photo": "../img/Cheeky-gorilla.jpg",
+        "xUrl": "https://x.com/cheekygorilla0x",
+        "role": "Lead",
+        "tagline": "Long-term Ethereum contributor funding protocol sustainability"
+      }
+    ],
+    "descriptionFull": "Long-term Ethereum contributor funding protocol sustainability."
+  },
+  {
+    "slug": "radicle",
+    "name": "Radicle",
+    "orgUrl": "https://radicle.dev/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=radicle.dev",
+    "curated": false,
+    "description": "Building sovereign collaboration tools for open-source communities.",
+    "direction": [
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "ELEFTHERIOS",
+        "photo": "../img/eleftherios.png",
+        "xUrl": "https://x.com/lftherios",
+        "role": "Lead",
+        "tagline": "Building sovereign collaboration tools for open-source communities"
+      }
+    ],
+    "descriptionFull": "Building sovereign collaboration tools for open-source communities."
+  },
+  {
+    "slug": "rarimo",
+    "name": "Rarimo",
+    "orgUrl": "https://rarimo.com/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=rarimo.com",
+    "curated": false,
+    "description": "Identity innovator enabling borderless democratic participation.",
+    "direction": [
+      "Identity & Credentials",
+      "Governance & Public Goods",
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "LASHA ANTADZE",
+        "photo": "../img/lasha.png",
+        "xUrl": "https://x.com/lashaantadze",
+        "role": "Lead",
+        "tagline": "Identity innovator enabling borderless democratic participation"
+      }
+    ],
+    "descriptionFull": "Identity innovator enabling borderless democratic participation."
+  },
+  {
+    "slug": "rotki",
+    "name": "Rotki",
+    "orgUrl": "https://rotki.com/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=rotki.com",
+    "curated": false,
+    "description": "Champion of financial transparency through open-source software.",
+    "direction": [
+      "Browsers & Apps",
+      "Governance & Public Goods"
+    ],
+    "members": [
+      {
+        "name": "LEFTERIS KARAPETSAS",
+        "photo": "../img/lefteris.png",
+        "xUrl": "https://x.com/LefterisJP",
+        "role": "Lead",
+        "tagline": "Champion of financial transparency through open-source software"
+      }
+    ],
+    "descriptionFull": "Champion of financial transparency through open-source software."
+  },
+  {
+    "slug": "sentinel-alliance",
+    "name": "Sentinel Alliance",
+    "orgUrl": "https://www.sentinelalliance.org/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=sentinelalliance.org",
+    "curated": false,
+    "description": "Defender of civil liberties in the digital age.",
+    "direction": [
+      "Digital Rights & Advocacy",
+      "Legal & Policy"
+    ],
+    "members": [
+      {
+        "name": "JOAN ARUS",
+        "photo": "../img/joan.jpg",
+        "xUrl": "https://x.com/Joan_Arus",
+        "role": "Lead",
+        "tagline": "Defender of civil liberties in the digital age"
+      }
+    ],
+    "descriptionFull": "Defender of civil liberties in the digital age."
+  },
+  {
+    "slug": "session",
+    "name": "Session",
+    "orgUrl": "https://getsession.org",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=getsession.org",
+    "curated": false,
+    "description": "Decentralised messengers visionary.",
+    "direction": [
+      "Messaging & Social",
+      "Browsers & Apps"
+    ],
+    "members": [
+      {
+        "name": "CHRIS MCCABE",
+        "photo": "../img/chrismccabe.jpg",
+        "xUrl": "https://twitter.com/Cryptic_cm",
+        "role": "Co-founder",
+        "tagline": "Decentralised messengers visionary"
+      }
+    ],
+    "descriptionFull": "Decentralised messengers visionary."
+  },
+  {
+    "slug": "shutter-network",
+    "name": "Shutter Network",
+    "orgUrl": "https://linktr.ee/ShutterNetwork",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=linktr.ee",
+    "curated": false,
+    "description": "Encrypted Mempools advocate.",
+    "direction": [
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "Loring Harkness",
+        "photo": "../img/loring.jpg",
+        "xUrl": "https://x.com/LoringHarkness",
+        "role": "Lead",
+        "tagline": "Encrypted Mempools advocate"
+      }
+    ],
+    "descriptionFull": "Encrypted Mempools advocate."
+  },
+  {
+    "slug": "sovright",
+    "name": "Sovright",
+    "orgUrl": "https://sovright.com",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=sovright.com",
+    "curated": false,
+    "description": "Open-hardware enthusiast.",
+    "direction": [
+      "Cryptography & ZK",
+      "Storage & Infra"
+    ],
+    "members": [
+      {
+        "name": "ml_sudo",
+        "photo": "../img/michelleLai.png",
+        "xUrl": "https://x.com/ml_sudo",
+        "role": "Lead",
+        "tagline": "Open-hardware enthusiast"
+      }
+    ],
+    "descriptionFull": "Open-hardware enthusiast."
+  },
+  {
+    "slug": "status",
+    "name": "Status",
+    "orgUrl": "",
+    "icon": "",
+    "curated": false,
+    "description": "Community strategist shaping private social coordination tools.",
+    "direction": [
+      "Messaging & Social"
+    ],
+    "members": [
+      {
+        "name": "CYP",
+        "photo": "../img/cyp.png",
+        "xUrl": "https://x.com/0xcyp",
+        "role": "Lead",
+        "tagline": "Community strategist shaping private social coordination tools"
+      }
+    ],
+    "descriptionFull": "Community strategist shaping private social coordination tools."
+  },
+  {
+    "slug": "strato",
+    "name": "Strato",
+    "orgUrl": "https://strato.nexus",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=strato.nexus",
+    "curated": false,
+    "description": "Decentralisation veteran.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "BOB SUMMERWILL",
+        "photo": "../img/bobsummerwill.png",
+        "xUrl": "https://x.com/BobSummerwill",
+        "role": "Head of Ecosystem",
+        "tagline": "Decentralisation veteran"
+      }
+    ],
+    "descriptionFull": "Decentralisation veteran."
+  },
+  {
+    "slug": "taceo",
+    "name": "Taceo",
+    "orgUrl": "https://taceo.io",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=taceo.io",
+    "curated": false,
+    "description": "MPC researcher turning advanced cryptography into usable infrastructure.",
+    "direction": [
+      "Cryptography & ZK"
+    ],
+    "members": [
+      {
+        "name": "AIS CONNOLLY",
+        "photo": "../img/aisconnolly.jpg",
+        "xUrl": "https://x.com/aisconnolly",
+        "role": "Lead",
+        "tagline": "MPC researcher turning advanced cryptography into usable infrastructure"
+      }
+    ],
+    "descriptionFull": "MPC researcher turning advanced cryptography into usable infrastructure."
+  },
+  {
+    "slug": "teleport-computer",
+    "name": "Teleport Computer",
+    "orgUrl": "https://router.teleport.computer/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=router.teleport.computer",
+    "curated": false,
+    "description": "Academic cryptographer turning theory into deployed systems.",
+    "direction": [
+      "Cryptography & ZK",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "ANDREW MILLER",
+        "photo": "../img/andrew-miller.jpg",
+        "xUrl": "https://x.com/socrates1024",
+        "role": "Lead",
+        "tagline": "Academic cryptographer turning theory into deployed systems"
+      }
+    ],
+    "descriptionFull": "Academic cryptographer turning theory into deployed systems."
+  },
+  {
+    "slug": "vocdoni",
+    "name": "Vocdoni",
+    "orgUrl": "https://vocdoni.io/en",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=vocdoni.io",
+    "curated": false,
+    "description": "Building verifiable digital voting for modern democracies.",
+    "direction": [
+      "Governance & Public Goods",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "JORDI PINYANA",
+        "photo": "../img/pinyana.jpeg",
+        "xUrl": "https://x.com/jordipainan",
+        "role": "Lead",
+        "tagline": "Building verifiable digital voting for modern democracies"
+      }
+    ],
+    "descriptionFull": "Building verifiable digital voting for modern democracies."
+  },
+  {
+    "slug": "walletbeat",
+    "name": "Walletbeat",
+    "orgUrl": "https://walletbeat.eth.limo",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=walletbeat.eth.limo",
+    "curated": false,
+    "description": "Wallet researcher focused on safer user experiences.",
+    "direction": [
+      "Wallets & Payments",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "POLYMUTEX",
+        "photo": "../img/polymutex.jpg",
+        "xUrl": "https://x.com/polymutex",
+        "role": "Lead",
+        "tagline": "Wallet researcher focused on safer user experiences"
+      }
+    ],
+    "descriptionFull": "Wallet researcher focused on safer user experiences."
+  },
+  {
+    "slug": "warptoad",
+    "name": "Warptoad",
+    "orgUrl": "https://warptoad.org/",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=warptoad.org",
+    "curated": false,
+    "description": "Builder of practical tools for privacy-first internet users.",
+    "direction": [
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "JIMJIM",
+        "photo": "../img/jimjim.png",
+        "xUrl": "https://x.com/jimjim_eth",
+        "role": "Lead",
+        "tagline": "Builder of practical tools for privacy-first internet users"
+      }
+    ],
+    "descriptionFull": "Builder of practical tools for privacy-first internet users."
+  },
+  {
+    "slug": "web3privacy-now",
+    "name": "Web3Privacy Now",
+    "orgUrl": "https://web3privacy.info",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=web3privacy.info",
+    "curated": false,
+    "description": "Community builder growing the Web3 privacy movement.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "PG",
+        "photo": "../img/pg.jpg",
+        "xUrl": "https://x.com/PG_CDG",
+        "role": "Lead",
+        "tagline": "Community builder growing the Web3 privacy movement"
+      }
+    ],
+    "descriptionFull": "Community builder growing the Web3 privacy movement."
+  },
+  {
+    "slug": "zisk",
+    "name": "Zisk",
+    "orgUrl": "http://zisk.technology",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=zisk.technology",
+    "curated": false,
+    "description": "Catalan cryptographer targeted by Pegasus.",
+    "direction": [
+      "Digital Rights & Advocacy"
+    ],
+    "members": [
+      {
+        "name": "JORDI BAYLINA",
+        "photo": "../img/baylina.jpg",
+        "xUrl": "https://x.com/jbaylina",
+        "role": "Co-founder",
+        "tagline": "Catalan cryptographer targeted by Pegasus"
+      }
+    ],
+    "descriptionFull": "Catalan cryptographer targeted by Pegasus."
+  }
+]

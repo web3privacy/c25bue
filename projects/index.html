@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Archivo:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/xdd8rzp.css" />
+    <link href="../community/styles/output.css" rel="stylesheet" />
+    <link href="../community/styles/w3pevent.css" rel="stylesheet" />
+    <title>W3Privacy Projects</title>
+    <meta name="description" content="Explore the projects and organizations building the privacy stack — grouped by team, filterable by technology." />
+    <style>
+      /* Re-declare local fonts since w3pevent.css uses absolute /fonts/ paths */
+      @font-face {
+        font-family: "Major Mono Display";
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/major-mono-display-v13-latin-regular.woff2') format('woff2'),
+             url('../fonts/major-mono-display-v13-latin-regular.woff') format('woff'),
+             url('../fonts/major-mono-display-v13-latin-regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/Archivo.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "KyivTypeSerif";
+        font-style: normal;
+        font-weight: 900;
+        src: url('../fonts/KyivTypeSerif-Heavy2.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: "aileron";
+        font-style: normal;
+        font-weight: 600;
+        src: url('../fonts/aileron/aileron.semibold.otf') format('opentype');
+      }
+
+      /* Direction badge base */
+      .direction-badge {
+        display: inline-block;
+        padding: 0.2rem 0.65rem;
+        border-radius: 20px;
+        font-size: 0.66rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.85);
+        letter-spacing: 0.02em;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.05);
+        white-space: nowrap;
+      }
+      .dir-crypto      { background: #1a1a3a; }
+      .dir-identity    { background: #1a0a2d; }
+      .dir-wallets     { background: #2a1a0a; }
+      .dir-messaging   { background: #1a2d2d; }
+      .dir-network     { background: #0a1a2a; }
+      .dir-storage     { background: #0a2a1a; }
+      .dir-protocol    { background: #1b2354; }
+      .dir-governance  { background: #2d2d1a; }
+      .dir-legal       { background: #2d1a1a; }
+      .dir-security    { background: #2d1a2d; }
+      .dir-browser     { background: #1a2d1a; }
+      .dir-rights      { background: #2a0a1a; }
+
+      .project-item:hover .direction-badge {
+        filter: brightness(1.6);
+        border-color: rgba(0, 0, 0, 0.15);
+      }
+
+      /* Hero section */
+      .community-hero {
+        padding-top: 7rem;
+        padding-bottom: 3.5rem;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .community-hero h1 {
+        font-family: "aileron", sans-serif;
+        font-weight: 600;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: #ffffff;
+        letter-spacing: 0.02em;
+        margin-top: 1rem;
+        line-height: 1.15;
+      }
+      .community-hero p {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.72);
+        max-width: 40rem;
+        margin: 1.1rem auto 0;
+        line-height: 1.65;
+      }
+
+      #filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .filter-controls {
+        margin-bottom: 2rem;
+      }
+      #filter-toggle {
+        display: none;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.72);
+        border-radius: 9999px;
+        padding: 0.32rem 0.85rem;
+        font-size: 0.75rem;
+        font-family: "DM Sans", sans-serif;
+        cursor: pointer;
+      }
+      #filter-toggle:hover {
+        border-color: rgba(255,255,255,0.55);
+        color: #fff;
+      }
+      .filter-pill {
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        font-size: 0.78rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.65);
+        cursor: pointer;
+        transition: all 0.18s ease;
+        flex-shrink: 0;
+      }
+      .filter-pill:hover { border-color: rgba(255,255,255,0.55); color: #fff; }
+      .filter-pill.active { background: #fff; color: #000; border-color: #fff; font-weight: 600; }
+
+      @media (max-width: 768px) {
+        #filter-toggle {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #filter-bar .mobile-hidden-filter {
+          display: none !important;
+        }
+      }
+
+      .section-label {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      /* ======= PROJECT CARD ======= */
+      /* Plain grid, not masonry: every card is built from fixed-height
+         sub-sections (1-line title, capped badges, 2-line desc, a 3-slot
+         member row) so all cards in the grid come out the same height
+         without needing to force/clip anything. */
+      .project-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+      @media (min-width: 640px) {
+        .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      @media (min-width: 1024px) {
+        .project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      }
+      @media (min-width: 1600px) {
+        .project-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      }
+
+      .project-item {
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 18px;
+        padding: 1.35rem;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.005));
+        transition: border-color 0.2s ease, background 0.2s ease;
+      }
+      .project-item:hover {
+        border-color: rgba(255, 255, 255, 0.45);
+        background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.01));
+      }
+
+      .project-head {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.85rem;
+        height: 40px;
+      }
+      .project-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        object-fit: contain;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        padding: 6px;
+        flex-shrink: 0;
+      }
+      .project-icon-fallback {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Archivo", sans-serif;
+        font-size: 0.95rem;
+        color: rgba(255,255,255,0.75);
+        flex-shrink: 0;
+      }
+      .project-name {
+        font-family: "Archivo", sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.3;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+      }
+
+      .direction-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        margin-bottom: 0.9rem;
+        height: 24px;
+        min-width: 0;
+        overflow: hidden;
+      }
+      .direction-badge-more {
+        color: rgba(255, 255, 255, 0.55);
+        border-style: dashed;
+        background: transparent !important;
+      }
+
+      .project-desc {
+        font-family: "DM Sans", sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.75);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        min-width: 0;
+        height: 2.7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .read-more-link {
+        display: inline-block;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        margin-bottom: 0.9rem;
+      }
+      .read-more-link:hover { color: #fff; }
+
+      .project-divider {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        margin-bottom: 1rem;
+        margin-top: auto;
+        padding-top: 1rem;
+      }
+
+      .member-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+        min-width: 0;
+      }
+      .member-row.modal-member-row {
+        grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+      }
+      @media (max-width: 639px) {
+        /* Single-column card layout below this width: no sibling card
+           shares a row, so it's safe to trade the fixed 3-up grid for
+           fewer, bigger, more legible tiles. */
+        .member-row:not(.modal-member-row) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .member-chip {
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        overflow: hidden;
+        min-width: 0;
+        text-decoration: none;
+        transition: border-color 0.18s ease, background 0.18s ease;
+      }
+      .member-chip:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.06);
+      }
+      .member-chip img {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .member-chip-name {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 0.68rem;
+        color: #fff;
+        margin-top: 0.4rem;
+        padding: 0 0.4rem;
+        line-height: 1.25;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .member-chip-role {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 0.62rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.3;
+        margin-top: 0.15rem;
+        padding: 0 0.4rem 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .member-more-tile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      /* ======= MODAL ======= */
+      .project-modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(4px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        padding: 1.5rem;
+      }
+      .project-modal-backdrop.open {
+        display: flex;
+      }
+      .project-modal {
+        background: #0a0a0a;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 18px;
+        max-width: 34rem;
+        width: 100%;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 2rem;
+        position: relative;
+      }
+      @media (max-width: 480px) {
+        .project-modal-backdrop { padding: 0.75rem; }
+        .project-modal { padding: 1.25rem; }
+        .project-modal-close { top: 0.75rem; right: 0.75rem; }
+      }
+      .project-modal-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        line-height: 1;
+      }
+      .project-modal-close:hover {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.6);
+      }
+      .project-modal-head {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-bottom: 1rem;
+        padding-right: 2rem;
+      }
+      .project-modal-head img.project-icon,
+      .project-modal-head .project-icon-fallback {
+        width: 48px;
+        height: 48px;
+      }
+      .project-modal-title {
+        font-family: "Archivo", sans-serif;
+        font-size: 1.4rem;
+        color: #fff;
+      }
+      .project-modal-desc {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 1.25rem;
+      }
+      .project-modal-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        padding: 0.45rem 1rem;
+        transition: all 0.18s ease;
+      }
+      .project-modal-link:hover {
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .modal-direction-row {
+        height: auto;
+        overflow: visible;
+      }
+      .project-modal-team-label {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 1.5rem 0 0.75rem;
+      }
+
+      .empty-state {
+        font-family: "DM Sans", sans-serif;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+        padding: 2rem 0;
+        break-inside: avoid;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body class="bg-black text-white" style="overflow-x:hidden;">
+    <div class="relative w-full min-h-screen text-white">
+
+      <!-- ======= NAVBAR ======= -->
+      <div id="header" class="fixed w-full h-18 z-40 top-0">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox hidden" />
+        <div class="navbar-minimal px-10 py-4 pt-2">
+          <!-- Desktop Navigation -->
+          <div class="desktop-nav flex justify-between items-center my-1">
+            <div class="flex items-center">
+              <a href="https://web3privacy.info/" target="_blank">
+                <img src="../img/logo5.svg" alt="Web3Privacy Now" class="w-52" />
+              </a>
+            </div>
+            <div class="flex items-center gap-8 text-base">
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#intro">Home</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#speakers">Speakers</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#program">Program</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../community/index.html">Community</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal active" href="index.html">Projects</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="../index.html#partners">Partners</a>
+              </div>
+              <div class="m-1">
+                <a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Navigation -->
+          <div class="mobile-nav flex justify-between items-center">
+            <div class="mobile-logo">
+              <a href="https://web3privacy.info/" target="_blank">
+                <img src="../img/logo5.svg" alt="Web3Privacy Now" class="w-40" />
+              </a>
+            </div>
+            <div class="mobile-nav-controls">
+              <label for="mobile-menu-toggle" class="hamburger-icon" data-hidden="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </label>
+              <label for="mobile-menu-toggle" class="close-icon" data-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </label>
+            </div>
+          </div>
+          <!-- Mobile Menu Panel -->
+          <div class="mobile-menu-panel" data-hidden="true">
+            <div class="mobile-menu-items">
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#intro">Home</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#speakers">Speakers</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#program">Program</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../community/index.html">Community</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal active" href="index.html">Projects</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="../index.html#partners">Partners</a>
+              </div>
+              <div class="mobile-nav-item">
+                <a class="nav-link-minimal" href="https://tally.so/r/3lLqKo" target="_blank">Volunteer with Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======= END NAVBAR ======= -->
+
+      <!-- ======= HERO ======= -->
+      <section class="community-hero">
+        <h1>Projects Directory</h1>
+        <p>
+          The organizations building the privacy stack — grouped by team, not by name tag.
+          Filter by technology to see the breadth of what's being built, and who's building it.
+        </p>
+      </section>
+
+      <!-- ======= PROJECTS GRID ======= -->
+      <section class="px-6 md:px-16 lg:px-24 pb-16">
+        <div class="section-label">Projects &mdash; <span id="projects-count">0 projects</span></div>
+        <div id="filter-bar"></div>
+        <div class="filter-controls">
+          <button id="filter-toggle" type="button" aria-expanded="false">Show all filters</button>
+        </div>
+
+        <div id="project-grid" class="project-grid"></div>
+      </section>
+
+      <!-- ======= FOOTER ======= -->
+      <footer class="mobile-footer">
+        <div class="footer-top-section">
+          <h3 class="footer-main-title">Web3Privacy Now</h3>
+          <p class="footer-description">Grassroots collective empowering privacy &amp; freedom in the future web.</p>
+        </div>
+        <div class="footer-bottom-section">
+          <div class="footer-column">
+            <h4 class="footer-column-title">Collective</h4>
+            <ul class="footer-links-list">
+              <li><a href="../index.html#intro" class="footer-link">Home</a></li>
+              <li><a href="../index.html#program" class="footer-link">Program</a></li>
+              <li><a href="../community/index.html" class="footer-link">Community</a></li>
+              <li><a href="index.html" class="footer-link">Projects</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Contact</h4>
+            <ul class="footer-links-list">
+              <li><a href="https://t.me/+DMkrxGNeJzYyYzM0" class="footer-link" target="_blank">Telegram</a></li>
+              <li><a href="https://twitter.com/web3privacy" class="footer-link" target="_blank">Twitter</a></li>
+              <li><a href="https://www.youtube.com/@Web3PrivacyNow" class="footer-link" target="_blank">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ======= READ MORE MODAL ======= -->
+    <div id="project-modal-backdrop" class="project-modal-backdrop">
+      <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <button type="button" class="project-modal-close" id="project-modal-close" aria-label="Close">&times;</button>
+        <div class="project-modal-head">
+          <div id="project-modal-icon-wrap"></div>
+          <div id="project-modal-title" class="project-modal-title"></div>
+        </div>
+        <div id="project-modal-directions" class="direction-row modal-direction-row"></div>
+        <p id="project-modal-desc" class="project-modal-desc modal-project-desc"></p>
+        <a id="project-modal-link" class="project-modal-link" href="#" target="_blank" rel="noopener noreferrer">
+          Visit website
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <div class="project-modal-team-label">Team</div>
+        <div id="project-modal-members" class="member-row modal-member-row"></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var projects = [];
+        var filteredProjects = [];
+        var activeFilters = new Set();
+        var isFilterExpanded = false;
+        var MOBILE_FILTER_LIMIT = 5;
+
+        var filterBar = document.getElementById('filter-bar');
+        var filterToggle = document.getElementById('filter-toggle');
+        var projectGrid = document.getElementById('project-grid');
+        var projectsCount = document.getElementById('projects-count');
+
+        var modalBackdrop = document.getElementById('project-modal-backdrop');
+        var modalClose = document.getElementById('project-modal-close');
+        var modalIconWrap = document.getElementById('project-modal-icon-wrap');
+        var modalTitle = document.getElementById('project-modal-title');
+        var modalDirections = document.getElementById('project-modal-directions');
+        var modalDesc = document.getElementById('project-modal-desc');
+        var modalLink = document.getElementById('project-modal-link');
+        var modalMembers = document.getElementById('project-modal-members');
+
+        var directionClassMap = {
+          'Cryptography & ZK': 'dir-crypto',
+          'Identity & Credentials': 'dir-identity',
+          'Wallets & Payments': 'dir-wallets',
+          'Messaging & Social': 'dir-messaging',
+          'Networking & Mixnets': 'dir-network',
+          'Storage & Infra': 'dir-storage',
+          'Protocol & Research': 'dir-protocol',
+          'Governance & Public Goods': 'dir-governance',
+          'Legal & Policy': 'dir-legal',
+          'Security & Auditing': 'dir-security',
+          'Browsers & Apps': 'dir-browser',
+          'Digital Rights & Advocacy': 'dir-rights'
+        };
+
+        function escapeHtml(value) {
+          return String(value || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+
+        function initials(name) {
+          var parts = String(name || '').trim().split(/\s+/).filter(Boolean);
+          if (!parts.length) return '?';
+          if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+          return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+        }
+
+        function iconHtml(project, size) {
+          var sizeStyle = 'width:' + size + 'px;height:' + size + 'px;';
+          var fallback = '<div class="project-icon-fallback" style="' + sizeStyle + '">' + escapeHtml(initials(project.name)) + '</div>';
+          if (!project.icon) return fallback;
+          return '<span class="project-icon-slot" style="display:inline-flex;' + sizeStyle + '">' +
+            '<img src="' + escapeHtml(project.icon) + '" alt="" class="project-icon" style="' + sizeStyle + '" loading="lazy" ' +
+            'onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;;" />' +
+            '<div class="project-icon-fallback" style="' + sizeStyle + 'display:none;">' + escapeHtml(initials(project.name)) + '</div>' +
+            '</span>';
+        }
+
+        var CARD_MEMBER_LIMIT = 3;
+
+        function cardDirectionLimit() {
+          // Two long badges ("Governance & Public Goods" etc.) don't fit
+          // on the fixed single-line badge row once the card narrows to a
+          // 1- or 2-up layout — cap to 1 there so the row never silently
+          // clips a badge that doesn't wrap into view.
+          return window.matchMedia('(max-width: 1023px)').matches ? 1 : 2;
+        }
+
+        function directionBadgesHtml(directions, limit) {
+          var shown = limit ? directions.slice(0, limit) : directions;
+          var hidden = limit ? directions.length - shown.length : 0;
+          var html = shown.map(function (direction) {
+            var cls = directionClassMap[direction] || 'dir-rights';
+            return '<span class="direction-badge ' + cls + '">' + escapeHtml(direction) + '</span>';
+          }).join('');
+          if (hidden > 0) {
+            html += '<span class="direction-badge direction-badge-more">+' + hidden + '</span>';
+          }
+          return html;
+        }
+
+        function memberChipHtml(member) {
+          var caption = member.role || '';
+          var href = member.xUrl ? ' href="' + escapeHtml(member.xUrl) + '" target="_blank" rel="noopener noreferrer"' : '';
+          var tag = member.xUrl ? 'a' : 'div';
+          return '<' + tag + ' class="member-chip"' + href + '>' +
+            '<img src="' + escapeHtml(member.photo) + '" alt="' + escapeHtml(member.name) + '" loading="lazy" />' +
+            '<div class="member-chip-name" style="' + (caption ? '' : 'padding-bottom:0.5rem;') + '">' + escapeHtml(member.name) + '</div>' +
+            (caption ? '<div class="member-chip-role">' + escapeHtml(caption) + '</div>' : '') +
+            '</' + tag + '>';
+        }
+
+        function memberRowHtml(members, limit) {
+          // Reserve one tile for the "+N" indicator so the total tile count
+          // never exceeds `limit` (keeps the row to a single grid row).
+          var needsMore = limit && members.length > limit;
+          var shownCount = needsMore ? limit - 1 : (limit || members.length);
+          var shown = members.slice(0, shownCount);
+          var hidden = members.length - shown.length;
+          var html = shown.map(memberChipHtml).join('');
+          if (hidden > 0) {
+            html += '<div class="member-more-tile">+' + hidden + '</div>';
+          }
+          return html;
+        }
+
+        function createProjectCard(project) {
+          var card = document.createElement('div');
+          card.className = 'project-item';
+          card.dataset.directions = project.direction.join('|');
+          card.dataset.slug = project.slug;
+
+          card.innerHTML =
+            '<div class="project-head">' +
+              iconHtml(project, 40) +
+              '<div class="project-name">' + escapeHtml(project.name) + '</div>' +
+            '</div>' +
+            '<div class="direction-row">' + directionBadgesHtml(project.direction, cardDirectionLimit()) + '</div>' +
+            '<p class="project-desc">' + escapeHtml(project.description) + '</p>' +
+            '<button type="button" class="read-more-link" data-slug="' + escapeHtml(project.slug) + '">Read more.</button>' +
+            '<div class="project-divider"></div>' +
+            '<div class="member-row">' + memberRowHtml(project.members, CARD_MEMBER_LIMIT) + '</div>';
+
+          return card;
+        }
+
+        function renderProjects() {
+          projectGrid.innerHTML = '';
+          projectsCount.textContent = filteredProjects.length + ' projects';
+
+          if (!filteredProjects.length) {
+            var empty = document.createElement('div');
+            empty.className = 'empty-state';
+            empty.textContent = 'No projects match this filter yet.';
+            projectGrid.appendChild(empty);
+            return;
+          }
+
+          filteredProjects.forEach(function (project) {
+            projectGrid.appendChild(createProjectCard(project));
+          });
+        }
+
+        function applyFilters() {
+          if (activeFilters.size === 0) {
+            filteredProjects = projects.slice();
+          } else {
+            filteredProjects = projects.filter(function (project) {
+              return project.direction.some(function (direction) { return activeFilters.has(direction); });
+            });
+          }
+          renderProjects();
+        }
+
+        function buildFilterBar() {
+          var directions = Array.from(new Set(
+            projects.reduce(function (acc, project) { return acc.concat(project.direction); }, [])
+          ));
+          directions.sort(function (a, b) { return a.localeCompare(b); });
+
+          filterBar.innerHTML = '';
+
+          var allButton = document.createElement('button');
+          allButton.className = 'filter-pill active';
+          allButton.type = 'button';
+          allButton.dataset.direction = 'All';
+          allButton.textContent = 'All';
+          filterBar.appendChild(allButton);
+
+          directions.forEach(function (direction) {
+            var button = document.createElement('button');
+            button.className = 'filter-pill';
+            button.type = 'button';
+            button.dataset.direction = direction;
+            button.textContent = direction;
+            filterBar.appendChild(button);
+          });
+
+          updateMobileFilterVisibility();
+        }
+
+        function updateMobileFilterVisibility() {
+          if (!filterToggle) return;
+          var pills = Array.from(filterBar.querySelectorAll('.filter-pill'));
+          var isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+          pills.forEach(function (pill) {
+            pill.classList.remove('mobile-hidden-filter');
+          });
+
+          if (!isMobile) {
+            filterToggle.style.display = 'none';
+            return;
+          }
+
+          if (pills.length <= MOBILE_FILTER_LIMIT + 1) {
+            filterToggle.style.display = 'none';
+            return;
+          }
+
+          filterToggle.style.display = 'inline-flex';
+          if (!isFilterExpanded) {
+            for (var i = MOBILE_FILTER_LIMIT + 1; i < pills.length; i++) {
+              if (!pills[i].classList.contains('active')) {
+                pills[i].classList.add('mobile-hidden-filter');
+              }
+            }
+            filterToggle.textContent = 'Show all filters';
+            filterToggle.setAttribute('aria-expanded', 'false');
+          } else {
+            filterToggle.textContent = 'Show fewer';
+            filterToggle.setAttribute('aria-expanded', 'true');
+          }
+        }
+
+        function setupFilterToggle() {
+          if (!filterToggle) return;
+          filterToggle.addEventListener('click', function () {
+            isFilterExpanded = !isFilterExpanded;
+            updateMobileFilterVisibility();
+          });
+
+          var lastDirectionLimit = cardDirectionLimit();
+          window.addEventListener('resize', function () {
+            updateMobileFilterVisibility();
+            // Re-render if crossing the breakpoint where the badge cap
+            // changes (e.g. rotating a tablet), not on every resize tick.
+            var limit = cardDirectionLimit();
+            if (limit !== lastDirectionLimit) {
+              lastDirectionLimit = limit;
+              renderProjects();
+            }
+          });
+        }
+
+        function setupFilterEvents() {
+          filterBar.addEventListener('click', function (event) {
+            var pill = event.target.closest('.filter-pill');
+            if (!pill) return;
+
+            var direction = pill.dataset.direction;
+            if (direction === 'All') {
+              activeFilters.clear();
+              filterBar.querySelectorAll('.filter-pill').forEach(function (node) {
+                node.classList.remove('active');
+              });
+              pill.classList.add('active');
+            } else {
+              var allPill = filterBar.querySelector('.filter-pill[data-direction="All"]');
+              if (allPill) allPill.classList.remove('active');
+
+              if (activeFilters.has(direction)) {
+                activeFilters.delete(direction);
+                pill.classList.remove('active');
+                if (activeFilters.size === 0 && allPill) {
+                  allPill.classList.add('active');
+                }
+              } else {
+                activeFilters.add(direction);
+                pill.classList.add('active');
+              }
+            }
+
+            applyFilters();
+            updateMobileFilterVisibility();
+          });
+        }
+
+        function openModal(project) {
+          modalIconWrap.innerHTML = iconHtml(project, 48);
+          modalTitle.textContent = project.name;
+          modalDirections.innerHTML = directionBadgesHtml(project.direction);
+          modalDesc.textContent = project.descriptionFull || project.description;
+          modalMembers.innerHTML = memberRowHtml(project.members);
+          if (project.orgUrl) {
+            modalLink.href = project.orgUrl;
+            modalLink.style.display = 'inline-flex';
+          } else {
+            modalLink.style.display = 'none';
+          }
+          modalBackdrop.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+          modalBackdrop.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+
+        function setupModalEvents() {
+          projectGrid.addEventListener('click', function (event) {
+            var trigger = event.target.closest('.read-more-link');
+            if (!trigger) return;
+            var slug = trigger.dataset.slug;
+            var project = projects.find(function (p) { return p.slug === slug; });
+            if (project) openModal(project);
+          });
+
+          modalClose.addEventListener('click', closeModal);
+          modalBackdrop.addEventListener('click', function (event) {
+            if (event.target === modalBackdrop) closeModal();
+          });
+          document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && modalBackdrop.classList.contains('open')) closeModal();
+          });
+        }
+
+        function renderErrorState() {
+          projectsCount.textContent = '0 projects';
+          var note = document.createElement('div');
+          note.className = 'empty-state';
+          note.textContent = 'Could not load projects data.';
+          projectGrid.appendChild(note);
+        }
+
+        fetch('./projects.json', { cache: 'no-store' })
+          .then(function (response) {
+            if (!response.ok) throw new Error('Failed to load projects JSON');
+            return response.json();
+          })
+          .then(function (data) {
+            projects = Array.isArray(data) ? data : [];
+            buildFilterBar();
+            setupFilterToggle();
+            setupFilterEvents();
+            setupModalEvents();
+            applyFilters();
+          })
+          .catch(function () {
+            renderErrorState();
+          });
+      })();
+    </script>
+  </body>
+</html>
