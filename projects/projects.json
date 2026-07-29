@@ -5,6 +5,7 @@
     "orgUrl": "https://ethereum.org/foundation/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.org",
     "curated": true,
+    "onsite": true,
     "description": "Nonprofit stewarding Ethereum protocol research, scalability, and cryptography.",
     "direction": [
       "Protocol & Research",
@@ -48,6 +49,7 @@
     "orgUrl": "https://www.flashbots.net",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=flashbots.net",
     "curated": true,
+    "onsite": true,
     "description": "R&D org mitigating MEV harms on Ethereum with fairer, more private transaction infrastructure.",
     "direction": [
       "Protocol & Research",
@@ -77,6 +79,7 @@
     "orgUrl": "http://nym.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=nym.com",
     "curated": true,
+    "onsite": true,
     "description": "Mixnet-based privacy infrastructure hiding metadata for anonymous VPN and messaging.",
     "direction": [
       "Networking & Mixnets",
@@ -106,6 +109,7 @@
     "orgUrl": "https://railgun.org/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=railgun.org",
     "curated": true,
+    "onsite": true,
     "description": "Privacy protocol enabling shielded, private DeFi transactions on EVM chains.",
     "direction": [
       "Cryptography & ZK",
@@ -135,6 +139,7 @@
     "orgUrl": "https://torproject.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=torproject.org",
     "curated": true,
+    "onsite": true,
     "description": "Free, open-source onion-routing network for anonymous browsing and censorship circumvention.",
     "direction": [
       "Networking & Mixnets",
@@ -164,6 +169,7 @@
     "orgUrl": "https://aragon.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=aragon.org",
     "curated": true,
+    "onsite": true,
     "description": "Toolkit for creating and running DAOs with on-chain governance primitives.",
     "direction": [
       "Governance & Public Goods",
@@ -186,6 +192,7 @@
     "orgUrl": "https://aztec.network/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=aztec.network",
     "curated": true,
+    "onsite": true,
     "description": "A privacy-focused zero-knowledge rollup enabling confidential smart contracts on Ethereum.",
     "direction": [
       "Cryptography & ZK",
@@ -203,11 +210,35 @@
     "descriptionFull": "A privacy-focused zero-knowledge rollup on Ethereum, using zk-SNARKs to enable confidential smart contracts and transactions at L2 scale."
   },
   {
+    "slug": "blackbox",
+    "name": "Blackbox",
+    "orgUrl": "https://blackbox.host",
+    "icon": "https://www.google.com/s2/favicons?sz=128&domain=blackbox.host",
+    "curated": true,
+    "onsite": false,
+    "description": "Open-source off-grid infrastructure for mesh communication, local AI, coordination, and digital value transfer.",
+    "direction": [
+      "Infrastructure & Resilience",
+      "Protocol & Research"
+    ],
+    "members": [
+      {
+        "name": "W3DADA",
+        "photo": "../img/w3dada.png",
+        "xUrl": "https://x.com/wadadawadada",
+        "role": "Founder & Lead Developer",
+        "tagline": "Building autonomous infrastructure for communication, local AI, and payments beyond the internet"
+      }
+    ],
+    "descriptionFull": "An open-source local-first infrastructure stack designed to preserve communication, computing, coordination, and digital value transfer when ordinary internet access is unavailable, restricted, or unreliable. Blackbox combines Meshtastic and LoRa mesh networking, local AI inference, telemetry and mapping tools, and experimental Cashu eCash transfers into a modular, self-hosted autonomous node."
+  },
+  {
     "slug": "brave",
     "name": "Brave",
     "orgUrl": "http://brave.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=brave.com",
     "curated": true,
+    "onsite": true,
     "description": "A privacy-first browser that blocks ads and trackers by default.",
     "direction": [
       "Browsers & Apps",
@@ -230,6 +261,7 @@
     "orgUrl": "https://coincenter.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=coincenter.org",
     "curated": true,
+    "onsite": true,
     "description": "Independent nonprofit policy research and advocacy for open blockchain networks.",
     "direction": [
       "Legal & Policy",
@@ -252,6 +284,7 @@
     "orgUrl": "https://www.eff.org/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=eff.org",
     "curated": true,
+    "onsite": true,
     "description": "Nonprofit defending civil liberties in the digital world since 1990.",
     "direction": [
       "Digital Rights & Advocacy",
@@ -274,6 +307,7 @@
     "orgUrl": "https://fil.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fil.org",
     "curated": true,
+    "onsite": true,
     "description": "Nonprofit growing the Filecoin decentralized storage ecosystem.",
     "direction": [
       "Storage & Infra",
@@ -296,6 +330,7 @@
     "orgUrl": "https://hoprnet.org/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=hoprnet.org",
     "curated": true,
+    "onsite": true,
     "description": "Incentivized mixnet protocol that strips metadata from data in transit.",
     "direction": [
       "Networking & Mixnets",
@@ -318,6 +353,7 @@
     "orgUrl": "https://metamask.io",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=metamask.io",
     "curated": true,
+    "onsite": true,
     "description": "The most widely used self-custodial Ethereum wallet and gateway to the dapp ecosystem.",
     "direction": [
       "Wallets & Payments",
@@ -340,6 +376,7 @@
     "orgUrl": "https://www.protocol.ai/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=protocol.ai",
     "curated": true,
+    "onsite": true,
     "description": "R&D lab behind IPFS, Filecoin, and libp2p for a decentralized internet.",
     "direction": [
       "Storage & Infra",
@@ -362,6 +399,7 @@
     "orgUrl": "https://ethswarm.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethswarm.org",
     "curated": true,
+    "onsite": true,
     "description": "Decentralized storage and communication network for the self-sovereign web.",
     "direction": [
       "Storage & Infra",
@@ -384,6 +422,7 @@
     "orgUrl": "https://ethereum.foundation",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.foundation",
     "curated": false,
+    "onsite": true,
     "description": "Privacy researcher connecting Ethereum and human rights communities.",
     "direction": [
       "Legal & Policy",
@@ -421,6 +460,7 @@
     "orgUrl": "https://logos.co",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=logos.co",
     "curated": false,
+    "onsite": true,
     "description": "Mixnets visionary.",
     "direction": [
       "Protocol & Research",
@@ -458,6 +498,7 @@
     "orgUrl": "https://dappnode.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=dappnode.com",
     "curated": false,
+    "onsite": true,
     "description": "Making self-hosted infrastructure accessible to everyone.",
     "direction": [
       "Digital Rights & Advocacy",
@@ -488,6 +529,7 @@
     "orgUrl": "https://fileverse.io/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fileverse.io",
     "curated": false,
+    "onsite": true,
     "description": "Tech visionary challenging Google Suite.",
     "direction": [
       "Protocol & Research",
@@ -518,6 +560,7 @@
     "orgUrl": "https://human.tech",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=human.tech",
     "curated": false,
+    "onsite": true,
     "description": "Digital identity advocate advancing human-centered credentials.",
     "direction": [
       "Identity & Credentials",
@@ -547,6 +590,7 @@
     "orgUrl": "https://ideal.group",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ideal.group",
     "curated": false,
+    "onsite": true,
     "description": "Helping protocols & institutions adopt ZK-tech.",
     "direction": [
       "Cryptography & ZK",
@@ -577,6 +621,7 @@
     "orgUrl": "http://pse.dev",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=pse.dev",
     "curated": false,
+    "onsite": true,
     "description": "Decentralised privacy adoption lead.",
     "direction": [
       "Cryptography & ZK",
@@ -607,6 +652,7 @@
     "orgUrl": "https://1kx.capital",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=1kx.capital",
     "curated": false,
+    "onsite": true,
     "description": "Helping protocols & institutions adopt ZK-tech.",
     "direction": [
       "Governance & Public Goods"
@@ -628,6 +674,7 @@
     "orgUrl": "https://x.com/alpeh_v",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Independent engineer advancing privacy-first infrastructure.",
     "direction": [
       "Protocol & Research"
@@ -649,6 +696,7 @@
     "orgUrl": "https://armada.wtf/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=armada.wtf",
     "curated": false,
+    "onsite": true,
     "description": "Ethereum educator focused on resilient validator infrastructure.",
     "direction": [
       "Browsers & Apps"
@@ -670,6 +718,7 @@
     "orgUrl": "https://bread.coop",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=bread.coop",
     "curated": false,
+    "onsite": true,
     "description": "Cooperative economy advocate reimagining ownership online.",
     "direction": [
       "Governance & Public Goods"
@@ -691,6 +740,7 @@
     "orgUrl": "cakewallet.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=cakewallet.com",
     "curated": false,
+    "onsite": true,
     "description": "Self-custody educator championing everyday financial privacy.",
     "direction": [
       "Cryptography & ZK",
@@ -713,6 +763,7 @@
     "orgUrl": "https://x.com/CirclesUBI",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Researching universal basic income through decentralized networks.",
     "direction": [
       "Digital Rights & Advocacy",
@@ -736,6 +787,7 @@
     "orgUrl": "https://diligence.security/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=diligence.security",
     "curated": false,
+    "onsite": true,
     "description": "Smart contract auditor securing Ethereum's critical infrastructure.",
     "direction": [
       "Security & Auditing"
@@ -757,6 +809,7 @@
     "orgUrl": "https://x.com/DarkFiSquad",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Visionary hacktivist.",
     "direction": [
       "Protocol & Research"
@@ -778,6 +831,7 @@
     "orgUrl": "https://getdweb.net",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=getdweb.net",
     "curated": false,
+    "onsite": true,
     "description": "Visionary behind alternative tech ecosystem.",
     "direction": [
       "Governance & Public Goods",
@@ -800,6 +854,7 @@
     "orgUrl": "https://dyne.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=dyne.org",
     "curated": false,
+    "onsite": true,
     "description": "Long-lasting cryptographer & hacktivist.",
     "direction": [
       "Cryptography & ZK"
@@ -821,6 +876,7 @@
     "orgUrl": "https://ethereum.foundation",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.foundation",
     "curated": false,
+    "onsite": true,
     "description": "FOSS advocate.",
     "direction": [
       "Digital Rights & Advocacy",
@@ -843,6 +899,7 @@
     "orgUrl": "https://x.com/EthereumGovAI",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Researcher applying AI to decentralized governance systems.",
     "direction": [
       "Governance & Public Goods"
@@ -864,6 +921,7 @@
     "orgUrl": "https://ethereum.institute",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethereum.institute",
     "curated": false,
+    "onsite": true,
     "description": "Policy researcher translating Ethereum for lawmakers and institutions.",
     "direction": [
       "Legal & Policy"
@@ -885,6 +943,7 @@
     "orgUrl": "https://x.com/mashbean",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Regenerative systems thinker cultivating public goods ecosystems.",
     "direction": [
       "Governance & Public Goods"
@@ -906,6 +965,7 @@
     "orgUrl": "https://ethpanda.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ethpanda.org",
     "curated": false,
+    "onsite": true,
     "description": "Visionary behind alternative tech ecosystem.",
     "direction": [
       "Cryptography & ZK"
@@ -927,6 +987,7 @@
     "orgUrl": "https://www.fairblock.network/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fairblock.network",
     "curated": false,
+    "onsite": true,
     "description": "Cryptography builder tackling fairness and transaction privacy.",
     "direction": [
       "Cryptography & ZK"
@@ -948,6 +1009,7 @@
     "orgUrl": "https://fatsolutions.xyz",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fatsolutions.xyz",
     "curated": false,
+    "onsite": true,
     "description": "Open-source engineer building privacy-enhancing Ethereum tools.",
     "direction": [
       "Protocol & Research"
@@ -969,6 +1031,7 @@
     "orgUrl": "https://x.com/Fatalmeh",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Legal expert on decentralized computing & activism.",
     "direction": [
       "Legal & Policy",
@@ -991,6 +1054,7 @@
     "orgUrl": "https://www.fhenix.io",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fhenix.io",
     "curated": false,
+    "onsite": true,
     "description": "Driving confidential computation toward mainstream adoption.",
     "direction": [
       "Cryptography & ZK",
@@ -1013,6 +1077,7 @@
     "orgUrl": "https://fil.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fil.org",
     "curated": false,
+    "onsite": true,
     "description": "Former Deputy Executive Director and General Counsel of EFF.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1034,6 +1099,7 @@
     "orgUrl": "https://fil.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fil.org",
     "curated": false,
+    "onsite": true,
     "description": "Former director of strategy at EFF.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1055,6 +1121,7 @@
     "orgUrl": "https://www.fluidkey.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=fluidkey.com",
     "curated": false,
+    "onsite": true,
     "description": "Stealth addresses advocate.",
     "direction": [
       "Cryptography & ZK",
@@ -1077,6 +1144,7 @@
     "orgUrl": "https://freedombrowser.eth.limo",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=freedombrowser.eth.limo",
     "curated": false,
+    "onsite": true,
     "description": "Lawyer building freedom-preserving tools for the sovereign web.",
     "direction": [
       "Browsers & Apps",
@@ -1099,6 +1167,7 @@
     "orgUrl": "https://freedom.press",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=freedom.press",
     "curated": false,
+    "onsite": true,
     "description": "Security engineer advancing press freedom through open-source tools.",
     "direction": [
       "Digital Rights & Advocacy",
@@ -1121,6 +1190,7 @@
     "orgUrl": "https://www.gccofficial.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=gccofficial.org",
     "curated": false,
+    "onsite": true,
     "description": "Scaling Asian Public Goods Sector.",
     "direction": [
       "Governance & Public Goods"
@@ -1142,6 +1212,7 @@
     "orgUrl": "",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Digital rights meeting decentralised tech.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1163,6 +1234,7 @@
     "orgUrl": "https://free.technology/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=free.technology",
     "curated": false,
+    "onsite": true,
     "description": "Builder of open technology beyond platform dependence.",
     "direction": [
       "Storage & Infra"
@@ -1184,6 +1256,7 @@
     "orgUrl": "https://x.com/IntmaxIO",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Scaling Ethereum privacy through next-generation rollup design.",
     "direction": [
       "Protocol & Research"
@@ -1205,6 +1278,7 @@
     "orgUrl": "https://x.com/jito_sol",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Governance researcher examining incentives and decentralized coordination.",
     "direction": [
       "Governance & Public Goods"
@@ -1226,6 +1300,7 @@
     "orgUrl": "https://www.ludlowinstitute.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=ludlowinstitute.org",
     "curated": false,
+    "onsite": true,
     "description": "Privacy educator making digital self-defense accessible.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1247,6 +1322,7 @@
     "orgUrl": "https://www.mask.io/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=mask.io",
     "curated": false,
+    "onsite": true,
     "description": "Connecting privacy, identity, and social networking.",
     "direction": [
       "Messaging & Social"
@@ -1268,6 +1344,7 @@
     "orgUrl": "https://www.hellomother.co.uk/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=hellomother.co.uk",
     "curated": false,
+    "onsite": true,
     "description": "Entrepreneur exploring alternatives to extractive digital platforms.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1289,6 +1366,7 @@
     "orgUrl": "https://neverlocal.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=neverlocal.com",
     "curated": false,
+    "onsite": true,
     "description": "Researcher exploring post-quantum and privacy-preserving systems.",
     "direction": [
       "Protocol & Research",
@@ -1311,6 +1389,7 @@
     "orgUrl": "https://palliora.org/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=palliora.org",
     "curated": false,
+    "onsite": true,
     "description": "Researcher bringing rigorous privacy science to Web3.",
     "direction": [
       "Cryptography & ZK",
@@ -1333,6 +1412,7 @@
     "orgUrl": "https://www.plexosinstitute.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=plexosinstitute.org",
     "curated": false,
+    "onsite": true,
     "description": "Governance strategist at the intersection of law and digital rights.",
     "direction": [
       "Governance & Public Goods",
@@ -1355,6 +1435,7 @@
     "orgUrl": "https://privacypools.com/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=privacypools.com",
     "curated": false,
+    "onsite": true,
     "description": "Cryptographer designing compliant privacy for public blockchains.",
     "direction": [
       "Cryptography & ZK"
@@ -1376,6 +1457,7 @@
     "orgUrl": "https://www.protocolguild.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=protocolguild.org",
     "curated": false,
+    "onsite": true,
     "description": "Long-term Ethereum contributor funding protocol sustainability.",
     "direction": [
       "Cryptography & ZK",
@@ -1398,6 +1480,7 @@
     "orgUrl": "https://radicle.dev/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=radicle.dev",
     "curated": false,
+    "onsite": true,
     "description": "Building sovereign collaboration tools for open-source communities.",
     "direction": [
       "Governance & Public Goods"
@@ -1419,6 +1502,7 @@
     "orgUrl": "https://rarimo.com/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=rarimo.com",
     "curated": false,
+    "onsite": true,
     "description": "Identity innovator enabling borderless democratic participation.",
     "direction": [
       "Identity & Credentials",
@@ -1442,6 +1526,7 @@
     "orgUrl": "https://rotki.com/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=rotki.com",
     "curated": false,
+    "onsite": true,
     "description": "Champion of financial transparency through open-source software.",
     "direction": [
       "Browsers & Apps",
@@ -1464,6 +1549,7 @@
     "orgUrl": "https://www.sentinelalliance.org/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=sentinelalliance.org",
     "curated": false,
+    "onsite": true,
     "description": "Defender of civil liberties in the digital age.",
     "direction": [
       "Digital Rights & Advocacy",
@@ -1486,6 +1572,7 @@
     "orgUrl": "https://getsession.org",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=getsession.org",
     "curated": false,
+    "onsite": true,
     "description": "Decentralised messengers visionary.",
     "direction": [
       "Messaging & Social",
@@ -1508,6 +1595,7 @@
     "orgUrl": "https://linktr.ee/ShutterNetwork",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=linktr.ee",
     "curated": false,
+    "onsite": true,
     "description": "Encrypted Mempools advocate.",
     "direction": [
       "Cryptography & ZK",
@@ -1530,6 +1618,7 @@
     "orgUrl": "https://sovright.com",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=sovright.com",
     "curated": false,
+    "onsite": true,
     "description": "Open-hardware enthusiast.",
     "direction": [
       "Cryptography & ZK",
@@ -1552,6 +1641,7 @@
     "orgUrl": "",
     "icon": "",
     "curated": false,
+    "onsite": true,
     "description": "Community strategist shaping private social coordination tools.",
     "direction": [
       "Messaging & Social"
@@ -1573,6 +1663,7 @@
     "orgUrl": "https://strato.nexus",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=strato.nexus",
     "curated": false,
+    "onsite": true,
     "description": "Decentralisation veteran.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1594,6 +1685,7 @@
     "orgUrl": "https://taceo.io",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=taceo.io",
     "curated": false,
+    "onsite": true,
     "description": "MPC researcher turning advanced cryptography into usable infrastructure.",
     "direction": [
       "Cryptography & ZK"
@@ -1615,6 +1707,7 @@
     "orgUrl": "https://router.teleport.computer/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=router.teleport.computer",
     "curated": false,
+    "onsite": true,
     "description": "Academic cryptographer turning theory into deployed systems.",
     "direction": [
       "Cryptography & ZK",
@@ -1637,6 +1730,7 @@
     "orgUrl": "https://vocdoni.io/en",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=vocdoni.io",
     "curated": false,
+    "onsite": true,
     "description": "Building verifiable digital voting for modern democracies.",
     "direction": [
       "Governance & Public Goods",
@@ -1659,6 +1753,7 @@
     "orgUrl": "https://walletbeat.eth.limo",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=walletbeat.eth.limo",
     "curated": false,
+    "onsite": true,
     "description": "Wallet researcher focused on safer user experiences.",
     "direction": [
       "Wallets & Payments",
@@ -1681,6 +1776,7 @@
     "orgUrl": "https://warptoad.org/",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=warptoad.org",
     "curated": false,
+    "onsite": true,
     "description": "Builder of practical tools for privacy-first internet users.",
     "direction": [
       "Protocol & Research"
@@ -1702,6 +1798,7 @@
     "orgUrl": "https://web3privacy.info",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=web3privacy.info",
     "curated": false,
+    "onsite": true,
     "description": "Community builder growing the Web3 privacy movement.",
     "direction": [
       "Digital Rights & Advocacy"
@@ -1723,6 +1820,7 @@
     "orgUrl": "http://zisk.technology",
     "icon": "https://www.google.com/s2/favicons?sz=128&domain=zisk.technology",
     "curated": false,
+    "onsite": true,
     "description": "Catalan cryptographer targeted by Pegasus.",
     "direction": [
       "Digital Rights & Advocacy"

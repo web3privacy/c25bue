@@ -67,6 +67,7 @@
       .dir-security    { background: #2d1a2d; }
       .dir-browser     { background: #1a2d1a; }
       .dir-rights      { background: #2a0a1a; }
+      .dir-resilience  { background: #262626; }
 
       .project-item:hover .direction-badge {
         filter: brightness(1.6);
@@ -199,6 +200,30 @@
         border-color: rgba(255, 255, 255, 0.45);
         background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.01));
       }
+      /* Featured project: not physically present at the congress, listed
+         for reference only. Muted, dashed treatment to read as "background". */
+      .project-item.featured-project {
+        border-style: dashed;
+        border-color: rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.015);
+      }
+      .project-item.featured-project:hover {
+        border-color: rgba(255, 255, 255, 0.32);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .featured-badge {
+        flex-shrink: 0;
+        margin-left: auto;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.6rem;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+        padding: 0.18rem 0.55rem;
+        white-space: nowrap;
+      }
 
       .project-head {
         display: flex;
@@ -315,16 +340,14 @@
       }
       .member-chip {
         display: block;
-        border: 1px solid rgba(255, 255, 255, 0.14);
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.03);
         overflow: hidden;
         min-width: 0;
         text-decoration: none;
-        transition: border-color 0.18s ease, background 0.18s ease;
+        transition: background 0.18s ease;
       }
       .member-chip:hover {
-        border-color: rgba(255, 255, 255, 0.4);
         background: rgba(255, 255, 255, 0.06);
       }
       .member-chip img {
@@ -489,6 +512,20 @@
         break-inside: avoid;
         text-align: center;
       }
+
+      .grid-section-divider {
+        grid-column: 1 / -1;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
     </style>
   </head>
 
@@ -639,6 +676,7 @@
         <div class="project-modal-head">
           <div id="project-modal-icon-wrap"></div>
           <div id="project-modal-title" class="project-modal-title"></div>
+          <span id="project-modal-badge" class="featured-badge" style="display:none;">Featured Project</span>
         </div>
         <div id="project-modal-directions" class="direction-row modal-direction-row"></div>
         <p id="project-modal-desc" class="project-modal-desc modal-project-desc"></p>
@@ -672,6 +710,7 @@
         var modalDesc = document.getElementById('project-modal-desc');
         var modalLink = document.getElementById('project-modal-link');
         var modalMembers = document.getElementById('project-modal-members');
+        var modalBadge = document.getElementById('project-modal-badge');
 
         var directionClassMap = {
           'Cryptography & ZK': 'dir-crypto',
@@ -685,7 +724,8 @@
           'Legal & Policy': 'dir-legal',
           'Security & Auditing': 'dir-security',
           'Browsers & Apps': 'dir-browser',
-          'Digital Rights & Advocacy': 'dir-rights'
+          'Digital Rights & Advocacy': 'dir-rights',
+          'Infrastructure & Resilience': 'dir-resilience'
         };
 
         function escapeHtml(value) {
@@ -764,8 +804,9 @@
         }
 
         function createProjectCard(project) {
+          var isFeatured = project.onsite === false;
           var card = document.createElement('div');
-          card.className = 'project-item';
+          card.className = 'project-item' + (isFeatured ? ' featured-project' : '');
           card.dataset.directions = project.direction.join('|');
           card.dataset.slug = project.slug;
 
@@ -773,6 +814,7 @@
             '<div class="project-head">' +
               iconHtml(project, 40) +
               '<div class="project-name">' + escapeHtml(project.name) + '</div>' +
+              (isFeatured ? '<span class="featured-badge">Featured Project</span>' : '') +
             '</div>' +
             '<div class="direction-row">' + directionBadgesHtml(project.direction, cardDirectionLimit()) + '</div>' +
             '<p class="project-desc">' + escapeHtml(project.description) + '</p>' +
@@ -795,7 +837,19 @@
             return;
           }
 
+          // Sorted on-site first, so each group is a contiguous run —
+          // drop a section header the moment the on-site/featured status
+          // changes (including right before the very first card).
+          var lastOnsite = null;
           filteredProjects.forEach(function (project) {
+            var isOnsite = project.onsite !== false;
+            if (isOnsite !== lastOnsite) {
+              var divider = document.createElement('div');
+              divider.className = 'grid-section-divider';
+              divider.textContent = isOnsite ? 'Live at Congress' : 'Featured Projects';
+              projectGrid.appendChild(divider);
+              lastOnsite = isOnsite;
+            }
             projectGrid.appendChild(createProjectCard(project));
           });
         }
@@ -808,6 +862,14 @@
               return project.direction.some(function (direction) { return activeFilters.has(direction); });
             });
           }
+          // On-site projects first, featured/info-only ones after. Stable
+          // sort keeps each group's original relative order otherwise.
+          filteredProjects.sort(function (a, b) {
+            var aOnsite = a.onsite !== false;
+            var bOnsite = b.onsite !== false;
+            if (aOnsite === bOnsite) return 0;
+            return aOnsite ? -1 : 1;
+          });
           renderProjects();
         }
 
@@ -928,6 +990,7 @@
         function openModal(project) {
           modalIconWrap.innerHTML = iconHtml(project, 48);
           modalTitle.textContent = project.name;
+          modalBadge.style.display = project.onsite === false ? 'inline-block' : 'none';
           modalDirections.innerHTML = directionBadgesHtml(project.direction);
           modalDesc.textContent = project.descriptionFull || project.description;
           modalMembers.innerHTML = memberRowHtml(project.members);
