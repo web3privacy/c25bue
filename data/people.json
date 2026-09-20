@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "ahmed-ghappour",
+    "name": "AHMED GHAPPOUR",
+    "photo": "img/ahmedghappour.png",
+    "xUrl": "https://twitter.com/ghappour",
+    "tagline": "Engineer turned digital rights lawyer",
+    "role": "GC",
+    "orgName": "Flashbots",
+    "orgUrl": "https://www.flashbots.net",
+    "industries": [
+      "Privacy",
+      "Digital Rights",
+      "Legal"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 2
+  },
+  {
+    "id": "ais-connolly",
+    "name": "AIS CONNOLLY",
+    "photo": "img/aisconnolly.jpg",
+    "xUrl": "https://x.com/aisconnolly",
+    "tagline": "MPC researcher turning advanced cryptography into usable infrastructure",
+    "role": "Lead",
+    "orgName": "Taceo",
+    "orgUrl": "https://taceo.io",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "alan-scott",
+    "name": "ALAN SCOTT",
+    "photo": "img/alan.png",
+    "xUrl": "https://x.com/tsu_kareta",
+    "tagline": "Privacy engineer advancing confidential Ethereum transactions",
+    "role": "Lead",
+    "orgName": "Railgun",
+    "orgUrl": "https://railgun.org/",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "alisher",
+    "name": "ALISHER",
+    "photo": "img/alisher.png",
+    "xUrl": "https://x.com/alisher",
+    "tagline": "Builder of open technology beyond platform dependence",
+    "role": "Lead",
+    "orgName": "Institute of Free Technology",
+    "orgUrl": "https://free.technology/",
+    "industries": [
+      "Privacy",
+      "Hardware"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "alpeh-v",
+    "name": "alpeh_v",
+    "photo": "img/alpeh.jpg",
+    "xUrl": "https://x.com/alpeh_v",
+    "tagline": "Independent engineer advancing privacy-first infrastructure",
+    "role": "Lead",
+    "orgName": "alpeh_v",
+    "orgUrl": "https://x.com/alpeh_v",
+    "industries": [
+      "Privacy",
+      "Engineering"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "ameen-suleimani",
+    "name": "AMEEN SULEIMANI",
+    "photo": "img/ameen.png",
+    "xUrl": "https://x.com/ameensol",
+    "tagline": "Cryptographer designing compliant privacy for public blockchains",
+    "role": "Lead",
+    "orgName": "Privacy Pools",
+    "orgUrl": "https://privacypools.com/",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "amir-taaki",
+    "name": "AMIR TAAKI",
+    "photo": "img/taaki.jpg",
+    "xUrl": "https://x.com/lunardragon420",
+    "tagline": "Visionary hacktivist",
+    "role": "Founder",
+    "orgName": "DarkFi",
+    "orgUrl": "https://x.com/DarkFiSquad",
+    "industries": [
+      "Privacy",
+      "Engineering"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 3
+  },
+  {
+    "id": "amit-chaudhary",
+    "name": "AMIT CHAUDHARY",
+    "photo": "img/amitchaudhary.png",
+    "xUrl": "https://x.com/amitchax",
+    "tagline": "Researcher bringing rigorous privacy science to Web3",
+    "role": "Lead",
+    "orgName": "Palliora",
+    "orgUrl": "https://palliora.org/",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Academia"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "andrew-miller",
+    "name": "ANDREW MILLER",
+    "photo": "img/andrew-miller.jpg",
+    "xUrl": "https://x.com/socrates1024",
+    "tagline": "Academic cryptographer turning theory into deployed systems",
+    "role": "Lead",
+    "orgName": "Teleport Computer",
+    "orgUrl": "https://router.teleport.computer/",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Academia"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "andy-guzman",
+    "name": "ANDY GUZMAN",
+    "photo": "img/guzman.jpg",
+    "xUrl": "https://x.com/AndyGuzmanEth",
+    "tagline": "Decentralised privacy adoption lead",
+    "role": "Head",
+    "orgName": "Privacy Stewards of Ethereum",
+    "orgUrl": "http://pse.dev",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 8
+  },
+  {
+    "id": "antonio-seveso",
+    "name": "ANTONIO SEVESO",
+    "photo": "img/seveso.png",
+    "xUrl": "https://x.com/0xMeTony",
+    "tagline": "Stealth addresses advocate",
+    "role": "Co-founder",
+    "orgName": "Fluidkey",
+    "orgUrl": "https://www.fluidkey.com",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Engineering"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
+  },
+  {
+    "id": "arnaud-schenk",
+    "name": "ARNAUD SCHENK",
+    "photo": "img/Arnaud Schenk.png",
+    "xUrl": "https://x.com/Arnaudschenk",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "Co-Founder",
+    "orgName": "Aztec",
+    "orgUrl": "https://aztec.network/",
+    "industries": [
+      "Privacy",
+      "Governance",
+      "Investments"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "auryn-mcmillan",
+    "name": "AURYN MCMILLAN",
+    "photo": "img/auryn.png",
+    "xUrl": "https://x.com/auryn_macmillan",
+    "tagline": "Confidential computing visionary",
+    "role": "Co-founder",
+    "orgName": "Enclave",
+    "orgUrl": "https://enclave.gg",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 14
+  },
+  {
+    "id": "aya-miyaguchi",
+    "name": "AYA MIYAGUCHI",
+    "photo": "img/aya.jpg",
+    "xUrl": "https://x.com/AyaMiyagotchi",
+    "tagline": "Steward of Ethereum's long-term ecosystem vision",
+    "role": "President",
+    "orgName": "Ethereum Foundation",
+    "orgUrl": "https://ethereum.org/foundation/",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "beth-mccarthy",
+    "name": "BETH MCCARTHY",
+    "photo": "img/beth mccarthy.jpg",
+    "xUrl": "https://x.com/ontologymachine",
+    "tagline": "Visionary behind alternative tech ecosystem",
+    "role": "Facilitator",
+    "orgName": "Dweb",
+    "orgUrl": "https://getdweb.net",
+    "industries": [
+      "Public goods",
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "bob-summerwill",
+    "name": "BOB SUMMERWILL",
+    "photo": "img/bobsummerwill.png",
+    "xUrl": "https://x.com/BobSummerwill",
+    "tagline": "Decentralisation veteran",
+    "role": "Head of Ecosystem",
+    "orgName": "Strato",
+    "orgUrl": "https://strato.nexus",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 20
+  },
+  {
+    "id": "bruce-eth",
+    "name": "BRUCE.ETH",
+    "photo": "img/brucexu.eth.jpg",
+    "xUrl": "https://x.com/brucexu_eth",
+    "tagline": "Visionary behind alternative tech ecosystem",
+    "role": "Co-Founder",
+    "orgName": "ETHPanda",
+    "orgUrl": "https://ethpanda.org",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "camila-rioja",
+    "name": "CAMILA RIOJA",
+    "photo": "img/camila-rioja.jpg",
+    "xUrl": "https://x.com/mila_rioja",
+    "tagline": "Governance strategist at the intersection of law and digital rights",
+    "role": "Lead",
+    "orgName": "Plexos Institute",
+    "orgUrl": "https://www.plexosinstitute.org",
+    "industries": [
+      "Privacy",
+      "Public Goods",
+      "Legal",
+      "Governance"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "chandresh",
+    "name": "CHANDRESH",
+    "photo": "img/chandresh.jpg",
+    "xUrl": "https://x.com/thisischandresh",
+    "tagline": "Community organiser",
+    "role": "core",
+    "orgName": "ETHMumbai",
+    "orgUrl": "https://www.ethmumbai.in",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 42
+  },
+  {
+    "id": "cheeky-gorilla",
+    "name": "CHEEKY GORILLA",
+    "photo": "img/Cheeky-gorilla.jpg",
+    "xUrl": "https://x.com/cheekygorilla0x",
+    "tagline": "Long-term Ethereum contributor funding protocol sustainability",
+    "role": "Lead",
+    "orgName": "Protocol Guild",
+    "orgUrl": "https://www.protocolguild.org",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Protocols"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "chris-mccabe",
+    "name": "CHRIS MCCABE",
+    "photo": "img/chrismccabe.jpg",
+    "xUrl": "https://twitter.com/Cryptic_cm",
+    "tagline": "Decentralised messengers visionary",
+    "role": "Co-founder",
+    "orgName": "Session",
+    "orgUrl": "https://getsession.org",
+    "industries": [
+      "Messengers",
+      "Applications"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 22
+  },
+  {
+    "id": "cyp",
+    "name": "CYP",
+    "photo": "img/cyp.png",
+    "xUrl": "https://x.com/0xcyp",
+    "tagline": "Community strategist shaping private social coordination tools",
+    "role": "Lead",
+    "orgName": "Status",
+    "orgUrl": "",
+    "industries": [
+      "Privacy",
+      "Socials"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "daniel-knobelsdorf",
+    "name": "DANIEL KNOBELSDORF",
+    "photo": "img/knobelsdorf.png",
+    "xUrl": "",
+    "tagline": "Digital rights meeting decentralised tech",
+    "role": "Lead",
+    "orgName": "Infinite Garden",
+    "orgUrl": "",
+    "industries": [
+      "Privacy",
+      "Digital Activism"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 43
+  },
+  {
+    "id": "danny-o-brien",
+    "name": "DANNY O'BRIEN",
+    "photo": "img/obrien.jpg",
+    "xUrl": "https://twitter.com/mala",
+    "tagline": "Former director of strategy at EFF",
+    "role": "Senior Fellow",
+    "orgName": "Filecoin Foundation, EFF",
+    "orgUrl": "https://fil.org",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 4
+  },
+  {
+    "id": "denis-jaromil-rojo",
+    "name": "DENIS JAROMIL ROJO",
+    "photo": "img/jaromil.jpg",
+    "xUrl": "https://x.com/jaromil",
+    "tagline": "Long-lasting cryptographer & hacktivist",
+    "role": "Founder",
+    "orgName": "Dyne.org",
+    "orgUrl": "https://dyne.org",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 6
+  },
+  {
+    "id": "devansh-mehta",
+    "name": "DEVANSH MEHTA",
+    "photo": "img/devansh-mehta.jpg",
+    "xUrl": "https://x.com/devanshmehta",
+    "tagline": "Deep Public Goods Funding expert",
+    "role": "public goods",
+    "orgName": "ex-Ethereum Foundation",
+    "orgUrl": "https://ethereum.foundation",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 36
+  },
+  {
+    "id": "dr-jennifer-helsby",
+    "name": "Dr. JENNIFER HELSBY",
+    "photo": "img/redshiftzero.png",
+    "xUrl": "https://x.com/redshiftzero",
+    "tagline": "Security engineer advancing press freedom through open-source tools",
+    "role": "Lead",
+    "orgName": "Freedom Of The Press Foundation",
+    "orgUrl": "https://freedom.press",
+    "industries": [
+      "Journalism",
+      "Cryptography",
+      "Whistleblowers"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "eleftherios",
+    "name": "ELEFTHERIOS",
+    "photo": "img/eleftherios.png",
+    "xUrl": "https://x.com/lftherios",
+    "tagline": "Building sovereign collaboration tools for open-source communities",
+    "role": "Lead",
+    "orgName": "Radicle",
+    "orgUrl": "https://radicle.dev/",
+    "industries": [
+      "Privacy",
+      "Coordination"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "eva-galperin",
+    "name": "EVA GALPERIN",
+    "photo": "img/evagalperin.jpg",
+    "xUrl": "https://x.com/evacide",
+    "tagline": "Visionary behind alternative tech ecosystem",
+    "role": "Founder",
+    "orgName": "Electronic Frontier Foundation",
+    "orgUrl": "https://www.eff.org/",
+    "industries": [
+      "Privacy",
+      "Digital Rights",
+      "Encryption"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "faiz-naeem",
+    "name": "FAIZ NAEEM",
+    "photo": "img/faiz-naeem.jpeg",
+    "xUrl": "https://www.linkedin.com/in/faiznaeem/",
+    "tagline": "Tech Policy & Digital Rights",
+    "role": "Chief of Staff",
+    "orgName": "Access Now",
+    "orgUrl": "https://www.accessnow.org",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 38
+  },
+  {
+    "id": "fatemeh-fannizadeh",
+    "name": "FATEMEH FANNIZADEH",
+    "photo": "img/fatemeh.png",
+    "xUrl": "https://x.com/Fatalmeh",
+    "tagline": "Legal expert on decentralized computing & activism",
+    "role": "Legal",
+    "orgName": "FATEMEH FANNIZADEH",
+    "orgUrl": "https://x.com/Fatalmeh",
+    "industries": [
+      "Legal",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 25
+  },
+  {
+    "id": "florian-glatz",
+    "name": "FLORIAN GLATZ",
+    "photo": "img/florian-glatz.jpg",
+    "xUrl": "https://x.com/heckerhut",
+    "tagline": "Lawyer building freedom-preserving tools for the sovereign web",
+    "role": "Lead",
+    "orgName": "Freedom Browser",
+    "orgUrl": "https://freedombrowser.eth.limo",
+    "industries": [
+      "Privacy",
+      "Browsers",
+      "Legal"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "francesco-andreoli",
+    "name": "FRANCESCO ANDREOLI",
+    "photo": "img/francesco.andreoli.webp",
+    "xUrl": "https://x.com/francescoswiss",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "DevRel",
+    "orgName": "MetaMask",
+    "orgUrl": "https://metamask.io",
+    "industries": [
+      "Privacy",
+      "Engineering",
+      "Wallets"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "gavin-birch",
+    "name": "GAVIN BIRCH",
+    "photo": "img/gavinbirch.png",
+    "xUrl": "https://x.com/Ether_Gavin",
+    "tagline": "Ethereum educator focused on resilient validator infrastructure",
+    "role": "Lead",
+    "orgName": "Armada",
+    "orgUrl": "https://armada.wtf/",
+    "industries": [
+      "Privacy",
+      "Applications"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "harry-halpin",
+    "name": "HARRY HALPIN",
+    "photo": "img/harryhalping.jog.webp",
+    "xUrl": "https://x.com/harryhalpin",
+    "tagline": "Experienced activist bridging network-level privacy & practical VPN",
+    "role": "CEO",
+    "orgName": "Nym",
+    "orgUrl": "http://nym.com",
+    "industries": [
+      "Privacy",
+      "VPN",
+      "Digital Rights",
+      "Mixnet"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 11
+  },
+  {
+    "id": "hazel-hu",
+    "name": "HAZEL HU",
+    "photo": "img/hazel-hu.jpg",
+    "xUrl": "https://x.com/0xHY2049",
+    "tagline": "Scaling Asian Public Goods Sector",
+    "role": "Facilitator",
+    "orgName": "GCC",
+    "orgUrl": "https://www.gccofficial.org",
+    "industries": [
+      "Public Goods"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "hioki-leona",
+    "name": "HIOKI LEONA",
+    "photo": "img/hiokileona.jpg",
+    "xUrl": "https://x.com/leo_hio",
+    "tagline": "Scaling Ethereum privacy through next-generation rollup design",
+    "role": "Lead",
+    "orgName": "INTMAX",
+    "orgUrl": "https://x.com/IntmaxIO",
+    "industries": [
+      "Privacy",
+      "Mining",
+      "Protocols"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "isabela-fernandes",
+    "name": "ISABELA FERNANDES",
+    "photo": "img/fernandes.jpeg",
+    "xUrl": "https://x.com/Isa",
+    "tagline": "Free & anonymous software advocate",
+    "role": "Executive Director",
+    "orgName": "Tor Project",
+    "orgUrl": "https://torproject.org",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 1
+  },
+  {
+    "id": "jarrad-hope",
+    "name": "JARRAD HOPE",
+    "photo": "img/jarradhope.png",
+    "xUrl": "https://x.com/jarradhope_",
+    "tagline": "Architect of censorship-resistant network infrastructure",
+    "role": "Lead",
+    "orgName": "Logos",
+    "orgUrl": "https://logos.co",
+    "industries": [
+      "Privacy",
+      "Protocols",
+      "Encryption"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "jimjim",
+    "name": "JIMJIM",
+    "photo": "img/jimjim.png",
+    "xUrl": "https://x.com/jimjim_eth",
+    "tagline": "Builder of practical tools for privacy-first internet users",
+    "role": "Lead",
+    "orgName": "Warptoad",
+    "orgUrl": "https://warptoad.org/",
+    "industries": [
+      "Privacy",
+      "Engineering"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "joan-arus",
+    "name": "JOAN ARUS",
+    "photo": "img/joan.jpg",
+    "xUrl": "https://x.com/Joan_Arus",
+    "tagline": "Defender of civil liberties in the digital age",
+    "role": "Lead",
+    "orgName": "Sentinel Alliance",
+    "orgUrl": "https://www.sentinelalliance.org/",
+    "industries": [
+      "Privacy",
+      "Digital Rights",
+      "Legal"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "john-guilding",
+    "name": "JOHN GUILDING",
+    "photo": "img/john.jpg",
+    "xUrl": "https://x.com/john_guilding",
+    "tagline": "Bringing privacy technologies into real-world governance systems",
+    "role": "Lead",
+    "orgName": "Privacy Stewards of Ethereum",
+    "orgUrl": "http://pse.dev",
+    "industries": [
+      "Privacy",
+      "Identity",
+      "Voting"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "jordi-baylina",
+    "name": "JORDI BAYLINA",
+    "photo": "img/baylina.jpg",
+    "xUrl": "https://x.com/jbaylina",
+    "tagline": "Catalan cryptographer targeted by Pegasus",
+    "role": "Co-founder",
+    "orgName": "Zisk",
+    "orgUrl": "http://zisk.technology",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 9
+  },
+  {
+    "id": "jordi-pinyana",
+    "name": "JORDI PINYANA",
+    "photo": "img/pinyana.jpeg",
+    "xUrl": "https://x.com/jordipainan",
+    "tagline": "Building verifiable digital voting for modern democracies",
+    "role": "Lead",
+    "orgName": "Vocdoni",
+    "orgUrl": "https://vocdoni.io/en",
+    "industries": [
+      "Privacy",
+      "Voting",
+      "Engineering"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "josh-davila",
+    "name": "JOSH DAVILA",
+    "photo": "img/josh-davila.png",
+    "xUrl": "https://x.com/TBSocialist",
+    "tagline": "Cooperative economy advocate reimagining ownership online",
+    "role": "Lead",
+    "orgName": "Bread Coop",
+    "orgUrl": "https://bread.coop",
+    "industries": [
+      "Privacy",
+      "Solidarity economy"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "juan-benet",
+    "name": "JUAN BENET",
+    "photo": "img/benet.avif",
+    "xUrl": "https://x.com/juanbenet",
+    "tagline": "Inventor of decentralized storage and network infrastructure",
+    "role": "Lead",
+    "orgName": "Protocol Labs",
+    "orgUrl": "https://www.protocol.ai/",
+    "industries": [
+      "Privacy",
+      "Investment"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 16
+  },
+  {
+    "id": "julio-linares",
+    "name": "JULIO LINARES",
+    "photo": "img/julio.png",
+    "xUrl": "https://x.com/Julio_Linares_",
+    "tagline": "Researching universal basic income through decentralized networks",
+    "role": "Lead",
+    "orgName": "Circles",
+    "orgUrl": "https://x.com/CirclesUBI",
+    "industries": [
+      "Privacy",
+      "Digital Rights",
+      "Cryptography",
+      "Academia"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "justin-drake",
+    "name": "JUSTIN DRAKE",
+    "photo": "img/justindrake.jpg",
+    "xUrl": "https://x.com/drakefjustin",
+    "tagline": "Key protocol researcher",
+    "role": "Research",
+    "orgName": "Ethereum Foundation",
+    "orgUrl": "https://ethereum.org/foundation/",
+    "industries": [
+      "Privacy",
+      "Quantum resistance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 7
+  },
+  {
+    "id": "kate-stapleton",
+    "name": "KATE STAPLETON",
+    "photo": "img/kate-stapleton.png",
+    "xUrl": "https://x.com/kate_stapes",
+    "tagline": "Driving confidential computation toward mainstream adoption",
+    "role": "Lead",
+    "orgName": "Fhenix",
+    "orgUrl": "https://www.fhenix.io",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Digital Rights"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "kevin-jones",
+    "name": "KEVIN JONES",
+    "photo": "img/Kevin Jones.jpg",
+    "xUrl": "https://x.com/cryptomastery_",
+    "tagline": "Messaging and privacy advocate within Ethereum's public interest ecosystem",
+    "role": "Lead",
+    "orgName": "Ethereum Foundation & IPTF",
+    "orgUrl": "https://ethereum.foundation",
+    "industries": [
+      "Privacy",
+      "Messaging",
+      "Engineering"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "kieran-mesquita",
+    "name": "KIERAN MESQUITA",
+    "photo": "img/kieran.png",
+    "xUrl": "https://x.com/mesquka",
+    "tagline": "Applied cryptographer serving millions of people",
+    "role": "contributor",
+    "orgName": "Railgun",
+    "orgUrl": "https://railgun.org/",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Engineering"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 41
+  },
+  {
+    "id": "kris-is",
+    "name": "KRIS IS",
+    "photo": "img/kris.png",
+    "xUrl": "https://x.com/krrisis",
+    "tagline": "Advocate for digital autonomy and internet freedom",
+    "role": "Lead",
+    "orgName": "Logos",
+    "orgUrl": "https://logos.co",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "kunal-majumder",
+    "name": "Kunāl Majumder",
+    "photo": "img/kunal-majumder.jpeg",
+    "xUrl": "https://www.linkedin.com/in/kunalmajumder/",
+    "tagline": "Committee to Protect Journalists",
+    "role": "Asia-Pacific Program Coordinator",
+    "orgName": "Committee to Protect Journalists",
+    "orgUrl": "https://cpj.org",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 26
+  },
+  {
+    "id": "kurt-opsahl",
+    "name": "KURT OPSAHL",
+    "photo": "img/kurtopsahl2.jpg",
+    "xUrl": "https://x.com/kurtopsahl",
+    "tagline": "Former Deputy Executive Director and General Counsel of EFF",
+    "role": "Associate General Counsel for Cybersecurity and Civil Liberties Policy",
+    "orgName": "Filecoin",
+    "orgUrl": "https://fil.org",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 0
+  },
+  {
+    "id": "kyle-den-hartog",
+    "name": "KYLE DEN HARTOG",
+    "photo": "img/kyledenhartog.jpg",
+    "xUrl": "https://x.com/PryvitKyle",
+    "tagline": "Researcher blending traditional & innovative tech",
+    "role": "Staff Cryptographic Security Engineer",
+    "orgName": "Brave",
+    "orgUrl": "http://brave.com",
+    "industries": [
+      "Privacy",
+      "Standartisation",
+      "Browsers"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 10
+  },
+  {
+    "id": "lasha-antadze",
+    "name": "LASHA ANTADZE",
+    "photo": "img/lasha.png",
+    "xUrl": "https://x.com/lashaantadze",
+    "tagline": "Identity innovator enabling borderless democratic participation",
+    "role": "Lead",
+    "orgName": "Rarimo",
+    "orgUrl": "https://rarimo.com/",
+    "industries": [
+      "Privacy",
+      "Identity",
+      "Voting",
+      "Digital Rights"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "lefteris-karapetsas",
+    "name": "LEFTERIS KARAPETSAS",
+    "photo": "img/lefteris.png",
+    "xUrl": "https://x.com/LefterisJP",
+    "tagline": "Champion of financial transparency through open-source software",
+    "role": "Lead",
+    "orgName": "Rotki",
+    "orgUrl": "https://rotki.com/",
+    "industries": [
+      "Privacy",
+      "Applications",
+      "Governance"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "leuts",
+    "name": "LEUTS",
+    "photo": "img/leuts-aragon.jpeg",
+    "xUrl": "https://x.com/A_Leutenegger",
+    "tagline": "Governance innovator focused on resilient decentralized organizations",
+    "role": "Lead",
+    "orgName": "Aragon",
+    "orgUrl": "https://aragon.org",
+    "industries": [
+      "Privacy",
+      "Governance"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "liam-eagan",
+    "name": "LIAM EAGAN",
+    "photo": "img/LIAM-EAGAN.webp",
+    "xUrl": "https://x.com/liameagen",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "Applied Cryptographer",
+    "orgName": "Ideal",
+    "orgUrl": "https://ideal.group",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Academia"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "loring-harkness",
+    "name": "Loring Harkness",
+    "photo": "img/loring.jpg",
+    "xUrl": "https://x.com/LoringHarkness",
+    "tagline": "Encrypted Mempools advocate",
+    "role": "Lead",
+    "orgName": "Shutter Network",
+    "orgUrl": "https://linktr.ee/ShutterNetwork",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Engineering"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 34
+  },
+  {
+    "id": "manu-alzuru",
+    "name": "MANU ALZURU",
+    "photo": "img/manualzuru.png",
+    "xUrl": "https://x.com/ManuAlzuru",
+    "tagline": "Entrepreneur exploring alternatives to extractive digital platforms",
+    "role": "Lead",
+    "orgName": "Mother AI",
+    "orgUrl": "https://www.hellomother.co.uk/",
+    "industries": [
+      "Privacy",
+      "Digital Activism"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "many-sheel-gupta",
+    "name": "MANY SHEEL GUPTA",
+    "photo": "img/manu-sheel-gupta.JPG",
+    "xUrl": "https://x.com/manusheel",
+    "tagline": "delivering modular p2p network stack",
+    "role": "maintainer",
+    "orgName": "Libp2p",
+    "orgUrl": "https://libp2p.io",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 37
+  },
+  {
+    "id": "marina-markezic",
+    "name": "MARINA MARKEZIC",
+    "photo": "img/Marina-Markezic.jpg",
+    "xUrl": "https://x.com/MarinaMarkezic",
+    "tagline": "Policy researcher translating Ethereum for lawmakers and institutions",
+    "role": "Lead",
+    "orgName": "Ethereum Institute",
+    "orgUrl": "https://ethereum.institute",
+    "industries": [
+      "Privacy",
+      "Legal"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "mario-havel",
+    "name": "MARIO HAVEL",
+    "photo": "img/havel.jpg",
+    "xUrl": "https://x.com/TMIYChao",
+    "tagline": "FOSS advocate",
+    "role": "Protocol Support",
+    "orgName": "Ethereum Foundation & BORDEL",
+    "orgUrl": "https://ethereum.foundation",
+    "industries": [
+      "Hacktivism",
+      "Engineering",
+      "Protocols"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 27
+  },
+  {
+    "id": "mashbean",
+    "name": "MASHBEAN",
+    "photo": "img/mashbean.jpg",
+    "xUrl": "https://x.com/mashbean",
+    "tagline": "Regenerative systems thinker cultivating public goods ecosystems",
+    "role": "Lead",
+    "orgName": "Ethereum Silviculture Society & Harvard Allen Lab Fellow",
+    "orgUrl": "https://x.com/mashbean",
+    "industries": [
+      "Privacy",
+      "Governance",
+      "Public Goods"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 31
+  },
+  {
+    "id": "max-hampshire",
+    "name": "MAX HAMPSHIRE",
+    "photo": "img/max-hampshire.jpg",
+    "xUrl": "https://x.com/_wjth",
+    "tagline": "Privacy engineer focused on mixnets and metadata resistance",
+    "role": "Lead",
+    "orgName": "Nym",
+    "orgUrl": "http://nym.com",
+    "industries": [
+      "Privacy",
+      "VPN",
+      "Mixnets"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "miroyato",
+    "name": "MIROYATO",
+    "photo": "img/andreas.png",
+    "xUrl": "https://x.com/miroyato",
+    "tagline": "Academic turned practical privacy tech",
+    "role": "Co-founder",
+    "orgName": "Fileverse",
+    "orgUrl": "https://fileverse.io/",
+    "industries": [
+      "Collaboration",
+      "Cryptography",
+      "Applications"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 21
+  },
+  {
+    "id": "ml-sudo",
+    "name": "ml_sudo",
+    "photo": "img/michelleLai.png",
+    "xUrl": "https://x.com/ml_sudo",
+    "tagline": "Open-hardware enthusiast",
+    "role": "Lead",
+    "orgName": "Sovright",
+    "orgUrl": "https://sovright.com",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Hardware"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 13
+  },
+  {
+    "id": "nanak-nihal-khalsa",
+    "name": "NANAK NIHAL KHALSA",
+    "photo": "img/Nanak-Nihal-Khalsa.jpg",
+    "xUrl": "https://x.com/NanakNihal",
+    "tagline": "Digital identity advocate advancing human-centered credentials",
+    "role": "Lead",
+    "orgName": "Human Tech",
+    "orgUrl": "https://human.tech",
+    "industries": [
+      "Privacy",
+      "Identity"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "naomi-brockwell",
+    "name": "NAOMI BROCKWELL",
+    "photo": "img/naomibrockwell.jpg",
+    "xUrl": "https://x.com/naomibrockwell",
+    "tagline": "Privacy educator making digital self-defense accessible",
+    "role": "Lead",
+    "orgName": "Ludlow Institute",
+    "orgUrl": "https://www.ludlowinstitute.org",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "nick-almond",
+    "name": "NICK ALMOND",
+    "photo": "img/nick-almond.jpg",
+    "xUrl": "https://x.com/DrNickA",
+    "tagline": "Governance researcher examining incentives and decentralized coordination",
+    "role": "Lead",
+    "orgName": "Jito & Factory Labs",
+    "orgUrl": "https://x.com/jito_sol",
+    "industries": [
+      "Privacy",
+      "Governance"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "nico-consigny",
+    "name": "NICO CONSIGNY",
+    "photo": "img/consigny.jpg",
+    "xUrl": "https://twitter.com/ncsgy",
+    "tagline": "Privacy in digital wallets visionary",
+    "role": "Lead",
+    "orgName": "Ethereum Foundation",
+    "orgUrl": "https://ethereum.org/foundation/",
+    "industries": [
+      "Privacy",
+      "Wallets"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 23
+  },
+  {
+    "id": "nikoline-arns",
+    "name": "NIKOLINE ARNS",
+    "photo": "img/nikoline.png",
+    "xUrl": "https://x.com/nikoline_nik",
+    "tagline": "Public goods organizer connecting privacy and digital rights movements",
+    "role": "Lead",
+    "orgName": "Ethereum Foundation & IPTF",
+    "orgUrl": "https://ethereum.foundation",
+    "industries": [
+      "Privacy",
+      "Digital Rights",
+      "Public Goods"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "oskarth",
+    "name": "OSKARTH",
+    "photo": "img/oskarth.png",
+    "xUrl": "https://x.com/oskarth",
+    "tagline": "Privacy researcher connecting Ethereum and human rights communities",
+    "role": "Lead",
+    "orgName": "Ethereum Foundation & IPTF",
+    "orgUrl": "https://ethereum.foundation",
+    "industries": [
+      "Institutional",
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 28
+  },
+  {
+    "id": "parsley",
+    "name": "PARSLEY",
+    "photo": "img/Parsley.jpg",
+    "xUrl": "https://x.com/Parsley3D",
+    "tagline": "Open-source engineer building privacy-enhancing Ethereum tools",
+    "role": "Lead",
+    "orgName": "FAT Solutions",
+    "orgUrl": "https://fatsolutions.xyz",
+    "industries": [
+      "Privacy",
+      "Engineering"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "paul-dylan-ennis",
+    "name": "PAUL DYLAN-ENNIS",
+    "photo": "img/paul-dylan-ennis.jpg",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Scholar documenting the social evolution of crypto communities",
+    "role": "Lead",
+    "orgName": "Dappnode",
+    "orgUrl": "https://dappnode.com",
+    "industries": [
+      "Privacy",
+      "Academia"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "peter-van-valkenburgh",
+    "name": "PETER VAN VALKENBURGH",
+    "photo": "img/valkenburgh.jpg",
+    "xUrl": "https://twitter.com/valkenburgh",
+    "tagline": "Advocate focused on the public policy on decentralized computing",
+    "role": "Executive Director",
+    "orgName": "Coin Center",
+    "orgUrl": "https://coincenter.org",
+    "industries": [
+      "Privacy",
+      "Legal"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 24
+  },
+  {
+    "id": "pg",
+    "name": "PG",
+    "photo": "img/pg.jpg",
+    "xUrl": "https://x.com/PG_CDG",
+    "tagline": "Community builder growing the Web3 privacy movement",
+    "role": "Lead",
+    "orgName": "Web3Privacy Now",
+    "orgUrl": "https://web3privacy.info",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "pieman",
+    "name": "PIEMAN",
+    "photo": "img/pieman.png",
+    "xUrl": "https://x.com/Pememoni",
+    "tagline": "Cryptography builder tackling fairness and transaction privacy",
+    "role": "Lead",
+    "orgName": "Fairblock",
+    "orgUrl": "https://www.fairblock.network/",
+    "industries": [
+      "Privacy",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "pol-lanski",
+    "name": "POL LANSKI",
+    "photo": "img/lanski.jpeg",
+    "xUrl": "https://x.com/Pol_Lanski",
+    "tagline": "Making self-hosted infrastructure accessible to everyone",
+    "role": "Lead",
+    "orgName": "Dappnode",
+    "orgUrl": "https://dappnode.com",
+    "industries": [
+      "Privacy",
+      "Digital Rights",
+      "Hardware"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 29
+  },
+  {
+    "id": "polymutex",
+    "name": "POLYMUTEX",
+    "photo": "img/polymutex.jpg",
+    "xUrl": "https://x.com/polymutex",
+    "tagline": "Wallet researcher focused on safer user experiences",
+    "role": "Lead",
+    "orgName": "Walletbeat",
+    "orgUrl": "https://walletbeat.eth.limo",
+    "industries": [
+      "Privacy",
+      "Wallets",
+      "Engineering"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "prasanth-sugathan",
+    "name": "Prasanth Sugathan",
+    "photo": "img/prasanth-sugathan.jpeg",
+    "xUrl": "https://x.com/PrasanthTweets",
+    "tagline": "two decades of work focused on data protection law, critical technology law",
+    "role": "Legal Director",
+    "orgName": "Software Freedom Law Center",
+    "orgUrl": "https://www.linkedin.com/in/prasanthsugathan/",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 15
+  },
+  {
+    "id": "quintus",
+    "name": "QUINTUS",
+    "photo": "img/quintus.jpg",
+    "xUrl": "https://x.com/0xQuintus",
+    "tagline": "Applied researcher exploring cryptography beyond the protocol layer",
+    "role": "Lead",
+    "orgName": "Flashbots",
+    "orgUrl": "https://www.flashbots.net",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Hardware"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "riddhima-sharma",
+    "name": "RIDDHIMA SHARMA",
+    "photo": "img/riddhima.jpeg",
+    "xUrl": "https://www.linkedin.com/in/riddhimasharma/",
+    "tagline": "Gender and Technology Researcher and Educator",
+    "role": "Knowledge Specialist",
+    "orgName": "Point Of View",
+    "orgUrl": "https://pointofview.org",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 18
+  },
+  {
+    "id": "roger-dingledine",
+    "name": "ROGER DINGLEDINE",
+    "photo": "img/roger.png",
+    "xUrl": "https://x.com/RogerDingledine",
+    "tagline": "Co-creator of Tor and pioneer of anonymous communications",
+    "role": "Lead",
+    "orgName": "Tor Project",
+    "orgUrl": "https://torproject.org",
+    "industries": [
+      "Digital Rights",
+      "Privacy",
+      "Protocols"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "sam-de-silva",
+    "name": "SAM DE SILVA",
+    "photo": "img/sam-de-silva.jpeg",
+    "xUrl": "https://www.linkedin.com/in/samdesilva/",
+    "tagline": "Independent digital rights consultant (Session, CommonEdge Asia, ex-Luminate)",
+    "role": "Lead",
+    "orgName": "Independent",
+    "orgUrl": "https://www.linkedin.com/in/samdesilva/",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 32
+  },
+  {
+    "id": "sasha-shilina",
+    "name": "SASHA SHILINA",
+    "photo": "img/sasha-shilina.jpg",
+    "xUrl": "https://x.com/sshshln",
+    "tagline": "Philosopher of tech, art & decentralisation",
+    "role": "researcher",
+    "orgName": "Paradigm",
+    "orgUrl": "https://linktr.ee/paradigm_research",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 39
+  },
+  {
+    "id": "sebastian-burgel",
+    "name": "SEBASTIAN BüRGEL",
+    "photo": "img/sebastian.png",
+    "xUrl": "https://x.com/SCBuergel",
+    "tagline": "Pioneer of incentivized mixnet infrastructure",
+    "role": "Lead",
+    "orgName": "HOPR",
+    "orgUrl": "https://hoprnet.org/",
+    "industries": [
+      "Privacy",
+      "Mixnets",
+      "VPN"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 17
+  },
+  {
+    "id": "seth-for-privacy",
+    "name": "SETH FOR PRIVACY",
+    "photo": "img/sethforprivacy.jpg",
+    "xUrl": "https://x.com/sethforprivacy",
+    "tagline": "Self-custody educator championing everyday financial privacy",
+    "role": "Lead",
+    "orgName": "Cake Wallet",
+    "orgUrl": "cakewallet.com",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Wallets"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "shady-el-damaty",
+    "name": "SHADY EL DAMATY",
+    "photo": "img/shady.jpeg",
+    "xUrl": "https://x.com/hebbianloop",
+    "tagline": "Digital rights activists delivering identity for the internet age",
+    "role": "CEO",
+    "orgName": "Human Tech",
+    "orgUrl": "https://human.tech",
+    "industries": [
+      "Privacy",
+      "Identity",
+      "Digital Activism"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 44
+  },
+  {
+    "id": "stefano-gogioso",
+    "name": "STEFANO GOGIOSO",
+    "photo": "img/stefano-gogioso-profile.jpg",
+    "xUrl": "https://x.com/StefanoGogioso",
+    "tagline": "Researcher exploring post-quantum and privacy-preserving systems",
+    "role": "Lead",
+    "orgName": "NeverLocal",
+    "orgUrl": "https://neverlocal.com",
+    "industries": [
+      "Privacy",
+      "Academia",
+      "Quantum resistance"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "suji-jan",
+    "name": "SUJI JAN",
+    "photo": "img/suji-yan.jpg",
+    "xUrl": "https://x.com/suji_yan",
+    "tagline": "Connecting privacy, identity, and social networking",
+    "role": "Lead",
+    "orgName": "Mask Network",
+    "orgUrl": "https://www.mask.io/",
+    "industries": [
+      "Privacy",
+      "Socials"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "sushimita",
+    "name": "SUSHIMITA",
+    "photo": "img/sushmita.jpg",
+    "xUrl": "https://x.com/Sushmitav1",
+    "tagline": "an international award-winning journalist & researcher",
+    "role": "Independent",
+    "orgName": "fellow Pulitzer Center, Society of Environmental journalists' and Uproot Project's",
+    "orgUrl": "https://linktr.ee/sushmitaw",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 30
+  },
+  {
+    "id": "tanisha-katara",
+    "name": "TANISHA KATARA",
+    "photo": "img/tanisha.jpg",
+    "xUrl": "https://x.com/governingweb3",
+    "tagline": "Researcher applying AI to decentralized governance systems",
+    "role": "Lead",
+    "orgName": "Ethereum Governance AI",
+    "orgUrl": "https://x.com/EthereumGovAI",
+    "industries": [
+      "Privacy",
+      "Governance"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "tobias-vogel",
+    "name": "TOBIAS VOGEL",
+    "photo": "img/tobias.png",
+    "xUrl": "https://www.linkedin.com/in/tobias-vogel-66545b100/",
+    "tagline": "Smart contract auditor securing Ethereum's critical infrastructure",
+    "role": "Lead",
+    "orgName": "Consensys Diligence",
+    "orgUrl": "https://diligence.security/",
+    "industries": [
+      "Privacy",
+      "Security"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "vaclav-pavlin",
+    "name": "VACLAV PAVLIN",
+    "photo": "img/vaclav-pavlin.jpg",
+    "xUrl": "https://x.com/vpavlin",
+    "tagline": "Mixnets visionary",
+    "role": "VP of Technology",
+    "orgName": "Logos",
+    "orgUrl": "https://logos.co",
+    "industries": [
+      "Engineering",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "vijay-krishnavanshi",
+    "name": "VIJAY KRISHNAVANSHI",
+    "photo": "img/vijay-krishnavanshi.jpeg",
+    "xUrl": "https://x.com/0x6b8",
+    "tagline": "Tech visionary challenging Google Suite",
+    "role": "Co-Founder",
+    "orgName": "Fileverse",
+    "orgUrl": "https://fileverse.io/",
+    "industries": [
+      "Privacy",
+      "Engineering",
+      "Cryptography"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 5
+  },
+  {
+    "id": "viktor-tron",
+    "name": "VIKTOR TRÓN",
+    "photo": "img/tron.jpg",
+    "xUrl": "https://x.com/zeligf",
+    "tagline": "Visionary behind distributed tech",
+    "role": "Founder",
+    "orgName": "Swarm",
+    "orgUrl": "https://ethswarm.org",
+    "industries": [
+      "Privacy",
+      "Storage"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 35
+  },
+  {
+    "id": "vinay-narayan",
+    "name": "VINAY NARAYAN",
+    "photo": "img/vinaj.jpeg",
+    "xUrl": "https://www.linkedin.com/in/vinay-narayan16/",
+    "tagline": "Focused on turning digital infrastructures into equitable governance frameworks",
+    "role": "Associate Director",
+    "orgName": "AAPTI Institute",
+    "orgUrl": "https://aapti.in/",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 19
+  },
+  {
+    "id": "vitalik-buterin",
+    "name": "VITALIK BUTERIN",
+    "photo": "img/vitalik-buterin.webp",
+    "xUrl": "https://x.com/vitalikbuterin",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "Founder",
+    "orgName": "Ethereum Foundation",
+    "orgUrl": "https://ethereum.org/foundation/",
+    "industries": [
+      "Privacy",
+      "Protocols",
+      "Cryptography"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "w3dada",
+    "name": "W3DADA",
+    "photo": "img/w3dada.png",
+    "xUrl": "https://x.com/wadadawadada",
+    "tagline": "Building autonomous infrastructure for communication, local AI, and payments beyond the internet",
+    "role": "Founder & Lead Developer",
+    "orgName": "Blackbox",
+    "orgUrl": "https://blackbox.host",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "wei-dai",
+    "name": "WEI DAI",
+    "photo": "img/wei-dai.webp",
+    "xUrl": "https://x.com/_weidai",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "Research Partner",
+    "orgName": "1kx",
+    "orgUrl": "https://1kx.capital",
+    "industries": [
+      "Privacy",
+      "Investments"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "wei-dai-2",
+    "name": "WEI DAI",
+    "photo": "img/wei-dai.jpg",
+    "xUrl": "https://x.com/_weidai",
+    "tagline": "Early cryptography pioneer whose ideas shaped modern crypto",
+    "role": "Lead",
+    "orgName": "1kx",
+    "orgUrl": "https://1kx.capital/",
+    "industries": [
+      "Privacy",
+      "Investments"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
+  },
+  {
+    "id": "will-scott",
+    "name": "WILL SCOTT",
+    "photo": "img/willscott.jpeg",
+    "xUrl": "https://x.com/willscott",
+    "tagline": "Global prime hacktivist",
+    "role": "Adoption",
+    "orgName": "Filecoin Foundation",
+    "orgUrl": "https://fil.org",
+    "industries": [
+      "Privacy",
+      "VPN"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 33
+  },
+  {
+    "id": "ying-tong-lai",
+    "name": "YING TONG LAI",
+    "photo": "img/yingtonglai2.jpg",
+    "xUrl": "https://twitter.com/therealyingtong",
+    "tagline": "Helping protocols & institutions adopt ZK-tech",
+    "role": "Applied Cryptographer",
+    "orgName": "Ideal",
+    "orgUrl": "https://ideal.group",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Identity"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 12
+  }
+]
