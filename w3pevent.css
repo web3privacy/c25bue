@@ -3010,6 +3010,10 @@ div[class*="bg-black"] .person-item img {
   margin: 0 auto;
 }
 
+#partner {
+  padding-top: 3rem;
+}
+
 .cta-partner-title {
   font-family: "aileron", sans-serif !important;
   font-weight: 600 !important;
