@@ -672,9 +672,10 @@
 
         function normalizeMember(item) {
           var industries = normalizeIndustries(item);
+          var photo = String(item.photo || '');
           return {
             name: String(item.name || ''),
-            photo: String(item.photo || ''),
+            photo: photo ? '../' + photo : '',
             xUrl: String(item.xUrl || ''),
             tagline: String(item.tagline || ''),
             role: String(item.role || ''),
@@ -966,7 +967,7 @@
           memberGrid.appendChild(note);
         }
 
-        fetch('./comminity.json', { cache: 'no-store' })
+        fetch('../data/people.json', { cache: 'no-store' })
           .then(function (response) {
             if (!response.ok) {
               throw new Error('Failed to load speakers JSON');

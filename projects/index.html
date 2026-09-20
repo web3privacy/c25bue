@@ -1035,13 +1035,45 @@
           projectGrid.appendChild(note);
         }
 
-        fetch('./projects.json', { cache: 'no-store' })
-          .then(function (response) {
+        function resolveMembers(memberIds, peopleById) {
+          var resolved = [];
+          (memberIds || []).forEach(function (id) {
+            var person = peopleById[id];
+            if (!person) {
+              console.warn('Could not resolve member id "' + id + '" against people.json');
+              return;
+            }
+            resolved.push({
+              name: person.name,
+              photo: person.photo ? '../' + person.photo : '',
+              xUrl: person.xUrl,
+              role: person.role,
+            });
+          });
+          return resolved;
+        }
+
+        Promise.all([
+          fetch('../data/projects.json', { cache: 'no-store' }).then(function (response) {
             if (!response.ok) throw new Error('Failed to load projects JSON');
             return response.json();
-          })
-          .then(function (data) {
-            projects = Array.isArray(data) ? data : [];
+          }),
+          fetch('../data/people.json', { cache: 'no-store' }).then(function (response) {
+            if (!response.ok) throw new Error('Failed to load people JSON');
+            return response.json();
+          }),
+        ])
+          .then(function (results) {
+            var projectsData = Array.isArray(results[0]) ? results[0] : [];
+            var people = Array.isArray(results[1]) ? results[1] : [];
+            var peopleById = {};
+            people.forEach(function (person) {
+              peopleById[person.id] = person;
+            });
+
+            projects = projectsData.map(function (project) {
+              return Object.assign({}, project, { members: resolveMembers(project.memberIds, peopleById) });
+            });
             buildFilterBar();
             setupFilterToggle();
             setupFilterEvents();
