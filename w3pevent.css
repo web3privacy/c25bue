@@ -3121,8 +3121,11 @@ div[class*="bg-black"] .person-item img {
   margin: 0 auto;
 }
 
-#partner {
+#partner,
+#partners {
   padding-top: 3rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .cta-partner-title {
