@@ -4080,3 +4080,10 @@ footer.mobile-footer {
     gap: 1.5rem;
   }
 }
+
+#partner,
+#partners {
+  padding-top: 3rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
