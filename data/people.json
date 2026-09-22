@@ -160,7 +160,7 @@
       "Cryptography"
     ],
     "speaker2026": true,
-    "speakerOrder": 8
+    "speakerOrder": 40
   },
   {
     "id": "antonio-seveso",
@@ -177,7 +177,7 @@
       "Engineering"
     ],
     "speaker2026": true,
-    "speakerOrder": 40
+    "speakerOrder": 41
   },
   {
     "id": "arnaud-schenk",
@@ -257,7 +257,7 @@
       "Privacy"
     ],
     "speaker2026": true,
-    "speakerOrder": 20
+    "speakerOrder": 30
   },
   {
     "id": "bruce-eth",
@@ -306,7 +306,7 @@
       "Privacy"
     ],
     "speaker2026": true,
-    "speakerOrder": 42
+    "speakerOrder": 43
   },
   {
     "id": "cheeky-gorilla",
@@ -371,7 +371,7 @@
       "Digital Activism"
     ],
     "speaker2026": true,
-    "speakerOrder": 43
+    "speakerOrder": 44
   },
   {
     "id": "danny-o-brien",
@@ -483,7 +483,7 @@
       "Privacy"
     ],
     "speaker2026": true,
-    "speakerOrder": 38
+    "speakerOrder": 7
   },
   {
     "id": "fatemeh-fannizadeh",
@@ -781,7 +781,7 @@
       "Quantum resistance"
     ],
     "speaker2026": true,
-    "speakerOrder": 7
+    "speakerOrder": 8
   },
   {
     "id": "kate-stapleton",
@@ -832,7 +832,7 @@
       "Engineering"
     ],
     "speaker2026": true,
-    "speakerOrder": 41
+    "speakerOrder": 42
   },
   {
     "id": "kris-is",
@@ -1012,7 +1012,7 @@
       "Privacy"
     ],
     "speaker2026": true,
-    "speakerOrder": 37
+    "speakerOrder": 38
   },
   {
     "id": "marina-markezic",
@@ -1062,7 +1062,7 @@
       "Public Goods"
     ],
     "speaker2026": true,
-    "speakerOrder": 31
+    "speakerOrder": 37
   },
   {
     "id": "max-hampshire",
@@ -1194,6 +1194,23 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },
+  {
+    "id": "osama-manzar",
+    "name": "OSAMA MANZAR",
+    "photo": "img/osama-manzar.jpg",
+    "xUrl": "https://www.linkedin.com/in/osamamanzar/",
+    "tagline": "Empowered 35 Million People Through Digital Interventions",
+    "role": "Founder & Director",
+    "orgName": "Digital Empowerment Foundation",
+    "orgUrl": "https://www.defindia.org",
+    "industries": [
+      "Sivic society",
+      "Digital Rights",
+      "Activism"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 5
   },
   {
     "id": "oskarth",
@@ -1468,7 +1485,7 @@
       "Digital Activism"
     ],
     "speaker2026": true,
-    "speakerOrder": 44
+    "speakerOrder": 45
   },
   {
     "id": "stefano-gogioso",
@@ -1516,7 +1533,7 @@
       "Privacy"
     ],
     "speaker2026": true,
-    "speakerOrder": 30
+    "speakerOrder": 31
   },
   {
     "id": "tanisha-katara",
@@ -1581,7 +1598,7 @@
       "Cryptography"
     ],
     "speaker2026": true,
-    "speakerOrder": 5
+    "speakerOrder": 20
   },
   {
     "id": "viktor-tron",
