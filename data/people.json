@@ -1551,6 +1551,22 @@
     "speaker2026": false,
     "speakerOrder": null
   },
+   {
+    "id": "thomas-thiery",
+    "name": "THOMAS THIERY",
+    "photo": "img/thomas-thierry.jpeg",
+    "xUrl": "https://x.com/soispoke",
+    "tagline": "Researcher at Robust Incentives Group",
+    "role": "Researcher",
+    "orgName": "Ethereum Foundation",
+    "orgUrl": "https://ethereum.foundation",
+    "industries": [
+      "Privacy",
+      "Governance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 41
+  },
   {
     "id": "tobias-vogel",
     "name": "TOBIAS VOGEL",
