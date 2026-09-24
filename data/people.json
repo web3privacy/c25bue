@@ -1113,6 +1113,23 @@
     "speaker2026": false,
     "speakerOrder": null
   },
+    {
+    "id": "meinhard-benn",
+    "name": "MEINHARD BENN",
+    "photo": "img/meinhard-benn.jpg",
+    "xUrl": "https://x.com/meinharrd",
+    "tagline": "Hacktivist building p2p browser",
+    "role": "Co-founder",
+    "orgName": "Freedom Browser",
+    "orgUrl": "https://freedom.baby",
+    "industries": [
+      "Privacy",
+      "Browsers",
+      "p2p"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 45
+  },
   {
     "id": "miroyato",
     "name": "MIROYATO",
@@ -1405,6 +1422,22 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },
+    {
+    "id": "rahul-rumalla",
+    "name": "RAHUL RUMALLA",
+    "photo": "img/rahul-rumalla.jpg",
+    "xUrl": "https://www.x.com/rsquare",
+    "tagline": "Building institutional-grade self-custody",
+    "role": "CEO",
+    "orgName": "Safe Foundation",
+    "orgUrl": "https://safefoundation.org",
+    "industries": [
+      "Privacy",
+      "Finance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 44
   },
   {
     "id": "riddhima-sharma",
