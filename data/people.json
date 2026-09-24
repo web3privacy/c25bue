@@ -71,14 +71,14 @@
     "xUrl": "https://x.com/alpeh_v",
     "tagline": "Independent engineer advancing privacy-first infrastructure",
     "role": "Lead",
-    "orgName": "alpeh_v",
+    "orgName": "independent",
     "orgUrl": "https://x.com/alpeh_v",
     "industries": [
       "Privacy",
       "Engineering"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 42
   },
   {
     "id": "ameen-suleimani",
@@ -210,6 +210,22 @@
     ],
     "speaker2026": true,
     "speakerOrder": 14
+  },
+  {
+    "id": "alexander-urbelis",
+    "name": "ALEXANDER URBELIS",
+    "photo": "img/alexander-urbelis.jpeg",
+    "xUrl": "https://x.com/aurbelis",
+    "tagline": "Professor of Cybersec Law",
+    "role": "Executive Director & Chief Legal Officer",
+    "orgName": "ENS",
+    "orgUrl": "https://ens.domains",
+    "industries": [
+      "Privacy",
+      "Law"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 43
   },
   {
     "id": "aya-miyaguchi",
@@ -583,6 +599,22 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },
+    {
+    "id": "harsh-bajpai",
+    "name": "HARSH BAJPAI",
+    "photo": "img/harshbajpai.jpg",
+    "xUrl": "https://x.com/bajpaiharsh244",
+    "tagline": "Developer working on encrypted money",
+    "role": "Independent",
+    "orgName": "Zcash",
+    "orgUrl": "https://x.com/zcash",
+    "industries": [
+      "Privacy",
+      "Finance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 44
   },
   {
     "id": "hioki-leona",
