@@ -129,6 +129,23 @@
     "speaker2026": false,
     "speakerOrder": null
   },
+    {
+    "id": "anita-gurumurthy",
+    "name": "ANITA GURUMURTHY",
+    "photo": "img/anita-gurumurthy.jpg",
+    "xUrl": "https://www.linkedin.com/in/anita-gurumurthy-8633681b/",
+    "tagline": "One of the top 50 leaders shaping India's AI future",
+    "role": "Executive Director",
+    "orgName": "IT For Change",
+    "orgUrl": "https://www.itforchange.net/team/",
+    "industries": [
+      "AI",
+      "digital rights",
+      "Regulation"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 6
+  },
   {
     "id": "andrew-miller",
     "name": "ANDREW MILLER",
@@ -222,7 +239,7 @@
     "orgUrl": "https://ens.domains",
     "industries": [
       "Privacy",
-      "Law"
+      "Regulation"
     ],
     "speaker2026": true,
     "speakerOrder": 43
@@ -615,6 +632,22 @@
     ],
     "speaker2026": true,
     "speakerOrder": 44
+  },
+      {
+    "id": "hudson-jameson",
+    "name": "HUDSON JAMESON",
+    "photo": "img/hudson-jameson.jpeg",
+    "xUrl": "https://x.com/hudsonjameson",
+    "tagline": "Developer working on encrypted money",
+    "role": "Head Of Ecosystem",
+    "orgName": "CertiK",
+    "orgUrl": "https://www.certik.com/",
+    "industries": [
+      "Privacy",
+      "Cybersecurity"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 45
   },
   {
     "id": "hioki-leona",
