@@ -355,8 +355,8 @@
       "Cryptography",
       "Protocols"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 47
   },
   {
     "id": "chris-mccabe",
@@ -853,17 +853,17 @@
     "name": "KATE STAPLETON",
     "photo": "img/kate-stapleton.png",
     "xUrl": "https://x.com/kate_stapes",
-    "tagline": "Driving confidential computation toward mainstream adoption",
+    "tagline": "Hacktivist who Wrote all code for Mr.Robot",
     "role": "Lead",
-    "orgName": "Fhenix",
-    "orgUrl": "https://www.fhenix.io",
+    "orgName": "Independent",
+    "orgUrl": "-",
     "industries": [
       "Privacy",
       "Cryptography",
       "Digital Rights"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 48
   },
   {
     "id": "kevin-jones",
@@ -1421,8 +1421,8 @@
       "Wallets",
       "Engineering"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 46
   },
   {
     "id": "prasanth-sugathan",
@@ -1580,6 +1580,23 @@
     "industries": [
       "Privacy",
       "Identity",
+      "Digital Activism"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 45
+  },
+    {
+    "id": "shayan-eskandari",
+    "name": "SHAYAN ESKANDARI",
+    "photo": "img/shayan-eskandari.jpg",
+    "xUrl": "https://x.com/sbetamc",
+    "tagline": "Cybersec activist building internet-circumvention stack",
+    "role": "Founder",
+    "orgName": "Mother Of All VPNs",
+    "orgUrl": "https://moav.sh",
+    "industries": [
+      "Privacy",
+      "Internet Censorship",
       "Digital Activism"
     ],
     "speaker2026": true,
