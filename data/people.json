@@ -1509,12 +1509,13 @@
     "name": "SAM DE SILVA",
     "photo": "img/sam-de-silva.jpeg",
     "xUrl": "https://www.linkedin.com/in/samdesilva/",
-    "tagline": "Independent digital rights consultant (Session, CommonEdge Asia, ex-Luminate)",
+    "tagline": "Independent digital rights consultant (CommonEdge Asia, ex-Luminate)",
     "role": "Lead",
     "orgName": "Independent",
     "orgUrl": "https://www.linkedin.com/in/samdesilva/",
     "industries": [
-      "Privacy"
+      "Privacy",
+      "Digital Rights"
     ],
     "speaker2026": true,
     "speakerOrder": 32
