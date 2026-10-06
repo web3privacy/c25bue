@@ -1780,6 +1780,23 @@
     "speaker2026": true,
     "speakerOrder": 2
   },
+    {
+    "id": "Uma-Subramanian",
+    "name": "Uma Subramanian",
+    "photo": "img/Uma-Subramanian.jpg",
+    "xUrl": "https://www.linkedin.com/in/uma-subramanian-6680b65/",
+    "tagline": "a social worker with over 15 years of experience of working with children & women at risk",
+    "role": "Co-Founder & Director",
+    "orgName": "RATI Foundation",
+    "orgUrl": "https://ratifoundation.org",
+    "industries": [
+      "Privacy",
+      "Protocols",
+      "Cryptography"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 14
+  },
   {
     "id": "w3dada",
     "name": "W3DADA",
