@@ -406,6 +406,23 @@
     "speaker2026": true,
     "speakerOrder": 44
   },
+    {
+    "id": "Daniel-Norman",
+    "name": "DANIEL NORMAN",
+    "photo": "img/Daniel-Norman.jpg",
+    "xUrl": "",
+    "tagline": "Building local-first, peer-to-peer and secure code collaboration",
+    "role": "Developer",
+    "orgName": "Radicle",
+    "orgUrl": "https://radicle.dev",
+    "industries": [
+      "Privacy",
+      "Digital Activism",
+      "Hacktivism"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 44
+  },
   {
     "id": "danny-o-brien",
     "name": "DANNY O'BRIEN",
