@@ -470,7 +470,7 @@
     "speaker2026": true,
     "speakerOrder": 36
   },
-    {
+  {
     "id": "deeksha-vanguru",
     "name": "Deeksha Vanguru",
     "photo": "img/Deeksha Vanguru.jpg",
@@ -1652,7 +1652,7 @@
     "speaker2026": false,
     "speakerOrder": null
   },
-    {
+  {
     "id": "sripath-roy-koganti",
     "name": "Dr. Sripath Roy Koganti",
     "photo": "img/Sripath Roy Koganti.jpeg",
@@ -1668,7 +1668,7 @@
     "speaker2026": true,
     "speakerOrder": 20
   },
-      {
+  {
     "id": "shripad-dharmadhikary",
     "name": "Shripad Dharmadhikary",
     "photo": "img/Shripad Dharmadhikary.jpeg",
