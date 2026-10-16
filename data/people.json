@@ -470,6 +470,21 @@
     "speaker2026": true,
     "speakerOrder": 36
   },
+    {
+    "id": "deeksha-vanguru",
+    "name": "Deeksha Vanguru",
+    "photo": "img/Deeksha Vanguru.jpg",
+    "xUrl": "https://www.linkedin.com/in/deeksha-vanguru-37866417a/",
+    "tagline": "Deep Public Goods Funding expert",
+    "role": "Research team coordinator",
+    "orgName": "Fridays for future",
+    "orgUrl": "https://fridaysforfuture.org",
+    "industries": [
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 30
+  },
   {
     "id": "dr-jennifer-helsby",
     "name": "Dr. JENNIFER HELSBY",
@@ -1636,6 +1651,38 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },
+    {
+    "id": "sripath-roy-koganti",
+    "name": "Dr. Sripath Roy Koganti",
+    "photo": "img/Sripath Roy Koganti.jpeg",
+    "xUrl": "https://www.linkedin.com/in/sripathroy/",
+    "tagline": "organisor of a huge movement in Andhra Pradesh against data centers",
+    "role": "NSS Advisor",
+    "orgName": "KL University",
+    "orgUrl": "https://www.kluniversity.in",
+    "industries": [
+      "AI",
+      "digital rights",
+    ],
+    "speaker2026": true,
+    "speakerOrder": 20
+  },
+      {
+    "id": "shripad-dharmadhikary",
+    "name": "Shripad Dharmadhikary",
+    "photo": "img/Shripad Dharmadhikary.jpeg",
+    "xUrl": "https://www.linkedin.com/in/shripad-dharmadhikary-37241010/",
+    "tagline": "Policy researcher on energy, water consumption",
+    "role": "Founder Coordinator",
+    "orgName": "Manthan Research Kendra",
+    "orgUrl": "https://www.manthan-india.org",
+    "industries": [
+      "AI",
+      "digital rights",
+    ],
+    "speaker2026": true,
+    "speakerOrder": 22
   },
   {
     "id": "suji-jan",
