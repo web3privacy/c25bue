@@ -37,7 +37,7 @@
     "name": "ALAN SCOTT",
     "photo": "img/alan.png",
     "xUrl": "https://x.com/tsu_kareta",
-    "tagline": "Privacy engineer advancing confidential Ethereum transactions",
+    "tagline": "Leader advancing Zero-knowledge cryptography",
     "role": "Lead",
     "orgName": "Railgun",
     "orgUrl": "https://railgun.org/",
@@ -45,8 +45,8 @@
       "Privacy",
       "Cryptography"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 30
   },
   {
     "id": "alisher",
@@ -469,6 +469,21 @@
     ],
     "speaker2026": true,
     "speakerOrder": 36
+  },
+  {
+    "id": "devisha",
+    "name": "Devisha",
+    "photo": "img/devisha.jpg",
+    "xUrl": "https://x.com/_devisha",
+    "tagline": "Advocate for FOSS & digital privacy",
+    "role": "Community",
+    "orgName": "Logos",
+    "orgUrl": "https://logos.co",
+    "industries": [
+      "Community"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
   },
   {
     "id": "deeksha-vanguru",
@@ -1487,6 +1502,22 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },
+  {
+    "id": "rads",
+    "name": "Rads",
+    "photo": "img/rads.jpg",
+    "xUrl": "https://x.com/lifewradss",
+    "tagline": "Promotes FHE privacy",
+    "role": "Marketing",
+    "orgName": "Fhenix",
+    "orgUrl": "https://www.fhenix.io",
+    "industries": [
+      "Community",
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
   },
     {
     "id": "rahul-rumalla",
