@@ -620,7 +620,7 @@
     "name": "GAVIN BIRCH",
     "photo": "img/gavinbirch.png",
     "xUrl": "https://x.com/Ether_Gavin",
-    "tagline": "Ethereum educator focused on resilient validator infrastructure",
+    "tagline": "Shaping compliant privacy through decentralised protocol",
     "role": "Lead",
     "orgName": "Armada",
     "orgUrl": "https://armada.wtf/",
@@ -628,8 +628,24 @@
       "Privacy",
       "Applications"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 40
+  },
+  {
+    "id": "guru",
+    "name": "GURU",
+    "photo": "img/guru.png",
+    "xUrl": "https://x.com/hackyguru",
+    "tagline": "Experienced DevRel helping builders shape privacy tech",
+    "role": "DevRel",
+    "orgName": "Logos",
+    "orgUrl": "https://logos.co",
+    "industries": [
+      "Privacy",
+      "Community"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
   },
   {
     "id": "harry-halpin",
