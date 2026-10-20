@@ -1715,6 +1715,23 @@
     "speaker2026": true,
     "speakerOrder": 45
   },
+      {
+    "id": "srinivas-kodali",
+    "name": "SRINIVAS KODALI",
+    "photo": "img/srinivas-kodali.jpeg",
+    "xUrl": "https://x.com/digitaldutta",
+    "tagline": "hacktivist, independent researcher and digital rights advocate working at the intersection of technology, democracy and society",
+    "role": "Independent",
+    "orgName": "-",
+    "orgUrl": "https://www.linkedin.com/in/iotakodali/",
+    "industries": [
+      "FOSS",
+      "Internet Censorship",
+      "Digital Activism"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
+  },
   {
     "id": "stefano-gogioso",
     "name": "STEFANO GOGIOSO",
