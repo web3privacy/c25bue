@@ -929,6 +929,23 @@
     "speakerOrder": 48
   },
   {
+    "id": "karan-saini",
+    "name": "KARAN SAINI",
+    "photo": "img/karansaini.jpg",
+    "xUrl": "https://x.com/squeal",
+    "tagline": "Experienced security researcher who worked with OTF, IGP",
+    "role": "Lead",
+    "orgName": "Independent",
+    "orgUrl": "https://karansaini.com",
+    "industries": [
+      "Privacy",
+      "Security",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 30
+  },
+  {
     "id": "kevin-jones",
     "name": "KEVIN JONES",
     "photo": "img/Kevin Jones.jpg",
@@ -1339,6 +1356,22 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },
+    {
+    "id": "nisarga-adhikary",
+    "name": "NISARGA ADHIKARY",
+    "photo": "img/Nisarga Adhikary.png",
+    "xUrl": "https://www.linkedin.com/in/ni5arga/",
+    "tagline": "Cybersecurity, AI, osint & threat intelligence",
+    "role": "Cybersec Lead",
+    "orgName": "IIT Kanpur",
+    "orgUrl": "https://www.iitk.ac.in",
+    "industries": [
+      "AI",
+      "Security"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 20
   },
   {
     "id": "osama-manzar",
