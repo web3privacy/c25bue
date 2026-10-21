@@ -775,8 +775,8 @@
       "Privacy",
       "Engineering"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 40
   },
   {
     "id": "joan-arus",
@@ -2034,6 +2034,23 @@
       "Privacy",
       "Cryptography",
       "Identity"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 12
+  }
+  {
+    "id": "zac-williamson",
+    "name": "ZAC WILLIAMSON",
+    "photo": "img/zac-williamson.jpg",
+    "xUrl": "https://x.com/Zac_Aztec",
+    "tagline": "Delivered decentralised & fully privacy protocol",
+    "role": "CEO",
+    "orgName": "Aztec",
+    "orgUrl": "https://aztec.network",
+    "industries": [
+      "Privacy",
+      "Cryptography",
+      "Protocol"
     ],
     "speaker2026": true,
     "speakerOrder": 12
