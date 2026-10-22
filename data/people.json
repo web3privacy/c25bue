@@ -257,8 +257,8 @@
       "Privacy",
       "Digital Rights"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 8
   },
   {
     "id": "beth-mccarthy",
