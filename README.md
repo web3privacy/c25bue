@@ -6,7 +6,8 @@ Public repository of the code for the 2025 Web3Privacy Now Congress held in Mumb
 
 - [ ] /fonts/            =  folder that holds all the fonts used by the website
 - [ ] /img/              =  folder that holds all images used by the website
-- [ ] /data/             =  single source of truth for people and projects — see [PEOPLE DATABASE](#people-database)
+- [ ] /data/             =  single source of truth for people, projects, and the schedule — see [PEOPLE DATABASE](#people-database) and [SCHEDULE](#schedule)
+- [ ] /schedule/         =  the congress agenda page — see [SCHEDULE](#schedule)
 - [ ] /backup/           =  retired JSON files, kept only as a rollback fallback — see [PEOPLE DATABASE](#people-database)
 - [ ] /scripts/          =  one-off Node scripts (e.g. the people-data migration script)
 - [ ] index.html         =  what-you-code-is-what-you-get HTML
@@ -96,6 +97,48 @@ All speakers, community members, and project/partner members are now driven from
 - Homepage "2026 Speakers" section and the "Join the Community" carousel: `fetch('./data/people.json')`, rendered by `initSpeakers2026()` / `initCommunityCarousel()` in `index.html`.
 - `/community/index.html`: `fetch('../data/people.json')`.
 - `/projects/index.html`: `fetch('../data/projects.json')` + `fetch('../data/people.json')`, then resolves each project's `memberIds` against the loaded people list.
+
+## SCHEDULE
+
+The `/schedule/` page shows the congress agenda as a filterable list, built the same way as `/projects/` and `/community/` (fetch JSON, render cards, no build step).
+
+### Files
+
+- **`data/schedule.json`** — array of sessions, one object per talk/panel/fireside chat.
+- **`schedule/index.html`** — the page itself: fetches `../data/schedule.json` and `../data/people.json`, resolves each session's speakers, and renders the list with two independent filters (Stage, Format).
+
+### `data/schedule.json` fields
+
+```json
+{
+  "id": "zk-identity-panel",
+  "title": "Zero-Knowledge Identity: Who Actually Ships This?",
+  "description": "Short 3-4 sentence summary, shown on the card.",
+  "descriptionFull": "Full description shown in the modal (can be longer).",
+  "stage": "Pearl",
+  "format": "Panel",
+  "startTime": "11:00",
+  "endTime": "11:45",
+  "date": "2026-11-02",
+  "speakers": [
+    { "id": "alexander-urbelis", "sessionRole": "Moderator" },
+    { "id": "anita-gurumurthy", "sessionRole": "Panelist" }
+  ]
+}
+```
+
+| Field | Meaning |
+|---|---|
+| `stage` | Free text, not a fixed list — the Stage filter is generated from whatever values appear in the data, so new stages just work. |
+| `format` | `"Talk"`, `"Panel"`, or `"Fireside Chat"` get their own color; any other value falls back to a neutral style. |
+| `startTime` / `endTime` | `"HH:MM"` 24h strings. Sessions are sorted by `startTime`. |
+| `speakers` | Array of `{ id, sessionRole? }`. `id` must exist in `data/people.json` (same pattern as `data/projects.json`'s `memberIds`). `sessionRole` (e.g. `"Moderator"`, `"Panelist"`) is this person's role **in this session only** — it's shown as a tag on their photo in the session's modal, separate from their general `role`/org in `people.json`. Omit `sessionRole` for formats like Talk where it doesn't apply. |
+
+### Common tasks
+
+**Add a session:** add an object to `data/schedule.json`. Reference speakers already in `data/people.json` by `id` — add the person there first if they don't exist yet.
+
+**Add a new stage or format:** just use the new value in a session's `stage`/`format` — no other file needs to change. New formats render with a neutral color until given their own entry in `formatClassMap` in `schedule/index.html`.
 
 ## COMMENTS
 
