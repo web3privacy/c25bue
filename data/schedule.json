@@ -1,0 +1,74 @@
+[
+  {
+    "id": "opening-keynote-privacy-stack",
+    "title": "Opening Keynote: The State of the Privacy Stack",
+    "description": "A framing talk on where privacy-preserving infrastructure stands heading into 2027. Covers the gap between cryptographic capability and real-world adoption across wallets, identity, and mixnets. Sets the thematic throughline for the rest of the day's sessions. Closes with three open problems the speaker wants the room to argue about.",
+    "descriptionFull": "A framing talk on where privacy-preserving infrastructure stands heading into 2027. Covers the gap between cryptographic capability and real-world adoption across wallets, identity, and mixnets. Sets the thematic throughline for the rest of the day's sessions. Closes with three open problems the speaker wants the room to argue about.",
+    "stage": "Pearl",
+    "format": "Talk",
+    "startTime": "10:00",
+    "endTime": "10:45",
+    "date": "2026-11-02",
+    "speakers": [
+      { "id": "aya-miyaguchi" }
+    ]
+  },
+  {
+    "id": "zk-identity-panel",
+    "title": "Zero-Knowledge Identity: Who Actually Ships This?",
+    "description": "A panel comparing competing approaches to ZK-based identity and credentialing in production today. Panelists debate whether selective disclosure standards are converging or fragmenting further. Expect disagreement on whether regulators are a forcing function or a drag on shipping. Audience Q&A reserved for the last ten minutes.",
+    "descriptionFull": "A panel comparing competing approaches to ZK-based identity and credentialing in production today. Panelists debate whether selective disclosure standards are converging or fragmenting further. Expect disagreement on whether regulators are a forcing function or a drag on shipping. Audience Q&A reserved for the last ten minutes.",
+    "stage": "Pearl",
+    "format": "Panel",
+    "startTime": "11:00",
+    "endTime": "11:45",
+    "date": "2026-11-02",
+    "speakers": [
+      { "id": "alexander-urbelis", "sessionRole": "Moderator" },
+      { "id": "anita-gurumurthy", "sessionRole": "Panelist" }
+    ]
+  },
+  {
+    "id": "shielded-defi-fireside",
+    "title": "Fireside Chat: Shielded DeFi After the Compliance Wars",
+    "description": "An informal fireside on building private DeFi rails that survive regulatory scrutiny without becoming surveillance tools. Covers lessons from shipping shielded pools on EVM chains at scale. Touches on what compliant privacy actually means in practice versus in a whitepaper. Casual format, audience encouraged to shout questions.",
+    "descriptionFull": "An informal fireside on building private DeFi rails that survive regulatory scrutiny without becoming surveillance tools. Covers lessons from shipping shielded pools on EVM chains at scale. Touches on what compliant privacy actually means in practice versus in a whitepaper. Casual format, audience encouraged to shout questions.",
+    "stage": "Studio",
+    "format": "Fireside Chat",
+    "startTime": "11:30",
+    "endTime": "12:00",
+    "date": "2026-11-02",
+    "speakers": [
+      { "id": "alan-scott" }
+    ]
+  },
+  {
+    "id": "mixnets-metadata-talk",
+    "title": "Metadata Is the Last Mile: Mixnets in Practice",
+    "description": "A technical talk on why hiding transaction content isn't enough if network metadata still leaks who talks to whom. Walks through mixnet design trade-offs between latency, cover traffic cost, and anonymity set size. Includes a short live demo of traffic analysis against an unprotected RPC endpoint. Ends with a call to treat metadata privacy as a first-class protocol requirement.",
+    "descriptionFull": "A technical talk on why hiding transaction content isn't enough if network metadata still leaks who talks to whom. Walks through mixnet design trade-offs between latency, cover traffic cost, and anonymity set size. Includes a short live demo of traffic analysis against an unprotected RPC endpoint. Ends with a call to treat metadata privacy as a first-class protocol requirement.",
+    "stage": "Studio",
+    "format": "Talk",
+    "startTime": "14:00",
+    "endTime": "14:45",
+    "date": "2026-11-02",
+    "speakers": [
+      { "id": "andy-guzman" }
+    ]
+  },
+  {
+    "id": "cypherpunk-roots-closing-panel",
+    "title": "Closing Panel: What the Cypherpunks Got Right (and Wrong)",
+    "description": "A closing-session panel reflecting on cypherpunk ideology versus how privacy tech actually got built and funded. Panelists revisit early predictions about cryptography and state power against what happened instead. Expect pointed disagreement about whether today's industry has drifted from first principles. Wraps the day with takeaways for builders in the room.",
+    "descriptionFull": "A closing-session panel reflecting on cypherpunk ideology versus how privacy tech actually got built and funded. Panelists revisit early predictions about cryptography and state power against what happened instead. Expect pointed disagreement about whether today's industry has drifted from first principles. Wraps the day with takeaways for builders in the room.",
+    "stage": "Pearl",
+    "format": "Panel",
+    "startTime": "17:00",
+    "endTime": "17:45",
+    "date": "2026-11-02",
+    "speakers": [
+      { "id": "amir-taaki", "sessionRole": "Moderator" },
+      { "id": "ahmed-ghappour", "sessionRole": "Panelist" }
+    ]
+  }
+]
