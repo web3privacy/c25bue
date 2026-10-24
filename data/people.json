@@ -1669,7 +1669,7 @@
     "name": "SETH FOR PRIVACY",
     "photo": "img/sethforprivacy.jpg",
     "xUrl": "https://x.com/sethforprivacy",
-    "tagline": "Self-custody educator championing everyday financial privacy",
+    "tagline": "Self-sovereign educator championing everyday financial privacy",
     "role": "Lead",
     "orgName": "Cake Wallet",
     "orgUrl": "cakewallet.com",
@@ -1678,8 +1678,8 @@
       "Cryptography",
       "Wallets"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 20
   },
   {
     "id": "shady-el-damaty",
