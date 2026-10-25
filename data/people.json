@@ -500,6 +500,21 @@
     "speaker2026": true,
     "speakerOrder": 30
   },
+    {
+    "id": "dhamm-muktiwadi",
+    "name": "Dhamm Muktiwadi",
+    "photo": "img/Dhamm Muktiwadi.jpg",
+    "xUrl": "https://www.instagram.com/dhamm.artist/",
+    "tagline": "his group perform songs and plays on the caste system, godmen, gau rakshaks, internet trolls, and mythology.",
+    "role": "Music leader",
+    "orgName": " Yalgaar Sanskrutik Manch",
+    "orgUrl": "https://fridaysforfuture.org",
+    "industries": [
+      "Human Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 10
+  },
   {
     "id": "dr-jennifer-helsby",
     "name": "Dr. JENNIFER HELSBY",
