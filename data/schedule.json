@@ -13,19 +13,23 @@
   },
   {
     "id": "main-stage-3-cultural-start-music-band",
-    "title": "Cultural Start: music band",
+    "title": "Cultural opening with Yalgaar Sanskrutik Manch",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
-    "format": "Session",
+    "format": "Performance",
     "startTime": "10:00",
     "endTime": "10:30",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "yalgaar-sanskrutik-manch"
+      }
+    ]
   },
   {
     "id": "main-stage-4-formal-start-w3pn",
-    "title": "Formal start: W3PN",
+    "title": "Web3Privacy Now opening speech",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -101,7 +105,7 @@
   },
   {
     "id": "foss-3-degoogle-journey",
-    "title": "deGoogle journey",
+    "title": "deGoogle journey with Bob Summerwill",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -109,7 +113,11 @@
     "startTime": "11:30",
     "endTime": "12:00",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "bob-summerwill"
+      }
+    ]
   },
   {
     "id": "main-stage-7-isha-suri-x-ai",
@@ -121,11 +129,15 @@
     "startTime": "11:35",
     "endTime": "12:00",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "isha-suri"
+      }
+    ]
   },
   {
     "id": "foss-4-fossify",
-    "title": "Fossify",
+    "title": "Fossify with Mario Havel (Ethereum Foundation, Bordel)",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -157,7 +169,7 @@
   },
   {
     "id": "foss-5-walkaway-test",
-    "title": "Walkaway test",
+    "title": "Walkaway test with Fileverse",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -165,11 +177,15 @@
     "startTime": "12:30",
     "endTime": "13:00",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "vijay-krishnavanshi"
+      }
+    ]
   },
   {
     "id": "stage-2-9-ai-harm-baarish-x-tattle-mod-uma-x-rati-foundation-2-other-participants",
-    "title": "AI Harm: Baarish x Tattle (mod), Uma x RATI Foundation, +2 other participants",
+    "title": "AI Harm: Baarish Aggarwal (Tattle) and Uma Subramanian (RATI Foundation)",
     "description": "",
     "descriptionFull": "",
     "stage": "K.S. Puttaswamy",
@@ -179,7 +195,12 @@
     "date": "2026-11-02",
     "speakers": [
       {
-        "id": "Uma-Subramanian"
+        "id": "baarish-aggarwal",
+        "sessionRole": "Moderator"
+      },
+      {
+        "id": "Uma-Subramanian",
+        "sessionRole": "Panelist"
       }
     ]
   },
@@ -206,18 +227,6 @@
     ]
   },
   {
-    "id": "foss-14-something",
-    "title": "LibP2P workshop",
-    "description": "",
-    "descriptionFull": "",
-    "stage": "FOSS Zone",
-    "format": "Workshop",
-    "startTime": "13:00",
-    "endTime": "13:30",
-    "date": "2026-11-02",
-    "speakers": []
-  },
-  {
     "id": "foss-6-cypherpunk-atlas",
     "title": "Cypherpunk Atlas",
     "description": "",
@@ -227,23 +236,15 @@
     "startTime": "13:00",
     "endTime": "13:30",
     "date": "2026-11-02",
-    "speakers": []
-  },
-  {
-    "id": "foss-7-something",
-    "title": "Workshop by Iva",
-    "description": "",
-    "descriptionFull": "",
-    "stage": "FOSS Zone",
-    "format": "Workshop",
-    "startTime": "13:00",
-    "endTime": "13:30",
-    "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "tur-tyhyi"
+      }
+    ]
   },
   {
     "id": "main-stage-10-kyle-x-brave",
-    "title": "Kyle x Brave",
+    "title": "Kyle den Hartog x Brave",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -280,24 +281,24 @@
     ]
   },
   {
-    "id": "foss-8-dbrowser",
-    "title": "dbrowser",
+    "id": "foss-7-something",
+    "title": "The State Of Decentralised Privacy",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
-    "format": "Talk",
+    "format": "Workshop",
     "startTime": "13:30",
     "endTime": "14:00",
     "date": "2026-11-02",
     "speakers": [
       {
-        "id": "meinhard-benn"
+        "id": "iva"
       }
     ]
   },
   {
     "id": "main-stage-11-aya-s-panel-on-funding-with-access-now-luminate",
-    "title": "Aya's panel on Funding with Access Now & Luminate",
+    "title": "Funding with Access Now & Luminate: Aya Miyaguchi, Faiz Naeem, Sam de Silva",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -308,12 +309,34 @@
     "speakers": [
       {
         "id": "aya-miyaguchi"
+      },
+      {
+        "id": "faiz-naeem"
+      },
+      {
+        "id": "sam-de-silva"
+      }
+    ]
+  },
+  {
+    "id": "foss-8-dbrowser",
+    "title": "dBrowser with Meinhard Benn",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Talk",
+    "startTime": "14:00",
+    "endTime": "14:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "meinhard-benn"
       }
     ]
   },
   {
     "id": "foss-9-stealth-addresses",
-    "title": "Stealth addresses",
+    "title": "Stealth Addresses - Tony Seveso",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -329,7 +352,7 @@
   },
   {
     "id": "main-stage-12-ai-governance-it-for-change-abhineet-nayyar-x-it-for-change-vinaj-x-aapti-uma-x-rati-foundation-kurt-opsahl-x-ex-eff",
-    "title": "AI governance (IT For Change): Abhineet Nayyar x IT For Change, Vinaj x AAPTI, Uma x RATI Foundation, Kurt Opsahl x ex-EFF",
+    "title": "AI governance: Abhineet Nayyar (IT for Change), Vinay Narayan (AAPTI), Uma Subramanian (RATI Foundation), Kurt Opsahl (Filecoin)",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -338,6 +361,9 @@
     "endTime": "14:30",
     "date": "2026-11-02",
     "speakers": [
+      {
+        "id": "abhineet-nayyar"
+      },
       {
         "id": "vinay-narayan"
       },
@@ -367,7 +393,7 @@
   },
   {
     "id": "stage-2-14-mike-x-coincenter",
-    "title": "Mike x CoinCenter",
+    "title": "Michael Lewellen x Coin Center",
     "description": "",
     "descriptionFull": "",
     "stage": "K.S. Puttaswamy",
@@ -375,11 +401,15 @@
     "startTime": "14:35",
     "endTime": "15:00",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "michael-lewellen"
+      }
+    ]
   },
   {
     "id": "foss-11-practical-privacy",
-    "title": "Practical privacy",
+    "title": "Practical Privacy with Gavin Birch",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -387,7 +417,11 @@
     "startTime": "15:00",
     "endTime": "15:30",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "gavin-birch"
+      }
+    ]
   },
   {
     "id": "main-stage-14-zac-aztec-jordi-baylina-x-zisk",
@@ -426,7 +460,7 @@
   },
   {
     "id": "foss-12-p2p-code-collaboration",
-    "title": "P2P Code Collaboration",
+    "title": "P2P Code Collaboration with Radicle",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -434,11 +468,15 @@
     "startTime": "15:30",
     "endTime": "16:00",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "Daniel-Norman"
+      }
+    ]
   },
   {
     "id": "foss-13-logos",
-    "title": "Logos",
+    "title": "Logos workshop - Guru",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -470,7 +508,7 @@
   },
   {
     "id": "stage-2-18-violet-x-independent-privacy-in-stablecoins",
-    "title": "Violet x independent \"Privacy in stablecoins\"",
+    "title": "Privacy in stablecoins",
     "description": "",
     "descriptionFull": "",
     "stage": "K.S. Puttaswamy",
@@ -478,7 +516,27 @@
     "startTime": "16:25",
     "endTime": "17:00",
     "date": "2026-11-02",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "alpeh-v"
+      }
+    ]
+  },
+  {
+    "id": "foss-14-something",
+    "title": "Libp2p workshop with Manu Sheel Gupta",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "16:30",
+    "endTime": "17:00",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "many-sheel-gupta"
+      }
+    ]
   },
   {
     "id": "main-stage-19-final-panel-kieran-x-railgun-pg-x-w3pn-mario-havel",
