@@ -129,7 +129,7 @@
     "speaker2026": false,
     "speakerOrder": null
   },
-    {
+  {
     "id": "anita-gurumurthy",
     "name": "ANITA GURUMURTHY",
     "photo": "img/anita-gurumurthy.jpg",
@@ -406,7 +406,7 @@
     "speaker2026": true,
     "speakerOrder": 44
   },
-    {
+  {
     "id": "Daniel-Norman",
     "name": "DANIEL NORMAN",
     "photo": "img/Daniel-Norman.jpg",
@@ -500,7 +500,7 @@
     "speaker2026": true,
     "speakerOrder": 30
   },
-    {
+  {
     "id": "dhamm-muktiwadi",
     "name": "Dhamm Muktiwadi",
     "photo": "img/Dhamm Muktiwadi.jpg",
@@ -695,7 +695,7 @@
     "speaker2026": false,
     "speakerOrder": null
   },
-    {
+  {
     "id": "harsh-bajpai",
     "name": "HARSH BAJPAI",
     "photo": "img/harshbajpai.jpg",
@@ -711,7 +711,7 @@
     "speaker2026": true,
     "speakerOrder": 44
   },
-      {
+  {
     "id": "hudson-jameson",
     "name": "HUDSON JAMESON",
     "photo": "img/hudson-jameson.jpeg",
@@ -1241,7 +1241,7 @@
     "speaker2026": false,
     "speakerOrder": null
   },
-    {
+  {
     "id": "meinhard-benn",
     "name": "MEINHARD BENN",
     "photo": "img/meinhard-benn.jpg",
@@ -1372,7 +1372,7 @@
     "speaker2026": false,
     "speakerOrder": null
   },
-    {
+  {
     "id": "nisarga-adhikary",
     "name": "NISARGA ADHIKARY",
     "photo": "img/Nisarga Adhikary.png",
@@ -1583,7 +1583,7 @@
     "speaker2026": true,
     "speakerOrder": 40
   },
-    {
+  {
     "id": "rahul-rumalla",
     "name": "RAHUL RUMALLA",
     "photo": "img/rahul-rumalla.jpg",
@@ -1713,7 +1713,7 @@
     "speaker2026": true,
     "speakerOrder": 45
   },
-    {
+  {
     "id": "shayan-eskandari",
     "name": "SHAYAN ESKANDARI",
     "photo": "img/shayan-eskandari.jpg",
@@ -1730,7 +1730,7 @@
     "speaker2026": true,
     "speakerOrder": 45
   },
-      {
+  {
     "id": "srinivas-kodali",
     "name": "SRINIVAS KODALI",
     "photo": "img/srinivas-kodali.jpeg",
@@ -1843,7 +1843,7 @@
     "speaker2026": false,
     "speakerOrder": null
   },
-   {
+  {
     "id": "thomas-thiery",
     "name": "THOMAS THIERY",
     "photo": "img/thomas-thierry.jpeg",
@@ -1956,7 +1956,7 @@
     "speaker2026": true,
     "speakerOrder": 2
   },
-    {
+  {
     "id": "Uma-Subramanian",
     "name": "Uma Subramanian",
     "photo": "img/Uma-Subramanian.jpg",
@@ -2069,5 +2069,116 @@
     ],
     "speaker2026": true,
     "speakerOrder": 12
+  },
+  {
+    "id": "michael-lewellen",
+    "name": "Michael Lewellen",
+    "photo": "img/lewellen.jpeg",
+    "xUrl": "https://x.com/LewellenMichael",
+    "tagline": "Smart contract security expert and Coin Center Research Fellow",
+    "role": "Research Fellow",
+    "orgName": "Coin Center",
+    "orgUrl": "https://coincenter.org",
+    "industries": [
+      "Privacy",
+      "Legal"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 49
+  },
+  {
+    "id": "baarish-aggarwal",
+    "name": "Baarish Aggarwal",
+    "photo": "img/baarish-aggarwal.jpg",
+    "xUrl": "https://www.linkedin.com/in/baarish/",
+    "tagline": "Researcher working on AI safety and online harms",
+    "role": "Research Development and Grants Specialist",
+    "orgName": "Tattle Civic Technologies",
+    "orgUrl": "https://tattle.co.in",
+    "industries": [
+      "AI",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 50
+  },
+  {
+    "id": "tur-tyhyi",
+    "name": "Tur Tyhyi",
+    "photo": "img/tur-tyhyi.png",
+    "xUrl": "https://turtyhyi.com/",
+    "tagline": "Investigative journalist and open-source developer",
+    "role": "Investigative journalist and open-source developer",
+    "orgName": "",
+    "orgUrl": "",
+    "industries": [
+      "Journalism",
+      "FOSS"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 51
+  },
+  {
+    "id": "iva",
+    "name": "Iva",
+    "photo": "img/iva.png",
+    "xUrl": "https://x.com/LisVikkk",
+    "tagline": "Experienced DeFi developer",
+    "role": "DeFi developer",
+    "orgName": "",
+    "orgUrl": "",
+    "industries": [
+      "DeFi",
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 52
+  },
+  {
+    "id": "isha-suri",
+    "name": "Isha Suri",
+    "photo": "img/isha-suri.jpg",
+    "xUrl": "https://www.linkedin.com/in/ishasuri97/",
+    "tagline": "Lawyer and interdisciplinary researcher focused on technology policy",
+    "role": "Lawyer and researcher",
+    "orgName": "",
+    "orgUrl": "",
+    "industries": [
+      "AI",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 53
+  },
+  {
+    "id": "abhineet-nayyar",
+    "name": "Abhineet Nayyar",
+    "photo": "img/abhineet-nayyar.jpg",
+    "xUrl": "https://www.linkedin.com/in/abhineet-nayyar-a06514143/",
+    "tagline": "Researcher focused on technology policy and the digital economy",
+    "role": "Senior Associate, Research and Policy Engagement",
+    "orgName": "IT for Change",
+    "orgUrl": "https://itforchange.net",
+    "industries": [
+      "AI",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 54
+  },
+  {
+    "id": "yalgaar-sanskrutik-manch",
+    "name": "Yalgaar Sanskrutik Manch",
+    "photo": "img/YALGAAR SANSKRUTIKMANCH.jpg",
+    "xUrl": "https://www.instagram.com/yalgaar14/",
+    "tagline": "Folk, fusion, Shahiri and Jalsa performance collective",
+    "role": "Music collective",
+    "orgName": "Yalgaar Sanskrutik Manch",
+    "orgUrl": "https://www.instagram.com/yalgaar14/",
+    "industries": [
+      "Arts",
+      "Human Rights"
+    ],
+    "speaker2026": false
   }
 ]
