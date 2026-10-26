@@ -1,74 +1,505 @@
 [
   {
-    "id": "opening-keynote-privacy-stack",
-    "title": "Opening Keynote: The State of the Privacy Stack",
-    "description": "A framing talk on where privacy-preserving infrastructure stands heading into 2027. Covers the gap between cryptographic capability and real-world adoption across wallets, identity, and mixnets. Sets the thematic throughline for the rest of the day's sessions. Closes with three open problems the speaker wants the room to argue about.",
-    "descriptionFull": "A framing talk on where privacy-preserving infrastructure stands heading into 2027. Covers the gap between cryptographic capability and real-world adoption across wallets, identity, and mixnets. Sets the thematic throughline for the rest of the day's sessions. Closes with three open problems the speaker wants the room to argue about.",
-    "stage": "Pearl",
-    "format": "Talk",
+    "id": "main-stage-2-opening",
+    "title": "Opening",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "09:30",
+    "endTime": "10:00",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "main-stage-3-cultural-start-music-band",
+    "title": "Cultural Start: music band",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
     "startTime": "10:00",
+    "endTime": "10:30",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "main-stage-4-formal-start-w3pn",
+    "title": "Formal start: W3PN",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "10:30",
     "endTime": "10:45",
     "date": "2026-11-02",
-    "speakers": [
-      { "id": "aya-miyaguchi" }
-    ]
+    "speakers": []
   },
   {
-    "id": "zk-identity-panel",
-    "title": "Zero-Knowledge Identity: Who Actually Ships This?",
-    "description": "A panel comparing competing approaches to ZK-based identity and credentialing in production today. Panelists debate whether selective disclosure standards are converging or fragmenting further. Expect disagreement on whether regulators are a forcing function or a drag on shipping. Audience Q&A reserved for the last ten minutes.",
-    "descriptionFull": "A panel comparing competing approaches to ZK-based identity and credentialing in production today. Panelists debate whether selective disclosure standards are converging or fragmenting further. Expect disagreement on whether regulators are a forcing function or a drag on shipping. Audience Q&A reserved for the last ten minutes.",
-    "stage": "Pearl",
-    "format": "Panel",
-    "startTime": "11:00",
-    "endTime": "11:45",
+    "id": "stage-2-3-sasha-shilina-x-paradigm",
+    "title": "Sasha Shilina x Paradigm",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "10:45",
+    "endTime": "11:05",
     "date": "2026-11-02",
     "speakers": [
-      { "id": "alexander-urbelis", "sessionRole": "Moderator" },
-      { "id": "anita-gurumurthy", "sessionRole": "Panelist" }
+      {
+        "id": "sasha-shilina"
+      }
     ]
   },
   {
-    "id": "shielded-defi-fireside",
-    "title": "Fireside Chat: Shielded DeFi After the Compliance Wars",
-    "description": "An informal fireside on building private DeFi rails that survive regulatory scrutiny without becoming surveillance tools. Covers lessons from shipping shielded pools on EVM chains at scale. Touches on what compliant privacy actually means in practice versus in a whitepaper. Casual format, audience encouraged to shout questions.",
-    "descriptionFull": "An informal fireside on building private DeFi rails that survive regulatory scrutiny without becoming surveillance tools. Covers lessons from shipping shielded pools on EVM chains at scale. Touches on what compliant privacy actually means in practice versus in a whitepaper. Casual format, audience encouraged to shout questions.",
-    "stage": "Studio",
-    "format": "Fireside Chat",
+    "id": "main-stage-5-digital-divide-osama-mansar",
+    "title": "Digital divide: Osama Mansar",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "10:45",
+    "endTime": "11:10",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "osama-manzar"
+      }
+    ]
+  },
+  {
+    "id": "foss-2-nodes",
+    "title": "Nodes",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Talk",
+    "startTime": "11:00",
+    "endTime": "11:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "pol-lanski"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-6-cypherpunk-match-kurt-opsahl",
+    "title": "Cypherpunk Match: Kurt Opsahl",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "11:10",
+    "endTime": "11:35",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "kurt-opsahl"
+      }
+    ]
+  },
+  {
+    "id": "foss-3-degoogle-journey",
+    "title": "deGoogle journey",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
     "startTime": "11:30",
     "endTime": "12:00",
     "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "main-stage-7-isha-suri-x-ai",
+    "title": "Isha Suri x AI",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "11:35",
+    "endTime": "12:00",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "foss-4-fossify",
+    "title": "Fossify",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "12:00",
+    "endTime": "12:30",
+    "date": "2026-11-02",
     "speakers": [
-      { "id": "alan-scott" }
+      {
+        "id": "mario-havel"
+      }
     ]
   },
   {
-    "id": "mixnets-metadata-talk",
-    "title": "Metadata Is the Last Mile: Mixnets in Practice",
-    "description": "A technical talk on why hiding transaction content isn't enough if network metadata still leaks who talks to whom. Walks through mixnet design trade-offs between latency, cover traffic cost, and anonymity set size. Includes a short live demo of traffic analysis against an unprotected RPC endpoint. Ends with a call to treat metadata privacy as a first-class protocol requirement.",
-    "descriptionFull": "A technical talk on why hiding transaction content isn't enough if network metadata still leaks who talks to whom. Walks through mixnet design trade-offs between latency, cover traffic cost, and anonymity set size. Includes a short live demo of traffic analysis against an unprotected RPC endpoint. Ends with a call to treat metadata privacy as a first-class protocol requirement.",
-    "stage": "Studio",
+    "id": "main-stage-8-isabela-fernandes-x-tor",
+    "title": "Isabela Fernandes x Tor",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "12:00",
+    "endTime": "12:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "isabela-fernandes"
+      }
+    ]
+  },
+  {
+    "id": "foss-5-walkaway-test",
+    "title": "Walkaway test",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
     "format": "Talk",
-    "startTime": "14:00",
-    "endTime": "14:45",
+    "startTime": "12:30",
+    "endTime": "13:00",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "stage-2-9-ai-harm-baarish-x-tattle-mod-uma-x-rati-foundation-2-other-participants",
+    "title": "AI Harm: Baarish x Tattle (mod), Uma x RATI Foundation, +2 other participants",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Panel",
+    "startTime": "12:45",
+    "endTime": "13:05",
     "date": "2026-11-02",
     "speakers": [
-      { "id": "andy-guzman" }
+      {
+        "id": "Uma-Subramanian"
+      }
     ]
   },
   {
-    "id": "cypherpunk-roots-closing-panel",
-    "title": "Closing Panel: What the Cypherpunks Got Right (and Wrong)",
-    "description": "A closing-session panel reflecting on cypherpunk ideology versus how privacy tech actually got built and funded. Panelists revisit early predictions about cryptography and state power against what happened instead. Expect pointed disagreement about whether today's industry has drifted from first principles. Wraps the day with takeaways for builders in the room.",
-    "descriptionFull": "A closing-session panel reflecting on cypherpunk ideology versus how privacy tech actually got built and funded. Panelists revisit early predictions about cryptography and state power against what happened instead. Expect pointed disagreement about whether today's industry has drifted from first principles. Wraps the day with takeaways for builders in the room.",
-    "stage": "Pearl",
+    "id": "main-stage-9-sflc-panel-on-cybercrime-prasanth-sugathan-x-sflc-hudson-jameson-x-certik-alexander-urbelis-x-ens",
+    "title": "SFLC panel on Cybercrime: Prasanth Sugathan x SFLC, Hudson Jameson x Certik, Alexander Urbelis x ENS",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
     "format": "Panel",
-    "startTime": "17:00",
-    "endTime": "17:45",
+    "startTime": "12:50",
+    "endTime": "13:15",
     "date": "2026-11-02",
     "speakers": [
-      { "id": "amir-taaki", "sessionRole": "Moderator" },
-      { "id": "ahmed-ghappour", "sessionRole": "Panelist" }
+      {
+        "id": "prasanth-sugathan"
+      },
+      {
+        "id": "hudson-jameson"
+      },
+      {
+        "id": "alexander-urbelis"
+      }
+    ]
+  },
+  {
+    "id": "foss-14-something",
+    "title": "LibP2P workshop",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "13:00",
+    "endTime": "13:30",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "foss-6-cypherpunk-atlas",
+    "title": "Cypherpunk Atlas",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Talk",
+    "startTime": "13:00",
+    "endTime": "13:30",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "foss-7-something",
+    "title": "Workshop by Iva",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "13:00",
+    "endTime": "13:30",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "main-stage-10-kyle-x-brave",
+    "title": "Kyle x Brave",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "13:15",
+    "endTime": "13:40",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "kyle-den-hartog"
+      }
+    ]
+  },
+  {
+    "id": "stage-2-11-security-panel-srinivas-kodali-karan-saini-nisarga-adhikary",
+    "title": "Security Panel: Srinivas Kodali, Karan Saini, Nisarga Adhikary",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Panel",
+    "startTime": "13:25",
+    "endTime": "13:50",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "srinivas-kodali"
+      },
+      {
+        "id": "karan-saini"
+      },
+      {
+        "id": "nisarga-adhikary"
+      }
+    ]
+  },
+  {
+    "id": "foss-8-dbrowser",
+    "title": "dbrowser",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Talk",
+    "startTime": "13:30",
+    "endTime": "14:00",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "meinhard-benn"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-11-aya-s-panel-on-funding-with-access-now-luminate",
+    "title": "Aya's panel on Funding with Access Now & Luminate",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Panel",
+    "startTime": "13:40",
+    "endTime": "14:05",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "aya-miyaguchi"
+      }
+    ]
+  },
+  {
+    "id": "foss-9-stealth-addresses",
+    "title": "Stealth addresses",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "14:00",
+    "endTime": "14:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "antonio-seveso"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-12-ai-governance-it-for-change-abhineet-nayyar-x-it-for-change-vinaj-x-aapti-uma-x-rati-foundation-kurt-opsahl-x-ex-eff",
+    "title": "AI governance (IT For Change): Abhineet Nayyar x IT For Change, Vinaj x AAPTI, Uma x RATI Foundation, Kurt Opsahl x ex-EFF",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Panel",
+    "startTime": "14:05",
+    "endTime": "14:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "vinay-narayan"
+      },
+      {
+        "id": "Uma-Subramanian"
+      },
+      {
+        "id": "kurt-opsahl"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-13-vitalik-x-ef",
+    "title": "Vitalik x EF",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "14:30",
+    "endTime": "15:00",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "vitalik-buterin"
+      }
+    ]
+  },
+  {
+    "id": "stage-2-14-mike-x-coincenter",
+    "title": "Mike x CoinCenter",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "14:35",
+    "endTime": "15:00",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "foss-11-practical-privacy",
+    "title": "Practical privacy",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Talk",
+    "startTime": "15:00",
+    "endTime": "15:30",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "main-stage-14-zac-aztec-jordi-baylina-x-zisk",
+    "title": "Zac Aztec + Jordi Baylina x Zisk",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "15:00",
+    "endTime": "15:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "zac-williamson"
+      },
+      {
+        "id": "jordi-baylina"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-15-ahmed-ghappour-x-flashbots",
+    "title": "Ahmed Ghappour x Flashbots",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "15:25",
+    "endTime": "16:00",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "ahmed-ghappour"
+      }
+    ]
+  },
+  {
+    "id": "foss-12-p2p-code-collaboration",
+    "title": "P2P Code Collaboration",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "15:30",
+    "endTime": "16:00",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "foss-13-logos",
+    "title": "Logos",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "16:00",
+    "endTime": "16:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "guru"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-16-harry-halpin-x-nym",
+    "title": "Harry Halpin x Nym",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "16:00",
+    "endTime": "16:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "harry-halpin"
+      }
+    ]
+  },
+  {
+    "id": "stage-2-18-violet-x-independent-privacy-in-stablecoins",
+    "title": "Violet x independent \"Privacy in stablecoins\"",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "16:25",
+    "endTime": "17:00",
+    "date": "2026-11-02",
+    "speakers": []
+  },
+  {
+    "id": "main-stage-19-final-panel-kieran-x-railgun-pg-x-w3pn-mario-havel",
+    "title": "Final panel: Kieran x Railgun, PG x W3PN, Mario Havel, ...",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Panel",
+    "startTime": "17:25",
+    "endTime": "18:00",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "kieran-mesquita"
+      },
+      {
+        "id": "pg"
+      },
+      {
+        "id": "mario-havel"
+      }
     ]
   }
 ]
