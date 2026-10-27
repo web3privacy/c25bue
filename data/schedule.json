@@ -88,10 +88,26 @@
     ]
   },
   {
-    "id": "main-stage-6-cypherpunk-match-kurt-opsahl",
-    "title": "Cypherpunk Match: Kurt Opsahl",
+    "id": "stage-2-sebastian-burgel-vpn",
+    "title": "You can't trust your VPN",
     "description": "",
     "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Talk",
+    "startTime": "11:05",
+    "endTime": "11:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "sebastian-burgel"
+      }
+    ]
+  },
+  {
+    "id": "main-stage-6-cypherpunk-match-kurt-opsahl",
+    "title": "Protecting the Tools that Protect Our Rights",
+    "description": "When society at large can't or won't stop the spread of ubiquitous surveillance, we need strong privacy technologies that return control and autonomy to users. Yet some of these tools, and the people who build and run them, have come under legal attack. Come learn about these legal threats and how to protect our right to build the tools we need, by practical steps and by working together to create the legal policy space necessary for a free society.",
+    "descriptionFull": "When society at large can't or won't stop the spread of ubiquitous surveillance, we need strong privacy technologies that return control and autonomy to users. Yet some of these tools, and the people who build and run them, have come under legal attack. Come learn about these legal threats and how to protect our right to build the tools we need, by practical steps and by working together to create the legal policy space necessary for a free society.",
     "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "11:10",
@@ -121,9 +137,9 @@
   },
   {
     "id": "main-stage-7-isha-suri-x-ai",
-    "title": "Isha Suri x AI",
-    "description": "",
-    "descriptionFull": "",
+    "title": "The Winners and Losers of the AI Race: A View from the Stack",
+    "description": "Isha Suri examines power and dependency across the AI stack, and whether open-source AI, local models and alternative cloud infrastructure can redistribute power.",
+    "descriptionFull": "Isha Suri examines the political economy of AI infrastructure: where power accumulates across the stack, how dependencies are created and reinforced, and what this means for building alternatives. Drawing on research into cloud infrastructure and AI market power, she explores cloud credits, partnerships, switching costs and vertical integration. The talk considers open-source and local AI, open cloud infrastructure, public or shared compute, and different models of ownership and governance, asking whether these alternatives can redistribute power when the underlying infrastructure remains concentrated.",
     "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "11:35",
@@ -137,9 +153,9 @@
   },
   {
     "id": "foss-4-fossify",
-    "title": "Fossify with Mario Havel (Ethereum Foundation, Bordel)",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Fossify yourself for privacy and security",
+    "description": "There is no excuse anymore: FOSS alternatives are not just more private and secure but also becoming more practical than their proprietary counterparts. Come to discuss alternative apps, operating systems, open hardware and all your tips on how to live on a Free software only diet!",
+    "descriptionFull": "There is no excuse anymore: FOSS alternatives are not just more private and secure but also becoming more practical than their proprietary counterparts. Come to discuss alternative apps, operating systems, open hardware and all your tips on how to live on a Free software only diet!",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "12:00",
@@ -169,9 +185,9 @@
   },
   {
     "id": "foss-5-walkaway-test",
-    "title": "Walkaway test with Fileverse",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Post-quantum collaboration?",
+    "description": "The basics of post-quantum cryptography and how it applies to privacy and security in collaborative files and apps.",
+    "descriptionFull": "End-to-end encryption (e2ee) gave us a way to gain privacy and security in online collaboration even while most of us were dependent on centralized third parties for these same activities. While e2ee remains far from ubiquitous, the privacy & security frontier has yet again moved due to quantum computers, and it carries with it the same issues that e2ee had: complexity. This talk will cover some of the basics of post-quantum cryptography and how we apply it to Multiplayer Collaboration files & apps. Post Quantum Collaboration is a made-up concept that we'll be unveiling in a light way in Nov with peers, anons, and friends :))",
     "stage": "FOSS Zone",
     "format": "Talk",
     "startTime": "12:30",
@@ -243,10 +259,39 @@
     ]
   },
   {
+    "id": "stage-2-cypherpunk-roadmap-panel",
+    "title": "Cypherpunk or Junk: Grading Ethereum's Roadmap",
+    "description": "Thomas Thiery, Sebastian Bürgel, jimjim and cheeky-gorilla put Ethereum's roadmap on trial: which upgrades put more power in your hands?",
+    "descriptionFull": "There's a lot of talk in Ethereum-land about being cypherpunk, but does the roadmap actually reflect those values?\n\nJoin Thomas Thiery (Ethereum Foundation), Sebastian Bürgel (Gnosis / HOPR), jimjim (Warptoad) and cheeky-gorilla (Protocol Guild, moderator) as they put the roadmap on trial and judge the upgrades by how cypherpunk they are. Which ones put more power in your hands, and which ones put it in someone else's?\n\nExpect stubborn realism, hard tradeoffs, and no hand-waving. Zero technical knowledge required!",
+    "stage": "K.S. Puttaswamy",
+    "format": "Panel",
+    "startTime": "13:05",
+    "endTime": "13:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "thomas-thiery",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "sebastian-burgel",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "jimjim",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "cheeky-gorilla",
+        "sessionRole": "Moderator"
+      }
+    ]
+  },
+  {
     "id": "main-stage-10-kyle-x-brave",
-    "title": "Kyle den Hartog x Brave",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Web3 is Reintroducing Privacy Issues Web2 just Fixed",
+    "description": "Web2 has just spent the better part of a decade working to remove trackers, 3P cookies, and lock down APIs to prevent fingerprinting. Meanwhile Web3 is accidentally reintroducing these problems because the browser privacy model is not well understood.",
+    "descriptionFull": "In this talk, I'll cover in greater depth what I scratched the surface on in this blog post: https://kyledenhartog.com/recreating-web3-cross-origin-tracking/\n\nCome learn some of the ways wallets are reintroducing privacy problems that we've been spending years to fix in Web2 by improving the browser privacy model. As of today Web3 is on track to make the Web privacy model worse as we share our addresses with every new site we visit. This will only get worse as we work to unify chains and make the UX more seamless with Web3 domains turning our wallet addresses into our globally unique third party cookie.\n\nAfter defining the problem, I'll cover some techniques and principles we can use to redefine how wallets interact with sites and how we as developers can think differently about this problem and propagate it throughout the protocol, sites, and wallets that we're adding to Web2.",
     "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "13:15",
@@ -320,9 +365,9 @@
   },
   {
     "id": "foss-8-dbrowser",
-    "title": "dBrowser with Meinhard Benn",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Browsing the User-Owned Internet",
+    "description": "An introduction and live demo of Freedom Browser, with built-in Swarm, IPFS, Radicle and Tor: sites no one can take down, names you own, and publishing without permission.",
+    "descriptionFull": "Today's internet is rented: platforms, registrars, app stores and gateways can switch you off.\n\nFreedom is an open-source browser where you become part of the network, with built-in Swarm, IPFS, Radicle and Tor.\n\nLive demo: sites no one can take down, names you own, publishing without permission.\n\nThe hard parts of building it, and what's next.\n\n10k downloads in 149 countries. Install it here and join in.",
     "stage": "FOSS Zone",
     "format": "Talk",
     "startTime": "14:00",
@@ -336,7 +381,7 @@
   },
   {
     "id": "foss-9-stealth-addresses",
-    "title": "Stealth Addresses - Tony Seveso",
+    "title": "Privacy on Chain: What Stealth Addresses Solve",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -352,9 +397,9 @@
   },
   {
     "id": "main-stage-12-ai-governance-it-for-change-abhineet-nayyar-x-it-for-change-vinaj-x-aapti-uma-x-rati-foundation-kurt-opsahl-x-ex-eff",
-    "title": "AI governance: Abhineet Nayyar (IT for Change), Vinay Narayan (AAPTI), Uma Subramanian (RATI Foundation), Kurt Opsahl (Filecoin)",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Governing for baselines | The material foundations of artificial intelligence supply chains",
+    "description": "Researchers and investigators examine the labour, data centres, and concentrated chip-and-cloud markets behind AI, and the need to engage with the political economy of the full stack.",
+    "descriptionFull": "Stepping away from the mainstream focus on AI redlines, both real and existential, this panel will instead deal with the very real supply chains that make up the 'AI' we know of and have come to use. From precarious labor that goes into training, curating, and using frontier models, to the resource-intensive data centers facing fierce pushback across the world, all the way to the concentrated chip-and-cloud markets, the AI supply chain shows how this intelligence is anything but artificial. In this panel, researchers and investigators across domains will present findings that reiterate this reality and establish the need to engage with the political economy of AI on multiple levels of the 'stack'.",
     "stage": "Shreya Singhal",
     "format": "Panel",
     "startTime": "14:05",
@@ -372,6 +417,31 @@
       },
       {
         "id": "kurt-opsahl"
+      }
+    ]
+  },
+  {
+    "id": "stage-2-wallet-privacy-panel",
+    "title": "Privacy's last-mile problem: Wallets",
+    "description": "A panel on the practical hurdles to wallet privacy, from onchain and network-level privacy to Tor integration, private recovery and transaction leakage.",
+    "descriptionFull": "Privacy is finally being integrated in web3 wallets. It's a long road, and there are many practical hurdles left to solve. In this panel, we'll discuss what several wallets are doing to solve privacy's last-mile problem. From onchain privacy to network-level privacy, Tor integration, address and amount correlations, private wallet recovery, and dealing with the problem of intermediaries learning of your transaction before it gets onchain.\n\nSpeakers:\n@rsquare (Safe)\n@LucemansNL (Ethereum Foundation)\n@apoorveth (WalletChan)\n@sethforprivacy (Cake Wallet)\n@polymutex (moderator)",
+    "stage": "K.S. Puttaswamy",
+    "format": "Panel",
+    "startTime": "14:15",
+    "endTime": "14:45",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "rahul-rumalla",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "seth-for-privacy",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "polymutex",
+        "sessionRole": "Moderator"
       }
     ]
   },
@@ -394,8 +464,8 @@
   {
     "id": "stage-2-14-mike-x-coincenter",
     "title": "Michael Lewellen x Coin Center",
-    "description": "",
-    "descriptionFull": "",
+    "description": "Michael Lewellen shares his lawsuit against the DOJ over the criminalization of software development, and why this fight matters for privacy and free expression. He’ll outline how cypherpunks can defend crypto freedoms and engage in local policy activism.",
+    "descriptionFull": "Michael Lewellen will discuss his lawsuit challenging the DOJ’s attempt to criminalize open-source software, a case with major implications for developers and privacy advocates. He’ll connect this battle to broader cypherpunk principles—free speech, code as expression, and resistance to surveillance—while offering concrete steps for activists to influence policy and protect crypto freedoms in their communities.",
     "stage": "K.S. Puttaswamy",
     "format": "Session",
     "startTime": "14:35",
@@ -420,6 +490,22 @@
     "speakers": [
       {
         "id": "gavin-birch"
+      }
+    ]
+  },
+  {
+    "id": "stage-2-harsh-bajpai-zcash",
+    "title": "Zcash: Welcome to encrypted money at planetary scale",
+    "description": "Learn about Zcash, where we are now and where we are headed.",
+    "descriptionFull": "Learn about Zcash, where we are now and where we are headed.",
+    "stage": "K.S. Puttaswamy",
+    "format": "Talk",
+    "startTime": "15:00",
+    "endTime": "15:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "harsh-bajpai"
       }
     ]
   },
@@ -476,9 +562,9 @@
   },
   {
     "id": "foss-13-logos",
-    "title": "Logos workshop - Guru",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Intersection of local-first, privacy and web3 with Logos",
+    "description": "In this talk, we explore why local-first software, privacy and web3 are stronger together than apart. Local-first puts data back in the user's custody, privacy keeps it out of reach of surveillance and web3 removes the central servers that can censor or shut you down.",
+    "descriptionFull": "In this talk, we explore why local-first software, privacy and web3 are stronger together than apart. Local-first puts data back in the user's custody, privacy keeps it out of reach of surveillance and web3 removes the central servers that can censor or shut you down.",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "16:00",
@@ -508,9 +594,9 @@
   },
   {
     "id": "stage-2-18-violet-x-independent-privacy-in-stablecoins",
-    "title": "Privacy in stablecoins",
-    "description": "",
-    "descriptionFull": "",
+    "title": "After Encryption",
+    "description": "The widespread application of encryption and privacy tools to security-critical applications has created a world where governments have started targeting the use of these tools instead of the content of the tools. To respond to this we need to imagine new forms of security. I propose one such tool in the form of textual stenography which allows you to use encryption while appearing to post normal encrypted text.",
+    "descriptionFull": "The widespread application of encryption and privacy tools to security-critical applications has created a world where governments have started targeting the use of these tools instead of the content of the tools. To respond to this we need to imagine new forms of security. I propose one such tool in the form of textual stenography which allows you to use encryption while appearing to post normal encrypted text.",
     "stage": "K.S. Puttaswamy",
     "format": "Session",
     "startTime": "16:25",
@@ -524,9 +610,9 @@
   },
   {
     "id": "foss-14-something",
-    "title": "Libp2p workshop with Manu Sheel Gupta",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Universal Connectivity workshop",
+    "description": "Achieving Universal Connectivity in Peer-to-Peer Networks: A libp2p Deep Dive",
+    "descriptionFull": "One of the biggest problems in peer-to-peer networks is getting peers to actually connect to each other. NATs, firewalls, and restrictive networks constantly get in the way, which is a real issue when you're trying to build censorship-resistant systems that anyone can access from anywhere.\n\nIn this workshop, we'll dig into how libp2p solves these connectivity problems. I'll walk you through the practical techniques we use, relay circuits, hole punching, QUIC and show you how to implement them in your own projects. We'll look at what works, what breaks, and how to design p2p applications that can reach users even in heavily restricted network environments.\n\nAs someone who maintains libp2p, I want to share the lessons we've learned from real deployments and help you avoid the pitfalls we've encountered. If you're building decentralized apps or working on p2p protocols, this session will give you the tools to make your networks more robust and accessible because universal connectivity isn't just a technical goal, it's essential for a truly open internet.",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "16:30",
