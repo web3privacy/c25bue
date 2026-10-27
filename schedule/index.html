@@ -202,6 +202,7 @@
       }
 
       .session-item {
+        position: relative;
         border: 1px solid rgba(255, 255, 255, 0.18);
         border-radius: 16px;
         padding: 1.75rem 2rem;
@@ -212,10 +213,42 @@
         min-width: 0;
         background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.005));
         transition: border-color 0.2s ease, background 0.2s ease;
+        cursor: pointer;
+        overflow: hidden;
       }
       .session-item:hover {
         border-color: rgba(255, 255, 255, 0.45);
         background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.01));
+      }
+
+      /* Optional per-session background image (e.g. for ceremonial/no-
+         speaker sessions like Opening) — a faint photo behind the card's
+         own dark gradient, so content stays readable regardless of the
+         image. */
+      .session-item-with-bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: var(--session-bg-image);
+        background-size: var(--session-bg-size, cover);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.22;
+        z-index: 0;
+      }
+      .session-item-with-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0.85) 100%);
+        z-index: 0;
+      }
+      .session-item-with-bg > * {
+        position: relative;
+        z-index: 1;
+      }
+      .session-item-with-bg:hover::before {
+        opacity: 0.3;
       }
 
       .session-time-col {
@@ -324,19 +357,62 @@
       @media (max-width: 640px) {
         .session-item {
           flex-direction: column;
-          align-items: flex-start;
-          gap: 0.75rem;
+          align-items: stretch;
+          gap: 0.6rem;
+          padding: 1.1rem 1.25rem;
         }
+        /* Time/stage/format collapse into one compact row above the
+           title, instead of a tall stacked column — the title is the
+           most important thing on a session card and should read first. */
         .session-time-col {
           width: auto;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 0.5rem 0.75rem;
           padding-right: 0;
+          padding-bottom: 0.6rem;
           border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .session-time {
+          margin: 0;
+          font-size: 0.92rem;
+          order: -1;
+          flex-basis: 100%;
         }
         .session-title {
           white-space: normal;
+          font-size: 1.1rem;
+        }
+        .session-desc {
+          -webkit-line-clamp: 3;
+        }
+        /* Speakers (left) and "Read more." (right) share one row at the
+           card's bottom edge. .session-main reserves space at its own
+           bottom (padding-bottom) for the speaker strip, which is then
+           docked there with position: absolute — so both read as one row
+           without restructuring .read-more-link out of .session-main
+           (which would also require reworking the desktop flex layout). */
+        .session-main {
+          position: relative;
+          padding-bottom: 3.25rem;
         }
         .session-speakers {
-          align-self: flex-start;
+          position: absolute;
+          left: 1.25rem;
+          bottom: 1.1rem;
+        }
+        .read-more-link {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        .session-speaker-avatar,
+        .session-speaker-more {
+          width: 56px;
+          height: 56px;
+          margin-left: -0.9rem;
         }
       }
 
@@ -453,8 +529,9 @@
         background: #0a0a0a;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 18px;
+        width: fit-content;
+        min-width: min(22rem, 100%);
         max-width: 34rem;
-        width: 100%;
         max-height: 85vh;
         overflow-y: auto;
         padding: 2rem;
@@ -464,6 +541,32 @@
         .project-modal-backdrop { padding: 0.75rem; }
         .project-modal { padding: 1.25rem; }
         .project-modal-close { top: 0.75rem; right: 0.75rem; }
+      }
+      @media (min-width: 768px) {
+        .project-modal {
+          max-width: 38rem;
+          padding: 2.75rem;
+        }
+        .project-modal-title {
+          font-size: 1.8rem;
+        }
+        .member-row.modal-member-row {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+          gap: 1rem;
+        }
+        .member-chip-name {
+          font-size: 0.85rem;
+          margin-top: 0.6rem;
+          padding: 0 0.6rem;
+        }
+        .member-chip-role {
+          font-size: 0.76rem;
+          padding: 0 0.6rem 0.75rem;
+        }
+        .speaker-session-role {
+          font-size: 0.62rem;
+          padding: 0.16rem 0.5rem;
+        }
       }
       .project-modal-close {
         position: absolute;
@@ -535,6 +638,7 @@
         break-inside: avoid;
         text-align: center;
       }
+
     </style>
   </head>
 
@@ -813,6 +917,13 @@
           card.className = 'session-item';
           card.dataset.stage = session.stage || '';
           card.dataset.id = session.id;
+          if (session.backgroundImage) {
+            card.classList.add('session-item-with-bg');
+            card.style.setProperty('--session-bg-image', 'url(' + JSON.stringify('../' + session.backgroundImage) + ')');
+            if (session.backgroundImageSize) {
+              card.style.setProperty('--session-bg-size', session.backgroundImageSize);
+            }
+          }
 
           card.innerHTML =
             '<div class="session-time-col">' +
@@ -1008,9 +1119,12 @@
 
         function setupModalEvents() {
           sessionGrid.addEventListener('click', function (event) {
-            var trigger = event.target.closest('.read-more-link');
-            if (!trigger) return;
-            var id = trigger.dataset.id;
+            // Speaker avatars link out to their X/profile — let those
+            // navigate instead of opening the session modal.
+            if (event.target.closest('.session-speaker-avatar, a.member-chip')) return;
+            var card = event.target.closest('.session-item');
+            if (!card) return;
+            var id = card.dataset.id;
             var session = sessions.find(function (s) { return s.id === id; });
             if (session) openModal(session);
           });

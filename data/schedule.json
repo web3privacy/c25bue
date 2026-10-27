@@ -9,6 +9,8 @@
     "startTime": "09:30",
     "endTime": "10:00",
     "date": "2026-11-02",
+    "backgroundImage": "img/features/6.webp",
+    "backgroundImageSize": "540px",
     "speakers": []
   },
   {
@@ -37,6 +39,8 @@
     "startTime": "10:30",
     "endTime": "10:45",
     "date": "2026-11-02",
+    "backgroundImage": "img/features/3.webp",
+    "backgroundImageSize": "110%",
     "speakers": []
   },
   {
