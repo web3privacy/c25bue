@@ -143,7 +143,7 @@
       "digital rights",
       "Regulation"
     ],
-    "speaker2026": true,
+    "speaker2026": false,
     "speakerOrder": 6
   },
   {
@@ -2148,7 +2148,7 @@
       "Digital Rights"
     ],
     "speaker2026": true,
-    "speakerOrder": 53
+    "speakerOrder": 11
   },
   {
     "id": "abhineet-nayyar",
@@ -2164,7 +2164,7 @@
       "Digital Rights"
     ],
     "speaker2026": true,
-    "speakerOrder": 54
+    "speakerOrder": 12
   },
   {
     "id": "yalgaar-sanskrutik-manch",
