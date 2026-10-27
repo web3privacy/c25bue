@@ -2180,5 +2180,29 @@
       "Human Rights"
     ],
     "speaker2026": false
-  }
+  },
+  {
+  "id": "lucemans",
+  "name": "Lucemans",
+  "photo": "img/lucemans.png",
+  "xUrl": "https://x.com/LucemansNL",
+  "tagline": "Wallet privacy panel participant",
+  "role": "",
+  "orgName": "Ethereum Foundation",
+  "orgUrl": "https://ethereum.foundation",
+  "industries": ["Privacy", "Wallets"],
+  "speaker2026": true
+},
+{
+  "id": "apoorv",
+  "name": "Apoorv",
+  "photo": "img/apoorv.png",
+  "xUrl": "https://x.com/apoorveth",
+  "tagline": "Wallet privacy panel participant",
+  "role": "",
+  "orgName": "WalletChan",
+  "orgUrl": "",
+  "industries": ["Privacy", "Wallets"],
+  "speaker2026": true
+}
 ]
