@@ -2,16 +2,20 @@
   {
     "id": "main-stage-2-opening",
     "title": "Opening",
-    "description": "",
+    "description": "Special Openin Message by Audrey Tang",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
-    "format": "Session",
+    "format": "Talk",
     "startTime": "09:30",
     "endTime": "10:00",
     "date": "2026-11-02",
     "backgroundImage": "img/features/6.webp",
     "backgroundImageSize": "540px",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "audrey-tang"
+      }
+    ]
   },
   {
     "id": "main-stage-3-cultural-start-music-band",
