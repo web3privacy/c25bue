@@ -17,6 +17,23 @@
     "speakerOrder": 2
   },
   {
+    "id": "aditi-shah",
+    "name": "ADITI SHAH",
+    "photo": "img/aditi-shah.png",
+    "xUrl": "https://aapti.in",
+    "tagline": "curious about the ways that technology can work for the rights and interests of communities",
+    "role": "Manager",
+    "orgName": "AAPTI Institute",
+    "orgUrl": "https://aapti.in",
+    "industries": [
+      "Privacy",
+      "Digital Platforms",
+      "Data governance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 16
+  },
+  {
     "id": "ais-connolly",
     "name": "AIS CONNOLLY",
     "photo": "img/aisconnolly.jpg",
