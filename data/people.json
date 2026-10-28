@@ -231,6 +231,23 @@
     "speakerOrder": null
   },
   {
+    "id": "audrey-tang",
+    "name": "AUDREY TANG",
+    "photo": "img/audrey-tang.png",
+    "xUrl": "https://x.com/Arnaudschenk",
+    "tagline": "[special recorded message]",
+    "role": "Visionary",
+    "orgName": "Oxford Institute for Ethics in AI",
+    "orgUrl": "https://audreyt.org",
+    "industries": [
+      "Privacy",
+      "Governance",
+      "Investments"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 3
+  },
+  {
     "id": "auryn-mcmillan",
     "name": "AURYN MCMILLAN",
     "photo": "img/auryn.png",
