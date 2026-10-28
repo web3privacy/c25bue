@@ -61,7 +61,7 @@
   },
   {
     "id": "main-stage-5-digital-divide-osama-mansar",
-    "title": "Digital divide: Osama Mansar",
+    "title": "Why technology fails us",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -77,7 +77,7 @@
   },
   {
     "id": "foss-2-nodes",
-    "title": "Nodes",
+    "title": "Self-sovereign nodes in 2026",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -125,7 +125,7 @@
   },
   {
     "id": "foss-3-degoogle-journey",
-    "title": "deGoogle journey with Bob Summerwill",
+    "title": "My deGoogle journey",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
@@ -173,7 +173,7 @@
   },
   {
     "id": "main-stage-8-isabela-fernandes-x-tor",
-    "title": "Isabela Fernandes x Tor",
+    "title": "Lessons learned from 20 years of Tor",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -189,7 +189,7 @@
   },
   {
     "id": "foss-5-walkaway-test",
-    "title": "Post-quantum collaboration?",
+    "title": "Post-quantum collaboration",
     "description": "The basics of post-quantum cryptography and how it applies to privacy and security in collaborative files and apps.",
     "descriptionFull": "End-to-end encryption (e2ee) gave us a way to gain privacy and security in online collaboration even while most of us were dependent on centralized third parties for these same activities. While e2ee remains far from ubiquitous, the privacy & security frontier has yet again moved due to quantum computers, and it carries with it the same issues that e2ee had: complexity. This talk will cover some of the basics of post-quantum cryptography and how we apply it to Multiplayer Collaboration files & apps. Post Quantum Collaboration is a made-up concept that we'll be unveiling in a light way in Nov with peers, anons, and friends :))",
     "stage": "FOSS Zone",
@@ -205,7 +205,7 @@
   },
   {
     "id": "stage-2-9-ai-harm-baarish-x-tattle-mod-uma-x-rati-foundation-2-other-participants",
-    "title": "AI Harm: Baarish Aggarwal (Tattle) and Uma Subramanian (RATI Foundation)",
+    "title": "Reimagining AI to address the harms inherent in its design",
     "description": "",
     "descriptionFull": "",
     "stage": "K.S. Puttaswamy",
@@ -226,8 +226,8 @@
   },
   {
     "id": "main-stage-9-sflc-panel-on-cybercrime-prasanth-sugathan-x-sflc-hudson-jameson-x-certik-alexander-urbelis-x-ens",
-    "title": "SFLC panel on Cybercrime: Prasanth Sugathan x SFLC, Hudson Jameson x Certik, Alexander Urbelis x ENS",
-    "description": "",
+    "title": "Who Protects Us Online? Cybercrime, Digital Rights and the Fight for a Free and Secure Internet in India.",
+    "description": "Cyberscams are increasingly cross-platform in nature. A scam may begin with a WhatsApp message, move to a fake website, involve a bank transaction, use a UPI/payment intermediary, and ultimately result in money being transferred through multiple bank accounts. Compromised social-media and messaging accounts are used to target the victims' contacts, creating a chain of scams. The victim is left navigating several institutions from platform-level account-recovery systems, banks, and law-enforcement, all of which may operate independently of each other. The first few hours after a financial fraud can be critical, but there is often a disconnect between reporting a fraud and obtaining a meaningful remedy. Users may have limited visibility into whether funds have been frozen, whether their complaint is being investigated, or how they can escalate it. Victims often do not know where to report, what evidence to preserve, how to follow up, or what happens after a complaint is filed. Furthermore, awareness efforts surrounding cyber scams and cyber fraud often focus on individual responsibility, such as not clicking suspicious links, not sharing OTPs, etc., without adequately addressing systemic issues around platform design, financial safeguards, law-enforcement coordination and accessible grievance redressal.",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Panel",
@@ -347,8 +347,8 @@
   },
   {
     "id": "main-stage-11-aya-s-panel-on-funding-with-access-now-luminate",
-    "title": "Funding with Access Now & Luminate: Aya Miyaguchi, Faiz Naeem, Sam de Silva",
-    "description": "",
+    "title": "Beyond Digital Rights: Building the Capacity to Shape Our Digital Future",
+    "description": "This panel brings together Access Now, Luminate and the Ethereum Foundation to explore what the digital rights movement needs for its next phase: stronger local capacity, better cooperation between advocacy and technology communities, sustainable institutions, and infrastructure designed around privacy, security and freedom.",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Panel",
@@ -467,7 +467,7 @@
   },
   {
     "id": "stage-2-14-mike-x-coincenter",
-    "title": "Michael Lewellen x Coin Center",
+    "title": "Against the criminalization of software development",
     "description": "Michael Lewellen shares his lawsuit against the DOJ over the criminalization of software development, and why this fight matters for privacy and free expression. He’ll outline how cypherpunks can defend crypto freedoms and engage in local policy activism.",
     "descriptionFull": "Michael Lewellen will discuss his lawsuit challenging the DOJ’s attempt to criminalize open-source software, a case with major implications for developers and privacy advocates. He’ll connect this battle to broader cypherpunk principles—free speech, code as expression, and resistance to surveillance—while offering concrete steps for activists to influence policy and protect crypto freedoms in their communities.",
     "stage": "K.S. Puttaswamy",
@@ -483,7 +483,7 @@
   },
   {
     "id": "foss-11-practical-privacy",
-    "title": "Practical Privacy with Gavin Birch",
+    "title": "Practical Privacy",
     "description": "",
     "descriptionFull": "",
     "stage": "FOSS Zone",
