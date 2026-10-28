@@ -45,9 +45,9 @@
   },
   {
     "id": "stage-2-3-sasha-shilina-x-paradigm",
-    "title": "Sasha Shilina x Paradigm",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Lethe Machina: Privacy When Nothing Fades",
+    "description": "Privacy engineering governs disclosure; it is far weaker at governing what follows, when traces remain searchable, inferable, executable, and reusable. Drawing on philosophies of memory, oblivion, and the archive, Lethe Machina treats blockchain as both cemetery and temple: an ossuary of active decisions and a programmable space for dormancy, closure, and release. It introduces Lethean gradients—fading, sealing, contextual expiry, and bounded influence—and translates them into a Lethean Readiness Framework for testing whether systems can bind traces to context, let their force decay, make reactivation accountable, and govern what survives deletion. Can privacy preserve evidence without allowing the past to govern indefinitely?",
+    "descriptionFull": "Cypherpunk privacy has largely been organised around disclosure, secrecy, and control. The Sapphirepunk Manifesto reframed privacy as a condition of relation; Lethe Machina adds the temporal question of how long past relations and traces should retain power.\nDrawing on Ricœur’s philosophy of forgetting, Stiegler’s tertiary retention, Ernst and Chun’s computational temporality, Derrida’s archive, and Mbembe’s necropolitics, the talk describes digital memory as a loss of thresholds between the active, archival, dormant, and socially finished. Blockchain intensifies this condition: as cemetery, it preserves executable remains; as temple, it can encode duration, withdrawal, sealing, and return.\nThe argument then follows the trace beyond apparent deletion, into metadata ghosts, derived classifications, embeddings, and model influence. Lethean gradients—including fading, dormancy, contextual expiry, and bounded influence—describe how such traces might persist without retaining equal power forever.\nThe closing Lethean Readiness Framework evaluates systems through several questions: whether traces have temporal limits, remain bound to legitimate contexts, can lose operational force, require accountable reactivation, and remain governed after they disappear from view.\nThe wider claim is that privacy concerns the conditions under which information appears, enters relations, survives, and eventually loses its authority to act.",
     "stage": "K.S. Puttaswamy",
     "format": "Session",
     "startTime": "10:45",
@@ -172,18 +172,21 @@
     ]
   },
   {
-    "id": "main-stage-8-isabela-fernandes-x-tor",
-    "title": "Lessons learned from 20 years of Tor",
+    "id": "main-stage-14-zac-aztec-jordi-baylina-x-zisk",
+    "title": "Post Quantum Cryptography: reality check",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Session",
-    "startTime": "15:00",
-    "endTime": "15:25",
+    "startTime": "12:00",
+    "endTime": "12:25",
     "date": "2026-11-02",
     "speakers": [
       {
-        "id": "isabela-fernandes"
+        "id": "zac-williamson"
+      },
+      {
+        "id": "jordi-baylina"
       }
     ]
   },
@@ -227,8 +230,8 @@
   {
     "id": "main-stage-9-sflc-panel-on-cybercrime-prasanth-sugathan-x-sflc-hudson-jameson-x-certik-alexander-urbelis-x-ens",
     "title": "Who Protects Us Online? Cybercrime, Digital Rights and the Fight for a Free and Secure Internet in India.",
-    "description": "Cyberscams are increasingly cross-platform in nature. A scam may begin with a WhatsApp message, move to a fake website, involve a bank transaction, use a UPI/payment intermediary, and ultimately result in money being transferred through multiple bank accounts. Compromised social-media and messaging accounts are used to target the victims' contacts, creating a chain of scams. The victim is left navigating several institutions from platform-level account-recovery systems, banks, and law-enforcement, all of which may operate independently of each other. The first few hours after a financial fraud can be critical, but there is often a disconnect between reporting a fraud and obtaining a meaningful remedy. Users may have limited visibility into whether funds have been frozen, whether their complaint is being investigated, or how they can escalate it. Victims often do not know where to report, what evidence to preserve, how to follow up, or what happens after a complaint is filed. Furthermore, awareness efforts surrounding cyber scams and cyber fraud often focus on individual responsibility, such as not clicking suspicious links, not sharing OTPs, etc., without adequately addressing systemic issues around platform design, financial safeguards, law-enforcement coordination and accessible grievance redressal.",
-    "descriptionFull": "",
+    "description": "As cyber scams cross messaging platforms, websites, banks and payment systems, victims face fragmented reporting, investigation and recovery processes. This panel examines how India can improve accountability and access to remedies while protecting encryption and digital rights, drawing the boundaries of legitimate surveillance, and making secure tools accessible to everyone.",
+    "descriptionFull": "As cyber scams cross messaging platforms, websites, banks and payment systems, victims face fragmented reporting, investigation and recovery processes. This panel examines how India can improve accountability and access to remedies while protecting encryption and digital rights, drawing the boundaries of legitimate surveillance, and making secure tools accessible to everyone.",
     "stage": "Shreya Singhal",
     "format": "Panel",
     "startTime": "12:50",
@@ -248,9 +251,9 @@
   },
   {
     "id": "foss-6-cypherpunk-atlas",
-    "title": "Cypherpunk Atlas",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Cypher Atlas, map of the cypherpunk movement",
+    "description": "Cypher Atlas maps the cypherpunk ecosystem using public sources, helping engineers, lawyers, researchers and communities find one another, understand their connections and make the movement easier to enter.",
+    "descriptionFull": "Most of the people this movement needs have never heard the word cypherpunk.\n\nHow do they get in? It is a question the movement does not ask itself.\n\nEngineers, lawyers, researchers solving the same problems under different names. Right now you find this movement by accident: the right podcast, the right person, the right conference.\n\nThe people already inside cannot see each other either. Five projects solve the same problem. One law takes all five, and they find out separately.\n\nCypher Atlas is a map of this ecosystem: who is here, what came out of what, and what is coming at it. Built entirely from public sources.\n\nThis movement built doors. All of them open from the inside. What happens when a movement that spent fifty years building tools for autonomy finally becomes easier to find, understand and enter?",
     "stage": "FOSS Zone",
     "format": "Talk",
     "startTime": "13:00",
@@ -331,9 +334,9 @@
   },
   {
     "id": "foss-7-something",
-    "title": "The State Of Decentralised Privacy",
-    "description": "",
-    "descriptionFull": "",
+    "title": "How to Kill Trust, Portable Social Graph as a Real-World Asset",
+    "description": "The social graph is now a company asset. It is worth billions, platforms monetize it, AI agents will soon price it, and you can't even see it. AR glasses with a camera and an automated workflow let a stranger learn everything about you in seconds, enough to fake trust and socially engineer you on the spot. DeFi learned to price collateral without trusting people. Now that the attention economy is turning into a trust economy, can we price trust without exploiting it?",
+    "descriptionFull": "The social graph is now a company asset. It is worth billions, platforms monetize it, AI agents will soon price it, and you can't even see it. AR glasses with a camera and an automated workflow let a stranger learn everything about you in seconds, enough to fake trust and socially engineer you on the spot. DeFi learned to price collateral without trusting people. Now that the attention economy is turning into a trust economy, can we price trust without exploiting it?",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "13:30",
@@ -347,9 +350,9 @@
   },
   {
     "id": "main-stage-11-aya-s-panel-on-funding-with-access-now-luminate",
-    "title": "Beyond Digital Rights: Building the Capacity to Shape Our Digital Future",
-    "description": "This panel brings together Access Now, Luminate and the Ethereum Foundation to explore what the digital rights movement needs for its next phase: stronger local capacity, better cooperation between advocacy and technology communities, sustainable institutions, and infrastructure designed around privacy, security and freedom.",
-    "descriptionFull": "",
+    "title": "Beyond Digital Rights: Building the Capacity to Shape Our Digital Future",
+    "description": "As surveillance, internet restrictions and AI reshape digital power, Access Now, Luminate and the Ethereum Foundation explore how to strengthen the capacity to shape our digital future. The panel examines local leadership, resilient institutions, cooperation between civil society and technology communities, and public-interest infrastructure built around privacy, security and freedom. It considers how funding, shared expertise and long-term institutional support can sustain this work and turn common priorities into practical collaboration.",
+    "descriptionFull": "As surveillance, internet restrictions and AI reshape digital power, Access Now, Luminate and the Ethereum Foundation explore how to strengthen the capacity to shape our digital future. The panel examines local leadership, resilient institutions, cooperation between civil society and technology communities, and public-interest infrastructure built around privacy, security and freedom. It considers how funding, shared expertise and long-term institutional support can sustain this work and turn common priorities into practical collaboration.",
     "stage": "Shreya Singhal",
     "format": "Panel",
     "startTime": "13:40",
@@ -384,22 +387,6 @@
     ]
   },
   {
-    "id": "foss-9-stealth-addresses",
-    "title": "Privacy on Chain: What Stealth Addresses Solve",
-    "description": "",
-    "descriptionFull": "",
-    "stage": "FOSS Zone",
-    "format": "Workshop",
-    "startTime": "14:00",
-    "endTime": "14:30",
-    "date": "2026-11-02",
-    "speakers": [
-      {
-        "id": "antonio-seveso"
-      }
-    ]
-  },
-  {
     "id": "main-stage-12-ai-governance-it-for-change-abhineet-nayyar-x-it-for-change-vinaj-x-aapti-uma-x-rati-foundation-kurt-opsahl-x-ex-eff",
     "title": "Governing for baselines | The material foundations of artificial intelligence supply chains",
     "description": "Researchers and investigators examine the labour, data centres, and concentrated chip-and-cloud markets behind AI, and the need to engage with the political economy of the full stack.",
@@ -407,7 +394,7 @@
     "stage": "Shreya Singhal",
     "format": "Panel",
     "startTime": "14:05",
-    "endTime": "14:30",
+    "endTime": "14:35",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -429,7 +416,7 @@
     "stage": "K.S. Puttaswamy",
     "format": "Panel",
     "startTime": "14:15",
-    "endTime": "14:45",
+    "endTime": "14:35",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -438,6 +425,14 @@
       },
       {
         "id": "seth-for-privacy",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "lucemans",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "apoorv",
         "sessionRole": "Panelist"
       },
       {
@@ -511,21 +506,18 @@
     ]
   },
   {
-    "id": "main-stage-14-zac-aztec-jordi-baylina-x-zisk",
-    "title": "Post Quantum Cryptography: reality check",
+    "id": "main-stage-8-isabela-fernandes-x-tor",
+    "title": "Lessons learned from 20 years of Tor",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Session",
-    "startTime": "12:00",
-    "endTime": "12:25",
+    "startTime": "15:00",
+    "endTime": "15:25",
     "date": "2026-11-02",
     "speakers": [
       {
-        "id": "zac-williamson"
-      },
-      {
-        "id": "jordi-baylina"
+        "id": "isabela-fernandes"
       }
     ]
   },
@@ -547,9 +539,9 @@
   },
   {
     "id": "foss-12-p2p-code-collaboration",
-    "title": "P2P Code Collaboration with Radicle",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Beyond GitHub: Building Open Source on Radicle",
+    "description": "Discover how Radicle provides a sovereign, peer-to-peer home for open source. You'll leave knowing how Radicle works, why it matters, why communities choose it over centralized forges and how to start using it.",
+    "descriptionFull": "Discover how Radicle provides a sovereign, peer-to-peer home for open source. You'll leave knowing how Radicle works, why it matters, why communities choose it over centralized forges and how to start using it.",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "15:30",
@@ -579,9 +571,9 @@
   },
   {
     "id": "main-stage-16-harry-halpin-x-nym",
-    "title": "Fighting against Palantir with NymVPN",
-    "description": "",
-    "descriptionFull": "",
+    "title": "Building the Anti-Palantir with NymVPN",
+    "description": "Today, a few large corporations like Palantir are using AI as a mass surveillance machine to create a perfectly controllable 'digital twin' of reality. Learning from cypherpunk history and our own recent lessons building NymVPN, we will sketch an alternative vision for anonymity and freedom beyond blockchains.",
+    "descriptionFull": "Today, a few large corporations like Palantir are using AI as a mass surveillance machine to create a perfectly controllable 'digital twin' of reality. Learning from cypherpunk history and our own recent lessons building NymVPN, we will sketch an alternative vision for anonymity and freedom beyond blockchains.",
     "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "16:00",
@@ -622,6 +614,22 @@
     "speakers": [
       {
         "id": "many-sheel-gupta"
+      }
+    ]
+  },
+  {
+    "id": "foss-9-stealth-addresses",
+    "title": "Privacy on Chain: What Stealth Addresses Solve",
+    "description": "A practical walkthrough of stealth addresses, ERC-5564 and real-world engineering hurdles, followed by a look at how zero-knowledge proofs and Keystore architectures could improve key rotation and user experience.",
+    "descriptionFull": "A practical, workshop-style technical walkthrough of how stealth addresses work under the hood. We'll break down the cryptographic flow, modern standards like ERC-5564, and the real-world engineering hurdles (fragmentation, UTXO-like selection). We will also look ahead at the future of onchain privacy, exploring how Zero-Knowledge Proofs and Keystore architectures are set to solve key rotation and improve UX, transforming fragmented addresses into a seamless, automated privacy layer for organizations and individuals alike.",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "17:00",
+    "endTime": "17:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "antonio-seveso"
       }
     ]
   },
