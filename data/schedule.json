@@ -417,9 +417,6 @@
         "id": "vinay-narayan"
       },
       {
-        "id": "Uma-Subramanian"
-      },
-      {
         "id": "kurt-opsahl"
       }
     ]
@@ -451,7 +448,7 @@
   },
   {
     "id": "main-stage-13-vitalik-x-ef",
-    "title": "Vitalik x EF",
+    "title": "The State Of Ethereum Privacy",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -515,7 +512,7 @@
   },
   {
     "id": "main-stage-14-zac-aztec-jordi-baylina-x-zisk",
-    "title": "Zac Aztec + Jordi Baylina x Zisk",
+    "title": "Post Quantum Cryptography: reality check",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -534,7 +531,7 @@
   },
   {
     "id": "main-stage-15-ahmed-ghappour-x-flashbots",
-    "title": "Ahmed Ghappour x Flashbots",
+    "title": "TBD",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -582,7 +579,7 @@
   },
   {
     "id": "main-stage-16-harry-halpin-x-nym",
-    "title": "Harry Halpin x Nym",
+    "title": "Fighting against Palantir with NymVPN",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -630,7 +627,7 @@
   },
   {
     "id": "main-stage-19-final-panel-kieran-x-railgun-pg-x-w3pn-mario-havel",
-    "title": "Final panel: Kieran x Railgun, PG x W3PN, Mario Havel, ...",
+    "title": "Closing ceremony with digital rights & FOSS advocates",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
