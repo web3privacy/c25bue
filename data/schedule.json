@@ -40,8 +40,8 @@
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Talk",
-    "startTime": "17:00",
-    "endTime": "17:25",
+    "startTime": "16:25",
+    "endTime": "16:50",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -758,10 +758,10 @@
     "title": "What Cypherpunks Can Learn From GenZ?",
     "description": "A practical walkthrough of stealth addresses, ERC-5564 and real-world engineering hurdles, followed by a look at how zero-knowledge proofs and Keystore architectures could improve key rotation and user experience.",
     "descriptionFull": "A practical, workshop-style technical walkthrough of how stealth addresses work under the hood. We'll break down the cryptographic flow, modern standards like ERC-5564, and the real-world engineering hurdles (fragmentation, UTXO-like selection). We will also look ahead at the future of onchain privacy, exploring how Zero-Knowledge Proofs and Keystore architectures are set to solve key rotation and improve UX, transforming fragmented addresses into a seamless, automated privacy layer for organizations and individuals alike.",
-    "stage": "FOSS Zone",
-    "format": "Workshop",
-    "startTime": "17:00",
-    "endTime": "17:30",
+    "stage": "K.S. Puttaswamy",
+    "format": "Panel",
+    "startTime": "10:20",
+    "endTime": "10:45",
     "date": "2026-11-02",
     "speakers": [
       {
