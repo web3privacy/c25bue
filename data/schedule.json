@@ -2,11 +2,11 @@
   {
     "id": "main-stage-2-opening",
     "title": "Opening",
-    "description": "Special Openin Message by Audrey Tang",
+    "description": "Special Opening Message by Audrey Tang",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Talk",
-    "startTime": "09:30",
+    "startTime": "09:50",
     "endTime": "10:00",
     "date": "2026-11-02",
     "backgroundImage": "img/features/6.webp",
@@ -114,8 +114,8 @@
   {
     "id": "stage-2-sebastian-burgel-vpn",
     "title": "You can't trust your VPN",
-    "description": "",
-    "descriptionFull": "",
+    "description": "VPNs are built on the promise that you can break the link between who you are (your IP) and what you're doing (your online activity). This is fundamental to online privacy, and over a billion users pay $70b annually for these services. There's just one problem: no legacy VPN can actually keep this promise. In fact, most make the situation worse.",
+    "descriptionFull": "This talk will explain why that matters, how decentralized VPNs over mixnets can finally live up to the promise, and why everyone can benefit from a web3 approach: users, builders and even regulators.",
     "stage": "K.S. Puttaswamy",
     "format": "Talk",
     "startTime": "11:05",
@@ -145,9 +145,9 @@
   },
   {
     "id": "foss-3-degoogle-journey",
-    "title": "Was Ethereum ever a cypherpunk project?",
-    "description": "What was the culture in the years leading up to the birth of Ethereum?\nHow did it come about?  Who was involved?  What happened?\nWas Ethereum ever a cypherpunk project?\nCan it become one?  What does that even mean?",
-    "descriptionFull": "The presenter has recently revived a personal Ethereum history project, dating back to 2017, with biographies, articles, videos and interviews of the numerous people involved with the Ethereum project from the very early days.\n\nArtifacts of the past will be reviewed, through the lens of \"Was Ethereum ever a cyperpunk project?\" and with a view to what we can learn from those beginnings to guide Ethereum to a cypherpunk future.\n\nhttps://earlydaysofeth.org",
+    "title": "My Ongoing Escape: De-Googling Your Life and Your AI",
+    "description": "Two escapes, one problem. Escape #1, Google. Escape #2, the AI. Start your escape tonight",
+    "descriptionFull": "",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "11:30",
@@ -193,9 +193,9 @@
   },
   {
     "id": "main-stage-14-zac-aztec-jordi-baylina-x-zisk",
-    "title": "Towards Trusted Online Identities: How blockchain is transforming privacy and security in the Web3 Age",
-    "description": "This panel discussion brings together some of the world’s leading privacy and blockchain experts to discuss how to solve decentralized identity’s security vulnerabilities. In particular, the panel will explore the evolution of unique digital identifiers to create a functional digital ID that does not compromise privacy.",
-    "descriptionFull": "Security and privacy has always lagged behind technical innovation. We’re now struggling to cope with a flood of mis- and disinformation, identity theft, online fraud, hacks and major security breaches. These not only erode trust in technology, but undermine the very foundations of democracy.\n\nThis panel discussion brings together some of the world’s leading privacy and blockchain experts to explore the evolution of unique digital identifiers, and how this is the cornerstone of creating a functional digital ID that does not compromise privacy. \n\nDigital identities (DIDs) lay the ground for a seismic shift in the way citizens engage with organizations, government, and each other. They will examine recent advances in DIDs, zero knowledge rollups and other decentralized technologies, how they combine with other sources of trust, and the implications for the future of privacy and security.",
+    "title": "Post-quantum cryptography: reality check",
+    "description": "Two leading cryptographers would disscuss the state of PQ cryptography, escalating AI threats, and if cryptography will be broken in the nearest future to come",
+    "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "12:00",
@@ -259,13 +259,20 @@
     "date": "2026-11-02",
     "speakers": [
       {
-        "id": "prasanth-sugathan"
+        "id": "prasanth-sugathan",
+        "sessionRole": "Panelist"
       },
       {
-        "id": "hudson-jameson"
+        "id": "hudson-jameson",
+        "sessionRole": "Panelist"
       },
       {
-        "id": "alexander-urbelis"
+        "id": "srinivas-kodali",
+        "sessionRole": "Moderator"
+      },
+      {
+        "id": "alexander-urbelis",
+        "sessionRole": "Panelist"
       }
     ]
   },
@@ -316,9 +323,9 @@
   },
   {
     "id": "main-stage-10-kyle-x-brave",
-    "title": "Web3 is Reintroducing Privacy Issues Web2 just Fixed",
-    "description": "Web2 has just spent the better part of a decade working to remove trackers, 3P cookies, and lock down APIs to prevent fingerprinting. Meanwhile Web3 is accidentally reintroducing these problems because the browser privacy model is not well understood.",
-    "descriptionFull": "In this talk, I'll cover in greater depth what I scratched the surface on in this blog post: https://kyledenhartog.com/recreating-web3-cross-origin-tracking/\n\nCome learn some of the ways wallets are reintroducing privacy problems that we've been spending years to fix in Web2 by improving the browser privacy model. As of today Web3 is on track to make the Web privacy model worse as we share our addresses with every new site we visit. This will only get worse as we work to unify chains and make the UX more seamless with Web3 domains turning our wallet addresses into our globally unique third party cookie.\n\nAfter defining the problem, I'll cover some techniques and principles we can use to redefine how wallets interact with sites and how we as developers can think differently about this problem and propagate it throughout the protocol, sites, and wallets that we're adding to Web2.",
+    "title": "What it’s like to build products with cypherpunk principles",
+    "description": "In this talk I’ll cover the tradeoffs that come with building software that allows users to operate in a more secure, private, and self sovereign way. I’ll share my learnings and principles I use from working on the security, privacy, and Web3 teams at Brave browser so you too can help get cypherpunk software into the hands of more users.",
+    "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "13:15",
@@ -481,7 +488,7 @@
     "id": "stage-2-14-mike-x-coincenter",
     "title": "Against the criminalization of software development",
     "description": "Michael Lewellen shares his lawsuit against the DOJ over the criminalization of software development, and why this fight matters for privacy and free expression. He’ll outline how cypherpunks can defend crypto freedoms and engage in local policy activism.",
-    "descriptionFull": "Michael Lewellen will discuss his lawsuit challenging the DOJ’s attempt to criminalize open-source software, a case with major implications for developers and privacy advocates. He’ll connect this battle to broader cypherpunk principles—free speech, code as expression, and resistance to surveillance—while offering concrete steps for activists to influence policy and protect crypto freedoms in their communities.",
+    "descriptionFull": "",
     "stage": "K.S. Puttaswamy",
     "format": "Session",
     "startTime": "14:35",
@@ -543,7 +550,7 @@
   },
   {
     "id": "main-stage-15-ahmed-ghappour-x-flashbots",
-    "title": "TBD",
+    "title": "Cypherpunk Silicon [update]",
     "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
@@ -561,7 +568,7 @@
     "id": "foss-12-p2p-code-collaboration",
     "title": "Beyond GitHub: Building Open Source on Radicle",
     "description": "Discover how Radicle provides a sovereign, peer-to-peer home for open source. You'll leave knowing how Radicle works, why it matters, why communities choose it over centralized forges and how to start using it.",
-    "descriptionFull": "Discover how Radicle provides a sovereign, peer-to-peer home for open source. You'll leave knowing how Radicle works, why it matters, why communities choose it over centralized forges and how to start using it.",
+    "descriptionFull": "",
     "stage": "FOSS Zone",
     "format": "Workshop",
     "startTime": "15:30",
@@ -650,6 +657,92 @@
     "speakers": [
       {
         "id": "antonio-seveso"
+      }
+    ]
+  },
+  {
+    "id": "second-future-of-social-media",
+    "title": "The Future Of Social Media From The Margins",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Workshop",
+    "startTime": "13:50",
+    "endTime": "14:15",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "riddhima-sharma"
+      }
+    ]
+  },
+    {
+    "id": "second-leona",
+    "title": "Wilderness and Privacy: When Cybersecurity Fails",
+    "description": "Until now, humans have been protected by civilized society and allowed to exercise their social skills without feeling any personal danger. However, the deterioration of cybersecurity and the increasing sophistication of crime through AI are destroying that premise. Just as wild animals live by holding their breath and emitting no signals, humans will be forced to live while concealing much of their information. I will discuss what privacy is needed in an era of regression to an advanced wilderness.",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "12:05",
+    "endTime": "12:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "leona-Hioki"
+      }
+    ]
+  },
+      {
+    "id": "second-shayan",
+    "title": "Mother of All VPNs: The First 9 Months",
+    "description": "Started as a response to the frustration and rage following the massacre in Iran and the internet shutdowns in January 2026. A crazy idea that, once put together, actually started to work. Not just in Iran, but in Myanmar, Russia, and elsewhere. First presented at the Neo-Cypherpunk Congress in Berlin, followed by DappCon. Both were turning points in realizing I might actually be onto something. A full-on developer mode over the summer, building, breaking, fixing, and experimenting. At the Global Gathering summit, seeing people from Tor, OONI, and others so excited to hear more about MoaV was another big moment. Basically, this talk is about the birth and rise of MoaV. The story behind it, what worked, what didn’t, how it’s going, and how I envision it growing from here.",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "16:00",
+    "endTime": "16:25",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "shayan-eskandari"
+      }
+    ]
+  },
+      {
+    "id": "second-urbelis",
+    "title": "Privacy Activism, Privacy Wars, Network States (With A Privacy Focus)",
+    "description": "ENS is detecting a surge of DNS hijacks targeting Web3, exploiting centralized DNS to steal keys and drain wallets. This talk flips the script—showing how reclaiming hijacked domains can turn them into cypherpunk intelligence hubs that map attacker infrastructure, harvest metadata, and expose threat networks. By weaponizing their own tactics against them, we can harden Ethereum’s naming layer into a censorship‑resistant, privacy‑first system—and take the fight to the root.",
+    "descriptionFull": "Hijacking the Hijackers: Cypherpunk Tactics for a Safer Ethereum. The Ethereum Name Service (ENS) has been witnessing a staggering rise in DNS-based attacks targeting Web3 users, revealing a critical security and trust gap that threatens Ethereum's open and permissionless future. These attacks, primarily conducted via DNS hijacking and registrar-level compromises, redirect unsuspecting users to malicious sites designed to steal keys and drain wallets—undermining trust, safety, and onboarding efforts for the Ethereum ecosystem. This talk will first unpack the scale and sophistication of these DNS attacks against Web3 entities as detected and mitigated by ENS, highlighting the precarious reliance on centralized Web2 DNS infrastructure that attackers exploit to bypass decentralized protocol security. The resulting damage goes beyond stolen assets; it erodes user confidence, slows mainstream adoption, and endangers Ethereum's promise of inclusivity and sovereignty. I plan on covering the following: Why there is a Massive DNS Attack Wave – ENS is detecting a sharp rise in DNS hijacks and registrar-level compromises that specifically target Web3 users and assets. Exploiting Centralization – Attackers bypass Web3’s cryptographic security by exploiting weak points in centralized Web2 DNS infrastructure. Impact on Ethereum’s Future – These attacks steal funds, erode user trust, and slow onboarding—threatening Ethereum’s promise of openness, safety, and inclusivity. The Cypherpunk Response – Don’t just defend—seize back compromised domains and turn them into assets for the community. Reclaimed Domains as Intel Hubs – Use them as honeypots to collect attacker metadata, trace tactics, and map malicious networks. Turning the Tables – Apply the adversary’s own tools—surveillance & control—against them, in defense of user sovereignty. And I will end with a call to action that involves working with SEAL to develop proactive resilience and why the Ethereum ecosystem must make the DNS into a censorship-resistant, attack-aware, namespace guided by cypherpunk principles of privacy and decentralization.",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "12:25",
+    "endTime": "12:45",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "alexander-urbelis"
+      }
+    ]
+  },
+    {
+    "id": "second-first-genz",
+    "title": "What Cypherpunks Can Learn From GenZ?",
+    "description": "A practical walkthrough of stealth addresses, ERC-5564 and real-world engineering hurdles, followed by a look at how zero-knowledge proofs and Keystore architectures could improve key rotation and user experience.",
+    "descriptionFull": "A practical, workshop-style technical walkthrough of how stealth addresses work under the hood. We'll break down the cryptographic flow, modern standards like ERC-5564, and the real-world engineering hurdles (fragmentation, UTXO-like selection). We will also look ahead at the future of onchain privacy, exploring how Zero-Knowledge Proofs and Keystore architectures are set to solve key rotation and improve UX, transforming fragmented addresses into a seamless, automated privacy layer for organizations and individuals alike.",
+    "stage": "FOSS Zone",
+    "format": "Workshop",
+    "startTime": "17:00",
+    "endTime": "17:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "chandresh"
+      },
+      {
+        "id": "devisha"
+      },
+      {
+        "id": "rads"
       }
     ]
   },
