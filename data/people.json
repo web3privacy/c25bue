@@ -1143,6 +1143,22 @@
     "speakerOrder": null
   },
   {
+    "id": "lavinia-nongbri",
+    "name": "LAVINIA NONGBRI",
+    "photo": "img/Lavinia Nongbri.png",
+    "xUrl": "https://www.linkedin.com/in/lavinia-nongbri/",
+    "tagline": "Research Domain: Low Resource Machine Translation",
+    "role": "PhD CSE",
+    "orgName": "IIT Bombay",
+    "orgUrl": "https://www.cfilt.iitb.ac.in",
+    "industries": [
+      "AI",
+      "Research"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
+  },
+  {
     "id": "lefteris-karapetsas",
     "name": "LEFTERIS KARAPETSAS",
     "photo": "img/lefteris.png",
