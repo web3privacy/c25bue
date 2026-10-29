@@ -418,7 +418,7 @@
 
       .member-row.modal-member-row {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 0.6rem;
         min-width: 0;
       }
@@ -493,9 +493,14 @@
         line-height: 1.3;
         margin-top: 0.15rem;
         padding: 0 0.4rem 0.5rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      }
+      .member-chip-role a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, 0.3);
+      }
+      .member-chip-role a:hover {
+        color: #fff;
       }
       .member-more-tile {
         display: flex;
@@ -533,14 +538,63 @@
         min-width: min(22rem, 100%);
         max-width: 34rem;
         max-height: 85vh;
-        overflow-y: auto;
         padding: 2rem;
         position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      /* The scrollable area is a separate inner wrapper, not
+         .project-modal itself — so the custom track/thumb (direct
+         children of .project-modal) stay fixed in place instead of
+         scrolling away with the content. */
+      .project-modal-scroll {
+        min-height: 0;
+        flex: 1 1 auto;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .project-modal-scroll::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      .modal-scrollbar-track {
+        position: absolute;
+        top: 24px;
+        bottom: 24px;
+        right: 6px;
+        width: 6px;
+        border-radius: 999px;
+        pointer-events: none;
+        z-index: 3;
+        display: none;
+      }
+      .modal-scrollbar-track.visible {
+        display: block;
+      }
+      .modal-scrollbar-thumb {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-radius: 999px;
+        background-color: rgba(255, 255, 255, 0.25);
+        pointer-events: auto;
+        cursor: pointer;
+      }
+      .modal-scrollbar-thumb:hover,
+      .modal-scrollbar-thumb.dragging {
+        background-color: rgba(255, 255, 255, 0.4);
       }
       @media (max-width: 480px) {
         .project-modal-backdrop { padding: 0.75rem; }
         .project-modal { padding: 1.25rem; }
-        .project-modal-close { top: 0.75rem; right: 0.75rem; }
+        .modal-scrollbar-track {
+          top: 16px;
+          bottom: 16px;
+          right: 4px;
+          width: 5px;
+        }
       }
       @media (min-width: 768px) {
         .project-modal {
@@ -551,7 +605,7 @@
           font-size: 1.8rem;
         }
         .member-row.modal-member-row {
-          grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+          grid-template-columns: repeat(auto-fit, minmax(180px, 210px));
           gap: 1rem;
         }
         .member-chip-name {
@@ -569,14 +623,17 @@
         }
       }
       .project-modal-close {
+        /* .project-modal no longer scrolls (.project-modal-scroll does),
+           so a plain absolute position in the corner is enough to keep
+           this visible at all times. */
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 1.25rem;
+        right: 1.25rem;
         width: 32px;
         height: 32px;
         border-radius: 50%;
         border: 1px solid rgba(255, 255, 255, 0.25);
-        background: transparent;
+        background: #0a0a0a;
         color: rgba(255, 255, 255, 0.7);
         cursor: pointer;
         display: flex;
@@ -584,6 +641,8 @@
         justify-content: center;
         font-size: 1.1rem;
         line-height: 1;
+        z-index: 4;
+        flex-shrink: 0;
       }
       .project-modal-close:hover {
         color: #fff;
@@ -817,13 +876,18 @@
     <div id="session-modal-backdrop" class="project-modal-backdrop">
       <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="session-modal-title">
         <button type="button" class="project-modal-close" id="session-modal-close" aria-label="Close">&times;</button>
-        <div class="project-modal-head">
-          <div id="session-modal-title" class="project-modal-title"></div>
+        <div class="project-modal-scroll">
+          <div class="project-modal-head">
+            <div id="session-modal-title" class="project-modal-title"></div>
+          </div>
+          <div id="session-modal-meta" class="session-modal-meta"></div>
+          <p id="session-modal-desc" class="project-modal-desc"></p>
+          <div class="project-modal-team-label">Speakers</div>
+          <div id="session-modal-speakers" class="member-row modal-member-row"></div>
         </div>
-        <div id="session-modal-meta" class="session-modal-meta"></div>
-        <p id="session-modal-desc" class="project-modal-desc"></p>
-        <div class="project-modal-team-label">Speakers</div>
-        <div id="session-modal-speakers" class="member-row modal-member-row"></div>
+        <div class="modal-scrollbar-track" id="modal-scrollbar-track">
+          <div class="modal-scrollbar-thumb" id="modal-scrollbar-thumb"></div>
+        </div>
       </div>
     </div>
 
@@ -842,6 +906,9 @@
         var modalMeta = document.getElementById('session-modal-meta');
         var modalDesc = document.getElementById('session-modal-desc');
         var modalSpeakers = document.getElementById('session-modal-speakers');
+        var modalEl = document.querySelector('.project-modal-scroll');
+        var scrollbarTrack = document.getElementById('modal-scrollbar-track');
+        var scrollbarThumb = document.getElementById('modal-scrollbar-thumb');
 
         var formatClassMap = {
           'Talk': 'format-talk',
@@ -887,16 +954,24 @@
         var CARD_SPEAKER_LIMIT = 4;
 
         function speakerChipHtml(speaker) {
-          var caption = speaker.role || '';
+          var role = speaker.role || '';
+          var orgName = speaker.orgName || '';
+          // Avoid nesting an <a> for the org link inside the chip's own
+          // <a> (when the speaker has an xUrl) — invalid HTML that breaks
+          // click behavior. Org is a plain text label in that case.
           var href = speaker.xUrl ? ' href="' + escapeHtml(speaker.xUrl) + '" target="_blank" rel="noopener noreferrer"' : '';
           var tag = speaker.xUrl ? 'a' : 'div';
+          var orgHtml = speaker.orgUrl && tag === 'div'
+            ? '<a href="' + escapeHtml(speaker.orgUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(orgName) + '</a>'
+            : escapeHtml(orgName);
+          var caption = role && orgName ? escapeHtml(role) + ' @ ' + orgHtml : escapeHtml(role) + escapeHtml(orgName);
           return '<' + tag + ' class="member-chip"' + href + '>' +
             '<div class="member-chip-photo-wrap">' +
               '<img src="' + escapeHtml(speaker.photo) + '" alt="' + escapeHtml(speaker.name) + '" loading="lazy" />' +
               (speaker.sessionRole ? '<span class="speaker-session-role speaker-session-role-' + escapeHtml(speaker.sessionRole.toLowerCase()) + '">' + escapeHtml(speaker.sessionRole) + '</span>' : '') +
             '</div>' +
             '<div class="member-chip-name" style="' + (caption ? '' : 'padding-bottom:0.5rem;') + '">' + escapeHtml(speaker.name) + '</div>' +
-            (caption ? '<div class="member-chip-role">' + escapeHtml(caption) + '</div>' : '') +
+            (caption ? '<div class="member-chip-role">' + caption + '</div>' : '') +
             '</' + tag + '>';
         }
 
@@ -1110,6 +1185,58 @@
           renderSessions();
         }
 
+        function syncScrollbar() {
+          if (!modalEl || !scrollbarTrack || !scrollbarThumb) return;
+          var scrollable = modalEl.scrollHeight > modalEl.clientHeight + 1;
+          if (!scrollable) {
+            scrollbarTrack.classList.remove('visible');
+            return;
+          }
+          scrollbarTrack.classList.add('visible');
+          var trackHeight = scrollbarTrack.clientHeight;
+          var thumbHeight = Math.max(24, (modalEl.clientHeight / modalEl.scrollHeight) * trackHeight);
+          var maxThumbTop = trackHeight - thumbHeight;
+          var scrollRatio = modalEl.scrollTop / (modalEl.scrollHeight - modalEl.clientHeight);
+          var thumbTop = maxThumbTop * scrollRatio;
+          scrollbarThumb.style.height = thumbHeight + 'px';
+          scrollbarThumb.style.transform = 'translateY(' + thumbTop + 'px)';
+        }
+
+        function setupCustomScrollbar() {
+          if (!modalEl || !scrollbarTrack || !scrollbarThumb) return;
+          modalEl.addEventListener('scroll', syncScrollbar);
+          window.addEventListener('resize', syncScrollbar);
+
+          var dragging = false;
+          var dragStartY = 0;
+          var dragStartScrollTop = 0;
+
+          scrollbarThumb.addEventListener('mousedown', function (event) {
+            dragging = true;
+            dragStartY = event.clientY;
+            dragStartScrollTop = modalEl.scrollTop;
+            scrollbarThumb.classList.add('dragging');
+            event.preventDefault();
+          });
+
+          document.addEventListener('mousemove', function (event) {
+            if (!dragging) return;
+            var trackHeight = scrollbarTrack.clientHeight;
+            var thumbHeight = scrollbarThumb.clientHeight;
+            var maxThumbTop = trackHeight - thumbHeight;
+            if (maxThumbTop <= 0) return;
+            var deltaY = event.clientY - dragStartY;
+            var scrollableHeight = modalEl.scrollHeight - modalEl.clientHeight;
+            modalEl.scrollTop = dragStartScrollTop + (deltaY / maxThumbTop) * scrollableHeight;
+          });
+
+          document.addEventListener('mouseup', function () {
+            if (!dragging) return;
+            dragging = false;
+            scrollbarThumb.classList.remove('dragging');
+          });
+        }
+
         function openModal(session) {
           modalTitle.textContent = session.title;
           modalMeta.innerHTML = '<span class="session-time">' + escapeHtml(timeRangeText(session)) + '</span>' +
@@ -1118,6 +1245,8 @@
           modalSpeakers.innerHTML = speakerRowHtml(session.speakers);
           modalBackdrop.classList.add('open');
           document.body.style.overflow = 'hidden';
+          if (modalEl) modalEl.scrollTop = 0;
+          requestAnimationFrame(syncScrollbar);
         }
 
         function closeModal() {
@@ -1171,6 +1300,8 @@
               photo: person.photo ? '../' + person.photo : '',
               xUrl: person.xUrl,
               role: person.role,
+              orgName: person.orgName,
+              orgUrl: person.orgUrl,
               sessionRole: typeof ref === 'object' ? ref.sessionRole : undefined,
             });
           });
@@ -1203,6 +1334,7 @@
             stageFilterGroup.setupEvents();
             formatFilterGroup.setupEvents();
             setupModalEvents();
+            setupCustomScrollbar();
             applyFilters();
           })
           .catch(function () {
