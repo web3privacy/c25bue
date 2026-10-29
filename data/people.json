@@ -2260,7 +2260,7 @@
       "Arts",
       "Human Rights"
     ],
-    "speaker2026": true
+    "speaker2026": true,
     "speakerOrder": 13
   },
   {
@@ -2276,7 +2276,7 @@
       "p2p",
       "open-source"
     ],
-    "speaker2026": true
+    "speaker2026": true,
     "speakerOrder": 42
   },
   {
@@ -2289,7 +2289,7 @@
   "orgName": "Ethereum Foundation",
   "orgUrl": "https://ethereum.foundation",
   "industries": ["Privacy", "Wallets"],
-  "speaker2026": true
+  "speaker2026": true,
   "speakerOrder": 30
 },
 {
@@ -2302,7 +2302,7 @@
   "orgName": "WalletChan",
   "orgUrl": "",
   "industries": ["Privacy", "Wallets"],
-  "speaker2026": true
+  "speaker2026": true,
   "speakerOrder": 50
 }
 ]
