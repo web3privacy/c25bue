@@ -775,8 +775,8 @@
       "Mining",
       "Protocols"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 30
   },
   {
     "id": "isabela-fernandes",
@@ -2134,7 +2134,7 @@
       "Digital Rights"
     ],
     "speaker2026": true,
-    "speakerOrder": 50
+    "speakerOrder": 20
   },
   {
     "id": "tur-tyhyi",
