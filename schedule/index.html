@@ -538,16 +538,23 @@
         min-width: min(22rem, 100%);
         max-width: 34rem;
         max-height: 85vh;
-        overflow-y: auto;
         padding: 2rem;
         position: relative;
-        /* Native scrollbar fully hidden; a custom track/thumb pair
-           (see .modal-scrollbar-*) is drawn on top instead, so no
-           browser ever shows default up/down arrow buttons. */
+        display: flex;
+        flex-direction: column;
+      }
+      /* The scrollable area is a separate inner wrapper, not
+         .project-modal itself — so the custom track/thumb (direct
+         children of .project-modal) stay fixed in place instead of
+         scrolling away with the content. */
+      .project-modal-scroll {
+        min-height: 0;
+        flex: 1 1 auto;
+        overflow-y: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
       }
-      .project-modal::-webkit-scrollbar {
+      .project-modal-scroll::-webkit-scrollbar {
         display: none;
         width: 0;
         height: 0;
@@ -616,16 +623,12 @@
         }
       }
       .project-modal-close {
-        /* sticky (not absolute) so it stays put at the top of the modal's
-           viewport as the modal content scrolls, instead of scrolling
-           away with it. float lets it sit above the content without
-           reserving its own row in the flow. */
-        position: sticky;
-        top: 0;
-        float: right;
-        margin-top: -0.25rem;
-        margin-right: -0.25rem;
-        margin-bottom: -2rem;
+        /* .project-modal no longer scrolls (.project-modal-scroll does),
+           so a plain absolute position in the corner is enough to keep
+           this visible at all times. */
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
         width: 32px;
         height: 32px;
         border-radius: 50%;
@@ -638,7 +641,8 @@
         justify-content: center;
         font-size: 1.1rem;
         line-height: 1;
-        z-index: 2;
+        z-index: 4;
+        flex-shrink: 0;
       }
       .project-modal-close:hover {
         color: #fff;
@@ -879,13 +883,15 @@
     <div id="session-modal-backdrop" class="project-modal-backdrop">
       <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="session-modal-title">
         <button type="button" class="project-modal-close" id="session-modal-close" aria-label="Close">&times;</button>
-        <div class="project-modal-head">
-          <div id="session-modal-title" class="project-modal-title"></div>
+        <div class="project-modal-scroll">
+          <div class="project-modal-head">
+            <div id="session-modal-title" class="project-modal-title"></div>
+          </div>
+          <div id="session-modal-meta" class="session-modal-meta"></div>
+          <p id="session-modal-desc" class="project-modal-desc"></p>
+          <div class="project-modal-team-label">Speakers</div>
+          <div id="session-modal-speakers" class="member-row modal-member-row"></div>
         </div>
-        <div id="session-modal-meta" class="session-modal-meta"></div>
-        <p id="session-modal-desc" class="project-modal-desc"></p>
-        <div class="project-modal-team-label">Speakers</div>
-        <div id="session-modal-speakers" class="member-row modal-member-row"></div>
         <div class="modal-scrollbar-track" id="modal-scrollbar-track">
           <div class="modal-scrollbar-thumb" id="modal-scrollbar-thumb"></div>
         </div>
@@ -907,7 +913,7 @@
         var modalMeta = document.getElementById('session-modal-meta');
         var modalDesc = document.getElementById('session-modal-desc');
         var modalSpeakers = document.getElementById('session-modal-speakers');
-        var modalEl = document.querySelector('.project-modal');
+        var modalEl = document.querySelector('.project-modal-scroll');
         var scrollbarTrack = document.getElementById('modal-scrollbar-track');
         var scrollbarThumb = document.getElementById('modal-scrollbar-thumb');
 
