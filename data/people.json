@@ -746,6 +746,22 @@
     "speakerOrder": 44
   },
   {
+    "id": "henning-diedrich",
+    "name": "HENNING DIEDRICH",
+    "photo": "img/henning-diedrich.jpeg",
+    "xUrl": "https://x.com/bajpaiharsh244",
+    "tagline": "Experienced tech leader from IBM to European Commision",
+    "role": "protocal lead",
+    "orgName": "Swarm",
+    "orgUrl": "https://www.ethswarm.org",
+    "industries": [
+      "Privacy",
+      "Finance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 30
+  },
+  {
     "id": "hudson-jameson",
     "name": "HUDSON JAMESON",
     "photo": "img/hudson-jameson.jpeg",
@@ -959,6 +975,22 @@
     ],
     "speaker2026": true,
     "speakerOrder": 8
+  },
+  {
+    "id": "kashvi",
+    "name": "kashvi",
+    "photo": "img/kashvi.png",
+    "xUrl": "https://x.com/kashvi",
+    "tagline": "Social Marketing Lead",
+    "role": "Creative Tech Marketer",
+    "orgName": "Boundless",
+    "orgUrl": "https://boundless.network",
+    "industries": [
+      "Privacy",
+      "Quantum resistance"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 40
   },
   {
     "id": "kate-stapleton",
