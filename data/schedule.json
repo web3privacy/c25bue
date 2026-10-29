@@ -321,6 +321,35 @@
       }
     ]
   },
+    {
+    "id": "stage-2-AI-Data-Centers",
+    "title": "Feeding the Cloud: Data centers, knowledge and resistance in India",
+    "description": "Panel with gather activists that led mass mobilisation of people, award-winning investigative journalists, researchers and advocates of people-centric AI.",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Panel",
+    "startTime": "11:45",
+    "endTime": "12:10",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "shripad-dharmadhikary",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "sripath-roy-koganti",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "deeksha-vanguru",
+        "sessionRole": "Panelist"
+      },
+      {
+        "id": "sushimita",
+        "sessionRole": "Moderator"
+      }
+    ]
+  },
   {
     "id": "main-stage-10-kyle-x-brave",
     "title": "What it’s like to build products with cypherpunk principles",
