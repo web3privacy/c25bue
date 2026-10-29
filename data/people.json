@@ -1516,8 +1516,8 @@
       "Privacy",
       "Digital Rights"
     ],
-    "speaker2026": false,
-    "speakerOrder": null
+    "speaker2026": true,
+    "speakerOrder": 30
   },
   {
     "id": "pieman",
@@ -1578,6 +1578,21 @@
     "role": "Legal Director",
     "orgName": "Software Freedom Law Center",
     "orgUrl": "https://www.linkedin.com/in/prasanthsugathan/",
+    "industries": [
+      "Privacy"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 15
+  },
+  {
+    "id": "pranesh-prakash",
+    "name": "Prasanth Sugathan",
+    "photo": "img/pranesh-prakash.png",
+    "xUrl": "https://www.linkedin.com/in/praneshprakash/",
+    "tagline": "co-founder of the Centre for Internet and Society",
+    "role": "Tech Law & Policy Adviser",
+    "orgName": "[remote video]",
+    "orgUrl": "https://www.linkedin.com/in/praneshprakash/",
     "industries": [
       "Privacy"
     ],
