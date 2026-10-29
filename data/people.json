@@ -2260,7 +2260,24 @@
       "Arts",
       "Human Rights"
     ],
-    "speaker2026": false
+    "speaker2026": true
+    "speakerOrder": 13
+  },
+  {
+    "id": "yorgos-saslis",
+    "name": "Yorgos Saslis",
+    "photo": "img/Yorgos Saslis.png",
+    "xUrl": "https://yorgos.net.gr",
+    "tagline": "love facing challenges and solving problems",
+    "role": "Infra, CI, Ops and whatever-needs-doing Engineer",
+    "orgName": "Radicle",
+    "orgUrl": "https://radicle.dev",
+    "industries": [
+      "p2p",
+      "open-source"
+    ],
+    "speaker2026": true
+    "speakerOrder": 42
   },
   {
   "id": "lucemans",
@@ -2273,6 +2290,7 @@
   "orgUrl": "https://ethereum.foundation",
   "industries": ["Privacy", "Wallets"],
   "speaker2026": true
+  "speakerOrder": 30
 },
 {
   "id": "apoorv",
@@ -2285,5 +2303,6 @@
   "orgUrl": "",
   "industries": ["Privacy", "Wallets"],
   "speaker2026": true
+  "speakerOrder": 50
 }
 ]
