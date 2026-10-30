@@ -524,8 +524,8 @@
     "descriptionFull": "Michael Lewellen will discuss his lawsuit challenging the DOJ’s attempt to criminalize open-source software, a case with major implications for developers and privacy advocates. He’ll connect this battle to broader cypherpunk principles—free speech, code as expression, and resistance to surveillance—while offering concrete steps for activists to influence policy and protect crypto freedoms in their communities.",
     "stage": "K.S. Puttaswamy",
     "format": "Session",
-    "startTime": "14:35",
-    "endTime": "15:00",
+    "startTime": "15:50",
+    "endTime": "16:15",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -655,8 +655,8 @@
     "descriptionFull": "The widespread application of encryption and privacy tools to security-critical applications has created a world where governments have started targeting the use of these tools instead of the content of the tools. To respond to this we need to imagine new forms of security. I propose one such tool in the form of textual stenography which allows you to use encryption while appearing to post normal encrypted text.",
     "stage": "K.S. Puttaswamy",
     "format": "Session",
-    "startTime": "16:25",
-    "endTime": "17:00",
+    "startTime": "15:25",
+    "endTime": "15:50",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -765,7 +765,7 @@
     "title": "Terminal Values",
     "description": "What values do we uphold as cypherpunks in 2026? Lessons from a long-lasting activist",
     "descriptionFull": "Danny spent decade in Electronic Frontier Foundation as an activist, international director, and finally, director of strategy. He was around the first-wave of cypherpunks, seen creation of cryptographic activism. Now it's time to share his vision on cypherpunk values that will work in 2026",
-    "stage": "K.S. Puttaswamy",
+    "stage": "Shreya Singhal",
     "format": "Session",
     "startTime": "17:15",
     "endTime": "17:30",
