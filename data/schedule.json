@@ -733,10 +733,10 @@
     "title": "Mother of All VPNs: The First 9 Months",
     "description": "Started as a response to the frustration and rage following the massacre in Iran and the internet shutdowns in January 2026. A crazy idea that, once put together, actually started to work. Not just in Iran, but in Myanmar, Russia, and elsewhere. First presented at the Neo-Cypherpunk Congress in Berlin, followed by DappCon. Both were turning points in realizing I might actually be onto something. A full-on developer mode over the summer, building, breaking, fixing, and experimenting. At the Global Gathering summit, seeing people from Tor, OONI, and others so excited to hear more about MoaV was another big moment. Basically, this talk is about the birth and rise of MoaV. The story behind it, what worked, what didn’t, how it’s going, and how I envision it growing from here.",
     "descriptionFull": "",
-    "stage": "K.S. Puttaswamy",
+    "stage": "Shreya Singhal",
     "format": "Session",
-    "startTime": "16:00",
-    "endTime": "16:25",
+    "startTime": "16:50",
+    "endTime": "17:15",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -757,6 +757,22 @@
     "speakers": [
       {
         "id": "alexander-urbelis"
+      }
+    ]
+  },
+  {
+    "id": "first-danny",
+    "title": "Terminal Values",
+    "description": "What values do we uphold as cypherpunks in 2026? Lessons from a long-lasting activist",
+    "descriptionFull": "Danny spent decade in Electronic Frontier Foundation as an activist, international director, and finally, director of strategy. He was around the first-wave of cypherpunks, seen creation of cryptographic activism. Now it's time to share his vision on cypherpunk values that will work in 2026",
+    "stage": "K.S. Puttaswamy",
+    "format": "Session",
+    "startTime": "17:15",
+    "endTime": "17:30",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "danny-o-brien"
       }
     ]
   },
@@ -808,7 +824,7 @@
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Panel",
-    "startTime": "17:25",
+    "startTime": "17:30",
     "endTime": "18:00",
     "date": "2026-11-02",
     "speakers": [
