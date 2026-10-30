@@ -98,10 +98,8 @@
   {
     "id": "foss-2-nodes",
     "title": "What does Web3 Privacy mean in an agentic world?",
-    "description": ""Ethereum privacy requires more than hiding a transaction’s contents. The infrastructure must also protect what users read—balances, addresses, contracts—and prevent their network identity from being linked to those requests or their transaction submissions.",
-    "descriptionFull": "Ethereum privacy requires more than hiding a transaction’s contents. The infrastructure must also protect what users read—balances, addresses, contracts—and prevent their network identity from being linked to those requests or their transaction submissions. This talk explores how private reads, privacy-preserving transaction submission, and a distributed network of independent node operators can make privacy part of everyday wallet UX.
-
-Then we extend that foundation to AI agents. If an agent exposes your intent while reasoning, querying data, or building a transaction, a private wallet cannot undo the leak. How can we preserve privacy throughout that process while enforcing explicit security checks before signing? From wallets to agents, we explore what it takes to make private UX future-proof",
+    "description": "Ethereum privacy requires more than hiding a transaction’s contents. The infrastructure must also protect what users read—balances, addresses, contracts—and prevent their network identity from being linked to those requests or their transaction submissions",
+    "descriptionFull": "Ethereum privacy requires more than hiding a transaction’s contents. The infrastructure must also protect what users read—balances, addresses, contracts—and prevent their network identity from being linked to those requests or their transaction submissions. This talk explores how private reads, privacy-preserving transaction submission, and a distributed network of independent node operators can make privacy part of everyday wallet UX. Then we extend that foundation to AI agents. If an agent exposes your intent while reasoning, querying data, or building a transaction, a private wallet cannot undo the leak. How can we preserve privacy throughout that process while enforcing explicit security checks before signing? From wallets to agents, we explore what it takes to make private UX future-proof",
     "stage": "FOSS Zone",
     "format": "Talk",
     "startTime": "11:00",
