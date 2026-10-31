@@ -61,7 +61,14 @@
     "date": "2026-11-02",
     "backgroundImage": "img/features/3.webp",
     "backgroundImageSize": "110%",
-    "speakers": []
+    "speakers": [
+      {
+        "id": "pg"
+      },
+      {
+        "id": "mykola-siusko"
+      }
+    ]
   },
   {
     "id": "stage-2-3-sasha-shilina-x-paradigm",
