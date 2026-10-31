@@ -1438,6 +1438,22 @@
     "speakerOrder": null
   },
   {
+    "id": "nicolas-bacca",
+    "name": "Nicolas Bacca",
+    "photo": "img/Nicolas Bacca.jpeg",
+    "xUrl": "https://x.com/BTChip",
+    "tagline": "Leader in hardware R&D",
+    "role": "Lead",
+    "orgName": "ZKKNOX",
+    "orgUrl": "https://zknox.com/team-nicolas",
+    "industries": [
+      "Cryptography",
+      "Hardware"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 30
+  },
+  {
     "id": "nico-consigny",
     "name": "NICO CONSIGNY",
     "photo": "img/consigny.jpg",
