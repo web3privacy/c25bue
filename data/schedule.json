@@ -453,6 +453,22 @@
       }
     ]
   },
+    {
+    "id": "second-nicolas",
+    "title": "Advancing Hardware Security & Cryptography",
+    "description": "Expect deep insights around how secure hardware can be built, if TEEs provide strong secure guarantees, PQ cryptography",
+    "descriptionFull": "",
+    "stage": "K.S. Puttaswamy",
+    "format": "Talk",
+    "startTime": "16:15",
+    "endTime": "16:40",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "nicolas-bacca"
+      }
+    ]
+  },
   {
     "id": "main-stage-12-ai-governance-it-for-change-abhineet-nayyar-x-it-for-change-vinaj-x-aapti-uma-x-rati-foundation-kurt-opsahl-x-ex-eff",
     "title": "Governing for baselines | The material foundations of artificial intelligence supply chains",
