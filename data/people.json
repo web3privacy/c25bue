@@ -1375,6 +1375,22 @@
     "speakerOrder": 13
   },
   {
+    "id": "mykola-siusko",
+    "name": "Mykola Siusko",
+    "photo": "img/mykola.png",
+    "xUrl": "https://www.linkedin.com/in/siusko/",
+    "tagline": "Community builder focused on joy of activism",
+    "role": "Core",
+    "orgName": "Web3Privacy Now",
+    "orgUrl": "https://web3privacy.info",
+    "industries": [
+      "Privacy",
+      "Digital Rights"
+    ],
+    "speaker2026": true,
+    "speakerOrder": 12
+  },
+  {
     "id": "nanak-nihal-khalsa",
     "name": "NANAK NIHAL KHALSA",
     "photo": "img/Nanak-Nihal-Khalsa.jpg",
