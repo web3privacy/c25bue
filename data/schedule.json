@@ -1,15 +1,15 @@
 [
   {
     "id": "main-stage-2-opening",
-    "title": "Opening",
-    "description": "Special Opening Message by Audrey Tang",
+    "title": "Doors are opened",
+    "description": "",
     "descriptionFull": "",
     "stage": "Shreya Singhal",
     "format": "Talk",
-    "startTime": "09:50",
+    "startTime": "09:30",
     "endTime": "10:00",
     "date": "2026-11-02",
-    "backgroundImage": "img/features/6.webp",
+    "backgroundImage": "",
     "backgroundImageSize": "540px",
     "speakers": [
       {
@@ -73,6 +73,24 @@
       }
     ]
   },
+    {
+    "id": "main-stage-3-opening",
+    "title": "Opening",
+    "description": "Special Opening Message by Audrey Tang",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Talk",
+    "startTime": "10:45",
+    "endTime": "10:50",
+    "date": "2026-11-02",
+    "backgroundImage": "img/features/6.webp",
+    "backgroundImageSize": "540px",
+    "speakers": [
+      {
+        "id": "audrey-tang"
+      }
+    ]
+  },
   {
     "id": "stage-2-3-sasha-shilina-x-paradigm",
     "title": "Lethe Machina: Privacy When Nothing Fades",
@@ -96,8 +114,8 @@
     "descriptionFull": "Technology promises inclusion but leaves a deep traces of exclusion, divide, and perpetual violation of rights and privileges. The latest is AI and Digital Public Infrastructure - Osama Manzar brings 25 years of learnings of what’s the relationship between digital promises and poverty alleviation amidst AI as a confusing paradox.",
     "stage": "Shreya Singhal",
     "format": "Talk",
-    "startTime": "10:45",
-    "endTime": "11:10",
+    "startTime": "10:50",
+    "endTime": "11:15",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -144,8 +162,8 @@
     "descriptionFull": "When society at large can't or won't stop the spread of ubiquitous surveillance, we need strong privacy technologies that return control and autonomy to users. Yet some of these tools, and the people who build and run them, have come under legal attack. Come learn about these legal threats and how to protect our right to build the tools we need, by practical steps and by working together to create the legal policy space necessary for a free society.",
     "stage": "Shreya Singhal",
     "format": "Session",
-    "startTime": "11:10",
-    "endTime": "11:35",
+    "startTime": "11:15",
+    "endTime": "11:45",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -176,8 +194,8 @@
     "descriptionFull": "Isha Suri examines the political economy of AI infrastructure: where power accumulates across the stack, how dependencies are created and reinforced, and what this means for building alternatives. Drawing on research into cloud infrastructure and AI market power, she explores cloud credits, partnerships, switching costs and vertical integration. The talk considers open-source and local AI, open cloud infrastructure, public or shared compute, and different models of ownership and governance, asking whether these alternatives can redistribute power when the underlying infrastructure remains concentrated.",
     "stage": "Shreya Singhal",
     "format": "Session",
-    "startTime": "11:35",
-    "endTime": "12:00",
+    "startTime": "11:45",
+    "endTime": "12:15",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -208,8 +226,8 @@
     "descriptionFull": "There's a lot of panic within cryptography scene: will AI break reliable cryptographic schemas? How far we are before Post-Quantum computers will break everything. Myths vs Practical cryptographic knowledge.",
     "stage": "Shreya Singhal",
     "format": "Session",
-    "startTime": "12:00",
-    "endTime": "12:25",
+    "startTime": "12:15",
+    "endTime": "12:45",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -217,6 +235,22 @@
       },
       {
         "id": "jordi-baylina"
+      }
+    ]
+  },
+  {
+    "id": "shreya-6-prasan",
+    "title": "Special message from Pranesh Prakash",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Talk",
+    "startTime": "12:45",
+    "endTime": "12:50",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "pranesh-prakash"
       }
     ]
   },
