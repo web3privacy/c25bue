@@ -278,7 +278,7 @@
     "stage": "Puttaswamy",
     "format": "Panel",
     "startTime": "12:45",
-    "endTime": "13:05",
+    "endTime": "13:10",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -347,8 +347,8 @@
     "descriptionFull": "There's a lot of talk in Ethereum-land about being cypherpunk, but does the roadmap actually reflect those values?\n\nJoin Thomas Thiery (Ethereum Foundation), Sebastian Bürgel (Gnosis / HOPR), jimjim (Warptoad) and cheeky-gorilla (Protocol Guild, moderator) as they put the roadmap on trial and judge the upgrades by how cypherpunk they are. Which ones put more power in your hands, and which ones put it in someone else's?\n\nExpect stubborn realism, hard tradeoffs, and no hand-waving. Zero technical knowledge required!",
     "stage": "Puttaswamy",
     "format": "Panel",
-    "startTime": "13:05",
-    "endTime": "13:25",
+    "startTime": "13:10",
+    "endTime": "13:35",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -377,7 +377,7 @@
     "stage": "Puttaswamy",
     "format": "Panel",
     "startTime": "11:45",
-    "endTime": "12:10",
+    "endTime": "12:05",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -421,8 +421,8 @@
     "descriptionFull": "Experienced indian hacktivists will disscuss the state of cybersec in India going through many domains from identity, cyber insidents, and voting.",
     "stage": "Puttaswamy",
     "format": "Panel",
-    "startTime": "13:25",
-    "endTime": "13:50",
+    "startTime": "13:35",
+    "endTime": "14:05",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -535,7 +535,7 @@
     "descriptionFull": "Privacy is finally being integrated in web3 wallets. It's a long road, and there are many practical hurdles left to solve. In this panel, we'll discuss what several wallets are doing to solve privacy's last-mile problem. From onchain privacy to network-level privacy, Tor integration, address and amount correlations, private wallet recovery, and dealing with the problem of intermediaries learning of your transaction before it gets onchain.\n\nSpeakers:\n@rsquare (Safe)\n@LucemansNL (Ethereum Foundation)\n@apoorveth (WalletChan)\n@sethforprivacy (Cake Wallet)\n@polymutex (moderator)",
     "stage": "Puttaswamy",
     "format": "Panel",
-    "startTime": "14:15",
+    "startTime": "14:05",
     "endTime": "14:35",
     "date": "2026-11-02",
     "speakers": [
@@ -600,8 +600,8 @@
     "descriptionFull": "Ethereum offers a unique value proposition: infrastructure with guarantees independent from counterparties. Ethereum works predictably, without the need for a vendor to operate, cooperate, or remain benevolent. But apps built on Ethereum often reintroduce those dependencies one layer higher (eg. governance, upgrade authority, relayers, hosted infra).\n\nFor orgs, this is different from an ideological problem. A competitor gaining influence over critical payment infra is counterparty risk. A maintainer team disappearing is continuity risk. An intermediary refusing service is operational risk.\n\nWe can use the walkaway test to evaluate what should still work when these dependencies fail. And recovering funds is table stakes. A shielded system can ensure asset recovery while losing the privacy that made it useful.\n\nBusiness adoption does not require weakening cypherpunk guarantees. In fact, with enough economic importance, I think cypherpunk guarantees will become ordinary infrastructure requirements. We are building systems strong enough for businesses to depend on so that everyone can inherit the same protections.",
     "stage": "Puttaswamy",
     "format": "Talk",
-    "startTime": "14:30",
-    "endTime": "14:55",
+    "startTime": "16:40",
+    "endTime": "17:05",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -763,8 +763,8 @@
     "descriptionFull": "In 2025 Point of View set out to reimagine social media through a series of consultations, shifting the focus from what was wrong with social media to what could social media look like if it were designed by us, for us? This talk highlights some of the ideas that came out of this series of consultations in 2025 and a follow-up workshop we did with a small group of experts.",
     "stage": "Puttaswamy",
     "format": "Session",
-    "startTime": "13:50",
-    "endTime": "14:15",
+    "startTime": "14:35",
+    "endTime": "15:00",
     "date": "2026-11-02",
     "speakers": [
       {
