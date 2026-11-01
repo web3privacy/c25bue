@@ -437,22 +437,6 @@
     ]
   },
   {
-    "id": "foss-7-something",
-    "title": "How to Kill Trust, Portable Social Graph as a Real-World Asset",
-    "description": "The social graph is now a company asset. It is worth billions, platforms monetize it, AI agents will soon price it, and you can't even see it. AR glasses with a camera and an automated workflow let a stranger learn everything about you in seconds, enough to fake trust and socially engineer you on the spot. DeFi learned to price collateral without trusting people. Now that the attention economy is turning into a trust economy, can we price trust without exploiting it?",
-    "descriptionFull": "The social graph is now a company asset. It is worth billions, platforms monetize it, AI agents will soon price it, and you can't even see it. AR glasses with a camera and an automated workflow let a stranger learn everything about you in seconds, enough to fake trust and socially engineer you on the spot. DeFi learned to price collateral without trusting people. Now that the attention economy is turning into a trust economy, can we price trust without exploiting it?",
-    "stage": "FOSS Zone",
-    "format": "Workshop",
-    "startTime": "13:30",
-    "endTime": "14:00",
-    "date": "2026-11-02",
-    "speakers": [
-      {
-        "id": "iva"
-      }
-    ]
-  },
-  {
     "id": "main-stage-11-aya-s-panel-on-funding-with-access-now-luminate",
     "title": "Beyond Digital Rights: Building the Capacity to Shape Our Digital Future",
     "description": "As surveillance, internet restrictions and AI reshape digital power, Access Now, Luminate and the Ethereum Foundation explore how to strengthen the capacity to shape our digital future. The panel examines local leadership, resilient institutions, cooperation between civil society and technology communities, and public-interest infrastructure built around privacy, security and freedom. It considers how funding, shared expertise and long-term institutional support can sustain this work and turn common priorities into practical collaboration.",
@@ -481,8 +465,8 @@
     "descriptionFull": "Today's internet is rented: platforms, registrars, app stores and gateways can switch you off.\n\nFreedom is an open-source browser where you become part of the network, with built-in Swarm, IPFS, Radicle and Tor.\n\nLive demo: sites no one can take down, names you own, publishing without permission.\n\nThe hard parts of building it, and what's next.\n\n10k downloads in 149 countries. Install it here and join in.",
     "stage": "FOSS Zone",
     "format": "Talk",
-    "startTime": "14:00",
-    "endTime": "14:30",
+    "startTime": "13:30",
+    "endTime": "14:10",
     "date": "2026-11-02",
     "speakers": [
       {
@@ -664,7 +648,7 @@
     "descriptionFull": "2026 is shaping up to be a turning point for code collaboration. As centralized forges struggle under the growing demands of agentic development, more developers are looking beyond the platform model searching for resilience, ownership, and autonomy.\n\nRadicle has emerged as the most widely used decentralized alternative: a sovereign, p2p network for code collaboration built on Git, with more than 20,000 repositories actively hosted across the network.\n\nIn this workshop, we'll introduce Radicle as a permanent home for open source, not only for human developers, but for a new generation of autonomous software agents that need to discover repositories, propose changes and collaborate without relying on a centralized intermediary.\n\nWe'll explore how Radicle works, how developers collaborate on repositories, and what peer-to-peer code infrastructure makes possible for human and agentic workflows.\n\nCome with a laptop and Radicle installed.",
     "stage": "FOSS Zone",
     "format": "Workshop",
-    "startTime": "15:30",
+    "startTime": "15:00",
     "endTime": "16:00",
     "date": "2026-11-02",
     "speakers": [
