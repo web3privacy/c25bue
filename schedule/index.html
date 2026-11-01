@@ -321,28 +321,60 @@
       .session-speakers {
         flex: 0 0 auto;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.6rem;
+        max-width: 26rem;
       }
 
-      /* Horizontal speaker strip: overlapping avatars, no name/role text
-         (names appear in the modal) — keeps a schedule row single-line. */
+      /* Mini speaker chips: avatar with name and organization beneath. */
+      .session-speaker {
+        flex: 0 0 auto;
+        width: max-content;
+        min-width: 84px;
+        max-width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
       .session-speaker-avatar {
-        width: 76px;
-        height: 76px;
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
         object-fit: cover;
-        border: 3px solid #0a0a0a;
-        margin-left: -1.25rem;
         flex-shrink: 0;
         display: block;
+        border: 1px solid rgba(255, 255, 255, 0.15);
       }
-      .session-speaker-avatar:first-child { margin-left: 0; }
+      .session-speaker-name {
+        margin-top: 0.45rem;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        font-size: 0.76rem;
+        line-height: 1.2;
+        color: #fff;
+        max-width: 100%;
+        overflow-wrap: break-word;
+      }
+      .session-speaker-org {
+        margin-top: 0.15rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.68rem;
+        line-height: 1.2;
+        color: rgba(255, 255, 255, 0.55);
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
       .session-speaker-more {
-        width: 76px;
-        height: 76px;
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
-        border: 3px solid #0a0a0a;
-        margin-left: -1.25rem;
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -353,6 +385,84 @@
         color: rgba(255, 255, 255, 0.75);
         background: rgba(255, 255, 255, 0.1);
       }
+
+      /* With 3+ speakers the chip row would squeeze the title, so on wide
+         screens it drops beneath the text instead of sitting beside it. */
+      @media (min-width: 641px) {
+        .session-item.session-item-many {
+          display: grid;
+          grid-template-columns: auto minmax(0, 1fr);
+          column-gap: 2rem;
+          row-gap: 0.6rem;
+          align-items: start;
+        }
+        .session-item-many .session-time-col {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+          align-self: stretch;
+          justify-content: center;
+        }
+        .session-item-many .session-main {
+          grid-column: 2;
+          grid-row: 1;
+        }
+        .session-item-many .session-footer {
+          grid-column: 2;
+          grid-row: 2;
+        }
+        /* 4+ speakers: description spans the full width, then one bottom row
+           with "Read more." on the left and every speaker in a single row. */
+        .session-item-wide .session-footer {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          column-gap: 1.5rem;
+          row-gap: 0.9rem;
+        }
+        .session-item-wide .session-footer-text { display: contents; }
+        .session-item-wide .session-footer-text .session-desc {
+          grid-column: 1 / -1;
+          -webkit-line-clamp: 3;
+        }
+        .session-item-wide .session-footer-text .read-more-link {
+          grid-column: 1;
+          grid-row: 2;
+          align-self: end;
+          justify-self: start;
+        }
+        .session-item-wide .session-footer .session-speakers {
+          grid-column: 2;
+          grid-row: 2;
+          flex-wrap: nowrap;
+        }
+        .session-item-many .session-speakers {
+          justify-content: flex-end;
+          gap: 0.8rem;
+          max-width: calc(var(--cols, 3) * 100px + (var(--cols, 3) - 1) * 0.8rem);
+        }
+      }
+      /* 3+ speakers: "Read more." (left) and the speaker chips (right)
+         share one footer row, so the card doesn't grow an extra line. */
+      .session-footer {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 1.5rem;
+        min-width: 0;
+      }
+      .session-footer-text {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+      .session-footer-text .session-desc {
+        -webkit-line-clamp: 6;
+        margin-bottom: 0;
+      }
+      .session-footer-text .read-more-link { align-self: flex-start; }
+      .session-footer .session-speakers { flex: 0 1 auto; align-self: flex-end; }
 
       @media (max-width: 640px) {
         .session-item {
@@ -388,32 +498,50 @@
         .session-desc {
           -webkit-line-clamp: 3;
         }
-        /* Speakers (left) and "Read more." (right) share one row at the
-           card's bottom edge. .session-main reserves space at its own
-           bottom (padding-bottom) for the speaker strip, which is then
-           docked there with position: absolute — so both read as one row
-           without restructuring .read-more-link out of .session-main
-           (which would also require reworking the desktop flex layout). */
-        .session-main {
-          position: relative;
-          padding-bottom: 3.25rem;
+        .session-footer {
+          flex-direction: column;
+          align-items: stretch;
         }
+        .session-footer-text .session-desc { -webkit-line-clamp: 4; }
+        .session-footer .session-speakers { align-self: stretch; }
+        /* Speaker chips (with names) sit in a wrapping row below the
+           text, left-aligned; "Read more." stays at the end of the text. */
         .session-speakers {
-          position: absolute;
-          left: 1.25rem;
-          bottom: 1.1rem;
+          justify-content: flex-start;
+          max-width: none;
+          gap: 0.75rem;
         }
-        .read-more-link {
-          position: absolute;
-          right: 0;
-          bottom: 0;
+        /* Compact horizontal chips: small avatar with name/org beside it,
+           instead of tall centered columns that waste vertical space. */
+        .session-speakers {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0.6rem 0.75rem;
+          padding-top: 0.6rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .session-speaker {
+          width: auto;
+          max-width: 100%;
+          display: grid;
+          grid-template-columns: 40px minmax(0, 1fr);
+          column-gap: 0.6rem;
+          align-items: center;
+          text-align: left;
         }
         .session-speaker-avatar,
         .session-speaker-more {
-          width: 56px;
-          height: 56px;
-          margin-left: -0.9rem;
+          width: 40px;
+          height: 40px;
         }
+        .session-speaker-avatar { grid-row: 1 / span 2; }
+        .session-speaker-name,
+        .session-speaker-org {
+          margin-top: 0;
+          overflow-wrap: normal;
+        }
+        .session-speaker-org { -webkit-line-clamp: 1; }
+        .session-speaker-name { align-self: center; }
       }
 
       .member-row.modal-member-row {
@@ -714,31 +842,6 @@
   order: 4;
 }
     
-      /* Visible names for every scheduled speaker, including panelists. */
-      .session-speakers {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 0.8rem 0.6rem;
-        max-width: 15rem;
-      }
-      .session-speaker-person {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 72px;
-        min-width: 0;
-        text-align: center;
-      }
-      .session-speaker-person .session-speaker-avatar,
-      .session-speaker-placeholder {
-        width: 64px;
-        height: 64px;
-        margin: 0;
-        flex-shrink: 0;
-        border-radius: 50%;
-      }
       .session-speaker-placeholder {
         display: flex;
         align-items: center;
@@ -746,71 +849,7 @@
         background: #252525;
         color: #fff;
         font-family: "DM Sans", sans-serif;
-      }
-      .session-speaker-name {
-        display: block;
-        margin-top: 0.4rem;
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.72rem;
         font-weight: 600;
-        line-height: 1.35;
-        color: #fff;
-        white-space: normal;
-        overflow-wrap: anywhere;
-      }
-      @media (max-width: 640px) {
-        .session-speakers {
-          position: static;
-          max-width: 100%;
-          width: 100%;
-          margin-top: 0.35rem;
-        }
-        .session-main { padding-bottom: 0; }
-        .session-main .read-more-link {
-          position: static;
-          margin-top: 0.3rem;
-        }
-        .session-speaker-person .session-speaker-avatar,
-        .session-speaker-placeholder {
-          width: 56px;
-          height: 56px;
-          margin: 0;
-        }
-      }
-    
-      /* Keep names intact; wrap whole speaker blocks onto new rows. */
-      .session-item { flex-wrap: wrap; }
-      .session-speakers {
-        position: static;
-        flex: 0 0 100%;
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: flex-start;
-        gap: 1rem 1.4rem;
-        margin-top: 0.35rem;
-      }
-      .session-speaker-person {
-        flex: 0 0 auto;
-        width: max-content;
-        min-width: 90px;
-        max-width: 100%;
-      }
-      .session-speaker-name {
-        white-space: nowrap;
-        overflow-wrap: normal;
-        word-break: normal;
-        font-size: 0.78rem;
-      }
-      @media (max-width: 640px) {
-        .session-speakers {
-          flex-basis: auto;
-          justify-content: flex-start;
-          gap: 0.9rem 1.2rem;
-        }
-        .session-speaker-name { font-size: 0.72rem; }
       }
     </style>
   </head>
@@ -1050,7 +1089,6 @@
           return hours * 60 + minutes;
         }
 
-        var CARD_SPEAKER_LIMIT = 4;
 
         function speakerChipHtml(speaker) {
           var role = speaker.role || '';
@@ -1078,15 +1116,15 @@
           return speakers.map(speakerChipHtml).join('');
         }
 
-        // Show every speaker's name directly below their portrait.
+        // Compact speaker chips for the list row: portrait and name.
         function speakerAvatarsHtml(speakers) {
           return (speakers || []).map(function (speaker) {
             var name = speaker.name || '';
             var portrait = speaker.photo
               ? '<img class="session-speaker-avatar" src="' + escapeHtml(speaker.photo) + '" alt="' + escapeHtml(name) + '" loading="lazy" />'
-              : '<span class="session-speaker-placeholder" aria-hidden="true">' + escapeHtml(name.split(/\s+/).map(function (part) { return part.charAt(0); }).slice(0, 2).join('')) + '</span>';
-            return '<div class="session-speaker-person">' + portrait +
-              '<span class="session-speaker-name">' + escapeHtml(name) + '</span></div>';
+              : '<span class="session-speaker-avatar session-speaker-placeholder" aria-hidden="true">' + escapeHtml(name.split(/\s+/).map(function (part) { return part.charAt(0); }).slice(0, 2).join('')) + '</span>';
+            return '<div class="session-speaker">' + portrait +
+              '<div class="session-speaker-name">' + escapeHtml(name) + '</div></div>';
           }).join('');
         }
 
@@ -1095,6 +1133,7 @@
           card.className = 'session-item';
           card.dataset.stage = session.stage || '';
           card.dataset.id = session.id;
+          if (session.speakers.length > 2) card.classList.add('session-item-many');
           if (session.backgroundImage) {
             card.classList.add('session-item-with-bg');
             card.style.setProperty('--session-bg-image', 'url(' + JSON.stringify('../' + session.backgroundImage) + ')');
@@ -1102,6 +1141,13 @@
               card.style.setProperty('--session-bg-size', session.backgroundImageSize);
             }
           }
+
+          var readMore = '<button type="button" class="read-more-link" data-id="' + escapeHtml(session.id) + '">Read more.</button>';
+          var wide = session.speakers.length > 3;
+          if (wide) card.classList.add('session-item-wide');
+          var cols = Math.min(session.speakers.length, wide ? 6 : 3);
+          var speakersHtml = '<div class="session-speakers" style="--cols:' + cols + '">' + speakerAvatarsHtml(session.speakers) + '</div>';
+          var many = session.speakers.length > 2;
 
           card.innerHTML =
             '<div class="session-time-col">' +
@@ -1111,10 +1157,13 @@
             '</div>' +
             '<div class="session-main">' +
               '<div class="session-title">' + escapeHtml(session.title) + '</div>' +
-              '<p class="session-desc">' + escapeHtml(session.description) + '</p>' +
-              '<button type="button" class="read-more-link" data-id="' + escapeHtml(session.id) + '">Read more.</button>' +
+              (many ? '' : '<p class="session-desc">' + escapeHtml(session.description) + '</p>' + readMore) +
             '</div>' +
-            '<div class="session-speakers">' + speakerAvatarsHtml(session.speakers, CARD_SPEAKER_LIMIT) + '</div>';
+            (many
+              ? '<div class="session-footer"><div class="session-footer-text">' +
+                  '<p class="session-desc">' + escapeHtml(session.description) + '</p>' + readMore +
+                '</div>' + speakersHtml + '</div>'
+              : speakersHtml);
 
           return card;
         }
@@ -1353,7 +1402,7 @@
           sessionGrid.addEventListener('click', function (event) {
             // Speaker avatars link out to their X/profile — let those
             // navigate instead of opening the session modal.
-            if (event.target.closest('.session-speaker-avatar, a.member-chip')) return;
+            if (event.target.closest('a.member-chip')) return;
             var card = event.target.closest('.session-item');
             if (!card) return;
             var id = card.dataset.id;
@@ -1381,6 +1430,21 @@
         // Each entry is { id, sessionRole? } — sessionRole (e.g.
         // "Moderator"/"Panelist") is this person's role in THIS session,
         // separate from their general org role in people.json.
+        // Normalizes ALL-CAPS / all-lowercase names to Title Case; leaves
+        // genuinely mixed-case words (McDonald, ben.gwei handles) alone.
+        function titleCaseName(name) {
+          return String(name || '').split(/(\s+|-)/).map(function (word) {
+            var letters = word.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ]/g, '');
+            if (letters.length < 3) return word;
+            var upper = letters.replace(/[^A-ZÀ-ÖØ-Þ]/g, '').length;
+            var lower = letters.length - upper;
+            var normalize = upper === letters.length || lower === letters.length || (upper > 1 && upper >= lower);
+            if (!normalize) return word;
+            return (word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+              .replace(/(['’])([a-z])/g, function (m, q, c) { return q + c.toUpperCase(); });
+          }).join('');
+        }
+
         function resolveSpeakers(speakerRefs, peopleById) {
           var resolved = [];
           (speakerRefs || []).forEach(function (ref) {
@@ -1391,11 +1455,11 @@
               return;
             }
             resolved.push({
-              name: person.name,
+              name: titleCaseName(person.name),
               photo: person.photo ? '../' + person.photo : '',
               xUrl: person.xUrl,
               role: person.role,
-              orgName: person.orgName,
+              orgName: /^[\s\-–—]*$/.test(person.orgName || '') ? '' : person.orgName,
               orgUrl: person.orgUrl,
               sessionRole: typeof ref === 'object' ? ref.sessionRole : undefined,
             });
