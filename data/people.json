@@ -1303,6 +1303,22 @@
     ],
     "speaker2026": false,
     "speakerOrder": null
+  },  
+  {
+    "id": "mike-mccabe",
+    "name": "Mike McCabe",
+    "photo": "img/Mike McCabe.png",
+    "xUrl": "https://x.com/MarinaMarkezic",
+    "tagline": "Policy researcher translating Ethereum for lawmakers and institutions",
+    "role": "Lead",
+    "orgName": "Privacy Pools",
+    "orgUrl": "https://privacypools.com",
+    "industries": [
+      "Privacy",
+      "Legal"
+    ],
+    "speaker2026": false,
+    "speakerOrder": null
   },
   {
     "id": "mario-havel",
