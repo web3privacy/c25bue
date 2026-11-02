@@ -18,6 +18,48 @@
     ]
   },
   {
+    "id": "second-6-0xbow",
+    "title": "Privacy 2.0",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Shreya Singhal",
+    "format": "Talk",
+    "startTime": "17:25",
+    "endTime": "18:00",
+    "date": "2026-11-02",
+    "backgroundImage": "",
+    "backgroundImageSize": "540px",
+    "speakers": [
+      {
+        "id": "tur-tyhyi"
+      },
+      {
+        "id": "iva"
+      },
+      {
+        "id": "mykola-siusko"
+      }
+    ]
+  },
+    {
+    "id": "second-6-0xbow",
+    "title": "Privacy 2.0",
+    "description": "",
+    "descriptionFull": "",
+    "stage": "Puttaswamy",
+    "format": "Talk",
+    "startTime": "17:05",
+    "endTime": "17:25",
+    "date": "2026-11-02",
+    "backgroundImage": "",
+    "backgroundImageSize": "540px",
+    "speakers": [
+      {
+        "id": "chris-mccabe"
+      }
+    ]
+  },
+  {
     "id": "main-stage-3-cultural-start-music-band",
     "title": "Cultural opening with Yalgaar Sanskrutik Manch",
     "description": "Musical collective amplifying Dalit histories (caste discrimination) and marginalised voices through storytelling, performance and cultural expression.",
