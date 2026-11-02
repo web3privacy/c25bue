@@ -281,6 +281,25 @@
     ]
   },
   {
+    "id": "main-stage-15-zac-aztec-jordi-baylina-x-zisk",
+    "title": "Post Quantum Cryptography: reality check in 2026",
+    "description": "Cryptography heavyweight will disscuss the state of cryptography in 2026",
+    "descriptionFull": "There's a lot of panic within cryptography scene: will AI break reliable cryptographic schemas? How far we are before Post-Quantum computers will break everything. Myths vs Practical cryptographic knowledge.",
+    "stage": "Shreya Singhal",
+    "format": "Session",
+    "startTime": "17:15",
+    "endTime": "12:35",
+    "date": "2026-11-02",
+    "speakers": [
+      {
+        "id": "zac-williamson"
+      },
+      {
+        "id": "jordi-baylina"
+      }
+    ]
+  },
+  {
     "id": "shreya-6-prasan",
     "title": "Special message from Pranesh Prakash",
     "description": "",
